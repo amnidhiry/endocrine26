@@ -150,16 +150,6 @@
     backdrop.addEventListener('click', close);
   }
 
-  function buildFooter() {
-    var host = document.getElementById('site-footer');
-    if (!host) return;
-    host.innerHTML =
-      '<div class="footer-inner">' +
-        '<p><strong>HSHD1 Endocrine Course Companion.</strong> A student-made study aid built by the endocrine course representative from open-access clinical references, organized around the 2026 course\'s stated learning objectives. It is not a course requirement, not an official course product, and not a clinical decision-support tool. Nothing here is medical advice.</p>' +
-        '<p>Corrections are welcome.</p>' +
-      '</div>';
-  }
-
   /* ------------------------------------------------- local section nav ---- */
   function buildToc() {
     var host = document.getElementById('page-toc');
@@ -400,7 +390,6 @@
   /* -------------------------------------------------------------- init --- */
   function init() {
     buildHeader();
-    buildFooter();
     buildToc();
     wireDisclosures(document);
     buildSearch();
