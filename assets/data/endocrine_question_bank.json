@@ -1,0 +1,1309 @@
+{
+  "title": "HSHD1 Endocrine Practice Question Bank",
+  "version": "1.0.0",
+  "created": "2026-08-07",
+  "intended_use": "Original educational MCQs written at a second-year-medical-student level, covering hypothalamic-pituitary, thyroid, and diabetes/insulin topics. Each question cites an open-access reference; it is not drawn from or a copy of any commercial or institutional question bank.",
+  "schema_notes": {
+    "correct_answer": "Matches one option id.",
+    "option_explanation": "Shown after submission for both correct and incorrect selections.",
+    "citation": "An open-access reference (StatPearls, Endotext, or a professional-society guideline) supporting the concept tested; not a citation to a copied question."
+  },
+  "questions": [
+    {
+      "id": "THY-001",
+      "lecture": "Thyroid Disorders",
+      "topic": "HPT axis",
+      "objective": "Localize thyroid dysfunction using TSH and free T4",
+      "difficulty": "foundational",
+      "stem": "A 14-year-old has fatigue, slowed growth, and constipation. Free T4 is low and TSH is markedly elevated. Which site is most likely responsible for the hormone abnormality?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hypothalamus",
+          "explanation": "A hypothalamic defect causes central hypothyroidism, in which TSH is low or inappropriately normal rather than markedly elevated."
+        },
+        {
+          "id": "B",
+          "text": "Anterior pituitary",
+          "explanation": "Pituitary failure also produces central hypothyroidism with low or inappropriately normal TSH."
+        },
+        {
+          "id": "C",
+          "text": "Thyroid gland",
+          "explanation": "Correct. Failure of the thyroid lowers free T4, removing negative feedback and producing a compensatory rise in TSH."
+        },
+        {
+          "id": "D",
+          "text": "Peripheral deiodinase",
+          "explanation": "Impaired peripheral conversion can change T3 availability, but it does not produce the classic high-TSH, low-free-T4 pattern of primary hypothyroidism."
+        }
+      ],
+      "correct_answer": "C",
+      "takeaway": "High TSH plus low free T4 localizes the defect to the thyroid: primary hypothyroidism.",
+      "citation": {
+        "text": "StatPearls: Hypothyroidism",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK519536/"
+      }
+    },
+    {
+      "id": "THY-002",
+      "lecture": "Thyroid Disorders",
+      "topic": "Congenital hypothyroidism",
+      "objective": "Interpret imaging in congenital hypothyroidism",
+      "difficulty": "intermediate",
+      "stem": "A newborn has confirmed primary congenital hypothyroidism. A technetium scan shows thyroid tissue at the base of the tongue and no uptake in the usual pretracheal location. Which mechanism best explains this finding?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Failure of thyroid hormone organification",
+          "explanation": "Dyshormonogenesis impairs synthesis in a present gland; it does not explain thyroid tissue located at the tongue base."
+        },
+        {
+          "id": "B",
+          "text": "Failure of embryologic thyroid migration",
+          "explanation": "Correct. A lingual thyroid results when thyroid tissue does not complete its normal descent to the anterior neck."
+        },
+        {
+          "id": "C",
+          "text": "Maternal TSH-receptor blocking antibodies",
+          "explanation": "Maternal antibodies can cause transient neonatal hypothyroidism but do not relocate the gland."
+        },
+        {
+          "id": "D",
+          "text": "Pituitary TSH deficiency",
+          "explanation": "TSH deficiency causes central hypothyroidism and would not explain ectopic functioning thyroid tissue."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "A lingual thyroid is an ectopic gland caused by incomplete embryologic migration.",
+      "citation": {
+        "text": "StatPearls: Ectopic Thyroid",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK539892/"
+      }
+    },
+    {
+      "id": "THY-003",
+      "lecture": "Thyroid Disorders",
+      "topic": "Graves disease",
+      "objective": "Relate Graves pathophysiology to diagnostic findings",
+      "difficulty": "foundational",
+      "stem": "A patient has tremor, heat intolerance, diffuse goiter, elevated free T4, and suppressed TSH. Radioactive iodine uptake is diffusely increased. Which mechanism best accounts for the findings?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Destruction of follicles with leakage of stored hormone",
+          "explanation": "Destructive thyroiditis releases stored hormone but suppresses new iodine uptake, producing low uptake."
+        },
+        {
+          "id": "B",
+          "text": "An autonomous mutation confined to one thyroid nodule",
+          "explanation": "A single autonomous nodule causes focal rather than diffuse uptake."
+        },
+        {
+          "id": "C",
+          "text": "Antibody-mediated stimulation of the TSH receptor",
+          "explanation": "Correct. TSH-receptor-stimulating antibodies activate the entire gland, causing diffuse growth and hormone synthesis."
+        },
+        {
+          "id": "D",
+          "text": "Exogenous ingestion of thyroid hormone",
+          "explanation": "Exogenous hormone suppresses both TSH and endogenous thyroid activity, so uptake would be low."
+        }
+      ],
+      "correct_answer": "C",
+      "takeaway": "Diffuse increased uptake indicates whole-gland hormone synthesis, classically from Graves disease.",
+      "citation": {
+        "text": "StatPearls: Graves Disease",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK448195/"
+      }
+    },
+    {
+      "id": "THY-004",
+      "lecture": "Thyroid Disorders",
+      "topic": "Thyroiditis",
+      "objective": "Distinguish hormone leakage from hormone overproduction",
+      "difficulty": "intermediate",
+      "stem": "A patient has palpitations, elevated free T4, suppressed TSH, and minimal radioactive iodine uptake throughout the thyroid. Which process best explains this combination?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Diffuse TSH-receptor stimulation",
+          "explanation": "Diffuse receptor stimulation increases new hormone synthesis and therefore increases iodine uptake."
+        },
+        {
+          "id": "B",
+          "text": "Release of preformed hormone from injured follicles",
+          "explanation": "Correct. Follicular injury can release stored hormone while active synthesis and iodine uptake remain suppressed."
+        },
+        {
+          "id": "C",
+          "text": "A TSH-secreting pituitary adenoma",
+          "explanation": "A TSH-secreting adenoma produces an elevated or inappropriately normal TSH, not a suppressed TSH."
+        },
+        {
+          "id": "D",
+          "text": "Iodine trapping by an autonomous nodule",
+          "explanation": "An autonomous nodule produces a focal area of increased uptake."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "Thyrotoxicosis with low uptake suggests hormone leakage or an exogenous source, not active glandular overproduction.",
+      "citation": {
+        "text": "StatPearls: Thyrotoxicosis",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482216/"
+      }
+    },
+    {
+      "id": "THY-005",
+      "lecture": "Thyroid Disorders",
+      "topic": "Thyroid pharmacology",
+      "objective": "Select antithyroid therapy during pregnancy",
+      "difficulty": "intermediate",
+      "stem": "A patient at 8 weeks of pregnancy requires antithyroid medication for Graves disease. Which plan best balances the major medication risks?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Methimazole throughout pregnancy",
+          "explanation": "Methimazole is generally preferred outside the first trimester, but first-trimester exposure carries a characteristic teratogenic risk."
+        },
+        {
+          "id": "B",
+          "text": "PTU initially, with consideration of switching to methimazole after the first trimester",
+          "explanation": "Correct. PTU is preferred during the first trimester; later switching limits prolonged PTU-associated hepatic risk."
+        },
+        {
+          "id": "C",
+          "text": "Radioactive iodine followed by levothyroxine",
+          "explanation": "Radioactive iodine is contraindicated in pregnancy because the fetal thyroid can concentrate iodine."
+        },
+        {
+          "id": "D",
+          "text": "Levothyroxine monotherapy",
+          "explanation": "Levothyroxine replaces thyroid hormone and therefore does not treat endogenous hormone excess."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "PTU is favored in the first trimester; methimazole is generally favored afterward because of PTU hepatotoxicity.",
+      "citation": {
+        "text": "StatPearls: Propylthiouracil (PTU)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK549828/"
+      }
+    },
+    {
+      "id": "THY-006",
+      "lecture": "Thyroid Disorders",
+      "topic": "Thyroid carcinoma",
+      "objective": "Identify medullary carcinoma and MEN2",
+      "difficulty": "intermediate",
+      "stem": "A patient with a thyroid mass has elevated calcitonin and a germline RET pathogenic variant. Which additional finding would most strongly support MEN2A?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mucosal neuromas",
+          "explanation": "Mucosal neuromas and a marfanoid habitus are characteristic of MEN2B rather than MEN2A."
+        },
+        {
+          "id": "B",
+          "text": "Hyperparathyroidism",
+          "explanation": "Correct. MEN2A classically combines medullary thyroid carcinoma, pheochromocytoma, and hyperparathyroidism."
+        },
+        {
+          "id": "C",
+          "text": "Pancreatic gastrinoma",
+          "explanation": "Pancreatic neuroendocrine tumors are associated with MEN1."
+        },
+        {
+          "id": "D",
+          "text": "Pituitary prolactinoma",
+          "explanation": "Pituitary tumors are part of MEN1, not the defining MEN2A pattern."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "MEN2A: medullary thyroid carcinoma, pheochromocytoma, and hyperparathyroidism.",
+      "citation": {
+        "text": "StatPearls: Multiple Endocrine Neoplasias Type 2",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK519054/"
+      }
+    },
+    {
+      "id": "PIT-001",
+      "lecture": "Hypothalamus and Pituitary Disorders",
+      "topic": "Pituitary anatomy",
+      "objective": "Relate pituitary mass effect to visual findings",
+      "difficulty": "foundational",
+      "stem": "A pituitary macroadenoma expands superiorly and compresses the central portion of the optic chiasm. Which visual deficit is most likely?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bitemporal hemianopsia",
+          "explanation": "Correct. Compression of crossing nasal retinal fibers causes loss of the temporal visual fields in both eyes."
+        },
+        {
+          "id": "B",
+          "text": "Left monocular blindness",
+          "explanation": "Monocular blindness results from injury to one optic nerve anterior to the chiasm."
+        },
+        {
+          "id": "C",
+          "text": "Right homonymous hemianopsia",
+          "explanation": "A homonymous deficit localizes posterior to the optic chiasm."
+        },
+        {
+          "id": "D",
+          "text": "Central scotoma in both eyes",
+          "explanation": "A central scotoma is not the classic visual-field effect of chiasmal compression by a sellar mass."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "A superiorly expanding sellar mass classically produces bitemporal hemianopsia.",
+      "citation": {
+        "text": "StatPearls: Neuroanatomy, Bitemporal Hemianopsia",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK545213/"
+      }
+    },
+    {
+      "id": "PIT-002",
+      "lecture": "Hypothalamus and Pituitary Disorders",
+      "topic": "Sheehan syndrome",
+      "objective": "Recognize ischemic anterior pituitary injury",
+      "difficulty": "intermediate",
+      "stem": "Several months after severe postpartum hemorrhage, a patient reports inability to lactate, fatigue, and amenorrhea. Which pathophysiologic event best explains these findings?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Autoimmune destruction of the thyroid",
+          "explanation": "Thyroid failure could cause fatigue but would not unify the loss of lactation and gonadal function after hemorrhage."
+        },
+        {
+          "id": "B",
+          "text": "Ischemic necrosis of the enlarged anterior pituitary",
+          "explanation": "Correct. The pituitary enlarges during pregnancy and is vulnerable to hypoperfusion during major obstetric blood loss."
+        },
+        {
+          "id": "C",
+          "text": "Hemorrhage into a preexisting adrenal adenoma",
+          "explanation": "An adrenal lesion does not account for loss of prolactin and gonadotropin function."
+        },
+        {
+          "id": "D",
+          "text": "Excess posterior pituitary hormone release",
+          "explanation": "The presentation reflects multiple anterior pituitary deficiencies, not posterior hormone excess."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "Postpartum hemorrhage followed by failure to lactate and other pituitary deficits suggests Sheehan syndrome.",
+      "citation": {
+        "text": "StatPearls: Sheehan Syndrome",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK459166/"
+      }
+    },
+    {
+      "id": "PIT-003",
+      "lecture": "Hypothalamus and Pituitary Disorders",
+      "topic": "Pituitary apoplexy",
+      "objective": "Recognize a pituitary emergency",
+      "difficulty": "intermediate",
+      "stem": "A patient with a known pituitary macroadenoma develops an abrupt severe headache, vomiting, impaired vision, hypotension, and confusion. What is the most likely diagnosis?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Empty sella syndrome",
+          "explanation": "Empty sella is often incidental or chronic and does not usually cause an abrupt neurologic and hemodynamic collapse."
+        },
+        {
+          "id": "B",
+          "text": "Pituitary apoplexy",
+          "explanation": "Correct. Acute hemorrhage or infarction within an adenoma can cause sudden mass effect and acute pituitary failure."
+        },
+        {
+          "id": "C",
+          "text": "Rathke cleft cyst",
+          "explanation": "A Rathke cleft cyst is typically a benign, slower-growing cystic lesion."
+        },
+        {
+          "id": "D",
+          "text": "Isolated growth hormone deficiency",
+          "explanation": "Isolated GH deficiency does not produce abrupt headache, visual loss, and cardiovascular instability."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "Sudden headache and visual or hemodynamic deterioration in a patient with a pituitary lesion is apoplexy until proven otherwise.",
+      "citation": {
+        "text": "StatPearls: Pituitary Apoplexy",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK559222/"
+      }
+    },
+    {
+      "id": "PIT-004",
+      "lecture": "Hypothalamus and Pituitary Disorders",
+      "topic": "Hyperprolactinemia",
+      "objective": "Explain prolactin elevation from stalk compression",
+      "difficulty": "intermediate",
+      "stem": "A non-prolactin-secreting suprasellar mass produces a moderate elevation in serum prolactin. Which mechanism is most likely?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Loss of hypothalamic dopamine delivery",
+          "explanation": "Correct. Dopamine normally inhibits lactotrophs; stalk disruption removes that inhibitory signal."
+        },
+        {
+          "id": "B",
+          "text": "Increased hypothalamic somatostatin delivery",
+          "explanation": "Somatostatin primarily suppresses GH and TSH and does not explain the stalk-effect prolactin rise."
+        },
+        {
+          "id": "C",
+          "text": "Direct stimulation of prolactin receptors",
+          "explanation": "Prolactin receptors act in target tissues; their stimulation does not cause pituitary prolactin secretion."
+        },
+        {
+          "id": "D",
+          "text": "Increased renal prolactin synthesis",
+          "explanation": "The kidney does not become the source of prolactin in a patient with stalk compression."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "Prolactin is tonically inhibited by dopamine, so pituitary-stalk interruption can raise prolactin.",
+      "citation": {
+        "text": "StatPearls: Prolactinoma",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK459347/"
+      }
+    },
+    {
+      "id": "PIT-005",
+      "lecture": "Hypothalamus and Pituitary Disorders",
+      "topic": "AVP disorders",
+      "objective": "Differentiate central from nephrogenic diabetes insipidus",
+      "difficulty": "intermediate",
+      "stem": "A patient has polyuria, hypernatremia, high serum osmolality, and very dilute urine. After desmopressin, urine osmolality rises substantially. What is the most likely diagnosis?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SIADH",
+          "explanation": "SIADH causes water retention, hyponatremia, low serum osmolality, and inappropriately concentrated urine."
+        },
+        {
+          "id": "B",
+          "text": "Primary polydipsia",
+          "explanation": "Primary polydipsia usually lowers serum sodium and osmolality rather than raising them."
+        },
+        {
+          "id": "C",
+          "text": "Central AVP deficiency",
+          "explanation": "Correct. A strong response to desmopressin shows that the kidneys can respond and that the missing signal was AVP."
+        },
+        {
+          "id": "D",
+          "text": "Renal AVP resistance",
+          "explanation": "With nephrogenic AVP resistance, desmopressin produces little or no increase in urine concentration."
+        }
+      ],
+      "correct_answer": "C",
+      "takeaway": "Desmopressin concentrates urine in central AVP deficiency but has little effect in renal AVP resistance.",
+      "citation": {
+        "text": "StatPearls: Arginine Vasopressin Disorder (Diabetes Insipidus)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK470458/"
+      }
+    },
+    {
+      "id": "PIT-006",
+      "lecture": "Hypothalamus and Pituitary Disorders",
+      "topic": "SIADH",
+      "objective": "Interpret serum and urine findings in SIADH",
+      "difficulty": "intermediate",
+      "stem": "A patient with small-cell lung carcinoma develops confusion. Sodium is 118 mEq/L, serum osmolality is low, and urine remains concentrated. Which finding is most consistent with the underlying process?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Suppressed collecting-duct aquaporin insertion",
+          "explanation": "Suppressed aquaporin insertion would reduce water reabsorption and produce dilute urine, as in AVP deficiency."
+        },
+        {
+          "id": "B",
+          "text": "Inappropriately increased AVP effect",
+          "explanation": "Correct. Excess AVP maintains water reabsorption and concentrated urine despite hypotonic plasma."
+        },
+        {
+          "id": "C",
+          "text": "Primary renal sodium retention",
+          "explanation": "The central disturbance in SIADH is excess free-water retention, not primary sodium retention."
+        },
+        {
+          "id": "D",
+          "text": "Failure of the kidney to respond to AVP",
+          "explanation": "AVP resistance produces high-volume dilute urine and tends toward hypernatremia, the opposite pattern."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "SIADH produces hypotonic hyponatremia with urine that is inappropriately concentrated.",
+      "citation": {
+        "text": "StatPearls: Syndrome of Inappropriate Antidiuretic Hormone Secretion",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK507777/"
+      }
+    },
+    {
+      "id": "T1D-001",
+      "lecture": "T1DM",
+      "topic": "Pathophysiology",
+      "objective": "Explain metabolic consequences of absolute insulin deficiency",
+      "difficulty": "foundational",
+      "stem": "A child with newly diagnosed T1DM has weight loss despite increased appetite. Which change most directly contributes to the weight loss?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Increased glucose uptake by skeletal muscle",
+          "explanation": "Insulin deficiency decreases rather than increases insulin-dependent glucose uptake."
+        },
+        {
+          "id": "B",
+          "text": "Increased storage of triglyceride in adipose tissue",
+          "explanation": "Insulin promotes energy storage; its absence favors breakdown of stored fat."
+        },
+        {
+          "id": "C",
+          "text": "Increased lipolysis and proteolysis",
+          "explanation": "Correct. Without insulin, the body mobilizes fat and protein despite abundant circulating glucose."
+        },
+        {
+          "id": "D",
+          "text": "Suppressed hepatic glucose production",
+          "explanation": "Hepatic glucose production rises in insulin deficiency and contributes to hyperglycemia."
+        }
+      ],
+      "correct_answer": "C",
+      "takeaway": "Absolute insulin deficiency creates a catabolic state with lipolysis, proteolysis, and weight loss.",
+      "citation": {
+        "text": "StatPearls: Type 1 Diabetes",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK507713/"
+      }
+    },
+    {
+      "id": "T1D-002",
+      "lecture": "T1DM",
+      "topic": "Classification",
+      "objective": "Use laboratory data to identify exogenous insulin exposure",
+      "difficulty": "advanced",
+      "stem": "During symptomatic hypoglycemia, a patient has a markedly elevated insulin concentration, suppressed C-peptide, and a negative sulfonylurea screen. Which explanation is most likely?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Insulinoma",
+          "explanation": "An insulinoma secretes endogenous insulin and therefore also releases C-peptide."
+        },
+        {
+          "id": "B",
+          "text": "Exogenous insulin administration",
+          "explanation": "Correct. Injected insulin lacks C-peptide, so insulin is high while C-peptide remains low."
+        },
+        {
+          "id": "C",
+          "text": "Sulfonylurea ingestion",
+          "explanation": "Sulfonylureas stimulate endogenous insulin, producing elevated insulin and C-peptide; the drug screen would support the diagnosis."
+        },
+        {
+          "id": "D",
+          "text": "Primary adrenal insufficiency",
+          "explanation": "Adrenal insufficiency can contribute to hypoglycemia but does not cause markedly elevated insulin with suppressed C-peptide."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "High insulin with low C-peptide indicates an exogenous insulin source.",
+      "citation": {
+        "text": "StatPearls: Factitious Hypoglycemia",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK542310/"
+      }
+    },
+    {
+      "id": "T1D-003",
+      "lecture": "T1DM",
+      "topic": "DKA",
+      "objective": "Recognize diabetic ketoacidosis",
+      "difficulty": "foundational",
+      "stem": "A teenager has polyuria, vomiting, abdominal pain, dehydration, and deep rapid respirations. Glucose is 480 mg/dL, bicarbonate is low, and the anion gap is elevated. Which diagnosis best unifies the findings?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Diabetic ketoacidosis",
+          "explanation": "Correct. Hyperglycemia, ketone-related anion-gap acidosis, dehydration, and compensatory deep breathing form the classic DKA pattern."
+        },
+        {
+          "id": "B",
+          "text": "Hyperosmolar hyperglycemic state without ketoacidosis",
+          "explanation": "HHS generally has extreme hyperglycemia and hyperosmolality with minimal ketoacidosis; this patient has clear anion-gap acidosis."
+        },
+        {
+          "id": "C",
+          "text": "Respiratory alkalosis",
+          "explanation": "The rapid breathing is compensation for metabolic acidosis, not the primary disorder."
+        },
+        {
+          "id": "D",
+          "text": "SIADH",
+          "explanation": "SIADH causes hypotonic hyponatremia and does not explain hyperglycemia with anion-gap acidosis."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "DKA combines hyperglycemia, ketosis, anion-gap metabolic acidosis, and volume depletion.",
+      "citation": {
+        "text": "StatPearls: Adult Diabetic Ketoacidosis",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK560723/"
+      }
+    },
+    {
+      "id": "T1D-004",
+      "lecture": "T1DM",
+      "topic": "DKA potassium",
+      "objective": "Explain total-body potassium depletion in DKA",
+      "difficulty": "intermediate",
+      "stem": "A patient with DKA has a serum potassium of 5.1 mEq/L before therapy. Which statement about potassium balance is most accurate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Total-body potassium is increased because the serum value is elevated",
+          "explanation": "The serum concentration does not reflect total-body stores in DKA; urinary losses usually produce depletion."
+        },
+        {
+          "id": "B",
+          "text": "Total-body potassium is usually depleted despite a normal or elevated serum value",
+          "explanation": "Correct. Insulin deficiency and acidosis shift potassium out of cells while osmotic diuresis removes potassium from the body."
+        },
+        {
+          "id": "C",
+          "text": "Potassium will remain unchanged after insulin is started",
+          "explanation": "Insulin drives potassium into cells, so the serum concentration can fall rapidly during treatment."
+        },
+        {
+          "id": "D",
+          "text": "Urinary potassium loss is reduced by osmotic diuresis",
+          "explanation": "Osmotic diuresis increases urinary water and electrolyte losses, including potassium."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "DKA usually causes total-body potassium depletion even when initial serum potassium is normal or high.",
+      "citation": {
+        "text": "StatPearls: Adult Diabetic Ketoacidosis",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK560723/"
+      }
+    },
+    {
+      "id": "T1D-005",
+      "lecture": "T1DM",
+      "topic": "DKA treatment",
+      "objective": "Predict potassium response to insulin",
+      "difficulty": "intermediate",
+      "stem": "Why can the serum potassium concentration fall quickly after insulin therapy begins in DKA?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Insulin shifts potassium from plasma into cells",
+          "explanation": "Correct. Insulin activates cellular potassium uptake, unmasking the patient's underlying total-body potassium deficit."
+        },
+        {
+          "id": "B",
+          "text": "Insulin directly blocks renal potassium reabsorption",
+          "explanation": "The immediate fall is primarily a transcellular shift, not direct blockade of tubular reabsorption."
+        },
+        {
+          "id": "C",
+          "text": "Insulin converts potassium into ketone bodies",
+          "explanation": "Potassium is an electrolyte and is not converted into ketones."
+        },
+        {
+          "id": "D",
+          "text": "Insulin raises the extracellular hydrogen ion concentration",
+          "explanation": "Insulin treatment helps correct ketoacidosis; it does not lower potassium by worsening extracellular acidemia."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "Insulin moves potassium intracellularly, making potassium measurement and replacement decisions central to DKA care.",
+      "citation": {
+        "text": "StatPearls: Adult Diabetic Ketoacidosis",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK560723/"
+      }
+    },
+    {
+      "id": "T2D-001",
+      "lecture": "T2DM",
+      "topic": "Pathophysiology",
+      "objective": "Differentiate T2DM from T1DM",
+      "difficulty": "foundational",
+      "stem": "An adult with central adiposity and acanthosis nigricans has progressive hyperglycemia. Which combination best describes the usual pathophysiology of T2DM?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Autoimmune beta-cell destruction with absolute insulin deficiency",
+          "explanation": "This is the core mechanism of T1DM."
+        },
+        {
+          "id": "B",
+          "text": "Insulin resistance with progressive relative insulin deficiency",
+          "explanation": "Correct. Tissues respond poorly to insulin, and beta-cell compensation eventually becomes inadequate."
+        },
+        {
+          "id": "C",
+          "text": "Excess AVP secretion with renal water retention",
+          "explanation": "This describes SIADH physiology and does not explain chronic hyperglycemia."
+        },
+        {
+          "id": "D",
+          "text": "Isolated absence of glucagon",
+          "explanation": "T2DM is not caused by isolated glucagon deficiency."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "T2DM reflects insulin resistance combined with progressive beta-cell dysfunction.",
+      "citation": {
+        "text": "StatPearls: Type 2 Diabetes",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK513253/"
+      }
+    },
+    {
+      "id": "T2D-002",
+      "lecture": "T2DM",
+      "topic": "Diagnosis",
+      "objective": "Apply diabetes diagnostic criteria",
+      "difficulty": "intermediate",
+      "stem": "A patient reports polyuria, polydipsia, and unexplained weight loss. A random plasma glucose is 242 mg/dL. Which interpretation is most appropriate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The result supports a diagnosis of diabetes because classic symptoms accompany a random glucose at or above 200 mg/dL",
+          "explanation": "Correct. Classic hyperglycemic symptoms plus a random plasma glucose at or above the diagnostic threshold supports diabetes."
+        },
+        {
+          "id": "B",
+          "text": "The result is diagnostic only if the patient was fasting",
+          "explanation": "A random glucose criterion does not require fasting when classic symptoms are present."
+        },
+        {
+          "id": "C",
+          "text": "The result establishes prediabetes rather than diabetes",
+          "explanation": "This value with classic symptoms meets a diabetes criterion, not merely a prediabetes range."
+        },
+        {
+          "id": "D",
+          "text": "The result distinguishes T1DM from T2DM",
+          "explanation": "The glucose establishes hyperglycemia but does not by itself classify the diabetes type."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "Classic symptoms plus random plasma glucose of at least 200 mg/dL supports the diagnosis of diabetes but not its type.",
+      "citation": {
+        "text": "ADA Standards of Care in Diabetes—2026: Diagnosis and Classification of Diabetes",
+        "url": "https://diabetesjournals.org/care/article/49/Supplement_1/S27/163926/"
+      }
+    },
+    {
+      "id": "T2D-003",
+      "lecture": "T2DM",
+      "topic": "HHS",
+      "objective": "Differentiate HHS from DKA",
+      "difficulty": "intermediate",
+      "stem": "An older adult with T2DM develops profound dehydration and altered mental status. Glucose is extremely elevated, serum osmolality is high, and ketones are minimal. Which diagnosis is most likely?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hyperosmolar hyperglycemic state",
+          "explanation": "Correct. HHS is dominated by severe hyperglycemia, hyperosmolality, and dehydration with limited ketosis."
+        },
+        {
+          "id": "B",
+          "text": "Diabetic ketoacidosis",
+          "explanation": "DKA is characterized by substantial ketone production and anion-gap metabolic acidosis."
+        },
+        {
+          "id": "C",
+          "text": "Central AVP deficiency",
+          "explanation": "AVP deficiency causes free-water loss and dilute urine but does not by itself produce extreme hyperglycemia."
+        },
+        {
+          "id": "D",
+          "text": "Primary adrenal insufficiency",
+          "explanation": "Primary adrenal insufficiency more often causes hypotension, hyponatremia, and hyperkalemia rather than extreme hyperglycemia."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "HHS features extreme hyperglycemia and hyperosmolality with profound dehydration and minimal ketoacidosis.",
+      "citation": {
+        "text": "StatPearls: Hyperosmolar Hyperglycemic Syndrome",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482142/"
+      }
+    },
+    {
+      "id": "T2D-004",
+      "lecture": "T2DM",
+      "topic": "Microvascular complications",
+      "objective": "Identify diabetic nephropathy pathology",
+      "difficulty": "intermediate",
+      "stem": "A patient with long-standing poorly controlled diabetes develops albuminuria and declining kidney function. Which renal lesion is most characteristic of diabetic nephropathy?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nodular mesangial sclerosis",
+          "explanation": "Correct. Nodular glomerulosclerosis is a characteristic advanced lesion of diabetic nephropathy."
+        },
+        {
+          "id": "B",
+          "text": "Linear IgG deposition from anti-basement-membrane antibodies",
+          "explanation": "This pattern suggests anti-GBM disease rather than diabetic nephropathy."
+        },
+        {
+          "id": "C",
+          "text": "Subepithelial immune-complex humps",
+          "explanation": "Subepithelial humps are associated with postinfectious glomerulonephritis."
+        },
+        {
+          "id": "D",
+          "text": "Diffuse crescent formation",
+          "explanation": "Crescents indicate severe rapidly progressive glomerular injury and are not the characteristic diabetic lesion."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "Diabetic nephropathy produces basement-membrane thickening and mesangial expansion, which may become nodular.",
+      "citation": {
+        "text": "StatPearls: Diabetic Nephropathy",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK534200/"
+      }
+    },
+    {
+      "id": "INS-001",
+      "lecture": "Insulin Therapy 101",
+      "topic": "Basal-bolus dosing",
+      "objective": "Calculate a meal bolus from carbohydrate coverage",
+      "difficulty": "foundational",
+      "stem": "A patient uses 1 unit of rapid-acting insulin for every 12 g of carbohydrate. The meal contains 60 g of carbohydrate, and no correction dose is needed. How much mealtime insulin is indicated by the prescribed ratio?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 units",
+          "explanation": "Three units would cover 36 g at this ratio, not 60 g."
+        },
+        {
+          "id": "B",
+          "text": "5 units",
+          "explanation": "Correct. Dividing 60 g by 12 g per unit gives 5 units."
+        },
+        {
+          "id": "C",
+          "text": "12 units",
+          "explanation": "The denominator describes grams covered by each unit; it is not itself the insulin dose."
+        },
+        {
+          "id": "D",
+          "text": "60 units",
+          "explanation": "Carbohydrate grams are not administered as an equal number of insulin units."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "Carbohydrate-coverage dose equals carbohydrate grams divided by the insulin-to-carbohydrate ratio.",
+      "citation": {
+        "text": "Endotext: Insulin—Pharmacology, Therapeutic Regimens and Principles of Intensive Insulin Therapy",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK278938/"
+      }
+    },
+    {
+      "id": "INS-002",
+      "lecture": "Insulin Therapy 101",
+      "topic": "Correction dosing",
+      "objective": "Calculate a hyperglycemia correction",
+      "difficulty": "intermediate",
+      "stem": "A patient has a correction factor of 1 unit for each 40 mg/dL above a target of 120 mg/dL. Before lunch, glucose is 280 mg/dL. Ignoring carbohydrate coverage, what correction dose is indicated by the prescribed factor?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2 units",
+          "explanation": "Two units would lower glucose by an estimated 80 mg/dL, leaving it above target."
+        },
+        {
+          "id": "B",
+          "text": "4 units",
+          "explanation": "Correct. The glucose is 160 mg/dL above target; 160 divided by 40 equals 4 units."
+        },
+        {
+          "id": "C",
+          "text": "7 units",
+          "explanation": "Dividing the current glucose directly by the correction factor ignores the target glucose."
+        },
+        {
+          "id": "D",
+          "text": "40 units",
+          "explanation": "The correction factor describes the expected glucose reduction per unit, not the number of units to administer."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "Correction dose equals current glucose minus target glucose, divided by the correction factor.",
+      "citation": {
+        "text": "Endotext: Insulin—Pharmacology, Therapeutic Regimens and Principles of Intensive Insulin Therapy",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK278938/"
+      }
+    },
+    {
+      "id": "INS-003",
+      "lecture": "Insulin Therapy 101",
+      "topic": "Pattern management",
+      "objective": "Identify the insulin period associated with fasting hyperglycemia",
+      "difficulty": "advanced",
+      "stem": "For four consecutive days, a patient's glucose is near target at bedtime but elevated on waking. Continuous glucose data show a gradual rise overnight without an intervening low. Which part of the regimen should be evaluated most directly?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Breakfast carbohydrate coverage",
+          "explanation": "Breakfast insulin affects the post-breakfast and pre-lunch periods, not the preceding overnight rise."
+        },
+        {
+          "id": "B",
+          "text": "Lunch correction factor",
+          "explanation": "The lunch correction factor does not act overnight."
+        },
+        {
+          "id": "C",
+          "text": "Overnight basal insulin delivery",
+          "explanation": "Correct. A repeated rise from bedtime to morning without nocturnal hypoglycemia points to inadequate overnight basal coverage or another overnight factor."
+        },
+        {
+          "id": "D",
+          "text": "Dinner carbohydrate counting only",
+          "explanation": "A dinner mismatch can affect evening glucose, but the trace begins near target at bedtime and then rises gradually overnight."
+        }
+      ],
+      "correct_answer": "C",
+      "takeaway": "Repeated fasting abnormalities should be interpreted from the overnight pattern before changing insulin.",
+      "citation": {
+        "text": "Endotext: Insulin—Pharmacology, Therapeutic Regimens and Principles of Intensive Insulin Therapy",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK278938/"
+      }
+    },
+    {
+      "id": "INS-004",
+      "lecture": "Insulin Therapy 101",
+      "topic": "Insulin regimens",
+      "objective": "Compare pump and injection regimens",
+      "difficulty": "intermediate",
+      "stem": "Which feature most clearly distinguishes continuous subcutaneous insulin infusion from a basal-bolus injection regimen?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A pump delivers rapid-acting insulin for both basal delivery and meal boluses",
+          "explanation": "Correct. Pump therapy uses rapid-acting insulin continuously for basal needs and in discrete meal or correction boluses."
+        },
+        {
+          "id": "B",
+          "text": "A pump eliminates the need for mealtime insulin",
+          "explanation": "Meal boluses are still required with pump therapy."
+        },
+        {
+          "id": "C",
+          "text": "A pump continues to provide long-acting insulin after an infusion interruption",
+          "explanation": "Standard pump therapy does not contain a long-acting depot, so interruption can quickly remove basal insulin delivery."
+        },
+        {
+          "id": "D",
+          "text": "A pump cannot vary basal insulin by time of day",
+          "explanation": "The ability to program different basal rates is a major advantage of pump therapy."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "Insulin pumps generally use rapid-acting insulin for programmable basal delivery and boluses.",
+      "citation": {
+        "text": "StatPearls: Insulin Pump",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK555961/"
+      }
+    },
+    {
+      "id": "INS-005",
+      "lecture": "Insulin Therapy 101",
+      "topic": "Insulin profiles",
+      "objective": "Recognize the practical consequences of NPH action",
+      "difficulty": "intermediate",
+      "stem": "Compared with a relatively peakless long-acting basal analog, which feature of NPH most affects meal and snack planning?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It has a pronounced peak that can increase hypoglycemia risk",
+          "explanation": "Correct. NPH has a clinically meaningful peak, so food and activity timing may need to account for it."
+        },
+        {
+          "id": "B",
+          "text": "It begins working only after several days",
+          "explanation": "NPH begins acting within hours, not days."
+        },
+        {
+          "id": "C",
+          "text": "It can be used only in an insulin pump",
+          "explanation": "Pumps generally use rapid-acting insulin; NPH is administered by injection."
+        },
+        {
+          "id": "D",
+          "text": "It provides mealtime carbohydrate coverage without another insulin",
+          "explanation": "NPH is intermediate acting and is not a direct substitute for rapid mealtime coverage."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "The NPH peak makes timing of meals, snacks, and activity more consequential.",
+      "citation": {
+        "text": "StatPearls: NPH Insulin",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK549860/"
+      }
+    },
+    {
+      "id": "THY-007",
+      "lecture": "Thyroid Disorders",
+      "topic": "Papillary thyroid carcinoma",
+      "objective": "Recognize characteristic papillary carcinoma pathology",
+      "difficulty": "intermediate",
+      "stem": "Fine-needle aspiration of a thyroid nodule shows enlarged nuclei with central clearing, nuclear grooves, and intranuclear cytoplasmic inclusions. Which additional finding would most strongly support the same diagnosis?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Amyloid-rich stroma",
+          "explanation": "Amyloid stroma is characteristic of medullary thyroid carcinoma, which arises from parafollicular C cells."
+        },
+        {
+          "id": "B",
+          "text": "Psammoma bodies",
+          "explanation": "Correct. Papillary carcinoma classically shows optically clear nuclei, nuclear grooves, intranuclear inclusions, and laminated calcifications called psammoma bodies."
+        },
+        {
+          "id": "C",
+          "text": "Capsular and vascular invasion without papillary nuclear features",
+          "explanation": "Capsular or vascular invasion is the defining malignant feature of follicular carcinoma."
+        },
+        {
+          "id": "D",
+          "text": "Sheets of highly pleomorphic spindle and giant cells",
+          "explanation": "Marked pleomorphism with spindle or giant cells suggests anaplastic carcinoma."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "Papillary carcinoma is identified by its nuclear features and may contain psammoma bodies.",
+      "citation": {
+        "text": "StatPearls: Papillary Thyroid Carcinoma",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK536943/"
+      }
+    },
+    {
+      "id": "THY-008",
+      "lecture": "Thyroid Disorders",
+      "topic": "Anaplastic thyroid carcinoma",
+      "objective": "Distinguish aggressive thyroid carcinoma types",
+      "difficulty": "intermediate",
+      "stem": "A 78-year-old develops a rapidly enlarging, hard thyroid mass with hoarseness, stridor, and local invasion. Biopsy shows highly pleomorphic undifferentiated cells. Which diagnosis is most likely?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Papillary thyroid carcinoma",
+          "explanation": "Papillary carcinoma usually has distinctive nuclear clearing and grooves and generally has an excellent prognosis."
+        },
+        {
+          "id": "B",
+          "text": "Follicular thyroid carcinoma",
+          "explanation": "Follicular carcinoma is defined by capsular or vascular invasion and does not typically present as a rapidly invasive pleomorphic mass."
+        },
+        {
+          "id": "C",
+          "text": "Medullary thyroid carcinoma",
+          "explanation": "Medullary carcinoma is a calcitonin-producing neuroendocrine tumor with amyloid stroma."
+        },
+        {
+          "id": "D",
+          "text": "Anaplastic thyroid carcinoma",
+          "explanation": "Correct. Anaplastic carcinoma occurs mainly in older adults and presents as a rapidly enlarging, locally invasive mass composed of undifferentiated pleomorphic cells."
+        }
+      ],
+      "correct_answer": "D",
+      "takeaway": "Anaplastic carcinoma is an aggressive tumor of older adults that often presents with rapid local compression and invasion.",
+      "citation": {
+        "text": "StatPearls: Anaplastic Thyroid Cancer",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK538179/"
+      }
+    },
+    {
+      "id": "THY-009",
+      "lecture": "Thyroid Disorders",
+      "topic": "Antithyroid pharmacology",
+      "objective": "Recognize a serious thionamide adverse effect and PTU mechanism",
+      "difficulty": "advanced",
+      "stem": "A pregnant patient treated for Graves disease develops fever, severe sore throat, oral ulcers, and marked neutropenia. The medication also inhibits peripheral conversion of T4 to T3. Which drug is most likely responsible?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Levothyroxine",
+          "explanation": "Levothyroxine is synthetic T4 used for hypothyroidism; it neither inhibits thyroid peroxidase nor blocks peripheral T4-to-T3 conversion."
+        },
+        {
+          "id": "B",
+          "text": "Propylthiouracil",
+          "explanation": "Correct. PTU inhibits thyroid peroxidase and also decreases peripheral conversion of T4 to T3. Thionamides can cause agranulocytosis, signaled by fever or sore throat."
+        },
+        {
+          "id": "C",
+          "text": "Radioactive iodine",
+          "explanation": "Radioactive iodine ablates thyroid tissue and is contraindicated during pregnancy; it does not cause this characteristic drug-induced agranulocytosis pattern."
+        },
+        {
+          "id": "D",
+          "text": "Propranolol",
+          "explanation": "Propranolol controls adrenergic symptoms and at higher doses can reduce peripheral conversion, but it does not inhibit thyroid peroxidase and is not the classic cause of agranulocytosis."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "PTU uniquely combines thyroid-peroxidase inhibition with reduced peripheral T4-to-T3 conversion; fever or sore throat on a thionamide requires urgent evaluation for agranulocytosis.",
+      "citation": {
+        "text": "StatPearls: Propylthiouracil (PTU)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK549828/"
+      }
+    },
+    {
+      "id": "THY-010",
+      "lecture": "Thyroid Disorders",
+      "topic": "Exogenous thyroid hormone",
+      "objective": "Interpret thyrotoxicosis caused by thyroid hormone ingestion",
+      "difficulty": "advanced",
+      "stem": "A patient secretly takes high-dose levothyroxine for weight loss. Which combination is most likely?",
+      "options": [
+        {
+          "id": "A",
+          "text": "High TSH with high radioactive iodine uptake",
+          "explanation": "Exogenous thyroid hormone suppresses TSH and endogenous thyroid activity rather than increasing both."
+        },
+        {
+          "id": "B",
+          "text": "Low TSH with low radioactive iodine uptake",
+          "explanation": "Correct. Exogenous hormone produces thyrotoxicosis while suppressing TSH and the gland's own iodine uptake."
+        },
+        {
+          "id": "C",
+          "text": "High TSH with low free T4",
+          "explanation": "This is the classic pattern of primary hypothyroidism, not excess levothyroxine exposure."
+        },
+        {
+          "id": "D",
+          "text": "Normal TSH with diffusely increased uptake",
+          "explanation": "Diffuse increased uptake with suppressed TSH is more consistent with Graves disease; normal TSH would be inappropriate in overt thyrotoxicosis."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "Exogenous thyroid hormone causes biochemical thyrotoxicosis but suppresses endogenous gland activity and radioactive iodine uptake.",
+      "citation": {
+        "text": "StatPearls: Thyrotoxicosis",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK482216/"
+      }
+    },
+    {
+      "id": "PIT-007",
+      "lecture": "Hypothalamus and Pituitary Disorders",
+      "topic": "Prolactinoma",
+      "objective": "Connect prolactin excess with reproductive and mass-effect findings",
+      "difficulty": "intermediate",
+      "stem": "A patient has amenorrhea, galactorrhea, headaches, and difficulty seeing objects approaching from either side. Pregnancy testing is negative. Which laboratory abnormality is most likely?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Elevated prolactin",
+          "explanation": "Correct. A prolactinoma can produce amenorrhea and galactorrhea; a sufficiently large lesion can compress the optic chiasm and impair temporal visual fields."
+        },
+        {
+          "id": "B",
+          "text": "Elevated free T4 with suppressed prolactin",
+          "explanation": "This pattern would not unify galactorrhea with a sellar mass effect."
+        },
+        {
+          "id": "C",
+          "text": "Elevated aldosterone",
+          "explanation": "Aldosterone excess causes hypertension and hypokalemia, not galactorrhea and bitemporal visual loss."
+        },
+        {
+          "id": "D",
+          "text": "Suppressed IGF-1 as the sole abnormality",
+          "explanation": "Isolated GH-axis dysfunction does not explain galactorrhea; the reproductive findings point more directly to prolactin excess."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "Amenorrhea and galactorrhea suggest prolactin excess; visual-field symptoms suggest a macroadenoma with chiasmal compression.",
+      "citation": {
+        "text": "StatPearls: Prolactinoma",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK459347/"
+      }
+    },
+    {
+      "id": "PIT-008",
+      "lecture": "Hypothalamus and Pituitary Disorders",
+      "topic": "Medication-induced hyperprolactinemia",
+      "objective": "Explain dopamine-antagonist effects on prolactin",
+      "difficulty": "intermediate",
+      "stem": "A patient develops galactorrhea and menstrual irregularity after beginning a dopamine D2-receptor-blocking antipsychotic. Which physiologic change most directly causes these effects?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Removal of tonic dopamine inhibition of lactotrophs",
+          "explanation": "Correct. Dopamine normally restrains prolactin secretion; D2 blockade removes that inhibition and raises prolactin."
+        },
+        {
+          "id": "B",
+          "text": "Direct activation of growth hormone receptors",
+          "explanation": "D2 blockade does not directly stimulate GH receptors."
+        },
+        {
+          "id": "C",
+          "text": "Suppression of hypothalamic TRH",
+          "explanation": "TRH can stimulate prolactin, but suppression of TRH would not explain medication-induced prolactin elevation."
+        },
+        {
+          "id": "D",
+          "text": "Increased renal synthesis of prolactin",
+          "explanation": "The elevated prolactin arises from pituitary lactotroph disinhibition, not renal hormone synthesis."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "D2 antagonists increase prolactin because dopamine normally inhibits lactotroph secretion.",
+      "citation": {
+        "text": "StatPearls: Hyperprolactinemia",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK537331/"
+      }
+    },
+    {
+      "id": "PIT-009",
+      "lecture": "Hypothalamus and Pituitary Disorders",
+      "topic": "Acromegaly pharmacology",
+      "objective": "Relate somatostatin analogs to GH excess treatment",
+      "difficulty": "advanced",
+      "stem": "A patient with acromegaly is not ready to undergo definitive pituitary surgery and begins a somatostatin analog. Which drug class effect is being used?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stimulation of pituitary growth hormone release",
+          "explanation": "Somatostatin physiologically inhibits, rather than stimulates, GH release."
+        },
+        {
+          "id": "B",
+          "text": "Suppression of growth hormone secretion",
+          "explanation": "Correct. Somatostatin analogs such as octreotide or lanreotide reduce GH secretion and thereby lower IGF-1."
+        },
+        {
+          "id": "C",
+          "text": "Replacement of deficient IGF-1",
+          "explanation": "Acromegaly is a state of GH and IGF-1 excess, so IGF-1 replacement would be inappropriate."
+        },
+        {
+          "id": "D",
+          "text": "Stimulation of dopamine release from the adrenal medulla",
+          "explanation": "The therapeutic effect is exerted on GH secretion, not through adrenal dopamine release."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "Somatostatin analogs treat acromegaly by suppressing GH secretion and reducing IGF-1 production.",
+      "citation": {
+        "text": "StatPearls: Acromegaly",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK431086/"
+      }
+    },
+    {
+      "id": "T1D-006",
+      "lecture": "T1DM",
+      "topic": "DKA compensation",
+      "objective": "Interpret respiratory findings in metabolic acidosis",
+      "difficulty": "intermediate",
+      "stem": "A patient with DKA is breathing deeply and rapidly. Which explanation best accounts for this respiratory pattern?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Primary respiratory alkalosis caused the ketoacidosis",
+          "explanation": "The respiratory change is compensatory; it does not initiate ketone production or the metabolic acidosis."
+        },
+        {
+          "id": "B",
+          "text": "Hyperventilation lowers carbon dioxide to compensate for metabolic acidosis",
+          "explanation": "Correct. Deep rapid breathing reduces carbon dioxide and partially compensates for the fall in bicarbonate and pH."
+        },
+        {
+          "id": "C",
+          "text": "Pulmonary edema prevents carbon dioxide elimination",
+          "explanation": "Impaired carbon dioxide elimination would cause respiratory acidosis, not compensatory hypocapnia."
+        },
+        {
+          "id": "D",
+          "text": "Insulin excess directly stimulates the respiratory center",
+          "explanation": "DKA results from insulin deficiency; the respiratory drive is generated by acidemia."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "Kussmaul respirations are respiratory compensation for severe metabolic acidosis in DKA.",
+      "citation": {
+        "text": "StatPearls: Adult Diabetic Ketoacidosis",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK560723/"
+      }
+    },
+    {
+      "id": "INS-006",
+      "lecture": "Insulin Therapy 101",
+      "topic": "Hypoglycemia safety",
+      "objective": "Recognize medication masking of hypoglycemia",
+      "difficulty": "advanced",
+      "stem": "A patient using insulin begins a nonselective beta blocker. Which warning symptom of hypoglycemia may become less noticeable?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tremor and palpitations",
+          "explanation": "Correct. Beta blockade can blunt adrenergic warning signs such as tremor, tachycardia, and palpitations."
+        },
+        {
+          "id": "B",
+          "text": "Sweating in every patient",
+          "explanation": "Sweating is cholinergically mediated and may remain present even when several adrenergic warning signs are blunted."
+        },
+        {
+          "id": "C",
+          "text": "Polyuria from glucosuria",
+          "explanation": "Polyuria is a manifestation of hyperglycemia rather than an acute warning symptom of hypoglycemia."
+        },
+        {
+          "id": "D",
+          "text": "Kussmaul respirations",
+          "explanation": "Kussmaul respirations reflect metabolic acidosis, classically DKA, not uncomplicated hypoglycemia."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "Beta blockers may mask adrenergic hypoglycemia warnings, although sweating can remain detectable.",
+      "citation": {
+        "text": "StatPearls: Selective Beta-1 Blockers",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK499982/"
+      }
+    },
+    {
+      "id": "T2D-005",
+      "lecture": "T2DM",
+      "topic": "Medication-associated hypoglycemia",
+      "objective": "Recognize insulin-secretagogue hypoglycemia",
+      "difficulty": "intermediate",
+      "stem": "An older adult with T2DM develops recurrent sweating, tremor, and confusion on days when lunch is skipped. Which medication class most directly raises this risk by stimulating pancreatic insulin release even when food intake is reduced?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sulfonylurea",
+          "explanation": "Correct. Sulfonylureas stimulate endogenous insulin secretion and can cause hypoglycemia, particularly when meals are missed."
+        },
+        {
+          "id": "B",
+          "text": "Alpha-glucosidase inhibitor",
+          "explanation": "This class delays intestinal carbohydrate absorption and does not usually cause hypoglycemia when used alone."
+        },
+        {
+          "id": "C",
+          "text": "Metformin",
+          "explanation": "Metformin primarily reduces hepatic glucose production and has a low risk of hypoglycemia when used alone."
+        },
+        {
+          "id": "D",
+          "text": "Thiazolidinedione",
+          "explanation": "Thiazolidinediones improve insulin sensitivity and do not generally produce hypoglycemia as monotherapy."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "Insulin secretagogues can cause hypoglycemia when food intake is delayed or omitted.",
+      "citation": {
+        "text": "StatPearls: Sulfonylureas",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK513225/"
+      }
+    }
+  ]
+}

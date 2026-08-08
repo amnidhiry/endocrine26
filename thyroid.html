@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thyroid Disorders — HSHD1 Endocrine Course Companion</title>
+<meta name="description" content="Thyroid disorders organized around one feedback loop: congenital and acquired hypothyroidism, Graves disease, the thyroiditides, goiter, nodules, and the four carcinomas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="thyroid">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+<noscript><div style="max-width:1180px;margin:0 auto;padding:1rem 1.25rem"><p class="note note-amber"><span class="note-kind">JavaScript is off</span>The text below is complete and readable, but the navigation, search, interactive figures, and practice questions need JavaScript. <a href="index.html">Back to the home page</a>.</p></div></noscript>
+
+<div class="page">
+  <nav class="toc" id="page-toc" aria-label="Sections of this page"></nav>
+
+  <main class="content" id="main" tabindex="-1">
+
+    <div class="page-head">
+      <p class="eyebrow">Study guide · Thyroid axis · 6 Aug 2026</p>
+      <h1>Thyroid Disorders</h1>
+      <p class="lede">Every disorder on this page is a break somewhere along a single feedback loop, or a lump growing next to it.
+        Get the loop fluent first and the disease list becomes a set of variations rather than a list to memorize.</p>
+      <div class="toc-mobile" id="page-toc-mobile"></div>
+    </div>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Orient</span><span class="phase-what">The axis, what thyroid hormone does, and the primary–central split</span></div>
+
+    <section class="section" id="orient" data-toc="The HPT axis" data-phase="Orient">
+      <h2>The hypothalamic–pituitary–thyroid axis</h2>
+
+      <div class="note note-blue">
+        <span class="note-kind">The loop</span>
+        <p>Hypothalamus releases <strong>TRH</strong> → anterior pituitary releases <strong>TSH</strong> → thyroid follicular cells release
+          <strong>T4</strong> (mostly) and <strong>T3</strong> (some) → peripheral deiodinase converts T4 to T3 → <strong>T3 is the active hormone</strong>
+          at nuclear receptors. Negative feedback closes the loop at both the hypothalamus and the pituitary.</p>
+      </div>
+
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 560 280" role="img" aria-labelledby="hpt-t hpt-d">
+          <title id="hpt-t">The hypothalamic–pituitary–thyroid feedback loop</title>
+          <desc id="hpt-d">The hypothalamus releases TRH to the anterior pituitary, which releases TSH to the thyroid, which releases T4 and some T3. Rising T4 and T3 feed back negatively on both the pituitary and the hypothalamus, shown as gray dashed inhibition lines. A break at the thyroid is primary disease and moves TSH in the opposite direction to the thyroid hormone. A break at the pituitary or hypothalamus is central disease and leaves TSH low or inappropriately normal regardless of the thyroid hormone level.</desc>
+
+          <circle cx="80" cy="76" r="48" class="box-blue"/>
+          <text x="80" y="72" text-anchor="middle" font-family="var(--font)" font-size="13" font-weight="600" fill="var(--text)">Hypothalamus</text>
+          <text x="80" y="90" text-anchor="middle" font-family="var(--mono)" font-size="13" fill="var(--blue)">TRH</text>
+
+          <circle cx="280" cy="76" r="48" class="box-teal"/>
+          <text x="280" y="72" text-anchor="middle" font-family="var(--font)" font-size="13" font-weight="600" fill="var(--text)">Ant. pituitary</text>
+          <text x="280" y="90" text-anchor="middle" font-family="var(--mono)" font-size="13" fill="var(--teal)">TSH</text>
+
+          <circle cx="480" cy="76" r="48" class="box-red"/>
+          <text x="480" y="72" text-anchor="middle" font-family="var(--font)" font-size="13" font-weight="600" fill="var(--text)">Thyroid</text>
+          <text x="480" y="90" text-anchor="middle" font-family="var(--mono)" font-size="13" fill="var(--red)">T4 → T3</text>
+
+          <line x1="130" y1="76" x2="226" y2="76" class="flow" marker-end="url(#thy-a)"/>
+          <line x1="330" y1="76" x2="426" y2="76" class="flow" marker-end="url(#thy-a)"/>
+          <defs><marker id="thy-a" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--accent)"/></marker></defs>
+
+          <path d="M480 126 C 480 200, 80 200, 80 126" class="inhibit"/>
+          <path d="M300 124 C 300 168, 200 172, 118 106" class="inhibit"/>
+          <text x="280" y="222" text-anchor="middle" font-family="var(--font)" font-size="13" fill="var(--gray)">negative feedback — dashed = a brake, not a signal</text>
+
+          <text x="280" y="252" text-anchor="middle" font-family="var(--font)" font-size="13" fill="var(--text2)">Break the loop at the thyroid = <tspan font-weight="600" fill="var(--text)">primary</tspan>. Break it upstream = <tspan font-weight="600" fill="var(--text)">central</tspan>.</text>
+          <text x="280" y="272" text-anchor="middle" font-family="var(--font)" font-size="13" fill="var(--text2)">That one distinction answers a large share of thyroid questions.</text>
+        </svg>
+        <p class="figcaption">Original diagram. In <strong>primary</strong> disease the break is at the gland, so TSH moves <em>opposite</em> to the hormone problem.
+          In <strong>central</strong> (secondary or tertiary) disease the break is upstream, so TSH stays low or inappropriately normal regardless of T4.</p>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label blue">What thyroid hormone actually does</div>
+          <div class="block-text">Brain maturation · bone maturation · linear growth · thermogenesis · myocardial contractility ·
+            hepatic maturation · skin maturation · <strong>increased catecholamine sensitivity</strong> · heart rate and blood pressure.
+            That catecholamine line is why a hyperthyroid patient looks adrenergically revved up, and why a beta blocker helps.</div>
+        </div>
+        <div class="block">
+          <div class="block-label amber">Primary vs central, stated plainly</div>
+          <div class="block-text"><strong>Primary</strong> — gland is broken. ↑TSH in hypothyroidism, ↓TSH in hyperthyroidism.
+            <strong>Central</strong> (secondary = pituitary, tertiary = hypothalamus) — TSH is low or inappropriately normal <em>regardless</em> of T4.
+            An "inappropriately normal" TSH beside a low free T4 is the finding people miss.</div>
+        </div>
+      </div>
+
+      <div class="figure">
+        <img src="assets/img/thyroid_disease_physiology_diversified.png" alt="Illustrated comparison of hyperthyroid and hypothyroid presentations, showing organ-by-organ effects and the mechanism by which goiter or glandular atrophy develops.">
+        <p class="figcaption">Figure by Priya Modi, <a href="https://physiologydiversified.github.io/" target="_blank" rel="noopener noreferrer">Physiology Diversified</a>.
+          Licensed <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-ND 4.0</a> — reproduced unmodified, with attribution, for non-commercial educational use.
+          This is the one image on this site that is not original; everything else is drawn from scratch.</p>
+      </div>
+
+      <div class="note note-teal">
+        <span class="note-kind">What the objectives ask of you, for every disorder below</span>
+        <p>Identify the underlying cause — congenital, embryologic, autoimmune, infectious, nutritional, or neoplastic.
+          Distinguish primary from secondary from tertiary. Recognize the signs and symptoms, <strong>including newborn-screening abnormalities where relevant</strong>.
+          Select and interpret the right laboratory, imaging, and pathologic studies. And identify the
+          <strong>indications for fine-needle aspiration, biopsy, or surgery</strong>.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Recognize</span><span class="phase-what">Presentation, examination findings, and the characteristic lab picture</span></div>
+
+    <section class="section" id="congenital" data-toc="Congenital hypothyroidism" data-phase="Recognize">
+      <h2>Congenital hypothyroidism</h2>
+      <p class="section-note">Usually detected through universal newborn screening; most cases are sporadic.</p>
+
+      <div class="note note-red">
+        <span class="note-kind">Speed is the whole point</span>
+        <p>T4 is essential for early brain and skeletal development, and the window does not reopen.
+          Severe untreated congenital hypothyroidism developing in infancy or early childhood is what the older literature calls
+          <strong>cretinism</strong> — a term now avoided clinically but still occasionally encountered in older texts. Start levothyroxine as soon as the screen flags it; do not let a confirmatory workup delay treatment.</p>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label purple">Etiology</div>
+          <div class="block-text"><strong>Thyroid dysgenesis is the most common cause</strong>: hypoplasia or aplasia, or an <strong>ectopic gland</strong> from a migration defect
+            during embryogenesis — most commonly a <strong>lingual</strong> gland.
+            <strong>Dyshormonogenesis</strong>: an inborn error of hormone synthesis, secretion, or metabolism. Often familial. The gland is
+            present but works incompletely or not at all — for example an organification defect or a TSH-receptor abnormality.</div>
+        </div>
+        <div class="block">
+          <div class="block-label amber">Imaging — and how to read it</div>
+          <div class="block-text"><strong>Tc-99 scan.</strong> Tissue seen in the wrong place → <strong>ectopic gland</strong>, a migration defect.
+            A normal-looking gland in a hypothyroid infant → <strong>dyshormonogenesis</strong>, because the tissue is there but not functioning.
+            <strong>No gland seen</strong> → aplasia or dysgenesis; follow up with ultrasound.</div>
+        </div>
+      </div>
+
+      <div class="block" style="margin-bottom:1rem">
+        <div class="block-label red">Classic signs and symptoms</div>
+        <div class="block-text">Macroglossia · coarse facies · umbilical hernia · lethargy, irritability, poor feeding ·
+          poor growth and weight gain · a persistently large, open fontanel · persistent jaundice · temperature instability ·
+          delayed passage of the first stool · edema. Most affected newborns look <em>well</em> at birth, which is precisely why the
+          screening programme exists.</div>
+      </div>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Congenital hypothyroidism lab patterns">
+        <table>
+          <caption>Localizing congenital hypothyroidism. Treatment is levothyroxine — synthetic T4 — in both.</caption>
+          <thead><tr><th scope="col">Pattern</th><th scope="col">TSH</th><th scope="col">T4 / T3</th><th scope="col">Where the defect is</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Primary</th><td>High</td><td>Low</td><td>The thyroid gland itself</td></tr>
+            <tr><th scope="row">Central (secondary or tertiary)</th><td>Low or normal</td><td>Low</td><td>Pituitary or hypothalamus — think congenital hypopituitarism</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note note-amber">
+        <span class="note-kind">The newborn screen trap</span>
+        <p>A <strong>low total T4 with a normal TSH</strong> in an otherwise well, term, normal-weight infant is usually
+          <strong>thyroxine-binding globulin deficiency</strong>, not thyroid disease. Total T4 tracks the binding protein; the
+          <strong>free T4 and TSH are normal</strong>, the axis is intact, and no treatment is needed. Confirm with a free T4 rather than
+          repeating a total T4. Two other explanations to hold in mind for the same pattern are <strong>central hypothyroidism</strong> and a
+          <strong>delayed TSH surge</strong> — the latter particularly in premature, low-birth-weight, or critically ill infants, which is
+          why the well term infant points away from it.</p>
+      </div>
+
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="THY-002,THY-001" data-quiz-toolbar="false"></div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="acquired" data-toc="Acquired hypothyroidism" data-phase="Recognize">
+      <h2>Acquired hypothyroidism and Hashimoto thyroiditis</h2>
+      <p class="section-note">In iodine-sufficient countries, autoimmune disease is the dominant cause.</p>
+
+      <div class="card" data-disclosure data-open>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Hashimoto thyroiditis</span>
+          <span class="card-aka">chronic lymphocytic thyroiditis</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-teal">Autoimmune</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <div class="grid">
+            <div class="block"><div class="block-label blue">Mechanism</div><div class="block-text">Multiple mechanisms acting together: cytotoxicity mediated by <strong>CD8+ and CD4+ T cells</strong>, cytokines, and antithyroid antibodies. The gland shows <strong>progressive destruction of parenchyma, Hürthle cell change, and a mononuclear (lymphoplasmacytic) infiltrate</strong>. Destruction eventually produces hypothyroidism.</div></div>
+            <div class="block"><div class="block-label amber">The long silent phase</div><div class="block-text">A patient can carry <strong>circulating thyroid antibodies for years — or a lifetime — before hypothyroidism develops</strong>. Antibody positivity is therefore not the same as disease, and a normal TSH today does not exclude Hashimoto tomorrow.</div></div>
+            <div class="block"><div class="block-label teal">Labs and treatment</div><div class="block-text"><strong>↑TSH, ↓free T4</strong> — the primary pattern. Confirm the autoimmune etiology with <strong>anti-thyroid peroxidase (anti-TPO)</strong> and <strong>anti-thyroglobulin (anti-TG)</strong> antibodies. Imaging (ultrasound, radioactive iodine uptake) is optional, not required. Treat with <strong>levothyroxine</strong>.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label red">Myxedema — acquired hypothyroidism in older children and adults</div>
+          <div class="block-text">Goiter · immature body proportions · fatigue and decreased energy · increased sleep ·
+            cold intolerance · dry skin and brittle hair · constipation · <strong>pubertal delay in children</strong>.</div>
+        </div>
+        <div class="block">
+          <div class="block-label purple">Other acquired causes to know</div>
+          <div class="block-text"><strong>Iodine deficiency</strong> — the common cause worldwide, no longer common in the United States ·
+            prior <strong>thyroid surgery</strong> or treatment for hyperthyroidism · <strong>radiation</strong> ·
+            medications, specifically <strong>lithium and amiodarone</strong>.</div>
+        </div>
+      </div>
+
+      <div class="block" style="margin-bottom:1rem">
+        <div class="block-label amber">Autoimmune polyglandular syndrome — the company Hashimoto keeps</div>
+        <div class="block-text"><strong>APS 1</strong>: autosomal recessive, <strong>AIRE</strong> gene mutation → hypoparathyroidism, adrenal insufficiency, hypogonadism, vitiligo.
+          <strong>APS 2</strong>: autosomal dominant, multifactorial → adrenal insufficiency, <strong>Hashimoto thyroiditis</strong>, and <strong>T1DM</strong>.
+          The clinical habit worth building: one autoimmune endocrinopathy is a reason to keep an eye on the others.
+          Cross-reference <a href="type1.html#autoimmunity">T1DM</a>.</div>
+      </div>
+
+      <div class="recall" data-disclosure>
+        <button class="recall-toggle" type="button" data-disclosure-toggle>
+          <span><span class="recall-kind">Retrieve</span><span class="recall-q">Someone has a high TSH and a low free T4. Which single test best establishes Hashimoto thyroiditis as the cause, and why not the others?</span></span>
+          <span class="card-spacer"></span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="recall-body" data-disclosure-body>
+          <p><strong>Anti-TPO antibody.</strong> The TSH and free T4 have already localized the problem to the gland; the remaining question is <em>why</em>,
+            and anti-TPO answers it serologically. <strong>TSI</strong> is the Graves antibody — wrong direction of disease.
+            A <strong>radioactive iodine uptake scan</strong> belongs to the hyperthyroid workup, where it separates Graves from a toxic nodule from
+            thyroiditis. <strong>Free T3</strong> tells you about severity, not etiology, and is often not even ordered.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="graves" data-toc="Graves disease" data-phase="Recognize">
+      <h2>Graves disease</h2>
+      <p class="section-note">The most common cause of hyperthyroidism; classically affects younger women.</p>
+
+      <div class="note note-blue">
+        <span class="note-kind">Hyperthyroidism is not the same word as thyrotoxicosis</span>
+        <p><strong>Thyrotoxicosis</strong> is excess thyroid hormone from <em>any</em> cause — including a gland that is leaking preformed hormone,
+          or hormone somebody swallowed. <strong>Hyperthyroidism</strong> means the thyroid gland itself is overproducing.
+          Every thyroiditis on this page causes thyrotoxicosis without hyperthyroidism, which is exactly why their iodine uptake is low.</p>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label blue">Mechanism</div>
+          <div class="block-text"><strong>Thyroid-stimulating immunoglobulins (TSI)</strong>, also called TSH-receptor stimulating antibodies,
+            bind and activate the TSH receptor. The result is continuous, unregulated stimulation — so the gland both
+            <strong>enlarges diffusely</strong> and overproduces. An antibody is doing the job TSH normally does, and no feedback loop can switch it off.</div>
+        </div>
+        <div class="block">
+          <div class="block-label amber">Diagnosis</div>
+          <div class="block-text"><strong>↑free T4, ↑free T3 or T3, ↓TSH.</strong> Antibodies: <strong>TSI or TSH-receptor antibody</strong>,
+            plus anti-TPO and anti-TG. Imaging: <strong>radioactive iodine (I-123 / I-131) uptake scan</strong>.</div>
+        </div>
+      </div>
+
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 560 220" role="img" aria-labelledby="rai-t rai-d">
+          <title id="rai-t">Three radioactive iodine uptake patterns</title>
+          <desc id="rai-d">Diffuse increased uptake across the whole gland indicates Graves disease. A single focal area of increased uptake with the rest of the gland suppressed indicates a hyperfunctioning nodule. Absent uptake indicates thyroiditis, where preformed hormone is leaking from a damaged gland that is not making new hormone.</desc>
+
+          <circle cx="95" cy="80" r="56" fill="var(--accent)" opacity="0.7"/>
+          <circle cx="95" cy="80" r="56" fill="none" stroke="var(--accent)" stroke-width="1.6"/>
+          <text x="95" y="160" text-anchor="middle" font-family="var(--font)" font-size="14" font-weight="600" fill="var(--text)">Diffuse uptake</text>
+          <text x="95" y="180" text-anchor="middle" font-family="var(--font)" font-size="13" fill="var(--text2)">= Graves disease</text>
+          <text x="95" y="200" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text3)">whole gland stimulated</text>
+
+          <circle cx="280" cy="80" r="56" fill="var(--bg3)" stroke="var(--border2)" stroke-width="1.6"/>
+          <circle cx="298" cy="66" r="19" fill="var(--accent)"/>
+          <text x="280" y="160" text-anchor="middle" font-family="var(--font)" font-size="14" font-weight="600" fill="var(--text)">Focal uptake</text>
+          <text x="280" y="180" text-anchor="middle" font-family="var(--font)" font-size="13" fill="var(--text2)">= hyperfunctioning nodule</text>
+          <text x="280" y="200" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text3)">rest of gland suppressed</text>
+
+          <circle cx="465" cy="80" r="56" fill="var(--bg3)" stroke="var(--border2)" stroke-width="1.6" stroke-dasharray="5 4"/>
+          <text x="465" y="160" text-anchor="middle" font-family="var(--font)" font-size="14" font-weight="600" fill="var(--text)">No uptake</text>
+          <text x="465" y="180" text-anchor="middle" font-family="var(--font)" font-size="13" fill="var(--text2)">= thyroiditis</text>
+          <text x="465" y="200" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text3)">leaking, not making</text>
+        </svg>
+        <p class="figcaption">Original diagram — the uptake scan is the test that separates the three causes of a thyrotoxic patient.
+          The logic is worth saying out loud: <strong>uptake measures whether the gland is <em>making</em> hormone</strong>. A thyroiditis is releasing
+          hormone it made earlier, so it takes up nothing.</p>
+      </div>
+
+      <div class="block" style="margin-bottom:1rem">
+        <div class="block-label red">Signs and symptoms</div>
+        <div class="block-text">The hypermetabolic, adrenergically amplified picture: weight loss despite good appetite, heat intolerance,
+          sweating, palpitations and tachycardia, tremor, anxiety and irritability, insomnia, frequent bowel movements, proximal muscle weakness,
+          and menstrual irregularity. On examination, a <strong>diffuse goiter</strong>, a stare or lid lag, and warm moist skin.
+          Two findings are specific to Graves rather than to thyrotoxicosis generally: <strong>Graves ophthalmopathy with exophthalmos</strong>
+          and <strong>pretibial myxedema</strong>.</div>
+      </div>
+
+
+      <div class="block" style="margin-bottom:1rem">
+        <div class="block-label teal">Treatment</div>
+        <div class="block-text"><strong>Medical:</strong> methimazole, propylthiouracil (PTU), and beta blockers for symptom control.
+          <strong>Definitive:</strong> surgery or <strong>I-131 radioactive iodine ablation</strong>. Details in the <a href="#act">pharmacology section</a>.</div>
+      </div>
+
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="THY-003" data-quiz-toolbar="false"></div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="neonatal-storm" data-toc="Neonatal Graves &amp; storm" data-phase="Recognize">
+      <h2>Neonatal Graves disease and thyroid storm</h2>
+      <p class="section-note">Two high-acuity presentations that follow directly from Graves pathophysiology.</p>
+
+      <div class="card" data-disclosure data-open>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Neonatal Graves disease</span>
+          <span class="card-aka">maternal antibodies cross the placenta</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-red">High acuity</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <div class="grid">
+            <div class="block"><div class="block-label blue">Mechanism</div><div class="block-text"><strong>Transplacental transfer of maternal TSH-receptor antibodies.</strong> The infant's own thyroid is normal — it is simply being stimulated by an antibody that crossed over. Almost always <strong>transient</strong>, resolving as the maternal antibody clears.</div></div>
+            <div class="block"><div class="block-label red">The trap that kills</div><div class="block-text">Fetal thyrotoxicosis is possible in <strong>any</strong> mother with a history of Graves disease, <strong>regardless of her current thyroid status or treatment</strong>. TSI persists even after maternal thyroidectomy or radioablation — the gland is gone, the antibody is not. A euthyroid post-thyroidectomy mother is <em>not</em> a reassuring history.</div></div>
+            <div class="block"><div class="block-label amber">Symptoms</div><div class="block-text">Tachycardia · cardiomegaly and heart failure · irritability and restlessness · small for gestational age · prematurity · microcephaly · hepatosplenomegaly · <strong>stare or exophthalmos</strong>, from increased sympathetic stimulation of levator palpebrae superioris.</div></div>
+            <div class="block"><div class="block-label teal">Evaluation and treatment</div><div class="block-text"><strong>↓TSH, ↑T4 and T3.</strong> Check thyroid antibodies in <strong>both infant and mother</strong> — TSH-receptor antibody and TSI. Treat with a <strong>beta blocker</strong>, <strong>PTU or methimazole</strong>, and <strong>iodine solution</strong>, for <strong>2–4 months</strong> — until the circulating maternal antibodies resolve.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-disclosure>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Thyroid storm</span>
+          <span class="card-aka">extremely rare, potentially fatal</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-red">Emergency</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <div class="note note-red">
+            <span class="note-kind">The pattern to recognize</span>
+            <p>Occurs in <strong>untreated or undertreated</strong> hyperthyroidism, typically with a <strong>precipitating event such as surgery or infection</strong>.
+              It is a hypermetabolic state: <strong>fever, tachycardia, nausea and vomiting, agitation, psychosis</strong> — progressing in the late stage to
+              <strong>stupor, coma, and hypotension</strong>. The transition from agitated and hypertensive to obtunded and hypotensive is the ominous one.</p>
+          </div>
+          <p class="prose">The reason a stressor precipitates it is worth holding: surgery or sepsis triggers a surge of catecholamines onto tissue that
+            thyroid hormone has already made hypersensitive to them. That is also why a beta blocker is central to management.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="thyroiditis" data-toc="The thyroiditides" data-phase="Recognize">
+      <h2>Thyroiditis — telling the four apart</h2>
+      <p class="section-note">Named individually in the course objectives. The comparative detail below is drawn from open-access references and cited.</p>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Comparison of the thyroiditides">
+        <table>
+          <caption>Two questions separate almost all of these at the bedside: <strong>does it hurt?</strong> and <strong>what is the uptake?</strong></caption>
+          <thead>
+            <tr><th scope="col">Type</th><th scope="col">Pain</th><th scope="col">Hormone course</th><th scope="col">RAI uptake</th><th scope="col">Signature</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Subacute granulomatous (de Quervain)</th><td><strong>Painful, tender gland</strong></td><td>Transient thyrotoxic → hypothyroid → usually recovers</td><td><strong>Low</strong></td><td>Follows a viral illness; raised inflammatory markers. The pain is what makes this one recognizable on a stem.</td></tr>
+            <tr><th scope="row">Subacute lymphocytic (includes postpartum thyroiditis)</th><td><strong>Painless</strong></td><td>Transient thyrotoxic → hypothyroid → usually recovers</td><td><strong>Low</strong></td><td>Autoimmune, classically <strong>postpartum</strong>. Same triphasic course as de Quervain, without the pain.</td></tr>
+            <tr><th scope="row">Hashimoto (chronic lymphocytic)</th><td>Usually painless</td><td>Often euthyroid, sometimes a brief thyrotoxic phase (hashitoxicosis), then <strong>permanent</strong> hypothyroidism</td><td>Variable</td><td><strong>Anti-TPO and anti-TG positive</strong>, firm goiter. The one that does <em>not</em> recover.</td></tr>
+            <tr><th scope="row">Riedel thyroiditis</th><td>Usually painless</td><td>Variable; hypothyroid if enough gland is replaced</td><td>Variable</td><td>Rare. A <strong>rock-hard, woody, fixed</strong> gland from dense fibrosis that <strong>extends into surrounding neck structures</strong>. Mimics anaplastic carcinoma — and that is the differential that matters.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label amber">Why the uptake is low in the subacute forms</div>
+          <div class="block-text"><strong>Damaged follicles leak preformed hormone</strong>, producing low uptake; antithyroid drugs do not help because new hormone is not being synthesized.</div>
+        </div>
+      </div>
+
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="THY-004" data-quiz-toolbar="false"></div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="goiter" data-toc="Goiter, cysts, sick euthyroid" data-phase="Recognize">
+      <h2>Goiter, thyroglossal duct cyst, and nonthyroidal illness</h2>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label blue">Diffuse and multinodular goiter</div>
+          <div class="block-text">A goiter is simply an <strong>enlarged thyroid gland</strong>, and it reflects <strong>impaired thyroid hormone synthesis</strong>:
+            output falls, TSH rises, and the rise in TSH drives <strong>hypertrophy and hyperplasia</strong>.
+            <strong>Simple (diffuse) non-toxic goiter</strong> includes endemic goiter.
+            <strong>Multinodular toxic goiter</strong> arises from <strong>recurrent cycles of hyperplasia and involution</strong>, producing irregular enlargement —
+            and is <strong>often mistaken for neoplasia</strong>, which is precisely the reason it is worth knowing.</div>
+        </div>
+        <div class="block">
+          <div class="block-label purple">Thyroglossal duct cyst</div>
+          <div class="block-text">A fibrous cyst forming from a <strong>persistent thyroglossal duct</strong> — the tract the thyroid descended along during
+            embryogenesis. Presents <strong>in the midline, anterior to the trachea</strong>. The cyst pockets fill with clear secretions and mucus,
+            and <strong>enlarge when infected</strong>, which is often when they are noticed.
+            Midline is the discriminator: a lateral neck mass is a different differential.</div>
+        </div>
+      </div>
+
+      <div class="note note-amber">
+        <span class="note-kind">Nonthyroidal illness syndrome — also called sick euthyroid syndrome</span>
+        <p>Abnormal thyroid laboratory values in a patient who is <strong>systemically ill but does not have primary thyroid disease</strong>.
+          The classic picture is a <strong>low T3</strong> with a normal-to-low TSH and a normal-to-low T4.
+          Do not chase the numbers: treat the underlying illness and, if needed, re-test once the patient has recovered.
+          Diagnosing and treating "hypothyroidism" in an intensive care unit on the strength of these values is the error the concept exists to prevent.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="nodules" data-toc="Nodules and carcinomas" data-phase="Recognize">
+      <h2>Thyroid nodules and the four carcinomas</h2>
+      <p class="section-note">Know the characteristic pathology and associations of each major type.</p>
+
+      <div class="block" style="margin-bottom:1rem">
+        <div class="block-label amber">Risk factors and presentation</div>
+        <div class="block-text"><strong>Risk:</strong> female preponderance · <strong>radiation exposure to the head and neck</strong> ·
+          exposure to radiation fallout · history of goiter · family history of thyroid cancer.
+          <strong>Presentation:</strong> a neck mass, sometimes <strong>rapidly enlarging</strong>, with dysphagia, hoarseness, cough, or
+          enlarged lymph nodes. Hoarseness deserves particular attention — it implies recurrent laryngeal nerve involvement.</div>
+      </div>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="The four thyroid carcinomas">
+        <table>
+          <caption>Know these four cold. Their relative frequency and signature findings answer most stems.</caption>
+          <thead><tr><th scope="col">Type</th><th scope="col">Frequency</th><th scope="col">Signature</th><th scope="col">The point to carry</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Papillary</th><td>Most common</td><td>Empty nuclei devoid of nucleoli — <strong>"Orphan Annie eye"</strong> nuclei — and <strong>psammoma bodies</strong></td><td><strong>Excellent prognosis.</strong> Commonly seen after prior <strong>ionizing radiation</strong> exposure. Treated with surgical excision, with or without radioactive iodine ablation.</td></tr>
+            <tr><th scope="row">Follicular</th><td>Second most common</td><td><strong>Invasion through the capsule</strong> is what defines malignancy</td><td>Multinodular goiter may predispose; increased incidence in <strong>iodine-deficient regions</strong>. Appears as a <strong>cold nodule</strong>. Treatment is surgical excision.</td></tr>
+            <tr><th scope="row">Medullary</th><td>Uncommon</td><td><strong>Calcitonin secretion</strong> — it is a neuroendocrine neoplasm arising from parafollicular C cells</td><td>Mostly sporadic, but hereditary disease is autosomal dominant via <strong>RET protooncogene</strong> mutations in <strong>MEN 2A and 2B</strong>. Treated by surgical excision of thyroid and lymph nodes — <strong>radiation and chemotherapy work poorly</strong>.</td></tr>
+            <tr><th scope="row">Anaplastic</th><td>Rare</td><td><strong>p53</strong> point mutation of the tumor suppressor gene</td><td>Highly aggressive and lethal. Affects an <strong>older population</strong>. <strong>Local invasion and metastasis are common at presentation</strong> — which is why it presents as a hard, fixed, rapidly enlarging mass with compressive symptoms.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note note-teal">
+        <span class="note-kind">MEN syndromes — the medullary carcinoma link</span>
+        <p><strong>MEN 2A</strong> = medullary carcinoma + hyperparathyroidism + pheochromocytoma.
+          <strong>MEN 2B</strong> = medullary carcinoma + mucosal neuromas + marfanoid habitus.
+          Both are autosomal dominant and both run through <strong>RET</strong>. The clinically urgent implication: screen for
+          pheochromocytoma before operating on the thyroid, because an unrecognized pheochromocytoma makes anaesthesia dangerous.</p>
+      </div>
+
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 560 250" role="img" aria-labelledby="cap-t cap-d">
+          <title id="cap-t">Follicular adenoma versus follicular carcinoma</title>
+          <desc id="cap-d">Two lesions with identical follicular architecture. In the adenoma the capsule is intact all the way around. In the carcinoma tumor tissue breaches the capsule. Because the deciding feature is at the capsule rather than within the cells, a fine-needle aspiration that samples only cells cannot distinguish them, and excision is needed.</desc>
+
+          <circle cx="145" cy="100" r="76" fill="var(--bg3)" stroke="var(--text)" stroke-width="3.5"/>
+          <text x="145" y="200" text-anchor="middle" font-family="var(--font)" font-size="15" font-weight="600" fill="var(--text)">Follicular adenoma</text>
+          <text x="145" y="222" text-anchor="middle" font-family="var(--font)" font-size="13" fill="var(--text2)">capsule intact all the way round</text>
+          <text x="145" y="242" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text3)">benign</text>
+
+          <circle cx="415" cy="100" r="76" fill="var(--bg3)" stroke="var(--text)" stroke-width="3.5"/>
+          <path d="M453 42 C 486 58, 500 88, 490 116" fill="none" stroke="var(--red)" stroke-width="5"/>
+          <circle cx="490" cy="116" r="7" fill="var(--red)"/>
+          <text x="415" y="200" text-anchor="middle" font-family="var(--font)" font-size="15" font-weight="600" fill="var(--text)">Follicular carcinoma</text>
+          <text x="415" y="222" text-anchor="middle" font-family="var(--font)" font-size="13" fill="var(--red)">tumor breaches the capsule</text>
+          <text x="415" y="242" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text3)">malignant</text>
+        </svg>
+        <p class="figcaption">Original diagram. The cells look the same in both — architecture cannot separate them.
+          <strong>Capsular, and often vascular, invasion is the deciding histologic feature</strong>, and it lives at the edge of the lesion.
+          That single anatomical fact is why fine-needle aspiration cytology frequently cannot call a follicular lesion, and why excision is often required.</p>
+      </div>
+
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="THY-007,THY-006,THY-008" data-quiz-toolbar="false"></div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Localize</span><span class="phase-what">Reading the pattern, and deciding when tissue is needed</span></div>
+
+    <section class="section" id="localize" data-toc="Localize from the labs" data-phase="Localize">
+      <h2>Localize the defect</h2>
+      <p class="section-note">Six patterns, worked until they are automatic. This is the single highest-yield skill on the page.</p>
+
+      <div class="figure" data-fig="thyroid-localizer"></div>
+    </section>
+
+    <section class="section" id="fna" data-toc="When to biopsy" data-phase="Localize">
+      <h2>Nodule evaluation — when tissue is needed</h2>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label amber">The features that raise concern</div>
+          <div class="block-text">A <strong>firm, fixed, or rapidly enlarging</strong> nodule — particularly with a radiation history — is a nodule that needs
+            <strong>fine-needle aspiration</strong>. An uptake scan characterizes <em>function</em>, not cytology, so it does not answer the malignancy question.
+            A <strong>cold nodule</strong> is the one that raises concern. And a follicular lesion is the recognized exception where FNA may be
+            insufficient and <strong>excision</strong> is required, because the diagnosis rests on capsular invasion.</div>
+        </div>
+        <div class="block">
+          <div class="block-label teal">The order that makes sense</div>
+          <div class="block-text"><strong>1.</strong> Check the TSH — this is cheap and it changes the path.
+            <strong>2.</strong> If the TSH is <em>suppressed</em>, the nodule may be autonomously functioning, so an <strong>uptake scan</strong> comes next;
+            a hot nodule is very unlikely to be malignant.
+            <strong>3.</strong> If the TSH is normal or high, function is not the issue and the question is structural —
+            <strong>ultrasound</strong>, and <strong>FNA</strong> of anything with concerning features.</div>
+        </div>
+      </div>
+
+      <p class="section-note"><strong>Follicular lesions require excision</strong> because malignancy depends on capsular or vascular invasion, which FNA cannot assess.</p>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Act</span><span class="phase-what">The four drugs and drug classes named in this session</span></div>
+
+    <section class="section" id="act" data-toc="Thyroid pharmacology" data-phase="Act">
+      <h2>Thyroid medications</h2>
+
+      <div class="card" data-disclosure data-open>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Levothyroxine</span>
+          <span class="card-aka">synthetic T4</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-teal">Hypothyroidism</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <div class="grid">
+            <div class="block"><div class="block-label teal">Use</div><div class="block-text">All causes of hypothyroidism, congenital and acquired. Given as tablets, titrated against the TSH in primary disease.</div></div>
+            <div class="block"><div class="block-label red">Excess looks like hyperthyroidism</div><div class="block-text">Tachycardia, angina, tremor, insomnia, heat intolerance, weight loss — iatrogenic thyrotoxicosis. Labs show a <strong>suppressed TSH with a high free T4</strong> and, importantly, a <strong>low or absent radioactive iodine uptake</strong>, because the exogenous hormone suppresses the gland.</div></div>
+          </div>
+          <div class="note note-amber">
+            <span class="note-kind">Distinguish from</span>
+            <p>Surreptitious or excessive levothyroxine versus Graves disease: both give a high free T4 and a suppressed TSH.
+              The uptake scan separates them — <strong>diffusely increased in Graves, low or absent with exogenous hormone</strong> —
+              and a Graves patient has a goiter and possibly eye disease, which an exogenous-hormone patient does not.
+              Thyroglobulin also falls with exogenous hormone, since the gland is switched off.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-disclosure>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Methimazole and propylthiouracil (PTU)</span>
+          <span class="card-aka">antithyroid drugs</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-amber">Hyperthyroidism</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <div class="grid">
+            <div class="block"><div class="block-label blue">Mechanism</div><div class="block-text">Both <strong>block thyroid hormone synthesis</strong>. This is why they help in Graves disease, where the gland is overproducing, and why they are useless in a thyroiditis, where a damaged gland is leaking hormone it made earlier.</div></div>
+            <div class="block"><div class="block-label teal">Which one, when</div><div class="block-text"><strong>Methimazole</strong> is the preferred antithyroid drug in general use. <strong>PTU</strong> is preferred in the <strong>first trimester of pregnancy</strong>, where methimazole carries a higher risk of congenital anomalies.</div></div>
+            <div class="block"><div class="block-label red">PTU's own risk</div><div class="block-text"><strong>Hepatotoxicity, including hepatic failure.</strong> This is the trade-off for its safer first-trimester profile, and the reason PTU is not simply used for everyone.</div></div>
+            <div class="block"><div class="block-label red">The shared serious risk: agranulocytosis</div><div class="block-text">Both drugs can cause <strong>agranulocytosis</strong>. Presentation is <strong>fever, severe sore throat, and oral ulceration</strong> — the classic teaching is that any patient on an antithyroid drug who develops fever and a sore throat needs an <strong>urgent white cell count</strong>, not reassurance.</div></div>
+          </div>
+          <div class="note note-amber">
+            <span class="note-kind">Shared trait</span>
+            <p>Both cross the placenta, so either can cause <strong>transient neonatal hypothyroidism</strong> regardless of which is chosen.</p>
+          </div>
+          <div class="quiz quiz-inline" data-quiz data-quiz-ids="THY-005,THY-009" data-quiz-toolbar="false"></div>
+        </div>
+      </div>
+
+      <div class="card" data-disclosure>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Radioactive iodine (I-131) and beta blockers</span>
+          <span class="card-aka">definitive ablation · symptom control</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-purple">Definitive / symptomatic</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <div class="grid">
+            <div class="block"><div class="block-label purple">I-131 ablation</div><div class="block-text">Definitive treatment for Graves hyperthyroidism. It works by being concentrated in the very cells that are overactive.
+              The expected consequence is worth stating plainly: it <strong>trades hyperthyroidism for lifelong levothyroxine-dependent hypothyroidism</strong>. That is a successful outcome, not a complication.</div></div>
+            <div class="block"><div class="block-label teal">Beta blockers — propranolol</div><div class="block-text">Control the adrenergic symptoms — tachycardia, tremor, anxiety — that thyroid hormone amplifies by increasing catecholamine sensitivity.
+              Useful as a <strong>bridge</strong> while definitive treatment takes effect, and central to thyroid storm management. They do nothing to the underlying hormone excess.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="THY-010" data-quiz-toolbar="false"></div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Retrieve</span><span class="phase-what">Practice before you leave the page</span></div>
+
+    <section class="section" id="retrieve" data-toc="Practice questions" data-phase="Retrieve">
+      <h2>All thyroid questions</h2>
+      <p class="section-note">Every question tagged to this lecture, shuffled. <a href="practice.html">Cumulative practice</a> mixes these with the rest of the block.</p>
+      <div class="quiz" data-quiz data-quiz-lecture="Thyroid Disorders"></div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/quiz.js" defer></script>
+<script src="assets/js/figures.js" defer></script>
+</body>
+</html>

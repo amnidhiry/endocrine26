@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insulin Therapy Lab — HSHD1 Endocrine Course Companion</title>
+<meta name="description" content="Insulin categories, regimens, dose arithmetic, and glucose-pattern interpretation — with toggleable action curves, worked dose exercises, and a pattern lab.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="insulin">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+<noscript><div style="max-width:1180px;margin:0 auto;padding:1rem 1.25rem"><p class="note note-amber"><span class="note-kind">JavaScript is off</span>The text below is complete and readable, but the navigation, search, interactive figures, and practice questions need JavaScript. <a href="index.html">Back to the home page</a>.</p></div></noscript>
+
+<div class="page">
+  <nav class="toc" id="page-toc" aria-label="Sections of this page"></nav>
+
+  <main class="content" id="main" tabindex="-1">
+
+    <div class="page-head">
+      <p class="eyebrow">Study guide · Pharmacology · 7 Aug 2026</p>
+      <h1>Insulin Therapy Lab</h1>
+      <p class="lede">Three objectives, and they build on each other: know what each insulin <em>does over time</em>, know what each regimen
+        <em>trades away</em>, and be able to look at a glucose pattern and say <em>which insulin was acting when it went wrong</em>.
+        This page is built to be worked through rather than read.</p>
+      <div class="toc-mobile" id="page-toc-mobile"></div>
+    </div>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Orient</span><span class="phase-what">Basal and bolus — the two jobs insulin has to do</span></div>
+
+    <section class="section" id="orient" data-toc="Basal versus bolus" data-phase="Orient">
+      <h2>What insulin therapy is trying to reproduce</h2>
+
+      <p class="prose"><strong>Basal insulin</strong> restrains hepatic glucose output between meals and overnight; <strong>bolus insulin</strong> covers meals. Every regimen attempts to reproduce both jobs.</p>
+
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 560 340" role="img" aria-labelledby="bb-t bb-d">
+          <title id="bb-t">A basal-bolus day</title>
+          <desc id="bb-d">Across a 24-hour day, a low continuous basal insulin level covers overnight and between-meal periods. Three carbohydrate loads at breakfast, lunch, and dinner each produce a rise in glucose demand, matched by a mealtime bolus given at each meal. A separate correction dose can be added to a mealtime bolus, or given on its own between meals, to bring an out-of-range glucose back toward target.</desc>
+
+          <!-- basal band -->
+          <rect x="34" y="196" width="512" height="34" fill="var(--blue-t)" stroke="var(--blue)" stroke-width="1.3"/>
+          <text x="290" y="218" text-anchor="middle" font-family="var(--font)" font-size="13" font-weight="600" fill="var(--blue)">BASAL — continuous background, overnight and between meals</text>
+
+          <!-- meal humps -->
+          <path d="M110 190 C 122 130, 158 130, 170 190 Z" fill="var(--amber-t)" stroke="var(--amber)" stroke-width="1.3"/>
+          <text x="140" y="120" text-anchor="middle" font-family="var(--font)" font-size="12.5" fill="var(--amber)">breakfast</text>
+          <path d="M250 190 C 264 118, 306 118, 320 190 Z" fill="var(--amber-t)" stroke="var(--amber)" stroke-width="1.3"/>
+          <text x="285" y="108" text-anchor="middle" font-family="var(--font)" font-size="12.5" fill="var(--amber)">lunch</text>
+          <path d="M400 190 C 414 112, 460 112, 474 190 Z" fill="var(--amber-t)" stroke="var(--amber)" stroke-width="1.3"/>
+          <text x="437" y="102" text-anchor="middle" font-family="var(--font)" font-size="12.5" fill="var(--amber)">dinner</text>
+          <text x="34" y="88" font-family="var(--mono)" font-size="11.5" fill="var(--text3)">CARBOHYDRATE LOAD</text>
+
+          <!-- bolus arrows -->
+          <path d="M140 260 L140 196" class="flow-red" marker-end="url(#bb-a)"/>
+          <path d="M285 260 L285 196" class="flow-red" marker-end="url(#bb-a)"/>
+          <path d="M437 260 L437 196" class="flow-red" marker-end="url(#bb-a)"/>
+          <defs><marker id="bb-a" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--red)"/></marker></defs>
+          <text x="290" y="280" text-anchor="middle" font-family="var(--font)" font-size="13" font-weight="600" fill="var(--red)">BOLUS — one per meal, sized to the carbohydrate</text>
+
+          <!-- correction -->
+          <path d="M360 300 L360 232" class="flow-teal" stroke-dasharray="5 4" marker-end="url(#bb-b)"/>
+          <defs><marker id="bb-b" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--teal)"/></marker></defs>
+          <text x="368" y="316" font-family="var(--font)" font-size="12.5" fill="var(--teal)">CORRECTION — added to a meal bolus, or given alone</text>
+
+          <!-- time axis -->
+          <line x1="34" y1="196" x2="546" y2="196" class="axis"/>
+          <text x="40" y="186" font-family="var(--font)" font-size="12" fill="var(--text3)">12a</text>
+          <text x="140" y="186" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text3)">8a</text>
+          <text x="285" y="186" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text3)">1p</text>
+          <text x="437" y="186" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text3)">6p</text>
+          <text x="540" y="186" text-anchor="end" font-family="var(--font)" font-size="12" fill="var(--text3)">12a</text>
+
+          <text x="34" y="30" font-family="var(--font)" font-size="13" fill="var(--text)">Two jobs, two kinds of insulin. A regimen that cannot separate them</text>
+          <text x="34" y="50" font-family="var(--font)" font-size="13" fill="var(--text)">has to constrain the patient's day instead.</text>
+        </svg>
+        <p class="figcaption">When a glucose pattern is abnormal, identify which insulin was acting beforehand.</p>
+      </div>
+
+      <div class="note note-red">
+        <span class="note-kind">The rule underneath everything</span>
+        <p><strong>T1DM requires insulin at all times, with no exceptions for illness or reduced intake.</strong>
+          Basal insulin is not "the insulin for food," and it is not paused because someone is not eating.
+          Without any insulin at all, the liver resumes ketogenesis regardless of what the patient has or has not eaten.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Recognize</span><span class="phase-what">The five categories, and what each one's shape means clinically</span></div>
+
+    <section class="section" id="profiles" data-toc="Insulin action curves" data-phase="Recognize">
+      <h2>Insulin profiles</h2>
+      <p class="section-note">Know the categories and the examples within each. The curves let you see why the category matters clinically, not just as a label.</p>
+
+      <div class="figure" data-fig="insulin-curves"></div>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label red">Rapid-acting</div>
+          <div class="block-text"><strong>Lispro (Humalog), aspart (NovoLog), glulisine (Apidra).</strong>
+            On and off quickly, with an early peak — which is what lets it match a meal and then get out of the way.
+            It is also the <strong>only</strong> insulin used in a pump.</div>
+        </div>
+        <div class="block">
+          <div class="block-label amber">Regular — short-acting</div>
+          <div class="block-text"><strong>Regular human insulin (R).</strong> Slower on, and it lasts longer than the meal does.
+            That tail is the reason regimens using regular insulin traditionally require timed snacks: the insulin outlives the food.</div>
+        </div>
+        <div class="block">
+          <div class="block-label purple">NPH — intermediate</div>
+          <div class="block-text"><strong>NPH (N).</strong> A broad mid-range peak. That peak is both its usefulness — it can cover a meal several hours
+            after injection — and its hazard, because a peak that arrives while the patient is asleep is a peak nobody is watching.</div>
+        </div>
+        <div class="block">
+          <div class="block-label blue">Long-acting and ultra-long-acting</div>
+          <div class="block-text"><strong>Glargine (Lantus), detemir (Levemir)</strong> — relatively flat across roughly a day.
+            <strong>Degludec (Tresiba)</strong> — essentially peakless and lasting beyond 24 hours, so doses overlap between days and a change
+            takes several days to show its full effect. Flatness is the feature: a basal insulin is meant to have no peak to fall off.</div>
+        </div>
+        <div class="block span-2">
+          <div class="block-label gray">Premixed</div>
+          <div class="block-text"><strong>70/30 and 75/25.</strong> A fixed ratio of an intermediate component and a rapid or short-acting component in
+            one injection. Fewer injections, but the ratio is fixed — you cannot adjust the meal coverage without also moving the background insulin.
+            That single constraint drives most of the trade-offs in the regimen table below.</div>
+        </div>
+      </div>
+
+      <div class="note note-amber">
+        <span class="note-kind">A practical bedside detail worth knowing cold</span>
+        <p><strong>NPH is cloudy. Regular and rapid-acting insulins are clear.</strong> It is a bedside safety check that costs nothing:
+          if a vial that should be clear is cloudy, or a patient describes drawing up the wrong appearance, something has gone wrong before the injection.</p>
+      </div>
+
+      <p class="citation-line"><cite>Thota S, Akbar A. <em>Insulin.</em> StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing. <a href="https://www.ncbi.nlm.nih.gov/books/NBK560688/" target="_blank" rel="noopener noreferrer">ncbi.nlm.nih.gov/books/NBK560688</a></cite></p>
+
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="INS-005" data-quiz-toolbar="false"></div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Classify</span><span class="phase-what">The four regimens, and what each one costs the patient</span></div>
+
+    <section class="section" id="regimens" data-toc="Regimen comparison" data-phase="Localize">
+      <h2>The four commonly used regimens</h2>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Comparison of insulin regimens">
+        <table>
+          <caption>Every regimen buys something and pays for it somewhere else. The "major vulnerability" column is where the exam questions live.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Regimen</th>
+              <th scope="col">What it is</th>
+              <th scope="col">Flexibility</th>
+              <th scope="col">Meal timing</th>
+              <th scope="col">Dose burden</th>
+              <th scope="col">Major vulnerability</th>
+              <th scope="col">Correct hyperglycemia?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">MDI / basal-bolus</th>
+              <td>1–2 basal injections (glargine, detemir, degludec) <strong>plus</strong> 2 or more mealtime injections (lispro, aspart, glulisine)</td>
+              <td><strong>High</strong> — carbohydrate amount is flexible</td>
+              <td>Meal timing variable; <strong>basal needs consistent timing</strong></td>
+              <td><strong>More than 4 injections daily</strong>; snacks not required but may need their own insulin</td>
+              <td>Number of injections, and the discipline it asks for</td>
+              <td><strong>Yes</strong> — even when not eating</td>
+            </tr>
+            <tr>
+              <th scope="row">Pump / CSII</th>
+              <td>Continuous basal infusion <strong>plus</strong> 2 or more boluses. <strong>Rapid-acting analog only.</strong></td>
+              <td><strong>Highest</strong> — basal rates vary through the day; temporary basal rates for acute changes</td>
+              <td>Fully flexible</td>
+              <td>"One injection" every 3 days; worn 24 hours a day, brief disconnection allowed</td>
+              <td><strong>Technology fails.</strong> No long-acting depot, so an interruption becomes ketosis within hours. Higher expense.</td>
+              <td><strong>Yes</strong>, and most precisely — dosing in 0.025–0.05 unit increments</td>
+            </tr>
+            <tr>
+              <th scope="row">Twice-daily (BID)</th>
+              <td>2 injections of intermediate insulin (NPH) mixed with rapid-acting or regular</td>
+              <td><strong>Low</strong> — a <strong>set amount of carbohydrate per meal</strong></td>
+              <td><strong>Strict times</strong> for meals and injections; <strong>snacks must be eaten with the insulin peaks</strong></td>
+              <td>Fewer injections per day — this is the trade being made</td>
+              <td>Activity and day-to-day variability make it hard; a peak arriving when food does not causes hypoglycemia</td>
+              <td><strong>Less likely</strong></td>
+            </tr>
+            <tr>
+              <th scope="row">Premixed</th>
+              <td>2 or more injections of 70/30 or 75/25</td>
+              <td><strong>Lowest</strong> — the ratio of the two components is fixed</td>
+              <td>Strict, as for BID</td>
+              <td>Fewest decisions; simplest to teach</td>
+              <td>You cannot move one component without moving the other</td>
+              <td><strong>Least likely of all</strong> — the fixed ratio makes an isolated correction the hardest to deliver of any regimen here</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label teal">Why the pump is described as the most physiological</div>
+          <div class="block-text">It is the only regimen that can <strong>change the basal rate by time of day</strong> — more insulin in the pre-dawn hours
+            when counter-regulatory hormones are rising, less during an afternoon of exercise. A basal injection commits you to one profile for the
+            whole 24 hours. <strong>Temporary basal rates</strong> allow acute adjustments for illness or activity, and the fine dosing increments make
+            ratios and correction factors usable in a way pens cannot match.</div>
+        </div>
+        <div class="block">
+          <div class="block-label red">Why the pump's failure mode is the sharpest</div>
+          <div class="block-text">A pump contains <strong>rapid-acting insulin only</strong>. There is no long-acting depot underneath it.
+            When delivery stops — occluded set, dislodged cannula, empty reservoir — the patient's entire insulin supply stops within a couple of
+            hours, and ketosis follows quickly. This is why unexplained hyperglycemia on a pump prompts a check of the delivery system before any
+            thought of adjusting doses.</div>
+        </div>
+      </div>
+
+      <p class="citation-line"><cite>Donner T, Sarkar S. <em>Insulin — Pharmacology, Therapeutic Regimens and Principles of Intensive Insulin Therapy.</em> Endotext [Internet]. South Dartmouth (MA): MDText.com. <a href="https://www.ncbi.nlm.nih.gov/books/NBK278938/" target="_blank" rel="noopener noreferrer">ncbi.nlm.nih.gov/books/NBK278938</a></cite></p>
+
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="INS-004" data-quiz-toolbar="false"></div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Act</span><span class="phase-what">The arithmetic, and then the pattern reading</span></div>
+
+    <section class="section" id="terms" data-toc="ICR, correction, target" data-phase="Act">
+      <h2>The three numbers a patient carries</h2>
+
+      <div class="grid three">
+        <div class="block">
+          <div class="block-label blue">Insulin-to-carbohydrate ratio (ICR)</div>
+          <div class="block-text">The insulin required to cover the breakdown of carbohydrate into sugars and keep glucose in target.
+            Written as <strong>"1 unit per XX grams."</strong> A <em>larger</em> XX is a <em>weaker</em> ratio.
+            <!-- Optional after the quiz: Course starting estimate: ICR = 540 ÷ total daily dose (the "540 Rule"). -->
+          </div>
+        </div>
+        <div class="block">
+          <div class="block-label amber">Correction factor (sensitivity factor)</div>
+          <div class="block-text">The insulin required to bring an out-of-range glucose down to target.
+            Written as <strong>"1 unit decreases glucose by XX mg/dL."</strong>
+            <!-- Optional after the quiz: CF = 1800 ÷ total daily dose for rapid-acting analogs; 1500 ÷ TDD for regular insulin. -->
+          </div>
+        </div>
+        <div class="block">
+          <div class="block-label teal">Basal insulin / basal rate, and target</div>
+          <div class="block-text">The insulin required to hold glucose at target <strong>when fasting or not eating</strong>.
+            The <strong>target glucose</strong> is the number the correction aims at — corrections are calculated from the distance above it,
+            which is why two patients with the same glucose can need different corrections.</div>
+        </div>
+      </div>
+
+      <div class="recall" data-disclosure>
+        <button class="recall-toggle" type="button" data-disclosure-toggle>
+          <span><span class="recall-kind">Retrieve</span><span class="recall-q">Two patients both read 240 mg/dL. One has a correction factor of 1 unit per 25 mg/dL, the other 1 unit per 80. What does that difference tell you about them — before you calculate anything?</span></span>
+          <span class="card-spacer"></span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="recall-body" data-disclosure-body>
+          <p>The patient whose correction factor is <strong>1 unit per 80 mg/dL is far more sensitive to insulin</strong> — a single unit moves their
+            glucose a long way, so they need very few units to correct. The patient at <strong>1 unit per 25</strong> is much more insulin-resistant;
+            each unit accomplishes less, so they need several times as many units for the same correction.</p>
+          <!-- Optional after the quiz: use the 1800 Rule to estimate how correction factor relates to total daily dose. -->
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ OPTIONAL: restore this block after the quiz if dose arithmetic is needed.
+    <section class="section" id="calculator" data-toc="Dose exercises" data-phase="Act">
+      <h2>Dose calculation exercises</h2>
+      <p class="section-note">Commit to an answer before the working is revealed — that is the point of the exercise, and it is why the button behaves as it does.</p>
+
+      <div class="figure" data-fig="dose-calc"></div>
+
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="INS-001,INS-002" data-quiz-toolbar="false"></div>
+    </section>
+    -->
+
+    <!-- ================================================================ -->
+    <section class="section" id="patterns" data-toc="Glucose pattern lab" data-phase="Act">
+      <h2>Glucose pattern lab</h2>
+
+      <div class="note note-teal">
+        <span class="note-kind">The one principle this whole section teaches</span>
+        <p><strong>Evaluate the insulin that acted before the repeated abnormal pattern.</strong></p>
+        <p>Two words in that sentence do a lot of work. <strong>"Before"</strong> — you work <em>backwards</em> from the abnormal reading to whatever insulin
+          was acting during the hours leading up to it, which is often not the insulin given nearest in time.
+          <strong>"Repeated"</strong> — one bad day is a missed dose or an unusual meal, not a pattern. Confirm it repeats across several days before
+          attributing it to an insulin period at all.</p>
+      </div>
+
+      <div class="figure" data-fig="pattern-lab"></div>
+
+      <h3>Working the same logic on a twice-daily NPH regimen</h3>
+      <p class="prose">The reasoning is identical, but the answers change because the insulin shapes change. Read this table off the
+        <a href="#profiles">action curves</a> rather than memorizing it — NPH given in the morning peaks in the afternoon, so it is the insulin
+        covering the pre-dinner reading, and NPH given in the evening peaks overnight, so it is the insulin covering the fasting reading.</p>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Which insulin acts before each glucose check on a twice-daily NPH regimen">
+        <table>
+          <caption>Twice-daily NPH mixed with rapid-acting or regular insulin. This is an application of the action curves, not a separate rule to memorize.</caption>
+          <thead><tr><th scope="col">Glucose reading that is repeatedly abnormal</th><th scope="col">Which insulin was acting before it</th><th scope="col">Why</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Fasting / pre-breakfast</th><td><strong>Evening NPH</strong></td><td>Its broad peak falls across the overnight hours</td></tr>
+            <tr><th scope="row">Pre-lunch</th><td><strong>Morning rapid-acting or regular</strong></td><td>The mealtime component given with breakfast covers the late morning</td></tr>
+            <tr><th scope="row">Pre-dinner</th><td><strong>Morning NPH</strong></td><td>Injected at breakfast, it peaks through the afternoon</td></tr>
+            <tr><th scope="row">Bedtime</th><td><strong>Evening rapid-acting or regular</strong></td><td>The mealtime component given with dinner covers the evening</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note note-amber">
+        <span class="note-kind">Why this table is a hazard as well as a tool</span>
+        <p>Look at the fasting row. On a twice-daily regimen, a high fasting glucose points to the evening NPH — but so does an
+          <em>overnight low</em>, because it is the same insulin peaking at the same hour. Raising the evening NPH to fix a morning high, without
+          first checking what happened at three in the morning, is precisely the error the
+          <a href="type1.html#management">dawn phenomenon versus Somogyi</a> distinction exists to prevent.</p>
+      </div>
+
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="INS-003" data-quiz-toolbar="false"></div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="cases" data-toc="Regimen cases" data-phase="Act">
+      <h2>Cases — reasoning across regimens</h2>
+      <p class="section-note">Original cases written to cover the regimen types above. Each opens to a worked answer.</p>
+
+      <div class="card" data-disclosure>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Case 1 — MDI, morning highs</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-blue">Basal-bolus</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <p class="prose">A college student with T1DM takes a long-acting basal insulin each morning, with an insulin-to-carbohydrate
+            ratio of 1 unit per 4 g and a correction factor of 1 unit per 20 mg/dL above 120. They report consistent morning highs and want to
+            increase the basal dose. <strong>What do you want to know, and what is the risk of simply agreeing?</strong></p>
+          <div class="recall" data-disclosure>
+            <button class="recall-toggle" type="button" data-disclosure-toggle>
+              <span><span class="recall-kind">Work it through</span><span class="recall-q">Reveal the reasoning</span></span>
+              <span class="card-spacer"></span>
+              <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="recall-body" data-disclosure-body>
+              <p><strong>Ask what the glucose does overnight</strong> — the pattern between bedtime and waking, over several days.
+                A steady drift upward supports increasing the basal. A dip in the early hours followed by a rebound means more basal would deepen a
+                nocturnal hypoglycemia.</p>
+              <p><strong>Then notice the timing.</strong> The basal is taken in the <em>morning</em>. Long-acting analogs are relatively flat but not
+                perfectly so, and their weakest coverage tends to fall at the far end of the dosing interval — which here is the overnight period.
+                So the question is not only <em>how much</em> basal but <em>when</em> it is given.</p>
+              <p><strong>And check the bedtime bolus.</strong> A very strong ratio of 1 unit per 4 g means a large evening dose, and insulin still active
+                from it changes the overnight picture. Look at the whole night before touching a standing dose.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-disclosure>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Case 2 — premixed insulin and a mid-afternoon low</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-gray">Premixed</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <p class="prose">A young adult with long-standing T1DM has switched from MDI to a premixed 70/30 regimen, taking a larger morning
+            dose and a smaller evening dose, because the injection burden had become unmanageable. They now report lows in the mid-afternoon and
+            highs before bed. <strong>What is happening, and what does the regimen make difficult?</strong></p>
+          <div class="recall" data-disclosure>
+            <button class="recall-toggle" type="button" data-disclosure-toggle>
+              <span><span class="recall-kind">Work it through</span><span class="recall-q">Reveal the reasoning</span></span>
+              <span class="card-spacer"></span>
+              <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="recall-body" data-disclosure-body>
+              <p>The <strong>mid-afternoon low</strong> is the intermediate component of the <em>morning</em> injection peaking — a large morning dose
+                means a large afternoon peak, arriving whether or not the patient eats. This is the reason twice-daily regimens require
+                <strong>snacks timed to the insulin peaks</strong>.</p>
+              <p>The <strong>pre-bed high</strong> is the evening injection's rapid component being too small for the evening meal.</p>
+              <p><strong>The bind:</strong> the 70/30 ratio is fixed. Reducing the morning dose to fix the afternoon low also reduces the morning
+                meal coverage. Increasing the evening dose to cover dinner also increases the overnight intermediate component.
+                <strong>You cannot move one component without moving the other</strong> — which is the trade the patient accepted in exchange for fewer injections.
+                Recognizing that the regimen, not the patient, is generating the pattern is the clinical point.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-disclosure>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Case 3 — pump user, A1c rising after a job change</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-teal">CSII</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <p class="prose">An adult with T1DM on pump therapy with continuous glucose monitoring has held an A1c below 7.0% for years.
+            It has risen to 8.1% since starting a new job. The pump is functioning and sets are being changed on schedule.
+            <strong>Where do you look?</strong></p>
+          <div class="recall" data-disclosure>
+            <button class="recall-toggle" type="button" data-disclosure-toggle>
+              <span><span class="recall-kind">Work it through</span><span class="recall-q">Reveal the reasoning</span></span>
+              <span class="card-spacer"></span>
+              <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="recall-body" data-disclosure-body>
+              <p><strong>At the pattern, by time of day, and specifically at whether boluses are being given at all.</strong> A pump's great advantage —
+                that a bolus is a few button presses rather than an injection — is also the easiest thing to postpone during a busy day and then forget.
+                <strong>Missed or late mealtime boluses</strong> are among the most common reasons an established pump user's control drifts, and the
+                bolus history in the pump answers the question directly.</p>
+              <p>Then ask what else changed with the job: meal timing, meal content, activity level, sleep, and stress.
+                A regimen that worked for one daily rhythm may need different basal rates for a different one — which the pump can accommodate,
+                once you know which hours are the problem.</p>
+              <p>Note what this case is <em>not</em>: the sets are being changed and the pump works, so this is not a delivery failure.
+                Delivery failure looks like the pump-interruption trace in the pattern lab — a rapid, unrelenting rise over hours, not a gradual
+                drift in A1c over months.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-disclosure>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Case 4 — hypoglycemia unawareness</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-red">Safety</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <p class="prose">An older adult with long-standing T1DM and known hypoglycemia unawareness is on a twice-daily NPH and regular
+            regimen. <strong>Why does that combination of patient and regimen deserve particular concern, and what changes if they move to MDI or a pump?</strong></p>
+          <div class="recall" data-disclosure>
+            <button class="recall-toggle" type="button" data-disclosure-toggle>
+              <span><span class="recall-kind">Work it through</span><span class="recall-q">Reveal the reasoning</span></span>
+              <span class="card-spacer"></span>
+              <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="recall-body" data-disclosure-body>
+              <p>Two risks are being multiplied. <strong>NPH peaks</strong>, and a peak that arrives when the patient has not eaten on schedule causes
+                hypoglycemia — which is why the regimen demands snacks timed to the peaks. <strong>Unawareness</strong> removes the adrenergic warning
+                that would normally prompt the patient to treat it. The result is a predictable low, in a person who will not feel it coming, one of
+                which lands overnight.</p>
+              <p>Moving to <strong>MDI</strong> replaces the peaking intermediate insulin with a relatively flat basal, which removes the scheduled
+                afternoon and overnight peaks and decouples the insulin from meal timing.
+                A <strong>pump</strong> goes further: basal rates can be lowered for the specific hours where lows cluster, and temporary basal rates
+                handle exercise. Continuous glucose monitoring adds the piece unawareness took away —
+                <strong>an alarm that notices the fall on the patient's behalf</strong>.</p>
+              <p>The general principle: when a patient cannot detect hypoglycemia, prefer regimens with <strong>fewer and flatter peaks</strong> and
+                add external detection. This reasoning is why regimen choice is a clinical decision rather than a preference.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="INS-006" data-quiz-toolbar="false"></div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Retrieve</span><span class="phase-what">Practice before you leave the page</span></div>
+
+    <section class="section" id="retrieve" data-toc="Practice questions" data-phase="Retrieve">
+      <h2>All insulin therapy questions</h2>
+      <p class="section-note">Every question tagged to this lecture, shuffled. <a href="practice.html">Cumulative practice</a> mixes these with the rest of the block.</p>
+      <div class="quiz" data-quiz data-quiz-lecture="Insulin Therapy 101"></div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/quiz.js" defer></script>
+<script src="assets/js/figures.js" defer></script>
+</body>
+</html>

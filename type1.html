@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T1DM — HSHD1 Endocrine Course Companion</title>
+<meta name="description" content="T1DM as a single causal chain: autoimmune beta-cell destruction, absolute insulin deficiency, catabolism, ketogenesis, and DKA — plus how to distinguish it from every form it mimics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="type1">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+<noscript><div style="max-width:1180px;margin:0 auto;padding:1rem 1.25rem"><p class="note note-amber"><span class="note-kind">JavaScript is off</span>The text below is complete and readable, but the navigation, search, interactive figures, and practice questions need JavaScript. <a href="index.html">Back to the home page</a>.</p></div></noscript>
+
+<div class="page">
+  <nav class="toc" id="page-toc" aria-label="Sections of this page"></nav>
+
+  <main class="content" id="main" tabindex="-1">
+
+    <div class="page-head">
+      <p class="eyebrow">Study guide · Autoimmune diabetes · 7 Aug 2026</p>
+      <h1>T1DM</h1>
+      <p class="lede">One causal chain runs the whole page: <strong>autoimmune beta-cell destruction → absolute insulin deficiency →
+        catabolism and hyperglycemia → ketogenesis → DKA</strong>. Every symptom, every lab value, and every complication on this page is a
+        consequence of one missing hormone.</p>
+      <div class="toc-mobile" id="page-toc-mobile"></div>
+    </div>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Orient</span><span class="phase-what">What insulin does, and what happens when it is gone</span></div>
+
+    <section class="section" id="orient" data-toc="The chain" data-phase="Orient">
+      <h2>Insulin, glucagon, and the consequence of absolute deficiency</h2>
+
+      <p class="prose">Glucose homeostasis is a balance of power between <strong>insulin</strong>, the anabolic storage signal, and
+        <strong>glucagon</strong> and the other counter-regulatory hormones, which mobilize fuel. Insulin is the only hormone that lowers glucose;
+        several act to raise it. Lose insulin entirely and the balance does not merely tilt — one side of it disappears, and the body behaves
+        as though it is starving in the presence of abundant fuel.</p>
+
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 560 470" role="img" aria-labelledby="map-t map-d">
+          <title id="map-t">The metabolic consequences of absolute insulin deficiency</title>
+          <desc id="map-d">Absolute insulin deficiency has four simultaneous effects. Muscle and fat take up less glucose. The liver increases glucose output through glycogenolysis and gluconeogenesis. Fat breaks down, releasing free fatty acids that the liver converts to ketones, causing an anion gap acidosis. Protein breaks down, supplying gluconeogenic substrate and causing weight loss and muscle wasting. The first two produce hyperglycemia, which exceeds the renal threshold and causes an osmotic diuresis, leading to polyuria, polydipsia, dehydration, and electrolyte loss.</desc>
+
+          <rect x="170" y="8" width="220" height="46" rx="10" class="box-red"/>
+          <text x="280" y="30" text-anchor="middle" font-family="var(--font)" font-size="15" font-weight="600" fill="var(--text)">No insulin action</text>
+          <text x="280" y="46" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">absolute deficiency</text>
+
+          <path d="M215 54 L95 96" class="flow" marker-end="url(#t1-a)"/>
+          <path d="M255 54 L215 96" class="flow" marker-end="url(#t1-a)"/>
+          <path d="M305 54 L345 96" class="flow" marker-end="url(#t1-a)"/>
+          <path d="M345 54 L465 96" class="flow" marker-end="url(#t1-a)"/>
+          <defs><marker id="t1-a" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--accent)"/></marker></defs>
+
+          <rect x="8" y="100" width="128" height="72" rx="9" class="box-blue"/>
+          <text x="72" y="122" text-anchor="middle" font-family="var(--font)" font-size="13" font-weight="600" fill="var(--text)">↓ glucose uptake</text>
+          <text x="72" y="141" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">muscle and fat</text>
+          <text x="72" y="160" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">cannot let it in</text>
+
+          <rect x="148" y="100" width="128" height="72" rx="9" class="box-blue"/>
+          <text x="212" y="122" text-anchor="middle" font-family="var(--font)" font-size="13" font-weight="600" fill="var(--text)">↑ hepatic output</text>
+          <text x="212" y="141" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">glycogenolysis and</text>
+          <text x="212" y="160" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">gluconeogenesis</text>
+
+          <rect x="288" y="100" width="128" height="72" rx="9" class="box-amber"/>
+          <text x="352" y="122" text-anchor="middle" font-family="var(--font)" font-size="13" font-weight="600" fill="var(--text)">Proteolysis</text>
+          <text x="352" y="141" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">muscle breaks down</text>
+          <text x="352" y="160" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">→ amino acids</text>
+
+          <rect x="428" y="100" width="124" height="72" rx="9" class="box-amber"/>
+          <text x="490" y="122" text-anchor="middle" font-family="var(--font)" font-size="13" font-weight="600" fill="var(--text)">Lipolysis</text>
+          <text x="490" y="141" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">fat breaks down →</text>
+          <text x="490" y="160" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">free fatty acids</text>
+
+          <!-- converge -->
+          <path d="M72 172 L142 214" class="flow" marker-end="url(#t1-a)"/>
+          <path d="M212 172 L200 214" class="flow" marker-end="url(#t1-a)"/>
+          <path d="M352 172 L250 214" class="flow" stroke-dasharray="4 4" marker-end="url(#t1-a)"/>
+          <path d="M490 172 L470 214" class="flow" marker-end="url(#t1-a)"/>
+
+          <rect x="70" y="218" width="200" height="46" rx="9" class="box-red"/>
+          <text x="170" y="240" text-anchor="middle" font-family="var(--font)" font-size="14" font-weight="600" fill="var(--text)">Hyperglycemia</text>
+          <text x="170" y="257" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">glucose piles up in the blood</text>
+
+          <rect x="300" y="218" width="230" height="46" rx="9" class="box-red"/>
+          <text x="415" y="240" text-anchor="middle" font-family="var(--font)" font-size="14" font-weight="600" fill="var(--text)">Ketogenesis</text>
+          <text x="415" y="257" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">liver turns FFA into ketone bodies</text>
+
+          <path d="M170 264 L170 300" class="flow" marker-end="url(#t1-a)"/>
+          <path d="M415 264 L415 300" class="flow" marker-end="url(#t1-a)"/>
+
+          <rect x="52" y="304" width="236" height="46" rx="9" class="box-purple"/>
+          <text x="170" y="326" text-anchor="middle" font-family="var(--font)" font-size="13.5" font-weight="600" fill="var(--text)">Exceeds the renal threshold</text>
+          <text x="170" y="343" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">glucose spills into the urine</text>
+
+          <rect x="300" y="304" width="230" height="46" rx="9" class="box-purple"/>
+          <text x="415" y="326" text-anchor="middle" font-family="var(--font)" font-size="13.5" font-weight="600" fill="var(--text)">Ketones are acids</text>
+          <text x="415" y="343" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">anion-gap metabolic acidosis</text>
+
+          <path d="M170 350 L170 386" class="flow" marker-end="url(#t1-a)"/>
+          <path d="M415 350 L415 386" class="flow" marker-end="url(#t1-a)"/>
+
+          <rect x="52" y="390" width="236" height="70" rx="9" class="box-red"/>
+          <text x="170" y="412" text-anchor="middle" font-family="var(--font)" font-size="13.5" font-weight="600" fill="var(--text)">Osmotic diuresis</text>
+          <text x="170" y="430" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">polyuria · polydipsia</text>
+          <text x="170" y="448" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">dehydration · electrolyte loss</text>
+
+          <rect x="300" y="390" width="230" height="70" rx="9" class="box-red"/>
+          <text x="415" y="412" text-anchor="middle" font-family="var(--font)" font-size="13.5" font-weight="600" fill="var(--text)">Diabetic ketoacidosis</text>
+          <text x="415" y="430" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">dehydration + acidosis together</text>
+          <text x="415" y="448" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">the emergency this all leads to</text>
+        </svg>
+        <p class="figcaption">Original diagram. Notice that the classic triad falls straight out of it:
+          <strong>polyuria</strong> from the osmotic diuresis, <strong>polydipsia</strong> from the resulting dehydration, and
+          <strong>polyphagia with weight loss</strong> from cells that cannot access glucose while fat and protein are being dismantled.
+          Weight loss <em>despite</em> eating more is not a paradox — it is the whole mechanism in one sign.</p>
+      </div>
+
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="T1D-001" data-quiz-toolbar="false"></div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="classification" data-toc="Forms of diabetes" data-phase="Orient">
+      <h2>The forms of diabetes mellitus</h2>
+      <p class="section-note">Worth learning before T1DM itself, because distinguishing T1DM from these other forms is largely a process of exclusion.</p>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Forms of diabetes mellitus">
+        <table>
+          <caption>"Diabetes" is a description of a glucose level, not a diagnosis — the diagnosis is which of these it is.</caption>
+          <thead><tr><th scope="col">Form</th><th scope="col">Defining feature</th><th scope="col">Key details</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">T1DM</th><td>Autoimmune beta-cell destruction → <strong>absolute</strong> insulin deficiency</td><td>Primarily an immune-system disease occurring in genetically susceptible people after some environmental trigger.</td></tr>
+            <tr><th scope="row">T2DM</th><td>Insulin resistance with <strong>relative</strong> deficiency</td><td>Covered in full on the <a href="type2.html">T2DM page</a>.</td></tr>
+            <tr><th scope="row">Monogenic — MODY</th><td>Single-gene defect in <strong>beta-cell function</strong></td><td>Mutations in enzymes and in insulin and beta-cell transcription factors. Monogenic and <strong>typically dominant</strong>. Often identified in adolescence or young adulthood.</td></tr>
+            <tr><th scope="row">Neonatal diabetes</th><td>Onset in the first month of life</td><td>Definition: blood glucose above <strong>120 mg/dL</strong>, occurring in the first month of life, lasting at least two weeks, requiring insulin. <strong>Transient or permanent.</strong> Monogenic — chromosome 6, IPF-1, glucokinase.</td></tr>
+            <tr><th scope="row">Gestational diabetes</th><td>First recognized in pregnancy</td><td>Risk is higher with obesity and family history. Tested at <strong>24–28 weeks</strong>, then again at <strong>6–12 weeks postpartum</strong>.</td></tr>
+            <tr><th scope="row">Cystic fibrosis–related diabetes</th><td>Pancreatic damage from cystic fibrosis</td><td>Grouped with chronic pancreatitis under "other specific types" in the standard classification.</td></tr>
+            <tr><th scope="row">Medication or treatment induced</th><td>A drug is doing it</td><td>Chemotherapy — <strong>L-asparaginase, cyclosporine, tacrolimus</strong> — by direct beta-cell toxicity, interference with insulin secretion, or induced resistance. <strong>Atypical antipsychotics</strong> and anti-seizure medications. <strong>Glucocorticoids</strong> increase insulin resistance and drive gluconeogenesis and glycogen breakdown.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="citation-line"><cite>American Diabetes Association Professional Practice Committee. 2. Diagnosis and Classification of Diabetes: Standards of Care in Diabetes—2026. <em>Diabetes Care.</em> 2026;49(Suppl 1):S27–S49. <a href="https://doi.org/10.2337/dc26-S002" target="_blank" rel="noopener noreferrer">doi:10.2337/dc26-S002</a></cite></p>
+
+      <div class="note note-amber">
+        <span class="note-kind">Why gestational diabetes matters after the pregnancy ends</span>
+        <p>For the mother: gestational diabetes signals a <strong>substantial future risk of T2DM</strong> —
+          which is why the 6-to-12-week postpartum test exists and why it should not be skipped.
+          For the child: prematurity, birth defects, neonatal hypoglycemia, being <strong>large for gestational age</strong>, and
+          <strong>metabolic syndrome in adolescence</strong>. One pregnancy generates two long-term risk trajectories.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Recognize</span><span class="phase-what">Why it happens, how it presents, and what the labs show</span></div>
+
+    <section class="section" id="autoimmunity" data-toc="Autoimmune destruction" data-phase="Recognize">
+      <h2>Autoimmune beta-cell destruction</h2>
+
+      <div class="note note-blue">
+        <span class="note-kind">The three-part formula worth memorizing</span>
+        <p><strong>Genetically susceptible individuals</strong> + <strong>an environmental trigger</strong> = an immune-system disease
+          that destroys beta cells. Note the emphasis: this is <em>primarily an immune-system disease</em> that happens to be diagnosed by a glucose level.
+          On histology, a normal islet gives way to <strong>insulitis</strong> — and the alpha and delta cells are
+          <strong>preserved</strong> while the beta cells are picked off. The selectivity is the point: this is a targeted immune attack, not general pancreatic damage.</p>
+      </div>
+
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 560 320" role="img" aria-labelledby="tl-t tl-d">
+          <title id="tl-t">The timeline of beta-cell loss before symptoms appear</title>
+          <desc id="tl-d">A timeline running left to right. Genetic susceptibility is present from birth. An environmental trigger initiates autoimmunity, at which point autoantibodies become detectable while beta-cell mass is still nearly normal and glucose is normal. Beta-cell mass then declines progressively over months to years, still without symptoms, because the remaining beta cells compensate. Symptoms appear abruptly only once the remaining beta-cell mass can no longer meet demand. A partial recovery known as the honeymoon phase may follow the start of treatment, before beta-cell loss completes.</desc>
+
+          <line x1="30" y1="240" x2="540" y2="240" class="axis"/>
+          <text x="285" y="300" text-anchor="middle" font-family="var(--font)" font-size="13" fill="var(--text2)">Time — months to years, not to scale</text>
+
+          <!-- beta cell mass curve -->
+          <path d="M30 70 L120 74 L200 96 L280 132 L350 174 L400 204 L440 220 L470 216 L500 224 L540 232" fill="none" stroke="var(--teal)" stroke-width="2.6"/>
+          <text x="42" y="60" font-family="var(--font)" font-size="12.5" fill="var(--teal)">beta-cell mass</text>
+
+          <!-- glucose -->
+          <path d="M30 232 L200 231 L300 229 L370 224 L400 200 L420 130 L440 84 L470 96 L500 88 L540 76" fill="none" stroke="var(--red)" stroke-width="2.6" stroke-dasharray="6 4"/>
+          <text x="470" y="66" text-anchor="end" font-family="var(--font)" font-size="12.5" fill="var(--red)">glucose</text>
+
+          <!-- markers -->
+          <line x1="120" y1="46" x2="120" y2="240" class="gridline"/>
+          <text x="124" y="128" font-family="var(--font)" font-size="12" fill="var(--text2)">trigger</text>
+          <text x="124" y="144" font-family="var(--font)" font-size="12" fill="var(--text2)">autoimmunity</text>
+          <text x="124" y="160" font-family="var(--font)" font-size="12" fill="var(--text2)">begins</text>
+
+          <line x1="200" y1="46" x2="200" y2="240" class="gridline"/>
+          <text x="204" y="180" font-family="var(--font)" font-size="12" fill="var(--amber)">autoantibodies</text>
+          <text x="204" y="196" font-family="var(--font)" font-size="12" fill="var(--amber)">detectable here</text>
+
+          <line x1="410" y1="46" x2="410" y2="240" stroke="var(--red)" stroke-width="1.4"/>
+          <text x="416" y="262" font-family="var(--font)" font-size="12.5" font-weight="600" fill="var(--red)">symptoms</text>
+
+          <text x="30" y="24" font-family="var(--mono)" font-size="11.5" fill="var(--text3)">SILENT PHASE — OFTEN YEARS</text>
+          <line x1="120" y1="34" x2="405" y2="34" stroke="var(--text3)" stroke-width="1" stroke-dasharray="3 3"/>
+          <text x="416" y="30" font-family="var(--mono)" font-size="11.5" fill="var(--red)">ABRUPT</text>
+
+          <text x="30" y="258" font-family="var(--font)" font-size="12" fill="var(--text3)">birth</text>
+        </svg>
+        <p class="figcaption">Original schematic; axes are relative and unscaled. The clinically important shape:
+          the <strong>autoimmune process runs silently long before anything is noticeable</strong>, because the surviving beta cells compensate.
+          Glucose only rises — and then rises fast — once that reserve is exhausted. This is why a child can appear entirely well one month
+          and present in ketoacidosis the next, and why <strong>autoantibodies can be positive years before diagnosis</strong>.</p>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label purple">Genetic risk</div>
+          <div class="block-text">The strongest named genetic associations are <strong>HLA-DR3 and HLA-DR4</strong>, which affect antigen presentation to T cells.</div>
+        </div>
+        <div class="block">
+          <div class="block-label amber">Proposed environmental triggers</div>
+          <div class="block-text"><strong>Viral and other environmental exposures</strong> may contribute, but no single trigger is established.</div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="presentation" data-toc="Clinical presentation" data-phase="Recognize">
+      <h2>Clinical presentation</h2>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label red">The three Ps</div>
+          <div class="block-text"><strong>Polyuria</strong> — glucose exceeds the renal threshold and drags water with it.
+            <strong>Polydipsia</strong> — thirst chasing that fluid loss.
+            <strong>Polyphagia</strong> — hunger, because the cells cannot access the fuel circulating past them.
+            In children, add <strong>nocturia and new nocturnal enuresis</strong>: a previously dry child wetting the bed again is a
+            classic and easily dismissed presentation.</div>
+        </div>
+        <div class="block">
+          <div class="block-label amber">What makes it T1DM rather than T2DM on the history</div>
+          <div class="block-text"><strong>Weight loss despite increased appetite</strong>, over weeks rather than years, in someone without an
+            insulin-resistance phenotype. Loose clothing and a tightened belt are the details students overlook.
+            A short, catabolic history points to absolute deficiency; an incidental A1c in someone with obesity points elsewhere.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="diagnosis" data-toc="Diagnostic criteria" data-phase="Recognize">
+      <h2>Diagnosing and classifying with laboratory data</h2>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Diagnostic criteria for diabetes and prediabetes">
+        <table>
+          <caption>Applies to T1DM and T2DM alike. Standard diagnostic thresholds, with the conventional threshold phrasing alongside.</caption>
+          <thead><tr><th scope="col">Test</th><th scope="col">Normal</th><th scope="col">Prediabetes / impaired glucose tolerance</th><th scope="col">Diabetes</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Fasting plasma glucose</th><td>Below 100 mg/dL</td><td><strong>100–125 mg/dL</strong></td><td><strong>&gt;125 mg/dL</strong> (conventionally written ≥126)</td></tr>
+            <tr><th scope="row">2-hour glucose on OGTT</th><td>Below 140 mg/dL</td><td><strong>140–199 mg/dL</strong></td><td><strong>&gt;199 mg/dL</strong> (conventionally ≥200)</td></tr>
+            <tr><th scope="row">HbA1c</th><td>Below 5.7%</td><td><strong>5.7–6.4%</strong></td><td><strong>&gt;6.4%</strong> (conventionally ≥6.5%)</td></tr>
+            <tr><th scope="row">Random plasma glucose</th><td>—</td><td>—</td><td><strong>&gt;199 mg/dL <em>with symptoms</em></strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note note-amber">
+        <span class="note-kind">The confirmation rule that questions are built on</span>
+        <p><strong>Asymptomatic patients require two abnormal results, on subsequent days, to confirm the diagnosis.</strong>
+          A single abnormal value in someone with no symptoms is not a diagnosis. The exception is the symptomatic patient with a random
+          glucose above 199 — there, symptoms plus the value are enough, and the reason is obvious once you think about it: someone with
+          classic symptoms and a glucose of 350 does not need a repeat test tomorrow, they need treatment today.</p>
+        <cite>American Diabetes Association Professional Practice Committee. 2. Diagnosis and Classification of Diabetes: Standards of Care in Diabetes—2026. <em>Diabetes Care.</em> 2026;49(Suppl 1):S27–S49. <a href="https://doi.org/10.2337/dc26-S002" target="_blank" rel="noopener noreferrer">doi:10.2337/dc26-S002</a></cite>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label purple">Autoantibodies — is it autoimmune?</div>
+          <div class="block-text"><strong>GAD-65</strong>, <strong>ICA-512 (IA-2)</strong>, and <strong>insulin autoantibodies (IAA)</strong>.
+            Their presence supports T1DM. Note the direction of the inference: they identify the <em>mechanism</em>, not the severity.</div>
+        </div>
+        <div class="block">
+          <div class="block-label blue">C-peptide — is there any endogenous insulin?</div>
+          <div class="block-text">C-peptide is cleaved from proinsulin in a <strong>one-to-one ratio with insulin</strong>, so it measures what the
+            pancreas is making. <strong>Low in T1DM</strong> (the beta cells are gone) and <strong>normal or high in T2DM</strong> (they are working
+            hard against resistance). Critically, C-peptide is <strong>not</strong> present in injected insulin — so it is also the test that
+            distinguishes endogenous hyperinsulinism from someone who has taken insulin.</div>
+        </div>
+      </div>
+
+      <div class="recall" data-disclosure>
+        <button class="recall-toggle" type="button" data-disclosure-toggle>
+          <span><span class="recall-kind">Retrieve</span><span class="recall-q">A patient has documented hypoglycemia with a high insulin level. How does C-peptide tell you whether the insulin came from their pancreas or a syringe?</span></span>
+          <span class="card-spacer"></span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="recall-body" data-disclosure-body>
+          <p>The pancreas makes proinsulin and cleaves it into <strong>insulin and C-peptide in equal amounts</strong>, so anything the pancreas
+            secretes raises both together. <strong>Manufactured insulin contains no C-peptide.</strong></p>
+          <p>So: <strong>high insulin with high C-peptide</strong> = endogenous overproduction — an insulinoma, or a drug that pushes the beta cell
+            to secrete, such as a sulfonylurea. <strong>High insulin with suppressed C-peptide</strong> = the insulin came from outside the body.
+            The same logic makes C-peptide a marker of residual beta-cell function when classifying diabetes.</p>
+        </div>
+      </div>
+
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="T1D-002" data-quiz-toolbar="false"></div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Localize</span><span class="phase-what">Deciding which form of diabetes you are looking at</span></div>
+
+    <section class="section" id="distinguish" data-toc="T1DM vs everything else" data-phase="Localize">
+      <h2>Distinguishing T1DM from T2DM, monogenic, and secondary diabetes</h2>
+
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 560 400" role="img" aria-labelledby="tree-t tree-d">
+          <title id="tree-t">Features used to classify diabetes</title>
+          <desc id="tree-d">Starting from confirmed hyperglycemia, four groups of evidence are weighed. Islet autoantibodies and a low C-peptide point to T1DM. An insulin-resistance phenotype with negative antibodies and a preserved or high C-peptide points to T2DM. Onset in the first month of life points to neonatal diabetes; dominant inheritance across generations without autoimmunity or resistance points to MODY. Cystic fibrosis, pancreatic disease, or a causative medication points to secondary diabetes. No branch is decisive on its own.</desc>
+
+          <rect x="180" y="8" width="200" height="42" rx="10" class="box-gray"/>
+          <text x="280" y="26" text-anchor="middle" font-family="var(--font)" font-size="14" font-weight="600" fill="var(--text)">Confirmed hyperglycemia</text>
+          <text x="280" y="42" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">now: which form?</text>
+
+          <path d="M280 50 L280 68" class="flow"/>
+          <line x1="70" y1="68" x2="490" y2="68" class="flow"/>
+          <path d="M70 68 L70 90" class="flow" marker-end="url(#tr-a)"/>
+          <path d="M210 68 L210 90" class="flow" marker-end="url(#tr-a)"/>
+          <path d="M350 68 L350 90" class="flow" marker-end="url(#tr-a)"/>
+          <path d="M490 68 L490 90" class="flow" marker-end="url(#tr-a)"/>
+          <defs><marker id="tr-a" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--accent)"/></marker></defs>
+
+          <rect x="8" y="94" width="124" height="128" rx="9" class="box-blue"/>
+          <text x="70" y="116" text-anchor="middle" font-family="var(--font)" font-size="12.5" font-weight="600" fill="var(--blue)">Autoimmunity?</text>
+          <text x="20" y="140" font-family="var(--font)" font-size="12" fill="var(--text)">GAD-65</text>
+          <text x="20" y="158" font-family="var(--font)" font-size="12" fill="var(--text)">ICA-512 (IA-2)</text>
+          <text x="20" y="176" font-family="var(--font)" font-size="12" fill="var(--text)">IAA</text>
+          <text x="20" y="200" font-family="var(--font)" font-size="12" fill="var(--text2)">C-peptide low?</text>
+
+          <rect x="148" y="94" width="124" height="128" rx="9" class="box-purple"/>
+          <text x="210" y="116" text-anchor="middle" font-family="var(--font)" font-size="12.5" font-weight="600" fill="var(--purple)">Resistance?</text>
+          <text x="160" y="140" font-family="var(--font)" font-size="12" fill="var(--text)">Acanthosis</text>
+          <text x="160" y="158" font-family="var(--font)" font-size="12" fill="var(--text)">nigricans</text>
+          <text x="160" y="176" font-family="var(--font)" font-size="12" fill="var(--text)">Obesity</text>
+          <text x="160" y="200" font-family="var(--font)" font-size="12" fill="var(--text2)">C-peptide high?</text>
+
+          <rect x="288" y="94" width="124" height="128" rx="9" class="box-amber"/>
+          <text x="350" y="116" text-anchor="middle" font-family="var(--font)" font-size="12.5" font-weight="600" fill="var(--amber)">Age &amp; family?</text>
+          <text x="300" y="140" font-family="var(--font)" font-size="12" fill="var(--text)">First month of</text>
+          <text x="300" y="158" font-family="var(--font)" font-size="12" fill="var(--text)">life? Neonatal.</text>
+          <text x="300" y="176" font-family="var(--font)" font-size="12" fill="var(--text)">Dominant across</text>
+          <text x="300" y="194" font-family="var(--font)" font-size="12" fill="var(--text)">3 generations?</text>
+          <text x="300" y="212" font-family="var(--font)" font-size="12" fill="var(--text)">MODY</text>
+
+          <rect x="428" y="94" width="124" height="128" rx="9" class="box-teal"/>
+          <text x="490" y="116" text-anchor="middle" font-family="var(--font)" font-size="12.5" font-weight="600" fill="var(--teal)">Context?</text>
+          <text x="440" y="140" font-family="var(--font)" font-size="12" fill="var(--text)">Cystic fibrosis</text>
+          <text x="440" y="158" font-family="var(--font)" font-size="12" fill="var(--text)">Pancreatitis</text>
+          <text x="440" y="176" font-family="var(--font)" font-size="12" fill="var(--text)">Steroids or</text>
+          <text x="440" y="194" font-family="var(--font)" font-size="12" fill="var(--text)">tacrolimus</text>
+          <text x="440" y="212" font-family="var(--font)" font-size="12" fill="var(--text)">antipsychotics</text>
+
+          <rect x="8" y="238" width="544" height="150" rx="10" fill="var(--amber-t)" stroke="var(--amber)" stroke-width="1.4"/>
+          <text x="24" y="262" font-family="var(--mono)" font-size="11.5" fill="var(--amber)">READ ALL FOUR — NONE OF THEM IS DECISIVE ALONE</text>
+          <text x="24" y="288" font-family="var(--font)" font-size="13" fill="var(--text)">· People with T2DM can present in ketoacidosis.</text>
+          <text x="24" y="310" font-family="var(--font)" font-size="13" fill="var(--text)">· People with T1DM can have obesity — the two coexist.</text>
+          <text x="24" y="332" font-family="var(--font)" font-size="13" fill="var(--text)">· MODY is routinely misclassified as T1DM or T2DM for years.</text>
+          <text x="24" y="354" font-family="var(--font)" font-size="13" fill="var(--text)">· A negative antibody panel does not by itself exclude T1DM.</text>
+          <text x="24" y="378" font-family="var(--font)" font-size="12.5" fill="var(--text2)">Treat each feature as evidence to be weighed, never as proof.</text>
+        </svg>
+        <p class="figcaption">Original diagram. The framework is deliberately not drawn as a strict decision tree with single yes/no gates,
+          because the real reasoning weighs the branches together.</p>
+      </div>
+
+      <div class="figure" data-fig="dm-classifier"></div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Act</span><span class="phase-what">Management principles, the acute complications, and DKA</span></div>
+
+    <section class="section" id="management" data-toc="Management and acute complications" data-phase="Act">
+      <h2>Management, and the acute complications short of DKA</h2>
+
+      <p class="prose">Management combines <strong>lifelong insulin, glucose monitoring, carbohydrate-based dosing, education, and psychosocial support</strong>.
+        <!-- Restore after the quiz: Regimens and dose arithmetic are covered in the <a href="insulin.html">Insulin Therapy Lab</a>. -->
+      </p>
+
+      <div class="note note-red">
+        <span class="note-kind">The non-negotiable principle</span>
+        <p><strong>T1DM requires insulin at all times</strong> — including when the patient is not eating, and including when they are unwell
+          and eating nothing at all. Basal insulin is not "the insulin for food." Stopping it because someone is not eating is how a person ends up
+          in ketoacidosis, because without any insulin the liver resumes ketogenesis regardless of intake.</p>
+      </div>
+
+      <h3>Hypoglycemia</h3>
+      <div class="grid">
+        <div class="block">
+          <div class="block-label red">Why it is the limiting problem</div>
+          <div class="block-text">Autonomic warning symptoms — sweating, tremor, palpitations, hunger, anxiety — normally give a person time to act.
+            <strong>Hypoglycemia unawareness</strong> removes that warning, so the first sign becomes a neuroglycopenic one:
+            <strong>altered mental status or seizures</strong>. Someone with unawareness is not less sick; they are less protected.</div>
+        </div>
+        <div class="block">
+          <div class="block-label amber">A pharmacology point worth carrying</div>
+          <div class="block-text"><strong>Non-selective beta blockers blunt the adrenergic warning symptoms</strong> — the tremor and palpitations in particular —
+            producing a drug-induced version of unawareness. <strong>Sweating is largely cholinergically mediated and tends to persist</strong>,
+            which is why it is the symptom to ask about specifically in a patient on a beta blocker.</div>
+        </div>
+      </div>
+
+      <h3>Morning hyperglycemia — two mechanisms with different fixes</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Dawn phenomenon versus Somogyi effect">
+        <table>
+          <caption>Both produce a high morning glucose, and the correct responses point in opposite directions — which is exactly why the distinction is taught.</caption>
+          <thead><tr><th scope="col"></th><th scope="col">Dawn phenomenon</th><th scope="col">Somogyi effect</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Mechanism</th><td>Morning hyperglycemia caused by <strong>counter-regulatory hormones — GH and cortisol — as part of their normal secretion</strong></td><td>Morning hyperglycemia caused by <strong>rebound from an early-morning hypoglycemia</strong>, through the counter-regulatory response to that low</td></tr>
+            <tr><th scope="row">Overnight glucose</th><td>Drifts up, or stays steady, then rises toward morning</td><td><strong>Dips low</strong> in the early hours, then rebounds</td></tr>
+            <tr><th scope="row">How you tell</th><td colspan="2">Check a glucose in the early hours of the morning. There is no way to distinguish them from the morning value alone.</td></tr>
+            <tr><th scope="row">Memory hook</th><td>Normal hormones, ordinary timing</td><td><strong>SOMogyi = SO MUCH INSULIN</strong> causing the overnight low</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="recall" data-disclosure>
+        <button class="recall-toggle" type="button" data-disclosure-toggle>
+          <span><span class="recall-kind">Retrieve</span><span class="recall-q">Someone wakes with a glucose of 260 every day and wants to increase their bedtime basal insulin. What do you need to know first, and why does it matter so much?</span></span>
+          <span class="card-spacer"></span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="recall-body" data-disclosure-body>
+          <p><strong>What the glucose did overnight</strong> — specifically, a reading in the early hours of the morning.</p>
+          <p>If the overnight trace ran steady or drifted upward, the morning high reflects the <strong>dawn phenomenon</strong>, and more overnight
+            insulin is a reasonable direction. If the trace <strong>dipped low</strong> before rebounding, this is the <strong>Somogyi</strong> pattern,
+            and increasing the evening dose would deepen a nocturnal hypoglycemia that is already happening while the patient is asleep and
+            unable to notice it. The two look identical at 7 a.m. and call for opposite actions — which is the entire reason the pair is taught together.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="dka" data-toc="Diabetic ketoacidosis" data-phase="Act">
+      <h2>Diabetic ketoacidosis</h2>
+      <p class="section-note">The acute complication the objectives ask you to explain mechanistically, recognize on labs, and manage in principle.</p>
+
+      <div class="note note-red">
+        <span class="note-kind">Scope, before we start</span>
+        <p>DKA is <strong>due to lack of insulin</strong> and is <strong>usually</strong> a feature of T1DM — but
+          <strong>patients with T2DM can present with DKA</strong> too. Do not treat DKA as diagnostic of T1DM, and do not treat
+          the presence of T2DM as reassurance against it.</p>
+      </div>
+
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 560 420" role="img" aria-labelledby="dka-t dka-d">
+          <title id="dka-t">The DKA causal cascade</title>
+          <desc id="dka-d">Insulin deficiency splits into two arms. On one arm, hyperglycemia exceeds the renal threshold and causes an osmotic diuresis, which produces dehydration and washes potassium out of the body, depleting total body stores. On the other arm, lipolysis releases free fatty acids that the liver converts into ketone bodies, which are acids, producing an anion gap metabolic acidosis; the body compensates with deep rapid Kussmaul breathing that lowers arterial carbon dioxide. Both arms converge on diabetic ketoacidosis. Meanwhile acidosis and insulin deficiency drive potassium out of cells into the blood, so the measured serum potassium may be normal or high even though total body potassium is severely depleted.</desc>
+
+          <rect x="180" y="8" width="200" height="40" rx="10" class="box-red"/>
+          <text x="280" y="33" text-anchor="middle" font-family="var(--font)" font-size="14.5" font-weight="600" fill="var(--text)">Insulin deficiency</text>
+
+          <path d="M235 48 L150 82" class="flow" marker-end="url(#dk-a)"/>
+          <path d="M325 48 L410 82" class="flow" marker-end="url(#dk-a)"/>
+          <defs><marker id="dk-a" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--accent)"/></marker></defs>
+
+          <rect x="20" y="86" width="240" height="38" rx="9" class="box-purple"/>
+          <text x="140" y="110" text-anchor="middle" font-family="var(--font)" font-size="13.5" fill="var(--text)">Hyperglycemia (typically &gt;250)</text>
+          <path d="M140 124 L140 148" class="flow" marker-end="url(#dk-a)"/>
+          <rect x="20" y="152" width="240" height="38" rx="9" class="box-purple"/>
+          <text x="140" y="176" text-anchor="middle" font-family="var(--font)" font-size="13.5" fill="var(--text)">Osmotic diuresis</text>
+          <path d="M140 190 L140 214" class="flow" marker-end="url(#dk-a)"/>
+          <rect x="20" y="218" width="240" height="56" rx="9" class="box-red"/>
+          <text x="140" y="240" text-anchor="middle" font-family="var(--font)" font-size="13.5" fill="var(--text)">Dehydration</text>
+          <text x="140" y="260" text-anchor="middle" font-family="var(--font)" font-size="12.5" fill="var(--text2)">+ urinary loss of potassium</text>
+
+          <rect x="300" y="86" width="240" height="38" rx="9" class="box-amber"/>
+          <text x="420" y="110" text-anchor="middle" font-family="var(--font)" font-size="13.5" fill="var(--text)">Lipolysis → free fatty acids</text>
+          <path d="M420 124 L420 148" class="flow" marker-end="url(#dk-a)"/>
+          <rect x="300" y="152" width="240" height="38" rx="9" class="box-amber"/>
+          <text x="420" y="176" text-anchor="middle" font-family="var(--font)" font-size="13.5" fill="var(--text)">Liver makes ketone bodies</text>
+          <path d="M420 190 L420 214" class="flow" marker-end="url(#dk-a)"/>
+          <rect x="300" y="218" width="240" height="56" rx="9" class="box-red"/>
+          <text x="420" y="240" text-anchor="middle" font-family="var(--font)" font-size="13.5" fill="var(--text)">Anion-gap metabolic acidosis</text>
+          <text x="420" y="260" text-anchor="middle" font-family="var(--font)" font-size="12.5" fill="var(--text2)">→ Kussmaul breathing lowers PaCO₂</text>
+
+          <path d="M140 274 L250 302" class="flow" marker-end="url(#dk-a)"/>
+          <path d="M420 274 L310 302" class="flow" marker-end="url(#dk-a)"/>
+          <rect x="170" y="306" width="220" height="40" rx="9" class="box-red"/>
+          <text x="280" y="331" text-anchor="middle" font-family="var(--font)" font-size="14.5" font-weight="600" fill="var(--text)">Diabetic ketoacidosis</text>
+
+          <rect x="20" y="358" width="520" height="56" rx="9" fill="var(--amber-t)" stroke="var(--amber)" stroke-width="1.4"/>
+          <text x="34" y="378" font-family="var(--mono)" font-size="11.5" fill="var(--amber)">RUNNING UNDERNEATH BOTH ARMS · THE POTASSIUM PARADOX</text>
+          <text x="34" y="398" font-family="var(--font)" font-size="12.5" fill="var(--text)">Acidosis and insulin deficiency push potassium OUT of cells, so the measured serum</text>
+          <text x="34" y="410" font-family="var(--font)" font-size="12.5" fill="var(--text)">potassium can look normal or high while total body potassium is severely depleted.</text>
+        </svg>
+        <p class="figcaption">Original diagram of the underlying mechanism: absence of intracellular insulin alters lipid metabolism,
+          free fatty acids are shunted into ketone body formation, and <strong>ketones are acids</strong> — hence ketoacidosis.</p>
+      </div>
+
+      <h3>Laboratory findings and physical signs</h3>
+      <div class="grid">
+        <div class="block">
+          <div class="block-label amber">Diagnostic laboratory thresholds</div>
+          <div class="block-text"><strong>Glucose typically above 250 mg/dL.</strong>
+            <strong>Bicarbonate below 15 mEq/L.</strong>
+            <strong>Increased anion gap, typically above 16.</strong>
+            Ketones present in blood and urine.</div>
+        </div>
+        <div class="block">
+          <div class="block-label red">Physical findings</div>
+          <div class="block-text">Dehydration · <strong>Kussmaul respirations</strong> · a <strong>fruity odor on the breath</strong> from ketonemia ·
+            <strong>non-focal abdominal tenderness</strong> · nausea and vomiting · altered mental status.
+            The abdominal pain is worth flagging — DKA is a well-known mimic of a surgical abdomen, and the pain typically resolves as the acidosis does.</div>
+        </div>
+      </div>
+
+      <h3>The potassium paradox</h3>
+      <ol class="list">
+        <li><strong>Total-body potassium is depleted</strong> by osmotic diuresis, even when serum potassium appears normal or high because insulin deficiency and acidosis shift potassium out of cells.</li>
+        <li><strong>Insulin drives potassium back into cells</strong>, so monitor closely and replace potassium during treatment.</li>
+      </ol>
+
+      <p class="citation-line"><cite>Glaser N, Fritsch M, Priyambada L, et al. ISPAD Clinical Practice Consensus Guidelines 2022: Diabetic ketoacidosis and hyperglycemic hyperosmolar state. <em>Pediatr Diabetes.</em> 2022;23(7):835–856. <a href="https://doi.org/10.1111/pedi.13406" target="_blank" rel="noopener noreferrer">doi:10.1111/pedi.13406</a></cite></p>
+
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="T1D-004,T1D-005,T1D-006" data-quiz-toolbar="false"></div>
+
+      <h3>Management principles</h3>
+      <p class="section-note">Course principles only; clinical treatment follows an institutional protocol.</p>
+
+      <ol class="list">
+        <li><strong>Fluid first.</strong> These patients are volume depleted from the osmotic diuresis. Restoring circulating volume improves
+          perfusion and, on its own, begins to lower the glucose by improving renal clearance of it.</li>
+        <li><strong>Insulin, to switch off ketogenesis.</strong> The purpose of the insulin is not primarily to lower the glucose — it is to
+          <strong>stop lipolysis and ketone production</strong> and close the acidosis. This is why insulin continues even once the glucose has come down,
+          with glucose added to the fluids to permit that.</li>
+        <li><strong>Potassium, anticipated rather than reacted to.</strong> See the paradox above. The expected fall is planned for.</li>
+        <li><strong>Monitor closely</strong> — glucose, electrolytes, acid–base status, and mental status. The anion gap closing is the marker that
+          the underlying process is resolving; the glucose normalizing is not.</li>
+        <li><strong>Find and treat the precipitant.</strong> Infection, missed insulin, an interrupted pump, or a new diagnosis.
+          A DKA that is treated without the trigger being identified tends to recur.</li>
+        <li><strong>Watch for cerebral edema throughout</strong>, particularly in children.</li>
+      </ol>
+
+      <h3>Cerebral edema</h3>
+      <div class="note note-red">
+        <span class="note-kind">The complication that dominates DKA mortality</span>
+        <p>Cerebral edema is the complication that dominates mortality from DKA in children. It is a <strong>severe, life-threatening complication needing urgent treatment</strong> —
+          typically <strong>mannitol or 3% saline</strong>.</p>
+        <p><strong>Warning signs:</strong> altered mentation or a fluctuating level of consciousness · a <strong>sustained, unexpected deceleration of heart
+          rate</strong> · incontinence · emesis · headache · lethargy · <strong>diastolic hypertension</strong>. <strong>Age under 5 years</strong> is a risk factor.</p>
+        <p>Two of those deserve emphasis because they run counter to intuition: a <strong>falling</strong> heart rate and a <strong>rising</strong> blood
+          pressure in a patient who has been tachycardic and dehydrated look superficially like improvement. In this context they suggest
+          <strong>rising intracranial pressure</strong>, and they are an emergency.</p>
+        <cite>Glaser N, Fritsch M, Priyambada L, et al. ISPAD Clinical Practice Consensus Guidelines 2022: Diabetic ketoacidosis and hyperglycemic hyperosmolar state. <em>Pediatr Diabetes.</em> 2022;23(7):835–856. <a href="https://doi.org/10.1111/pedi.13406" target="_blank" rel="noopener noreferrer">doi:10.1111/pedi.13406</a></cite>
+      </div>
+
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="T1D-003" data-quiz-toolbar="false"></div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Retrieve</span><span class="phase-what">Practice before you leave the page</span></div>
+
+    <section class="section" id="retrieve" data-toc="Practice questions" data-phase="Retrieve">
+      <h2>All T1DM questions</h2>
+      <p class="section-note">Every question tagged to this lecture, shuffled. <a href="practice.html">Cumulative practice</a> mixes these with the rest of the block.</p>
+      <div class="quiz" data-quiz data-quiz-lecture="T1DM"></div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/quiz.js" defer></script>
+<script src="assets/js/figures.js" defer></script>
+</body>
+</html>

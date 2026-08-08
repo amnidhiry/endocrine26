@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hypothalamus &amp; Pituitary — HSHD1 Endocrine Course Companion</title>
+<meta name="description" content="Pituitary disease organized around hormone excess, hormone deficiency, and mass effect, with the posterior pituitary water disorders and an interactive desmopressin comparison.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="pituitary">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+<noscript><div style="max-width:1180px;margin:0 auto;padding:1rem 1.25rem"><p class="note note-amber"><span class="note-kind">JavaScript is off</span>The text below is complete and readable, but the navigation, search, interactive figures, and practice questions need JavaScript. <a href="index.html">Back to the home page</a>.</p></div></noscript>
+
+<div class="page">
+  <nav class="toc" id="page-toc" aria-label="Sections of this page"></nav>
+
+  <main class="content" id="main" tabindex="-1">
+
+    <div class="page-head">
+      <p class="eyebrow">Study guide · Hypothalamic-pituitary axis · 5 Aug 2026</p>
+      <h1>Hypothalamus &amp; Pituitary Disorders</h1>
+      <p class="lede">One small gland, three ways to go wrong. Almost every disorder on this page is a variation on
+        making too much of a hormone, making too little of it, or being a lump in a space that has no room for lumps —
+        and a surprising number of patients have all three at once.</p>
+      <div class="toc-mobile" id="page-toc-mobile"></div>
+    </div>
+
+    <section class="section" id="orient" data-toc="Anatomy and the wiring" data-phase="Orient">
+      <h2>Pituitary anatomy and its hypothalamic connections</h2>
+      <p class="section-note">Where the gland sits, and why the anterior and posterior lobes fail in completely different ways.</p>
+
+      <p class="prose">The pituitary is about <strong>1 cm across and weighs roughly 0.5 g</strong>. It sits at the base of the brain
+        in the <strong>sella turcica</strong>, immediately below the optic chiasm, and hangs from the hypothalamus by a
+        <strong>stalk that carries both blood vessels and axons</strong>. Those two things in the stalk — vessels and axons —
+        are the whole reason the two lobes behave so differently.</p>
+
+      <div class="figure">
+        <svg class="svg-diagram" viewBox="0 0 420 560" role="img" aria-labelledby="wire-t wire-d">
+          <title id="wire-t">How the hypothalamus controls each pituitary lobe</title>
+          <desc id="wire-d">The hypothalamus connects to the anterior pituitary through hypophyseal portal veins, which carry releasing hormones. It connects to the posterior pituitary through axons, which carry vasopressin and oxytocin made in hypothalamic neurons. The anterior pituitary makes and secretes growth hormone, TSH, ACTH, LH and FSH, and prolactin, each acting on a target organ. The posterior pituitary makes nothing itself — it stores and releases the two hormones delivered down the axons.</desc>
+
+          <rect x="70" y="10" width="280" height="42" rx="10" class="box-blue"/>
+          <text x="210" y="30" text-anchor="middle" font-family="var(--font)" font-size="15" font-weight="600" fill="var(--text)">Hypothalamus</text>
+          <text x="210" y="45" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">releasing hormones · AVP · oxytocin</text>
+
+          <!-- portal route -->
+          <path d="M150 52 L110 104" class="flow-blue" marker-end="url(#pit-arrow)"/>
+          <text x="26" y="80" font-family="var(--font)" font-size="12" fill="var(--blue)">portal veins</text>
+          <!-- axonal route -->
+          <path d="M270 52 L310 104" class="flow-blue" marker-end="url(#pit-arrow)"/>
+          <text x="300" y="80" font-family="var(--font)" font-size="12" fill="var(--blue)">axons</text>
+
+          <defs>
+            <marker id="pit-arrow" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto">
+              <path d="M0,0 L5.5,3 L0,6 Z" fill="var(--blue)"/>
+            </marker>
+          </defs>
+
+          <rect x="14" y="106" width="188" height="44" rx="9" class="box-teal"/>
+          <text x="108" y="126" text-anchor="middle" font-family="var(--font)" font-size="14" font-weight="600" fill="var(--text)">Anterior pituitary</text>
+          <text x="108" y="141" text-anchor="middle" font-family="var(--font)" font-size="11.5" fill="var(--text2)">adenohypophysis</text>
+
+          <rect x="218" y="106" width="188" height="44" rx="9" class="box-purple"/>
+          <text x="312" y="126" text-anchor="middle" font-family="var(--font)" font-size="14" font-weight="600" fill="var(--text)">Posterior pituitary</text>
+          <text x="312" y="141" text-anchor="middle" font-family="var(--font)" font-size="11.5" fill="var(--text2)">neurohypophysis</text>
+
+          <text x="14" y="182" font-family="var(--mono)" font-size="11.5" fill="var(--text3)">ANTERIOR — FIVE CELL TYPES, FIVE OUTPUTS</text>
+          <line x1="14" y1="190" x2="406" y2="190" stroke="var(--border2)" stroke-width="1"/>
+          <text x="14" y="212" font-family="var(--font)" font-size="14" fill="var(--text)">GH  →  liver  →  IGF-1  →  linear growth</text>
+          <text x="14" y="238" font-family="var(--font)" font-size="14" fill="var(--text)">TSH  →  thyroid  →  T4 and T3</text>
+          <text x="14" y="264" font-family="var(--font)" font-size="14" fill="var(--text)">ACTH  →  adrenal cortex  →  cortisol</text>
+          <text x="14" y="290" font-family="var(--font)" font-size="14" fill="var(--text)">LH / FSH  →  gonads  →  sex steroids, gametes</text>
+          <text x="14" y="316" font-family="var(--font)" font-size="14" fill="var(--text)">Prolactin  →  breast  →  milk production</text>
+
+          <text x="14" y="356" font-family="var(--mono)" font-size="11.5" fill="var(--text3)">POSTERIOR — NOTHING IS MADE HERE</text>
+          <line x1="14" y1="364" x2="406" y2="364" stroke="var(--border2)" stroke-width="1"/>
+          <text x="14" y="386" font-family="var(--font)" font-size="14" fill="var(--text)">AVP (vasopressin)  →  collecting duct</text>
+          <text x="30" y="404" font-family="var(--font)" font-size="12.5" fill="var(--text2)">→ water reabsorbed, urine concentrated</text>
+          <text x="14" y="428" font-family="var(--font)" font-size="14" fill="var(--text)">Oxytocin  →  uterus, breast</text>
+
+          <rect x="14" y="446" width="392" height="98" rx="9" fill="var(--amber-t)" stroke="var(--amber)" stroke-width="1.4"/>
+          <text x="26" y="468" font-family="var(--mono)" font-size="11.5" fill="var(--amber)">THE POINT STUDENTS MISS</text>
+          <text x="26" y="490" font-family="var(--font)" font-size="13" fill="var(--text)">AVP is synthesized in hypothalamic neurons,</text>
+          <text x="26" y="507" font-family="var(--font)" font-size="13" fill="var(--text)">travels down their axons, and is merely stored</text>
+          <text x="26" y="524" font-family="var(--font)" font-size="13" fill="var(--text)">and released by the posterior pituitary. So a</text>
+          <text x="26" y="538" font-family="var(--font)" font-size="13" fill="var(--text)">hypothalamic lesion can cause AVP deficiency.</text>
+        </svg>
+        <p class="figcaption">Original diagram of the hypothalamic-pituitary anatomy and axes. The two routes out of the hypothalamus explain the clinical split:
+          anterior lobe failure is a <em>secretory</em> problem in the pituitary itself, whereas posterior lobe failure can originate anywhere along the hypothalamus–stalk–posterior lobe path.</p>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label blue">Anterior lobe — histology</div>
+          <div class="block-text">Five functional cell types: <strong>somatotropes</strong> (GH), <strong>lactotropes</strong> (prolactin),
+            <strong>corticotropes</strong> (ACTH), <strong>gonadotropes</strong> (FSH/LH), and <strong>thyrotropes</strong> (TSH).</div>
+        </div>
+        <div class="block">
+          <div class="block-label purple">Posterior lobe — histology</div>
+          <div class="block-text"><strong>Axons, Herring bodies, and pituicytes</strong> rather than glandular cells. It stores and releases hormones made in the hypothalamus.</div>
+        </div>
+      </div>
+
+      <div class="note note-blue">
+        <span class="note-kind">Primary, secondary, tertiary — define it once and reuse it everywhere</span>
+        <p>This framework applies to every axis, so it is worth over-learning. <strong>Primary</strong>: the end organ has failed —
+          the pituitary or hypothalamic hormone is <em>elevated</em> while the end-organ hormone is low.
+          <strong>Secondary</strong>: the pituitary has failed — pituitary hormone low, hypothalamic hormone elevated, end-organ hormone low.
+          <strong>Tertiary</strong>: the hypothalamus has failed — all three low. Secondary and tertiary together are called <strong>central</strong>.</p>
+      </div>
+
+      <div class="recall" data-disclosure>
+        <button class="recall-toggle" type="button" data-disclosure-toggle>
+          <span><span class="recall-kind">Retrieve</span><span class="recall-q">A patient has a low cortisol. What would the ACTH be in primary, secondary, and tertiary disease — and which organ is at fault in each?</span></span>
+          <span class="card-spacer"></span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="recall-body" data-disclosure-body>
+          <p><strong>Primary</strong> — the adrenal cortex has failed, so ACTH is <strong>high</strong> as the pituitary tries to flog a gland that cannot respond.
+            <strong>Secondary</strong> — the <strong>pituitary</strong> has failed, so ACTH is low and cortisol is low; CRH from the hypothalamus would be elevated.
+            <strong>Tertiary</strong> — the <strong>hypothalamus</strong> has failed, so CRH, ACTH, and cortisol are all low.
+            The trick that makes exam questions answerable: look at whether the <em>upstream</em> hormone moved in the same direction as the downstream one, or the opposite.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="framework" data-toc="The three presentations" data-phase="Orient">
+      <h2>Three ways pituitary disease presents</h2>
+      <p class="section-note">If you can place a disorder into one of these three boxes — and notice when it belongs in more than one — most of this topic organizes itself.</p>
+
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 560 350" role="img" aria-labelledby="fw-t fw-d">
+          <title id="fw-t">Three presentations of pituitary disease</title>
+          <desc id="fw-d">Pituitary disease branches into three overlapping outcomes. Hormone excess comes from functional adenomas such as prolactinoma, growth hormone adenoma, and corticotroph adenoma. Hormone deficiency comes from hypopituitarism of any cause, including craniopharyngioma, Sheehan syndrome, apoplexy, and a large adenoma crushing the normal gland. Mass effect comes from any expanding sellar lesion, causing headache, bitemporal hemianopsia, and abnormal sella imaging. A single large adenoma frequently produces all three at once.</desc>
+
+          <rect x="185" y="8" width="190" height="42" rx="10" class="box-gray"/>
+          <text x="280" y="34" text-anchor="middle" font-family="var(--font)" font-size="15" font-weight="600" fill="var(--text)">Pituitary disease</text>
+
+          <path d="M225 50 L110 90" class="flow" marker-end="url(#fw-a)"/>
+          <path d="M280 50 L280 90" class="flow" marker-end="url(#fw-a)"/>
+          <path d="M335 50 L450 90" class="flow" marker-end="url(#fw-a)"/>
+          <defs><marker id="fw-a" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--accent)"/></marker></defs>
+
+          <rect x="8" y="94" width="172" height="150" rx="10" class="box-red"/>
+          <text x="94" y="116" text-anchor="middle" font-family="var(--font)" font-size="14" font-weight="600" fill="var(--red)">1 · Hormone excess</text>
+          <text x="20" y="140" font-family="var(--font)" font-size="12.5" fill="var(--text2)">Functional adenoma</text>
+          <text x="20" y="160" font-family="var(--font)" font-size="12.5" fill="var(--text)">· Prolactinoma</text>
+          <text x="20" y="178" font-family="var(--font)" font-size="12.5" fill="var(--text)">· GH → acromegaly</text>
+          <text x="20" y="196" font-family="var(--font)" font-size="12.5" fill="var(--text)">· ACTH → Cushing</text>
+          <text x="20" y="214" font-family="var(--font)" font-size="12.5" fill="var(--text)">· TSH, LH/FSH (rare)</text>
+          <text x="20" y="234" font-family="var(--font)" font-size="11.5" fill="var(--text3)">Symptoms of the hormone</text>
+
+          <rect x="194" y="94" width="172" height="150" rx="10" class="box-blue"/>
+          <text x="280" y="116" text-anchor="middle" font-family="var(--font)" font-size="14" font-weight="600" fill="var(--blue)">2 · Hormone deficiency</text>
+          <text x="206" y="140" font-family="var(--font)" font-size="12.5" fill="var(--text2)">Hypopituitarism</text>
+          <text x="206" y="160" font-family="var(--font)" font-size="12.5" fill="var(--text)">· Craniopharyngioma</text>
+          <text x="206" y="178" font-family="var(--font)" font-size="12.5" fill="var(--text)">· Sheehan syndrome</text>
+          <text x="206" y="196" font-family="var(--font)" font-size="12.5" fill="var(--text)">· Apoplexy</text>
+          <text x="206" y="214" font-family="var(--font)" font-size="12.5" fill="var(--text)">· Big adenoma crushing</text>
+          <text x="206" y="234" font-family="var(--font)" font-size="11.5" fill="var(--text3)">GH first, ACTH last</text>
+
+          <rect x="380" y="94" width="172" height="150" rx="10" class="box-purple"/>
+          <text x="466" y="116" text-anchor="middle" font-family="var(--font)" font-size="14" font-weight="600" fill="var(--purple)">3 · Mass effect</text>
+          <text x="392" y="140" font-family="var(--font)" font-size="12.5" fill="var(--text2)">Any expanding lesion</text>
+          <text x="392" y="160" font-family="var(--font)" font-size="12.5" fill="var(--text)">· Headache, raised ICP</text>
+          <text x="392" y="178" font-family="var(--font)" font-size="12.5" fill="var(--text)">· Bitemporal hemianopsia</text>
+          <text x="392" y="196" font-family="var(--font)" font-size="12.5" fill="var(--text)">· Sella abnormal on MRI</text>
+          <text x="392" y="214" font-family="var(--font)" font-size="12.5" fill="var(--text)">· Stalk effect on prolactin</text>
+          <text x="392" y="234" font-family="var(--font)" font-size="11.5" fill="var(--text3)">Non-functioning tumors too</text>
+
+          <rect x="8" y="258" width="544" height="82" rx="10" fill="var(--amber-t)" stroke="var(--amber)" stroke-width="1.4"/>
+          <text x="22" y="280" font-family="var(--mono)" font-size="11.5" fill="var(--amber)">THE THREE OVERLAP — THAT IS THE EXAM POINT</text>
+          <text x="22" y="302" font-family="var(--font)" font-size="13" fill="var(--text)">One macroadenoma can secrete a hormone, crush the rest of the gland into</text>
+          <text x="22" y="320" font-family="var(--font)" font-size="13" fill="var(--text)">hypopituitarism, and compress the chiasm — all at the same time. When a stem</text>
+          <text x="22" y="336" font-family="var(--font)" font-size="13" fill="var(--text)">mixes an excess syndrome with visual loss, that is a macroadenoma, not two diseases.</text>
+        </svg>
+        <p class="figcaption">Original diagram. Use it as a triage question on every vignette: <em>which of the three is this stem describing, and is it describing more than one?</em></p>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Recognize</span><span class="phase-what">Presentation, physical findings, and characteristic patterns</span></div>
+
+    <section class="section" id="mass-effect" data-toc="Mass effect and the chiasm" data-phase="Recognize">
+      <h2>Mass effect and the optic chiasm</h2>
+      <p class="section-note">Why a lesion in the sella takes the outer half of each visual field, and nothing else.</p>
+
+      <p class="prose">Three consequences of local mass effect: <strong>headache</strong> from raised intracranial pressure,
+        an <strong>abnormal sella turcica</strong> on imaging, and <strong>visual field loss, most commonly bitemporal hemianopsia</strong>.
+        The last one is worth understanding rather than memorizing, because the anatomy explains the exact field defect.</p>
+
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 560 360" role="img" aria-labelledby="oc-t oc-d">
+          <title id="oc-t">Why a sellar mass expanding upward causes bitemporal hemianopsia</title>
+          <desc id="oc-d">Light from the temporal, or outer, half of each visual field falls on the nasal half of each retina. Nasal retinal fibers cross the midline at the optic chiasm. A pituitary mass sitting directly under the chiasm and expanding upward compresses those crossing fibers first, so vision is lost in the temporal half of each visual field — bitemporal hemianopsia. Fibers from the temporal retina, which carry the nasal field, run laterally and are spared until later.</desc>
+
+          <text x="20" y="24" font-family="var(--mono)" font-size="12" fill="var(--text3)">STEP 1 · THE CROSSING</text>
+
+          <!-- eyes -->
+          <circle cx="70" cy="120" r="26" class="box-gray"/>
+          <text x="70" y="164" text-anchor="middle" font-family="var(--font)" font-size="12.5" fill="var(--text2)">left eye</text>
+          <circle cx="70" cy="230" r="26" class="box-gray"/>
+          <text x="70" y="274" text-anchor="middle" font-family="var(--font)" font-size="12.5" fill="var(--text2)">right eye</text>
+
+          <!-- chiasm -->
+          <circle cx="250" cy="175" r="34" class="box-blue"/>
+          <text x="250" y="180" text-anchor="middle" font-family="var(--font)" font-size="12.5" font-weight="600" fill="var(--text)">chiasm</text>
+
+          <!-- crossing nasal fibers (red = compressed) -->
+          <path d="M96 120 L224 190" class="flow-red"/>
+          <path d="M96 230 L224 160" class="flow-red"/>
+          <!-- uncrossed temporal fibers -->
+          <path d="M96 108 C 160 96, 200 120, 220 150" class="flow-blue"/>
+          <path d="M96 242 C 160 254, 200 230, 220 200" class="flow-blue"/>
+
+          <path d="M284 175 L360 175" class="flow-blue" marker-end="url(#oc-a)"/>
+          <defs><marker id="oc-a" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--blue)"/></marker></defs>
+          <text x="368" y="172" font-family="var(--font)" font-size="12.5" fill="var(--text2)">to occipital</text>
+          <text x="368" y="188" font-family="var(--font)" font-size="12.5" fill="var(--text2)">cortex</text>
+
+          <!-- pituitary mass pushing up -->
+          <path d="M250 250 L250 216" class="flow-red" marker-end="url(#oc-r)"/>
+          <defs><marker id="oc-r" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--red)"/></marker></defs>
+          <ellipse cx="250" cy="278" rx="58" ry="28" class="box-red"/>
+          <text x="250" y="274" text-anchor="middle" font-family="var(--font)" font-size="12.5" font-weight="600" fill="var(--red)">sellar mass</text>
+          <text x="250" y="291" text-anchor="middle" font-family="var(--font)" font-size="11.5" fill="var(--text2)">expands upward</text>
+
+          <text x="20" y="322" font-family="var(--font)" font-size="12.5" fill="var(--red)">solid red = crossing nasal-retinal fibers, compressed first</text>
+          <text x="20" y="340" font-family="var(--font)" font-size="12.5" fill="var(--blue)">solid blue = uncrossed temporal fibers, spared</text>
+
+          <!-- visual fields -->
+          <text x="440" y="240" text-anchor="middle" font-family="var(--mono)" font-size="12" fill="var(--text3)">STEP 2 · THE FIELD</text>
+          <circle cx="400" cy="286" r="34" fill="var(--bg3)" stroke="var(--border2)" stroke-width="1.4"/>
+          <path d="M400 252 A 34 34 0 0 0 400 320 Z" fill="var(--red-t)"/>
+          <line x1="400" y1="252" x2="400" y2="320" stroke="var(--border2)" stroke-width="1"/>
+          <text x="400" y="336" text-anchor="middle" font-family="var(--font)" font-size="11.5" fill="var(--text2)">left field</text>
+          <circle cx="490" cy="286" r="34" fill="var(--bg3)" stroke="var(--border2)" stroke-width="1.4"/>
+          <path d="M490 252 A 34 34 0 0 1 490 320 Z" fill="var(--red-t)"/>
+          <line x1="490" y1="252" x2="490" y2="320" stroke="var(--border2)" stroke-width="1"/>
+          <text x="490" y="336" text-anchor="middle" font-family="var(--font)" font-size="11.5" fill="var(--text2)">right field</text>
+          <text x="445" y="266" text-anchor="middle" font-family="var(--font)" font-size="11" fill="var(--red)">shaded = lost</text>
+        </svg>
+        <p class="figcaption">Original diagram. The chain to be able to say out loud: <strong>temporal field → nasal retina → crossing fibers → sit in the middle of the chiasm →
+          a mass pushing up from the sella hits the middle first → both temporal fields go.</strong> "Bitemporal" describes the <em>field</em> that is lost, not the retina.</p>
+      </div>
+
+      <div class="note note-amber">
+        <span class="note-kind">Distinguish from</span>
+        <p>A defect in <strong>one</strong> eye is a lesion of that optic nerve, in front of the chiasm.
+          A <strong>homonymous</strong> defect — the same side of the field lost in both eyes — is a lesion behind the chiasm, in the tract or radiation.
+          Only a lesion <em>at</em> the chiasm produces the bitemporal pattern.</p>
+      </div>
+
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="PIT-001" data-quiz-toolbar="false"></div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="hypopituitarism" data-toc="Hypopituitarism" data-phase="Recognize">
+      <h2>Hypopituitarism and the order hormones are lost</h2>
+
+      <p class="prose">Hypopituitarism is loss of anterior pituitary output, from any cause. Two points carry most of the exam
+        weight: <strong>GH is deficient in most patients with hypopituitarism</strong>, and acquired
+        hypopituitarism tends to follow a <strong>sequential order</strong> of loss.</p>
+
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 560 260" role="img" aria-labelledby="hp-t hp-d">
+          <title id="hp-t">The usual sequence of anterior pituitary hormone loss</title>
+          <desc id="hp-d">Acquired hypopituitarism typically loses growth hormone first, then LH and FSH, then TSH, and ACTH last. Because growth hormone goes first, its loss foreshadows the deficits that follow. ACTH deficiency is flagged as the potentially urgent one, because loss of cortisol can be life-threatening under physiological stress.</desc>
+
+          <rect x="10" y="40" width="118" height="70" rx="10" class="box-blue"/>
+          <text x="69" y="70" text-anchor="middle" font-family="var(--font)" font-size="17" font-weight="600" fill="var(--blue)">GH</text>
+          <text x="69" y="90" text-anchor="middle" font-family="var(--font)" font-size="11.5" fill="var(--text2)">lost first</text>
+
+          <rect x="148" y="40" width="118" height="70" rx="10" class="box-blue"/>
+          <text x="207" y="70" text-anchor="middle" font-family="var(--font)" font-size="17" font-weight="600" fill="var(--blue)">LH / FSH</text>
+          <text x="207" y="90" text-anchor="middle" font-family="var(--font)" font-size="11.5" fill="var(--text2)">gonadotropins</text>
+
+          <rect x="286" y="40" width="118" height="70" rx="10" class="box-blue"/>
+          <text x="345" y="70" text-anchor="middle" font-family="var(--font)" font-size="17" font-weight="600" fill="var(--blue)">TSH</text>
+          <text x="345" y="90" text-anchor="middle" font-family="var(--font)" font-size="11.5" fill="var(--text2)">thyrotropin</text>
+
+          <rect x="424" y="40" width="126" height="70" rx="10" class="box-red"/>
+          <text x="487" y="70" text-anchor="middle" font-family="var(--font)" font-size="17" font-weight="600" fill="var(--red)">ACTH</text>
+          <text x="487" y="90" text-anchor="middle" font-family="var(--font)" font-size="11.5" fill="var(--text2)">lost last · urgent</text>
+
+          <path d="M128 75 L142 75" class="flow" marker-end="url(#hp-a)"/>
+          <path d="M266 75 L280 75" class="flow" marker-end="url(#hp-a)"/>
+          <path d="M404 75 L418 75" class="flow" marker-end="url(#hp-a)"/>
+          <defs><marker id="hp-a" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--accent)"/></marker></defs>
+
+          <text x="10" y="26" font-family="var(--mono)" font-size="12" fill="var(--text3)">GH → LH/FSH → TSH → ACTH</text>
+
+          <rect x="10" y="130" width="264" height="118" rx="10" class="box-blue"/>
+          <text x="24" y="152" font-family="var(--mono)" font-size="11.5" fill="var(--blue)">WHY GH FIRST MATTERS</text>
+          <text x="24" y="176" font-family="var(--font)" font-size="13" fill="var(--text)">GH loss foreshadows the deficits</text>
+          <text x="24" y="194" font-family="var(--font)" font-size="13" fill="var(--text)">still to come. Short stature in a</text>
+          <text x="24" y="212" font-family="var(--font)" font-size="13" fill="var(--text)">child, or an isolated GH deficiency,</text>
+          <text x="24" y="230" font-family="var(--font)" font-size="13" fill="var(--text)">warrants watching the other axes.</text>
+
+          <rect x="286" y="130" width="264" height="118" rx="10" class="box-red"/>
+          <text x="300" y="152" font-family="var(--mono)" font-size="11.5" fill="var(--red)">WHY ACTH LAST IS DANGEROUS</text>
+          <text x="300" y="176" font-family="var(--font)" font-size="13" fill="var(--text)">It arrives late, so it is easy to miss —</text>
+          <text x="300" y="194" font-family="var(--font)" font-size="13" fill="var(--text)">and cortisol deficiency is the one that</text>
+          <text x="300" y="212" font-family="var(--font)" font-size="13" fill="var(--text)">kills under stress, surgery, or illness.</text>
+          <text x="300" y="230" font-family="var(--font)" font-size="13" fill="var(--text)">Treat this axis before thyroid hormone.</text>
+        </svg>
+        <p class="figcaption">Original diagram of the classically taught sequence. The ordering is a <em>tendency</em>, not a law — any individual can lose axes out of order,
+          particularly after surgery, radiation, or apoplexy.</p>
+      </div>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Anterior pituitary deficiencies and their consequences">
+        <table>
+          <caption>What each anterior deficiency looks like. Note that the pituitary hormone and the end-organ hormone are both <em>low</em> — that is the signature of central disease.</caption>
+          <thead>
+            <tr><th scope="col">Axis lost</th><th scope="col">Lab pattern</th><th scope="col">Clinical picture</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">GH</th><td>↓ GH, ↓ IGF-1</td><td>Children: short stature. Adults: a diffuse picture — visceral adiposity, low bone mass, increased cardiovascular disease, fatigue, anxiety, depression, reduced quality of life, and possibly premature death.</td></tr>
+            <tr><th scope="row">LH / FSH</th><td>↓ LH and FSH, ↓ estrogen or testosterone</td><td>Women: amenorrhea, infertility. Men: decreased libido, impotence, loss of pubic and axillary hair. In children: delayed puberty.</td></tr>
+            <tr><th scope="row">TSH</th><td>↓ TSH, ↓ T4 and T3</td><td>Central hypothyroidism. The TSH is low or inappropriately normal — this is why TSH alone is an unreliable screen when you suspect pituitary disease.</td></tr>
+            <tr><th scope="row">ACTH</th><td>↓ ACTH, ↓ cortisol</td><td>Hypocortisolism. Note that mineralocorticoid output is largely preserved in central disease, unlike primary adrenal failure.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Causes, grouped by mechanism</h3>
+      <div class="grid">
+        <div class="block">
+          <div class="block-label purple">Destruction</div>
+          <div class="block-text">Tumors and other mass lesions · trauma and subarachnoid hemorrhage · pituitary surgery or radiation ·
+            ischemia · pituitary apoplexy. Gliomas and craniopharyngiomas are named as the most common tumors to cause hypopituitarism.</div>
+        </div>
+        <div class="block">
+          <div class="block-label blue">Congenital</div>
+          <div class="block-text">Empty sella syndrome · Rathke cleft cysts · genetic defects including <strong>PIT-1</strong> and <strong>HESX1</strong> mutations.</div>
+        </div>
+        <div class="block">
+          <div class="block-label amber">Inflammation</div>
+          <div class="block-text">Autoimmune hypophysitis.</div>
+        </div>
+        <div class="block">
+          <div class="block-label red">Clinical definition</div>
+          <div class="block-text">Isolated GH deficiency is a defined group of conditions involving absent GH action and severe short stature.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="structural-causes" data-toc="Structural and vascular causes" data-phase="Recognize">
+      <h2>The named structural and vascular lesions</h2>
+      <p class="section-note">Six entities the objectives name individually. Each card opens; each one ends with a distinguishing feature worth having ready.</p>
+
+      <div class="card" data-disclosure data-open>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Craniopharyngioma</span>
+          <span class="card-aka">from Rathke pouch remnants</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-purple">Structural lesion</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <p class="prose"><strong>Rathke pouch remnant</strong>, classically in a child with <strong>growth failure, hypopituitarism, headache, and visual-field loss</strong> from a suprasellar mass.</p>
+        </div>
+      </div>
+
+      <div class="card" data-disclosure>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Sheehan syndrome</span>
+          <span class="card-aka">postpartum pituitary infarction</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-red">Ischemic</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <p class="prose"><strong>Anterior pituitary infarction after severe postpartum hemorrhage</strong> → failure to lactate, amenorrhea, fatigue, and other anterior hormone deficiencies.</p>
+          <div class="quiz quiz-inline" data-quiz data-quiz-ids="PIT-002" data-quiz-toolbar="false"></div>
+        </div>
+      </div>
+
+      <div class="card" data-disclosure>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Pituitary apoplexy</span>
+          <span class="card-aka">hemorrhage into an adenoma</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-red">Neurosurgical emergency</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <div class="note note-red">
+            <span class="note-kind">The time-sensitive one on this page</span>
+            <p>Acute hemorrhage into a pituitary adenoma with rapid enlargement. It causes an <strong>excruciating headache</strong>,
+              <strong>vision changes</strong>, and <strong>hypopituitarism</strong> — and it can cause <strong>cardiovascular collapse and sudden death</strong>.
+              It is a <strong>true neurosurgical emergency</strong>. The circulatory collapse is the acute loss of ACTH and therefore cortisol.</p>
+          </div>
+          <div class="quiz quiz-inline" data-quiz data-quiz-ids="PIT-003" data-quiz-toolbar="false"></div>
+        </div>
+      </div>
+
+      <div class="card" data-disclosure>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Empty sella syndrome</span>
+          <span class="card-aka">sella filled with CSF</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-purple">Structural</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <p class="prose">The pituitary is <strong>shrunken or flattened</strong> and the sella then fills with cerebrospinal fluid, so on imaging
+            the sella looks empty. The clinically important part: with a <strong>partial</strong> empty sella, <strong>pituitary function is often normal</strong>.
+            An "empty sella" on a scan is therefore not automatically a diagnosis of hypopituitarism — it is a reason to test the axes, not to assume them.</p>
+        </div>
+      </div>
+
+      <div class="card" data-disclosure>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Septo-optic dysplasia and congenital hypopituitarism</span>
+          <span class="card-aka">midline malformation</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-blue">Congenital</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <p class="prose"><strong>Optic nerve hypoplasia + absent septum pellucidum + pituitary hormone deficiency.</strong> Midline defects or neonatal hypoglycemia should prompt evaluation for congenital hypopituitarism.</p>
+        </div>
+      </div>
+
+      <div class="card" data-disclosure>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Rathke cleft cyst</span>
+          <span class="card-aka">benign remnant cyst</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-purple">Structural</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <p class="prose"><strong>Benign Rathke pouch remnant cyst</strong>, often incidental but capable of causing anterior pituitary deficiency by local compression.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="gh-deficiency" data-toc="Growth hormone deficiency" data-phase="Recognize">
+      <h2>Growth hormone deficiency</h2>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label blue">The axis</div>
+          <div class="block-text">GH acts largely through <strong>IGF-1</strong>, generated principally in the liver. That is why the workup measures
+            both: GH is pulsatile and a single random level is close to uninterpretable, whereas IGF-1 integrates GH exposure over time.</div>
+        </div>
+        <div class="block">
+          <div class="block-label red">What suppresses GH secretion</div>
+          <div class="block-text">Malnutrition · illness · <strong>hyperglycemia</strong>. The last one is the mechanistic basis of the diagnostic test for GH <em>excess</em>.</div>
+        </div>
+        <div class="block">
+          <div class="block-label teal">What stimulates GH secretion</div>
+          <div class="block-text">Deep sleep · stress · exercise · <strong>hypoglycemia</strong> · sex steroids. Again, the last one is the basis of a diagnostic test — this time for GH <em>deficiency</em>.</div>
+        </div>
+        <div class="block">
+          <div class="block-label amber">Testing</div>
+          <div class="block-text">GH <strong>stimulation tests</strong> are used, because a low random GH proves nothing. In the <strong>insulin tolerance test</strong>,
+            insulin is given to induce hypoglycemia; someone with adequate GH reserve <strong>raises their GH in response</strong>. Failure to rise is the abnormal result.</div>
+        </div>
+      </div>
+
+      <div class="note note-blue">
+        <span class="note-kind">Adult GH deficiency is not just a height problem</span>
+        <p>Adults have a genuinely diverse clinical picture: <strong>visceral adiposity, low bone mass, increased cardiovascular
+          disease, excessive tiredness, anxiety, depression, reduced quality of life</strong>, and possibly premature death. In children the presentation
+          is dominated by <strong>short stature</strong>.</p>
+      </div>
+
+      <div class="recall" data-disclosure>
+        <button class="recall-toggle" type="button" data-disclosure-toggle>
+          <span><span class="recall-kind">Retrieve</span><span class="recall-q">An insulin tolerance test is performed on someone with intact GH reserve. What happens to serum GH, and why is that the logic of the test?</span></span>
+          <span class="card-spacer"></span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="recall-body" data-disclosure-body>
+          <p>Serum GH <strong>rises</strong>. Insulin drives the glucose down; <strong>hypoglycemia is a physiological stimulus to GH secretion</strong>,
+            so a healthy somatotroph population responds. The test works by provoking the axis rather than sampling it — which is necessary because GH
+            is secreted in pulses and a low random value is uninformative. A <strong>failure to rise</strong> is what defines the deficiency.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="adenomas" data-toc="Adenomas: functional or not" data-phase="Recognize">
+      <h2>Pituitary adenomas — functional versus non-functional</h2>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Functional versus non-functional adenomas">
+        <table>
+          <caption>The single most useful split in this topic. Note that they are not opposites clinically — a functional adenoma can also be large enough to do everything a non-functional one does.</caption>
+          <thead><tr><th scope="col"></th><th scope="col">Functional (hormone-secreting)</th><th scope="col">Non-functional</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Frequency</th><td>Prolactin and GH are the most common functioning types; prolactinoma is the most common functional adenoma</td><td>A common pituitary-tumor category</td></tr>
+            <tr><th scope="row">How it declares itself</th><td>Symptoms of the hormone it makes, so it can be caught while small</td><td><strong>Mass effect</strong> — which means it is usually large by the time it is found</td></tr>
+            <tr><th scope="row">Typical size at diagnosis</th><td>Often a microadenoma (&lt;1 cm), especially prolactinoma in women</td><td>Usually a macroadenoma (&gt;1 cm)</td></tr>
+            <tr><th scope="row">Effect on the rest of the gland</th><td>Can also compress and destroy neighboring parenchyma if large</td><td>Destroys surrounding tissue → <strong>hypopituitarism</strong></td></tr>
+            <tr><th scope="row">Pathology term</th><td>Named for the hormone: lactotroph, somatotroph, corticotroph, thyrotroph, gonadotroph</td><td>"<strong>Null cell</strong>" adenoma — no demonstrable markers of differentiation</td></tr>
+            <tr><th scope="row">Apoplexy risk</th><td>Present, and rises with size</td><td>A recognized cause of pituitary apoplexy</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label amber">Size vocabulary</div>
+          <div class="block-text"><strong>Microadenoma &lt; 1 cm · macroadenoma &gt; 1 cm.</strong> Larger lesions can erode the sella, compress the chiasm, and cause hypopituitarism.</div>
+        </div>
+        <div class="block">
+          <div class="block-label purple">Pathology — the two headline findings</div>
+          <div class="block-text"><strong>Cellular monomorphism</strong>: a pure population of acidophils, basophils, or chromophobes, rather than the
+            mixed population of the normal gland. <strong>Loss of the reticulin network</strong> on a reticulin (silver) stain — the normal acinar
+            architecture breaks down. Those two together are how an adenoma is distinguished from hyperplasia.</div>
+        </div>
+      </div>
+
+      <div class="note note-purple">
+        <span class="note-kind">Pituitary carcinoma</span>
+        <p><strong>Extremely rare.</strong> It is distinguished from an adenoma by <strong>craniospinal or systemic metastasis</strong>, not by local invasion or microscopic appearance alone.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="prolactin" data-toc="Prolactin and prolactinoma" data-phase="Recognize">
+      <h2>Prolactin regulation and prolactinoma</h2>
+      <p class="section-note">Prolactin is the odd one out: it is the only anterior pituitary hormone under <em>tonic inhibition</em>. Understand that one fact and four different diseases fall out of it.</p>
+
+      <div class="figure">
+        <svg class="svg-diagram" viewBox="0 0 420 320" role="img" aria-labelledby="pr-t pr-d">
+          <title id="pr-t">Tonic dopamine inhibition of prolactin</title>
+          <desc id="pr-d">The hypothalamus continuously sends dopamine down the stalk to the lactotroph, which suppresses prolactin release. This is inhibition rather than stimulation, shown as a gray dashed line ending in a bar. Anything that interrupts the dopamine signal — a stalk lesion, a dopamine receptor blocker, or a lactotroph that has escaped control — raises prolactin. A dopamine agonist restores the inhibition.</desc>
+
+          <rect x="110" y="10" width="200" height="42" rx="10" class="box-blue"/>
+          <text x="210" y="30" text-anchor="middle" font-family="var(--font)" font-size="14" font-weight="600" fill="var(--text)">Hypothalamus</text>
+          <text x="210" y="45" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--blue)">releases dopamine, continuously</text>
+
+          <!-- inhibition line: gray dashed with a bar terminal -->
+          <line x1="210" y1="52" x2="210" y2="112" class="inhibit"/>
+          <line x1="188" y1="112" x2="232" y2="112" stroke="var(--gray)" stroke-width="3"/>
+          <text x="240" y="86" font-family="var(--font)" font-size="12.5" fill="var(--gray)">inhibition</text>
+          <text x="240" y="102" font-family="var(--font)" font-size="11.5" fill="var(--text3)">(dashed = a brake)</text>
+
+          <rect x="110" y="120" width="200" height="46" rx="10" class="box-teal"/>
+          <text x="210" y="140" text-anchor="middle" font-family="var(--font)" font-size="14" font-weight="600" fill="var(--text)">Lactotroph</text>
+          <text x="210" y="156" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">anterior pituitary</text>
+
+          <path d="M210 166 L210 208" class="flow" marker-end="url(#pr-a)"/>
+          <defs><marker id="pr-a" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--accent)"/></marker></defs>
+
+          <rect x="110" y="212" width="200" height="42" rx="10" class="box-red"/>
+          <text x="210" y="232" text-anchor="middle" font-family="var(--font)" font-size="14" font-weight="600" fill="var(--text)">Prolactin</text>
+          <text x="210" y="247" text-anchor="middle" font-family="var(--font)" font-size="12" fill="var(--text2)">→ breast, and suppression of GnRH</text>
+
+          <rect x="10" y="268" width="400" height="46" rx="9" fill="var(--amber-t)" stroke="var(--amber)" stroke-width="1.4"/>
+          <text x="24" y="288" font-family="var(--font)" font-size="13" fill="var(--text)">Cut the brake and prolactin rises. That single idea</text>
+          <text x="24" y="306" font-family="var(--font)" font-size="13" fill="var(--text)">explains every cause in the table below.</text>
+        </svg>
+        <p class="figcaption">Original diagram. The gray dashed line ending in a bar is this site's convention for <strong>inhibition or a lost signal</strong> —
+          it is used the same way on every page.</p>
+      </div>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Causes of hyperprolactinemia and what each does to the dopamine brake">
+        <table>
+          <caption>Four routes to a high prolactin, and one route back down. Reading the middle column is usually enough to answer the question.</caption>
+          <thead><tr><th scope="col">Situation</th><th scope="col">What happens to the dopamine brake</th><th scope="col">Clinical fingerprint</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Physiologic</th><td>Normal regulation, appropriately overridden</td><td>Pregnancy, suckling or nipple stimulation, stress. Not a disease.</td></tr>
+            <tr><th scope="row">Stalk effect</th><td>Brake line <strong>cut</strong> — any suprasellar mass disturbs the hypothalamic inhibitory influence reaching the lactotroph</td><td>A <strong>moderate</strong> prolactin rise from a mass that does not itself secrete prolactin. The classic trap: a non-prolactin-secreting tumor with a raised prolactin.</td></tr>
+            <tr><th scope="row">D2-receptor antagonist drugs</th><td>Brake <strong>signal blocked at the receptor</strong></td><td>Antipsychotics — phenothiazines and haloperidol among them. Galactorrhea and menstrual irregularity appearing after a new medication.</td></tr>
+            <tr><th scope="row">Prolactinoma</th><td>Lactotrophs <strong>escape</strong> control and secrete autonomously; hyperplasia also interferes with normal dopamine inhibition</td><td>Prolactin concentration <strong>correlates positively with adenoma size</strong> — so a <em>very</em> high prolactin points here rather than to stalk effect.</td></tr>
+            <tr><th scope="row">Dopamine agonist treatment</th><td>Brake <strong>restored</strong> pharmacologically</td><td><strong>Bromocriptine</strong> or <strong>cabergoline</strong> — first-line, ahead of surgery. They restore the inhibition of prolactin release.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card" data-disclosure data-open>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Prolactinoma</span>
+          <span class="card-aka">lactotroph adenoma</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-red">Most common functional adenoma</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <div class="grid">
+            <div class="block"><div class="block-label blue">Mechanism</div><div class="block-text">Autonomous prolactin secretion from a lactotroph adenoma. Serum prolactin <strong>correlates positively with the size of the adenoma</strong>.</div></div>
+            <div class="block"><div class="block-label red">Presentation</div><div class="block-text"><strong>Amenorrhea, galactorrhea, loss of libido, infertility, delayed puberty.</strong> Typically ages 20–40. The diagnosis is <strong>made more readily in females</strong>, because menstrual disturbance and galactorrhea declare themselves earlier than a slowly falling libido — so men more often present late, with mass effect.</div></div>
+            <div class="block"><div class="block-label purple">Pathology</div><div class="block-text">Dystrophic calcification, which when extensive is called a <strong>"pituitary stone."</strong> Prolactin immunohistochemistry confirms the lineage; reticulin stain shows the loss of acinar architecture common to all adenomas.</div></div>
+            <div class="block"><div class="block-label teal">Management</div><div class="block-text"><strong>Medication first</strong> — bromocriptine or cabergoline, dopamine receptor agonists that restore inhibition of prolactin release. Surgery is second-line. This is unusual among pituitary tumors, where surgery is more often the primary answer.</div></div>
+          </div>
+          <div class="note note-amber">
+            <span class="note-kind">Course emphasis</span>
+            <p>Two things carry most of the exam weight: prolactinoma is the <strong>most common functional adenoma</strong>, and it is the one where
+              <strong>drugs beat surgery</strong>. Add the size–prolactin correlation and you can separate a true prolactinoma from stalk effect.</p>
+          </div>
+          <div class="quiz quiz-inline" data-quiz data-quiz-ids="PIT-007,PIT-004,PIT-008" data-quiz-toolbar="false"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="gh-excess" data-toc="Acromegaly and gigantism" data-phase="Recognize">
+      <h2>Growth hormone excess — acromegaly and gigantism</h2>
+      <p class="section-note">Same hormone, same tumor, two entirely different bodies. The only variable that matters is whether the growth plates are still open.</p>
+
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 560 320" role="img" aria-labelledby="gh-t gh-d">
+          <title id="gh-t">Growth hormone excess before and after epiphyseal closure</title>
+          <desc id="gh-d">A somatotroph adenoma secretes growth hormone, which stimulates IGF-1. If this happens before the epiphyseal plates close, in childhood, the result is gigantism — a generalized increase in body size with disproportionately long arms and legs. If it happens after closure, in adulthood, long bones can no longer lengthen, so the result is acromegaly — continued growth of bone and cartilage producing enlargement of the hands, feet, and face, and of organs including the heart, liver, and adrenals.</desc>
+
+          <rect x="180" y="8" width="200" height="42" rx="10" class="box-red"/>
+          <text x="280" y="28" text-anchor="middle" font-family="var(--font)" font-size="14" font-weight="600" fill="var(--text)">Somatotroph adenoma</text>
+          <text x="280" y="43" text-anchor="middle" font-family="var(--font)" font-size="11.5" fill="var(--text2)">2nd most common functioning type</text>
+
+          <path d="M280 50 L280 74" class="flow" marker-end="url(#gh-a)"/>
+          <defs><marker id="gh-a" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--accent)"/></marker></defs>
+          <rect x="200" y="76" width="160" height="34" rx="8" class="box-blue"/>
+          <text x="280" y="98" text-anchor="middle" font-family="var(--font)" font-size="13.5" fill="var(--text)">↑ GH → ↑ IGF-1</text>
+
+          <path d="M235 110 L140 142" class="flow" marker-end="url(#gh-a)"/>
+          <path d="M325 110 L420 142" class="flow" marker-end="url(#gh-a)"/>
+
+          <rect x="10" y="146" width="256" height="164" rx="10" class="box-teal"/>
+          <text x="24" y="168" font-family="var(--mono)" font-size="11.5" fill="var(--teal)">EPIPHYSEAL PLATES STILL OPEN</text>
+          <text x="24" y="192" font-family="var(--font)" font-size="16" font-weight="600" fill="var(--text)">Gigantism</text>
+          <text x="24" y="214" font-family="var(--font)" font-size="13" fill="var(--text2)">Childhood onset. Long bones can still</text>
+          <text x="24" y="232" font-family="var(--font)" font-size="13" fill="var(--text2)">lengthen, so height increases.</text>
+          <text x="24" y="256" font-family="var(--font)" font-size="13" fill="var(--text)">· Generalized increase in body size</text>
+          <text x="24" y="274" font-family="var(--font)" font-size="13" fill="var(--text)">· Disproportionately long arms and legs</text>
+          <text x="24" y="296" font-family="var(--font)" font-size="12" fill="var(--text3)">Same hormone, growing skeleton</text>
+
+          <rect x="294" y="146" width="256" height="164" rx="10" class="box-purple"/>
+          <text x="308" y="168" font-family="var(--mono)" font-size="11.5" fill="var(--purple)">EPIPHYSEAL PLATES CLOSED</text>
+          <text x="308" y="192" font-family="var(--font)" font-size="16" font-weight="600" fill="var(--text)">Acromegaly</text>
+          <text x="308" y="214" font-family="var(--font)" font-size="13" fill="var(--text2)">Adult onset. Bone can no longer</text>
+          <text x="308" y="232" font-family="var(--font)" font-size="13" fill="var(--text2)">lengthen, so it thickens instead.</text>
+          <text x="308" y="256" font-family="var(--font)" font-size="13" fill="var(--text)">· Hands, feet, face enlarge</text>
+          <text x="308" y="274" font-family="var(--font)" font-size="13" fill="var(--text)">· Heart, liver, adrenals enlarge</text>
+          <text x="308" y="296" font-family="var(--font)" font-size="12" fill="var(--text3)">Same hormone, finished skeleton</text>
+        </svg>
+        <p class="figcaption">Original diagram. If a question gives you GH excess and asks which phenotype, the only thing you need from the stem is the <strong>age at onset</strong>.</p>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label red">Acromegaly — the face and hands</div>
+          <div class="block-text">Protrusion of the <strong>lower jaw (prognathism)</strong>, prominent <strong>supraorbital ridges</strong>,
+            <strong>broadening of the nose</strong>, <strong>thickening of the lips</strong>, and <strong>thickened fingers</strong>.
+            Old photographs are genuinely diagnostic, because the change is slow enough that nobody around the patient notices.</div>
+        </div>
+        <div class="block">
+          <div class="block-label red">Acromegaly — the systemic cost</div>
+          <div class="block-text">GH excess also causes <strong>gonadal dysfunction, diabetes mellitus, hypertension, arthritis, congestive heart failure</strong>,
+            and an <strong>increased risk of cancers</strong>. The cardiovascular and metabolic burden, not the appearance, is what shortens life.</div>
+        </div>
+        <div class="block">
+          <div class="block-label amber">Diagnosis</div>
+          <div class="block-text">Elevated serum <strong>GH and IGF-1</strong>. Then the confirmatory test: <strong>failure to suppress GH in response to an
+            oral glucose tolerance test</strong>, one of the most sensitive tests for the diagnosis. It works because
+            <strong>hyperglycemia normally suppresses GH</strong> — a tumor ignores that. Imaging with <strong>MRI</strong>, plus bone scan.</div>
+        </div>
+        <div class="block">
+          <div class="block-label teal">Treatment</div>
+          <div class="block-text"><strong>Surgery</strong>, then drug therapy: <strong>somatostatin analogs</strong> (somatostatin is GHIH, growth-hormone-inhibiting hormone)
+            or a <strong>GH receptor antagonist</strong>. Note the contrast with prolactinoma, where medication comes first.</div>
+        </div>
+      </div>
+
+      <div class="recall" data-disclosure>
+        <button class="recall-toggle" type="button" data-disclosure-toggle>
+          <span><span class="recall-kind">Retrieve</span><span class="recall-q">Why does giving oral glucose help diagnose acromegaly, and what result confirms it?</span></span>
+          <span class="card-spacer"></span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="recall-body" data-disclosure-body>
+          <p><strong>Hyperglycemia normally suppresses GH secretion.</strong> Load someone with glucose and a healthy somatotroph population
+            obediently shuts down. An autonomous somatotroph adenoma does not — so the confirmatory finding is <strong>failure of GH to suppress</strong>
+            after the oral glucose load. It is the mirror image of the insulin tolerance test used for GH deficiency, where you provoke with
+            <em>hypoglycemia</em> and look for a rise.</p>
+        </div>
+      </div>
+
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="PIT-009" data-quiz-toolbar="false"></div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="other-functional" data-toc="Corticotroph, thyrotroph, gonadotroph" data-phase="Recognize">
+      <h2>The remaining functional adenomas</h2>
+
+      <div class="card" data-disclosure>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Corticotroph adenoma — Cushing disease and Nelson syndrome</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-red">ACTH excess</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <p class="prose"><strong>Cushing disease</strong> — meaning specifically the pituitary cause of Cushing syndrome — is oversecretion of ACTH
+            from a corticotroph adenoma, stimulating the adrenals to overproduce cortisol. On histology, corticotroph tumors show
+            <strong>Crooke hyaline change</strong>.</p>
+          <div class="note note-purple">
+            <span class="note-kind">Nelson syndrome — follow the feedback</span>
+            <p>A <strong>large, destructive corticotroph adenoma appearing after bilateral adrenalectomy</strong> performed for Cushing disease.
+              Removing the adrenals removes the <strong>inhibitory effect of adrenal corticosteroids</strong> on the tumor, which is then free to grow.
+              The giveaway is the combination: <strong>hypercortisolism is absent</strong> — the adrenals are gone — yet the patient has
+              <strong>mass effect and hyperpigmentation</strong>, the latter driven by the very high ACTH.</p>
+          </div>
+          <div class="note note-amber">
+            <span class="note-kind">Scope</span>
+            <p>The adrenal side of Cushing syndrome, including the diagnostic workup separating pituitary from
+              adrenal from ectopic sources, belongs to a different session. This page stays at the depth this topic needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-disclosure>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Gonadotroph adenoma</span>
+          <span class="card-aka">LH and FSH producing</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-amber">Often functionally silent</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <p class="prose">Usually found in <strong>middle-aged men and women presenting with neurologic symptoms</strong> once the adenoma is large enough —
+            which is the paradox of this tumor: it secretes hormone, but the hormone it secretes does not produce a florid syndrome, so it behaves
+            clinically much like a non-functioning tumor. It causes <strong>decreased libido and amenorrhea in premenopausal women</strong>,
+            and <strong>secondary gonadal hypofunction</strong>, usually through <strong>impaired LH</strong> even though <strong>FSH is the predominant
+            secreted hormone</strong>. Histology shows <strong>pseudorosettes</strong> around vascular channels and oncocytic change.</p>
+        </div>
+      </div>
+
+      <div class="card" data-disclosure>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">Thyrotroph adenoma</span>
+          <span class="card-aka">TSH producing</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-amber">Rare — but a diagnostic trap</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <p class="prose">An <strong>extremely rare cause of hyperthyroidism</strong>.
+            It earns its place here entirely because of its lab pattern: <strong>elevated TSH <em>and</em> elevated T4 and T3</strong>.</p>
+          <div class="note note-amber">
+            <span class="note-kind">Why that pattern is the whole point</span>
+            <p>Every other hyperthyroid state has a <strong>suppressed</strong> TSH, because excess thyroid hormone feeds back and shuts the pituitary down.
+              A TSH that is high while the thyroid hormones are also high means the pituitary is <em>driving</em> the process rather than responding to it.
+              When you see both elevated, the lesion is upstream. Cross-reference the <a href="thyroid.html#localize">thyroid localizer</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="posterior" data-toc="Posterior pituitary: water" data-phase="Recognize">
+      <h2>Posterior pituitary — the three water disorders</h2>
+      <p class="section-note">One hormone, and the three ways it goes wrong: too much, not enough, or present but ignored.</p>
+
+      <div class="card" data-disclosure data-open>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">SIADH</span>
+          <span class="card-aka">syndrome of inappropriate antidiuretic hormone</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-red">Too much AVP</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <div class="grid">
+            <div class="block"><div class="block-label blue">Mechanism</div><div class="block-text">AVP excess causes <strong>reabsorption of excessive free water</strong>. Retaining water without retaining solute dilutes the serum — hence <strong>hyponatremia</strong>.</div></div>
+            <div class="block"><div class="block-label red">Presentation</div><div class="block-text">Neurologic, and driven by the rate of the sodium fall: confusion, <strong>cerebral edema</strong>, and neurologic dysfunction <strong>including seizures</strong>.</div></div>
+            <div class="block"><div class="block-label amber">Diagnostic pattern</div><div class="block-text"><strong>↓ serum osmolality and ↓ sodium</strong>, with <strong>↑ urine osmolality and ↑ specific gravity</strong>. Urine output is <strong>low despite appropriate or increased hydration</strong> — the kidney is concentrating when it should be dumping water.</div></div>
+            <div class="block"><div class="block-label teal">Management</div><div class="block-text"><strong>Water restriction.</strong></div></div>
+          </div>
+          <div class="note note-amber">
+            <span class="note-kind">The finding that surprises people</span>
+            <p>Total body water is increased, <strong>yet peripheral edema does not develop</strong>, because blood volume stays normal —
+              the retained water distributes across all compartments rather than pooling in the interstitium. A hyponatremic patient
+              <em>with</em> pitting edema is telling you about heart, liver, or kidney failure instead.</p>
+          </div>
+          <div class="quiz quiz-inline" data-quiz data-quiz-ids="PIT-006" data-quiz-toolbar="false"></div>
+        </div>
+      </div>
+
+      <div class="card" data-disclosure>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">AVP deficiency (AVP-D)</span>
+          <span class="card-aka">formerly central diabetes insipidus</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-blue">Not enough AVP</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <div class="grid">
+            <div class="block"><div class="block-label blue">Mechanism</div><div class="block-text">Deficient AVP secretion. Because AVP is <em>made</em> in the hypothalamus, the lesion can sit anywhere along the hypothalamus–stalk–posterior lobe path.</div></div>
+            <div class="block"><div class="block-label purple">Causes</div><div class="block-text"><strong>Head trauma, tumors, surgery, and inflammation</strong> of the hypothalamus and pituitary gland.</div></div>
+            <div class="block"><div class="block-label red">Presentation</div><div class="block-text"><strong>Polyuria and polydipsia</strong>. Large volumes of dilute urine with low specific gravity and low urine osmolality, and a concentrated serum with a <strong>raised sodium and osmolality</strong>.</div></div>
+            <div class="block"><div class="block-label teal">Treatment</div><div class="block-text">Replace the missing hormone — <strong>desmopressin (DDAVP)</strong>.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-disclosure>
+        <button class="card-toggle" type="button" data-disclosure-toggle>
+          <span class="card-name">AVP resistance (AVP-R)</span>
+          <span class="card-aka">formerly nephrogenic diabetes insipidus</span>
+          <span class="card-spacer"></span>
+          <span class="tag tag-purple">AVP present but ignored</span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="card-body" data-disclosure-body>
+          <div class="grid">
+            <div class="block"><div class="block-label blue">Mechanism</div><div class="block-text"><strong>Renal tubular unresponsiveness</strong> to circulating AVP. The hormone is there; the collecting duct will not listen.</div></div>
+            <div class="block"><div class="block-label purple">Causes</div><div class="block-text"><strong>Medications — lithium</strong> is the most commonly cited cause. Congenital disease from an <strong>X-linked mutation of the <em>AVPR2</em> gene</strong>, which encodes the receptor.</div></div>
+            <div class="block"><div class="block-label red">Presentation</div><div class="block-text"><strong>Clinically almost identical to AVP-D.</strong> Polyuria, polydipsia, dilute urine, concentrated serum. You cannot tell them apart at the bedside.</div></div>
+            <div class="block"><div class="block-label amber">So how do you separate them?</div><div class="block-text">By <strong>responsiveness to administered AVP</strong> and by <strong>measurement of serum AVP</strong>. That is the entire content of the next section.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="note note-red">
+        <span class="note-kind">The danger in both AVP disorders</span>
+        <p>Patients with an <strong>intact thirst mechanism and free access to water can generally compensate</strong> for the urinary losses,
+          and look deceptively well. Remove either of those — an infant, someone with altered consciousness, a patient
+          made nil by mouth for surgery, anyone with hypothalamic damage that also took out thirst — and they develop
+          <strong>life-threatening dehydration</strong>. The polyuria is not the emergency; the inability to keep up with it is.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Localize</span><span class="phase-what">Using the lab pattern and the response to treatment to place the defect</span></div>
+
+    <section class="section" id="localize" data-toc="Separating the water disorders" data-phase="Localize">
+      <h2>Water-deprivation and desmopressin interpretation</h2>
+      <p class="section-note">Three disorders, five numbers, one maneuver that separates the two that look alike.</p>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Comparison of SIADH, AVP deficiency, and AVP resistance">
+        <table>
+          <caption>The comparison to have automatic. Read down the "urine" rows first: SIADH is the one where the urine is inappropriately <em>concentrated</em>, and the two AVP disorders are the ones where it is inappropriately <em>dilute</em>.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Finding</th>
+              <th scope="col">SIADH</th>
+              <th scope="col">AVP deficiency (central)</th>
+              <th scope="col">AVP resistance (renal)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Serum sodium</th><td>Low (hyponatremia)</td><td>High</td><td>High</td></tr>
+            <tr><th scope="row">Serum osmolality</th><td>Low — dilute serum</td><td>High — concentrated serum</td><td>High — concentrated serum</td></tr>
+            <tr><th scope="row">Urine osmolality</th><td>High</td><td>Low</td><td>Low</td></tr>
+            <tr><th scope="row">Urine specific gravity</th><td>High</td><td>Low</td><td>Low</td></tr>
+            <tr><th scope="row">Urine volume</th><td>Low, despite adequate or increased hydration</td><td>High, despite dehydration</td><td>High, despite dehydration</td></tr>
+            <tr><th scope="row">Serum AVP</th><td>Inappropriately present</td><td>Low</td><td>Normal or high — the hormone is there</td></tr>
+            <tr><th scope="row">Response to desmopressin</th><td>Not a diagnostic step; would worsen the hyponatremia</td><td><strong>Urine osmolality rises substantially</strong> — the kidney can concentrate once given the hormone</td><td><strong>Little or no rise</strong> — the kidney cannot respond</td></tr>
+            <tr><th scope="row">Underlying problem</th><td>Too much AVP action</td><td>Too little AVP</td><td>Enough AVP, unresponsive receptor</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="figure" data-fig="avp-desmopressin"></div>
+
+      <h3>Water deprivation, then desmopressin</h3>
+      <ol class="list">
+        <li><strong>Water deprivation:</strong> continued high-volume dilute urine confirms failure to concentrate.</li>
+        <li><strong>Desmopressin:</strong> urine osmolality rises in <strong>AVP deficiency</strong> but changes little in <strong>AVP resistance</strong>.</li>
+      </ol>
+
+      <div class="note note-red">
+        <span class="note-kind">Safety — this is a supervised test, not a bedside maneuver</span>
+        <p>Water deprivation can cause dangerous dehydration and hypernatremia and must be performed under close supervision.</p>
+      </div>
+
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="PIT-005" data-quiz-toolbar="false"></div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Act</span><span class="phase-what">Evaluation, management, and the drugs named in this topic</span></div>
+
+    <section class="section" id="act" data-toc="Evaluation and management" data-phase="Act">
+      <h2>What to do about it, at the depth this topic goes to</h2>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Management summary by disorder">
+        <table>
+          <caption>Course-relevant management only. Where the course objectives stop, this table stops.</caption>
+          <thead><tr><th scope="col">Disorder</th><th scope="col">Key evaluation</th><th scope="col">Management principle</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Prolactinoma</th><td>Serum prolactin (correlates with size), MRI</td><td><strong>Dopamine agonist first</strong> — bromocriptine or cabergoline. Surgery second-line.</td></tr>
+            <tr><th scope="row">Acromegaly / gigantism</th><td>GH and IGF-1; failure to suppress GH after oral glucose; MRI; bone scan</td><td><strong>Surgery</strong>, then <strong>somatostatin analog</strong> or <strong>GH receptor antagonist</strong>.</td></tr>
+            <tr><th scope="row">Pituitary apoplexy</th><td>Recognition is the test — sudden headache, visual failure, collapse</td><td><strong>Neurosurgical emergency.</strong> Hemodynamic collapse reflects acute cortisol deficiency.</td></tr>
+            <tr><th scope="row">Hypopituitarism</th><td>Test each axis; remember the pituitary hormone is low <em>with</em> the end-organ hormone</td><td>Replace the deficient end-organ hormones. Address the underlying lesion.</td></tr>
+            <tr><th scope="row">SIADH</th><td>Serum and urine osmolality and sodium; urine output against hydration status</td><td><strong>Water restriction.</strong></td></tr>
+            <tr><th scope="row">AVP deficiency</th><td>Water-deprivation test; response to desmopressin; serum AVP</td><td><strong>Desmopressin (DDAVP)</strong> — replacing the missing hormone.</td></tr>
+            <tr><th scope="row">AVP resistance</th><td>Same tests; the absent response is the diagnosis</td><td>Giving more hormone does not work. Address the cause — <strong>lithium</strong> is a common medication cause.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Drugs named in this session</h3>
+      <div class="grid">
+        <div class="block">
+          <div class="block-label teal">Bromocriptine, cabergoline</div>
+          <div class="block-text"><strong>Dopamine receptor agonists.</strong> They restore the tonic inhibition of prolactin release that the disease removed —
+            which is why they work on prolactinoma and why they are first-line ahead of surgery.</div>
+        </div>
+        <div class="block">
+          <div class="block-label teal">Desmopressin (DDAVP)</div>
+          <div class="block-text">Synthetic <strong>arginine vasopressin</strong>. Both the treatment for AVP deficiency and the discriminating step in the
+            diagnostic test — the same molecule doing two jobs.</div>
+        </div>
+        <div class="block">
+          <div class="block-label teal">Somatostatin analogs</div>
+          <div class="block-text">Somatostatin is <strong>GHIH</strong>, growth-hormone-inhibiting hormone. The analogs suppress GH secretion in acromegaly when
+            surgery is not the answer or has not been enough.</div>
+        </div>
+        <div class="block">
+          <div class="block-label red">Drugs that cause these problems</div>
+          <div class="block-text"><strong>D2-receptor antagonists</strong> (phenothiazines, haloperidol) raise prolactin.
+            <strong>Lithium</strong> causes AVP resistance. On any endocrine vignette, read the medication list before the labs.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Retrieve</span><span class="phase-what">Practice before you leave the page</span></div>
+
+    <section class="section" id="retrieve" data-toc="Practice questions" data-phase="Retrieve">
+      <h2>All pituitary questions</h2>
+      <p class="section-note">Every question tagged to this lecture, shuffled. Explanations are given for the option you picked as well as the correct one.
+        <a href="practice.html">Cumulative practice</a> mixes these with the rest of the block.</p>
+      <div class="quiz" data-quiz data-quiz-lecture="Hypothalamus and Pituitary Disorders"></div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/quiz.js" defer></script>
+<script src="assets/js/figures.js" defer></script>
+</body>
+</html>
