@@ -28,13 +28,6 @@
       <div class="toc-mobile" id="page-toc-mobile"></div>
     </div>
 
-    <div class="note note-teal" style="margin-top:1.5rem">
-      <span class="note-kind">How to use a page like this</span>
-      <p>Reading these tables feels productive and mostly is not. <strong>Cover a column and generate it</strong> — say the answers before you look.
-        The moment you find yourself nodding along, you have stopped learning and started recognizing. The recall prompts at the bottom of each
-        section are there for exactly that reason.</p>
-    </div>
-
     <!-- ================================================================ -->
     <section class="section" id="lab-patterns" data-toc="Lab patterns" data-phase="Patterns">
       <h2>Lab patterns</h2>
@@ -89,7 +82,7 @@
       <div class="table-wrap" tabindex="0" role="region" aria-label="Diagnostic thresholds">
         <table>
           <caption>Lecture phrasing, with the conventional form in brackets. Full version on the <a href="type2.html#diagnosis">T2DM page</a>.</caption>
-          <thead><tr><th scope="col">Test</th><th scope="col">Prediabetes</th><th scope="col">Diabetes</th></tr></thead>
+          <thead><tr><th scope="col">Test</th><th scope="col">Prediabetes<br><span class="mono">impaired glucose tolerance</span></th><th scope="col">Diabetes</th></tr></thead>
           <tbody>
             <tr><th scope="row">Fasting plasma glucose</th><td>100–125 mg/dL</td><td>&gt;125 mg/dL [≥126]</td></tr>
             <tr><th scope="row">2-hour OGTT</th><td>140–199 mg/dL</td><td>&gt;199 mg/dL [≥200]</td></tr>
@@ -147,6 +140,59 @@
     </section>
 
     <!-- ================================================================ -->
+    <section class="section" id="insulin-tables" data-toc="Insulin" data-phase="Therapy">
+      <h2>Insulin — profiles, regimens, and the three numbers</h2>
+      <p class="section-note">Three tables cover the whole Insulin Therapy 101 objective set. Worked examples are on the
+        <a href="insulin.html">insulin lab</a>.</p>
+
+      <h3>Action profiles</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Insulin action profiles">
+        <table>
+          <caption>Toggle these as overlapping curves on the <a href="insulin.html#profiles">action-curve figure</a>.</caption>
+          <thead><tr><th scope="col">Category</th><th scope="col">Examples</th><th scope="col">Onset</th><th scope="col">Peak</th><th scope="col">Duration</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Rapid-acting</th><td>lispro, aspart, glulisine</td><td>~15 min</td><td>~1–2 h</td><td>2–4 h</td></tr>
+            <tr><th scope="row">Regular (short)</th><td>regular human insulin (R)</td><td>~30–60 min</td><td>~2–4 h</td><td>6–8 h</td></tr>
+            <tr><th scope="row">Intermediate</th><td>NPH (N)</td><td>~1–2 h</td><td>broad, ~4–8 h</td><td>12–16 h</td></tr>
+            <tr><th scope="row">Long-acting (basal)</th><td>glargine, detemir</td><td>~1–2 h</td><td>relatively flat</td><td>glargine ~24 h; detemir ~20–24 h, dose-dependent</td></tr>
+            <tr><th scope="row">Ultra-long-acting</th><td>degludec</td><td>~1 h</td><td>essentially peakless</td><td>&gt;24 h — <strong>doses carry over between days</strong></td></tr>
+            <tr><th scope="row">Premixed</th><td>70/30, 75/25</td><td colspan="2">two components: an early rapid/short peak, then a later NPH peak</td><td>~10–16 h</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="section-note">Bedside shorthand from the lecture: <strong>NPH is "cloudy," regular and rapid-acting are "clear."</strong></p>
+
+      <h3>The four regimens, and the trade-off in each</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Insulin regimens with pros and cons">
+        <table>
+          <caption>Compared side by side on the <a href="insulin.html#regimens">regimen comparison</a>.</caption>
+          <thead><tr><th scope="col">Regimen</th><th scope="col">What it is</th><th scope="col">Pro</th><th scope="col">Con</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Basal-bolus (MDI)</th><td>1–2 basal <em>plus</em> 2+ mealtime injections — glargine/detemir/degludec with lispro/aspart/glulisine</td><td>Flexible carbs and meal timing; can correct a high even when not eating</td><td>More than 4 injections a day; basal needs consistent timing</td></tr>
+            <tr><th scope="row">Pump (CSII)</th><td>Continuous basal infusion plus boluses — <strong>rapid-acting only</strong></td><td>Most physiologic; basal adjustable through the day and by temp basal; dosing to 0.025–0.05 units; one site change every 3 days</td><td>Worn 24 h; technology fails; expensive. <strong>No depot</strong> — a failure means ketosis within hours</td></tr>
+            <tr><th scope="row">Twice daily (BID)</th><td>2 intermediate injections mixed with rapid or short — NPH plus lispro/aspart/glulisine or regular</td><td>Fewer injections</td><td>Set carbs per meal, strict meal and injection timing, <strong>must eat snacks to cover the peaks</strong>; poorly suited to variable activity</td></tr>
+            <tr><th scope="row">Premixed</th><td>2+ injections of 70/30 or 75/25</td><td>Fewest decisions</td><td>All of the BID limitations, plus it is the <strong>least able to correct a hyperglycemia</strong> — the ratio is fixed</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>The three numbers</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Insulin dosing terms">
+        <table>
+          <caption>Know what each one <em>means</em>; the formulas were flagged as optional. Practice on the <a href="insulin.html#terms">dose exercises</a>.</caption>
+          <thead><tr><th scope="col">Term</th><th scope="col">The question it answers</th><th scope="col">Read as</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Insulin-to-carb ratio (ICR)</th><td>How much insulin covers the carbohydrate about to be eaten</td><td>1 unit per <strong>XX grams</strong> of carbs. A <em>smaller</em> XX means more insulin per gram. <span class="mono">ICR = 540/TDD</span></td></tr>
+            <tr><th scope="row">Correction / sensitivity factor</th><td>How much insulin brings a high glucose back to target</td><td>1 unit drops glucose by <strong>XX mg/dL</strong>. A <em>smaller</em> XX means more insulin per point. <span class="mono">CF = 1800/TDD</span> (or 1500)</td></tr>
+            <tr><th scope="row">Basal insulin / basal rate</th><td>How much insulin holds glucose steady while <em>fasting</em></td><td>Judged by the overnight and between-meal trend, not by post-meal numbers. <strong>T1DM needs insulin at all times.</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="section-note">For adjusting a regimen, the whole principle is one sentence — see
+        <a href="#recall">the pattern-management prompt</a> below.</p>
+    </section>
+
+    <!-- ================================================================ -->
     <section class="section" id="emergencies" data-toc="Must-not-miss" data-phase="Danger">
       <h2>The time-sensitive presentations</h2>
 
@@ -165,6 +211,75 @@
             <tr><th scope="row"><a href="pituitary.html#posterior">Severe hyponatremia in SIADH</a></th><td>Small-cell lung cancer, CNS disease, drugs</td><td>Confusion or seizure with a low sodium and a <strong>concentrated</strong> urine. No peripheral edema.</td></tr>
             <tr><th scope="row"><a href="thyroid.html#act">Antithyroid drug agranulocytosis</a></th><td>Anyone on methimazole or PTU</td><td><strong>Fever with severe sore throat and oral ulceration.</strong> Needs an urgent white cell count, not reassurance.</td></tr>
             <tr><th scope="row"><a href="insulin.html#regimens">Pump delivery failure</a></th><td>Insulin pump user</td><td>A rapid, unrelenting glucose rise over hours. <strong>Rapid-acting insulin only, no depot</strong> — ketosis follows quickly.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <section class="section" id="chronic" data-toc="Complications &amp; metabolic syndrome" data-phase="Detail">
+      <h2>Chronic complications and metabolic syndrome</h2>
+      <p class="section-note">The diagram version of the damage pathway is on the
+        <a href="type2.html#complications">T2DM page</a>.</p>
+
+      <h3>Metabolic syndrome — the "deadly quartet"</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Metabolic syndrome components">
+        <table>
+          <caption>Also called insulin resistance syndrome or syndrome X (Reaven, 1988). Worked through on the <a href="type2.html#metabolic-syndrome">T2DM page</a>.</caption>
+          <thead><tr><th scope="col">The four</th><th scope="col">The detail that gets tested</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Abdominal obesity</th><td><strong>BMI and total weight are not the criterion</strong> — the fat distribution is.</td></tr>
+            <tr><th scope="row">Hyperglycemia</th><td>The consequence of insulin resistance, not the starting point.</td></tr>
+            <tr><th scope="row">Dyslipidemia</th><td>Specifically <strong>high triglycerides and low HDL</strong>.</td></tr>
+            <tr><th scope="row">Hypertension</th><td>One of several downstream effects of endothelial dysfunction.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="section-note">Chain to carry: abdominal obesity → insulin resistance → hyperinsulinemia and adipocyte cytokines →
+        impaired glucose and fatty-acid use, <strong>vascular endothelial dysfunction</strong>, impaired lipid metabolism, hypertension.
+        The ultimate threat is <strong>atherosclerotic cardiovascular disease</strong>, not the glucose.</p>
+
+      <h3>How hyperglycemia does the damage</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Mechanisms of hyperglycemic tissue injury">
+        <table>
+          <caption>Three mechanisms, converging on two vascular pathways.</caption>
+          <thead><tr><th scope="col">Mechanism</th><th scope="col">What happens</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Advanced glycation end-products (AGEs)</th><td><strong>Non-enzymatic</strong> glycation alters protein structure and function → increased vascular permeability, arterial stiffness, cytokines → inflammation and tissue ischemia.</td></tr>
+            <tr><th scope="row">Sorbitol accumulation</th><td>Aldose reductase makes it; there is <strong>no sorbitol dehydrogenase</strong> to clear it → osmotic and oxidative injury.</td></tr>
+            <tr><th scope="row">Oxidative stress and inflammation</th><td>Amplifies the other two rather than acting alone.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Microvascular versus macrovascular</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Microvascular and macrovascular complications">
+        <table>
+          <caption>Know which bucket each belongs to — that alone answers most stems.</caption>
+          <thead><tr><th scope="col"></th><th scope="col">Complication</th><th scope="col">The point to carry</th></tr></thead>
+          <tbody>
+            <tr><th scope="row" rowspan="3">Microvascular<br><span class="mono">small vessels, nerves</span></th><td>Retinopathy</td><td>Driven by <strong>ischemia and neovascularization</strong>. Accelerated by longer duration after puberty, worse control, hypertension, smoking, pregnancy.</td></tr>
+            <tr><td>Nephropathy</td><td>Characterized by <strong>protein in the urine</strong>. Early detection allows intervention; <strong>ACE inhibitor</strong>, blood-pressure and glucose control, no smoking.</td></tr>
+            <tr><td>Neuropathy</td><td><strong>Sorbitol</strong> injury via aldose reductase plus <strong>AGE</strong> damage to myelinated nerves and Schwann cells. Conduction changes after ~4–5 years.</td></tr>
+            <tr><th scope="row" rowspan="3">Macrovascular<br><span class="mono">endothelial dysfunction →<br>accelerated atherosclerosis</span></th><td>Coronary artery disease</td><td rowspan="3"><strong>Cardiovascular disease is ~70% of morbidity and mortality</strong> in diabetes — the leading cause, and the reason the macrovascular bucket matters more than its three-item length suggests.</td></tr>
+            <tr><td>Cerebrovascular disease</td></tr>
+            <tr><td>Peripheral artery disease</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="section-note">Two variables govern all of it: <strong>duration of diabetes</strong> and <strong>degree of glucose control</strong>.
+        The DCCT is the evidence — intensive control produced a <strong>60% reduction</strong> in the development and progression of complications.</p>
+
+      <h3>Treatment modalities</h3>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Treatment approaches for type 2 diabetes">
+        <table>
+          <caption>The objective asks you to know that there are <em>many</em> modalities, not to pick between agents.</caption>
+          <thead><tr><th scope="col">Modality</th><th scope="col">Specifics named in the lecture</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Nutrition</th><td>Weight stabilization then <strong>7% weight loss</strong>; eliminate sugary beverages; plant-forward; match to preference — Mediterranean, low-calorie, low-fat, DASH, intermittent fasting.</td></tr>
+            <tr><th scope="row">Exercise</th><td>Children <strong>60 min/day</strong> moderate-to-vigorous; adults <strong>150 min/week</strong>, plus strengthening 3 days/week.</td></tr>
+            <tr><th scope="row">Glucose monitoring</th><td>Fasting, pre-meal, 2-hour post-prandial; 4× daily on basal-bolus; or CGM.</td></tr>
+            <tr><th scope="row">Medication</th><td>Oral (e.g. metformin), insulin, oral <em>plus</em> insulin, or injectable glucose-lowering agents.</td></tr>
           </tbody>
         </table>
       </div>

@@ -338,16 +338,16 @@
   /* ===================================================================== */
   var INSULINS = [
     { key: 'rapid', label: 'Rapid-acting', examples: 'lispro, aspart, glulisine', color: 'red', dash: null,
-      onset: '~15 minutes', peak: '~1–2 hours', duration: '~3–5 hours',
-      pts: [[0,0],[0.25,0.08],[0.5,0.35],[1,0.85],[1.5,1.0],[2,0.9],[2.5,0.75],[3,0.55],[4,0.25],[5,0.06],[5.5,0]] },
+      onset: '~15 minutes', peak: '~1–2 hours', duration: '2–4 hours',
+      pts: [[0,0],[0.25,0.08],[0.5,0.35],[1,0.85],[1.5,1.0],[2,0.85],[2.5,0.62],[3,0.38],[3.5,0.16],[4,0]] },
     { key: 'regular', label: 'Regular (short-acting)', examples: 'regular human insulin (R)', color: 'amber', dash: null,
-      onset: '~30–60 minutes', peak: '~2–4 hours', duration: '~5–8 hours',
-      pts: [[0,0],[0.5,0.05],[1,0.28],[1.5,0.48],[2,0.66],[3,0.82],[4,0.76],[5,0.58],[6,0.36],[7,0.17],[8,0.04],[8.5,0]] },
+      onset: '~30–60 minutes', peak: '~2–4 hours', duration: '6–8 hours',
+      pts: [[0,0],[0.5,0.05],[1,0.28],[1.5,0.48],[2,0.66],[3,0.82],[4,0.76],[5,0.58],[6,0.36],[7,0.17],[8,0]] },
     { key: 'nph', label: 'NPH (intermediate)', examples: 'NPH (N)', color: 'purple', dash: null,
-      onset: '~1–2 hours', peak: 'broad, ~4–8 hours', duration: '~12–18 hours',
-      pts: [[0,0],[1,0.05],[2,0.24],[3,0.44],[4,0.60],[5,0.68],[6,0.71],[7,0.70],[8,0.66],[10,0.53],[12,0.37],[14,0.21],[16,0.08],[18,0]] },
+      onset: '~1–2 hours', peak: 'broad, ~4–8 hours', duration: '12–16 hours',
+      pts: [[0,0],[1,0.05],[2,0.24],[3,0.44],[4,0.60],[5,0.68],[6,0.71],[7,0.70],[8,0.66],[10,0.53],[12,0.35],[14,0.18],[16,0]] },
     { key: 'long', label: 'Long-acting (basal)', examples: 'glargine, detemir', color: 'blue', dash: null,
-      onset: '~1–2 hours', peak: 'relatively flat', duration: 'up to about 24 hours; detemir is often shorter and dose-dependent',
+      onset: '~1–2 hours', peak: 'relatively flat', duration: 'glargine about 24 hours; detemir about 20–24 hours and dose-dependent',
       pts: [[0,0],[1,0.14],[2,0.28],[3,0.35],[4,0.37],[6,0.38],[8,0.38],[12,0.37],[16,0.34],[20,0.27],[22,0.17],[24,0.04]] },
     { key: 'ultra', label: 'Ultra-long-acting', examples: 'degludec', color: 'teal', dash: '2 4',
       onset: '~1 hour', peak: 'essentially peakless', duration: 'beyond 24 hours, so doses carry over between days',
@@ -378,7 +378,7 @@
 
     var chart = svg('svg', { role: 'img', 'aria-labelledby': 'ins-t ins-d' });
     chart.appendChild(svg('title', { id: 'ins-t', text: 'Approximate insulin action curves on a shared 24-hour axis' }));
-    chart.appendChild(svg('desc', { id: 'ins-d', text: 'Relative insulin action over 24 hours. Rapid-acting rises and falls within about five hours with an early sharp peak. Regular acts later and longer. NPH has a broad mid-range peak lasting most of a half-day. Long-acting and ultra-long-acting are comparatively flat and extend across the whole day. Premixed insulin shows two humps. Exact onset, peak, and duration for each are given in the table below the figure.' }));
+    chart.appendChild(svg('desc', { id: 'ins-d', text: 'Relative insulin action over 24 hours. Rapid-acting rises and falls within about four hours with an early sharp peak. Regular acts later and longer. NPH has a broad mid-range peak lasting most of a half-day. Long-acting and ultra-long-acting are comparatively flat and extend across the whole day. Premixed insulin shows two humps. Exact onset, peak, and duration for each are given in the table below the figure.' }));
     var plot = svg('g'); chart.appendChild(plot);
     var status = el('p', { class: 'visually-hidden', role: 'status', 'aria-live': 'polite' });
 

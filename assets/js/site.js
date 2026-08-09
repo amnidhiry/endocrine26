@@ -19,11 +19,10 @@
     { id: 'type2',     href: 'type2.html',        label: 'T2DM',        group: 'Lectures' },
     { id: 'insulin',   href: 'insulin.html',      label: 'Insulin Therapy Lab',    group: 'Lectures' },
     { id: 'practice',  href: 'practice.html',     label: 'Cumulative Practice',    group: 'Practice' },
-    { id: 'rapid',     href: 'rapid-review.html', label: 'Rapid Review',           group: 'Practice' },
-    // { id: 'sources', href: 'sources.html', label: 'Sources & Scope', group: 'Reference' }
+    { id: 'rapid',     href: 'rapid-review.html', label: 'Rapid Review',           group: 'Practice' }
   ];
 
-  var SHORT = { pituitary: 'Pituitary', thyroid: 'Thyroid', type1: 'T1DM', type2: 'T2DM', insulin: 'Insulin Lab', practice: 'Practice', rapid: 'Rapid Review', sources: 'Sources' };
+  var SHORT = { pituitary: 'Pituitary', thyroid: 'Thyroid', type1: 'T1DM', type2: 'T2DM', insulin: 'Insulin Lab', practice: 'Practice', rapid: 'Rapid Review' };
 
   var current = document.body.getAttribute('data-page') || 'home';
 

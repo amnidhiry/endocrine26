@@ -154,42 +154,6 @@
       }
     },
     {
-      "id": "THY-005",
-      "lecture": "Thyroid Disorders",
-      "topic": "Thyroid pharmacology",
-      "objective": "Select antithyroid therapy during pregnancy",
-      "difficulty": "intermediate",
-      "stem": "A patient at 8 weeks of pregnancy requires antithyroid medication for Graves disease. Which plan best balances the major medication risks?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Methimazole throughout pregnancy",
-          "explanation": "Methimazole is generally preferred outside the first trimester, but first-trimester exposure carries a characteristic teratogenic risk."
-        },
-        {
-          "id": "B",
-          "text": "PTU initially, with consideration of switching to methimazole after the first trimester",
-          "explanation": "Correct. PTU is preferred during the first trimester; later switching limits prolonged PTU-associated hepatic risk."
-        },
-        {
-          "id": "C",
-          "text": "Radioactive iodine followed by levothyroxine",
-          "explanation": "Radioactive iodine is contraindicated in pregnancy because the fetal thyroid can concentrate iodine."
-        },
-        {
-          "id": "D",
-          "text": "Levothyroxine monotherapy",
-          "explanation": "Levothyroxine replaces thyroid hormone and therefore does not treat endogenous hormone excess."
-        }
-      ],
-      "correct_answer": "B",
-      "takeaway": "PTU is favored in the first trimester; methimazole is generally favored afterward because of PTU hepatotoxicity.",
-      "citation": {
-        "text": "StatPearls: Propylthiouracil (PTU)",
-        "url": "https://www.ncbi.nlm.nih.gov/books/NBK549828/"
-      }
-    },
-    {
       "id": "THY-006",
       "lecture": "Thyroid Disorders",
       "topic": "Thyroid carcinoma",
@@ -478,42 +442,6 @@
       }
     },
     {
-      "id": "T1D-002",
-      "lecture": "T1DM",
-      "topic": "Classification",
-      "objective": "Use laboratory data to identify exogenous insulin exposure",
-      "difficulty": "advanced",
-      "stem": "During symptomatic hypoglycemia, a patient has a markedly elevated insulin concentration, suppressed C-peptide, and a negative sulfonylurea screen. Which explanation is most likely?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Insulinoma",
-          "explanation": "An insulinoma secretes endogenous insulin and therefore also releases C-peptide."
-        },
-        {
-          "id": "B",
-          "text": "Exogenous insulin administration",
-          "explanation": "Correct. Injected insulin lacks C-peptide, so insulin is high while C-peptide remains low."
-        },
-        {
-          "id": "C",
-          "text": "Sulfonylurea ingestion",
-          "explanation": "Sulfonylureas stimulate endogenous insulin, producing elevated insulin and C-peptide; the drug screen would support the diagnosis."
-        },
-        {
-          "id": "D",
-          "text": "Primary adrenal insufficiency",
-          "explanation": "Adrenal insufficiency can contribute to hypoglycemia but does not cause markedly elevated insulin with suppressed C-peptide."
-        }
-      ],
-      "correct_answer": "B",
-      "takeaway": "High insulin with low C-peptide indicates an exogenous insulin source.",
-      "citation": {
-        "text": "StatPearls: Factitious Hypoglycemia",
-        "url": "https://www.ncbi.nlm.nih.gov/books/NBK542310/"
-      }
-    },
-    {
       "id": "T1D-003",
       "lecture": "T1DM",
       "topic": "DKA",
@@ -727,42 +655,6 @@
       "citation": {
         "text": "StatPearls: Hyperosmolar Hyperglycemic Syndrome",
         "url": "https://www.ncbi.nlm.nih.gov/books/NBK482142/"
-      }
-    },
-    {
-      "id": "T2D-004",
-      "lecture": "T2DM",
-      "topic": "Microvascular complications",
-      "objective": "Identify diabetic nephropathy pathology",
-      "difficulty": "intermediate",
-      "stem": "A patient with long-standing poorly controlled diabetes develops albuminuria and declining kidney function. Which renal lesion is most characteristic of diabetic nephropathy?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Nodular mesangial sclerosis",
-          "explanation": "Correct. Nodular glomerulosclerosis is a characteristic advanced lesion of diabetic nephropathy."
-        },
-        {
-          "id": "B",
-          "text": "Linear IgG deposition from anti-basement-membrane antibodies",
-          "explanation": "This pattern suggests anti-GBM disease rather than diabetic nephropathy."
-        },
-        {
-          "id": "C",
-          "text": "Subepithelial immune-complex humps",
-          "explanation": "Subepithelial humps are associated with postinfectious glomerulonephritis."
-        },
-        {
-          "id": "D",
-          "text": "Diffuse crescent formation",
-          "explanation": "Crescents indicate severe rapidly progressive glomerular injury and are not the characteristic diabetic lesion."
-        }
-      ],
-      "correct_answer": "A",
-      "takeaway": "Diabetic nephropathy produces basement-membrane thickening and mesangial expansion, which may become nodular.",
-      "citation": {
-        "text": "StatPearls: Diabetic Nephropathy",
-        "url": "https://www.ncbi.nlm.nih.gov/books/NBK534200/"
       }
     },
     {
@@ -1018,42 +910,6 @@
       }
     },
     {
-      "id": "THY-009",
-      "lecture": "Thyroid Disorders",
-      "topic": "Antithyroid pharmacology",
-      "objective": "Recognize a serious thionamide adverse effect and PTU mechanism",
-      "difficulty": "advanced",
-      "stem": "A pregnant patient treated for Graves disease develops fever, severe sore throat, oral ulcers, and marked neutropenia. The medication also inhibits peripheral conversion of T4 to T3. Which drug is most likely responsible?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Levothyroxine",
-          "explanation": "Levothyroxine is synthetic T4 used for hypothyroidism; it neither inhibits thyroid peroxidase nor blocks peripheral T4-to-T3 conversion."
-        },
-        {
-          "id": "B",
-          "text": "Propylthiouracil",
-          "explanation": "Correct. PTU inhibits thyroid peroxidase and also decreases peripheral conversion of T4 to T3. Thionamides can cause agranulocytosis, signaled by fever or sore throat."
-        },
-        {
-          "id": "C",
-          "text": "Radioactive iodine",
-          "explanation": "Radioactive iodine ablates thyroid tissue and is contraindicated during pregnancy; it does not cause this characteristic drug-induced agranulocytosis pattern."
-        },
-        {
-          "id": "D",
-          "text": "Propranolol",
-          "explanation": "Propranolol controls adrenergic symptoms and at higher doses can reduce peripheral conversion, but it does not inhibit thyroid peroxidase and is not the classic cause of agranulocytosis."
-        }
-      ],
-      "correct_answer": "B",
-      "takeaway": "PTU uniquely combines thyroid-peroxidase inhibition with reduced peripheral T4-to-T3 conversion; fever or sore throat on a thionamide requires urgent evaluation for agranulocytosis.",
-      "citation": {
-        "text": "StatPearls: Propylthiouracil (PTU)",
-        "url": "https://www.ncbi.nlm.nih.gov/books/NBK549828/"
-      }
-    },
-    {
       "id": "THY-010",
       "lecture": "Thyroid Disorders",
       "topic": "Exogenous thyroid hormone",
@@ -1231,78 +1087,6 @@
       "citation": {
         "text": "StatPearls: Adult Diabetic Ketoacidosis",
         "url": "https://www.ncbi.nlm.nih.gov/books/NBK560723/"
-      }
-    },
-    {
-      "id": "INS-006",
-      "lecture": "Insulin Therapy 101",
-      "topic": "Hypoglycemia safety",
-      "objective": "Recognize medication masking of hypoglycemia",
-      "difficulty": "advanced",
-      "stem": "A patient using insulin begins a nonselective beta blocker. Which warning symptom of hypoglycemia may become less noticeable?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Tremor and palpitations",
-          "explanation": "Correct. Beta blockade can blunt adrenergic warning signs such as tremor, tachycardia, and palpitations."
-        },
-        {
-          "id": "B",
-          "text": "Sweating in every patient",
-          "explanation": "Sweating is cholinergically mediated and may remain present even when several adrenergic warning signs are blunted."
-        },
-        {
-          "id": "C",
-          "text": "Polyuria from glucosuria",
-          "explanation": "Polyuria is a manifestation of hyperglycemia rather than an acute warning symptom of hypoglycemia."
-        },
-        {
-          "id": "D",
-          "text": "Kussmaul respirations",
-          "explanation": "Kussmaul respirations reflect metabolic acidosis, classically DKA, not uncomplicated hypoglycemia."
-        }
-      ],
-      "correct_answer": "A",
-      "takeaway": "Beta blockers may mask adrenergic hypoglycemia warnings, although sweating can remain detectable.",
-      "citation": {
-        "text": "StatPearls: Selective Beta-1 Blockers",
-        "url": "https://www.ncbi.nlm.nih.gov/books/NBK499982/"
-      }
-    },
-    {
-      "id": "T2D-005",
-      "lecture": "T2DM",
-      "topic": "Medication-associated hypoglycemia",
-      "objective": "Recognize insulin-secretagogue hypoglycemia",
-      "difficulty": "intermediate",
-      "stem": "An older adult with T2DM develops recurrent sweating, tremor, and confusion on days when lunch is skipped. Which medication class most directly raises this risk by stimulating pancreatic insulin release even when food intake is reduced?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Sulfonylurea",
-          "explanation": "Correct. Sulfonylureas stimulate endogenous insulin secretion and can cause hypoglycemia, particularly when meals are missed."
-        },
-        {
-          "id": "B",
-          "text": "Alpha-glucosidase inhibitor",
-          "explanation": "This class delays intestinal carbohydrate absorption and does not usually cause hypoglycemia when used alone."
-        },
-        {
-          "id": "C",
-          "text": "Metformin",
-          "explanation": "Metformin primarily reduces hepatic glucose production and has a low risk of hypoglycemia when used alone."
-        },
-        {
-          "id": "D",
-          "text": "Thiazolidinedione",
-          "explanation": "Thiazolidinediones improve insulin sensitivity and do not generally produce hypoglycemia as monotherapy."
-        }
-      ],
-      "correct_answer": "A",
-      "takeaway": "Insulin secretagogues can cause hypoglycemia when food intake is delayed or omitted.",
-      "citation": {
-        "text": "StatPearls: Sulfonylureas",
-        "url": "https://www.ncbi.nlm.nih.gov/books/NBK513225/"
       }
     }
   ]
