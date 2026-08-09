@@ -90,11 +90,24 @@
     this.render();
   }
 
+  /* Lecture and topic are two views of the same 30 questions, so combining
+     them with AND mostly yields nothing ("T2DM" AND "Insulin therapy" shares
+     no question). They are unioned instead: pick a lecture and a topic and you
+     get both sets. Difficulty is a modifier, so it still narrows the result.
+     On a lecture page opts.lecture has already limited this.all, so that
+     lecture is a fixed scope rather than one side of the union — otherwise
+     choosing a topic there would widen back to the whole lecture. */
   Quiz.prototype.matching = function () {
     var s = this.state;
+    var scoped = !!this.opts.lecture;
     return this.all.filter(function (q) {
-      if (s.lecture !== 'all' && q.lecture !== s.lecture) return false;
-      if (s.topic !== 'all' && q.topic !== s.topic) return false;
+      var byLecture = !scoped && s.lecture !== 'all';
+      var byTopic = s.topic !== 'all';
+      if (byLecture || byTopic) {
+        var inEither = (byLecture && q.lecture === s.lecture) ||
+                       (byTopic && q.topic === s.topic);
+        if (!inEither) return false;
+      }
       if (s.difficulty !== 'all' && q.difficulty !== s.difficulty) return false;
       return true;
     });
@@ -153,8 +166,10 @@
 
     if (!this.opts.lecture) {
       bar.appendChild(select('q-lecture', 'Lecture', uniq('lecture'), 'lecture'));
+      bar.appendChild(select('q-topic', 'Topic (or lecture)', uniq('topic'), 'topic'));
+    } else {
+      bar.appendChild(select('q-topic', 'Topic', uniq('topic'), 'topic'));
     }
-    bar.appendChild(select('q-topic', 'Topic', uniq('topic'), 'topic'));
     bar.appendChild(select('q-difficulty', 'Difficulty', ['foundational', 'intermediate', 'advanced'], 'difficulty',
       function (v) { return v.charAt(0).toUpperCase() + v.slice(1); }));
 
