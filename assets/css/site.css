@@ -121,10 +121,10 @@ body {
   border-bottom-color: var(--accent); border-radius: 5px 5px 0 0;
 }
 .nav-home-icon { display: block; width: 16px; height: 16px; }
-@media (max-width: 1080px) { .primary-nav { display: none; } }
+@media (max-width: 1200px) { .primary-nav { display: none; } }
 
 .header-actions { margin-left: auto; display: flex; gap: 6px; align-items: center; }
-@media (max-width: 1080px) { .primary-nav + .header-actions { margin-left: 0; } }
+@media (max-width: 1200px) { .primary-nav + .header-actions { margin-left: 0; } }
 
 .icon-btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 6px;
@@ -135,7 +135,7 @@ body {
 .icon-btn:hover { background: var(--bg3); color: var(--text); }
 .icon-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
 .menu-btn { display: none; }
-@media (max-width: 1080px) { .menu-btn { display: inline-flex; } }
+@media (max-width: 1200px) { .menu-btn { display: inline-flex; } }
 .search-btn .search-hint {
   font-family: var(--mono); font-size: 10px; color: var(--text3);
   border: 1px solid var(--border2); border-radius: 3px; padding: 0 4px;
