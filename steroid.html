@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steroid Hormone Synthesis — HSHD1 Endocrine Course Companion</title>
+<meta name="description" content="Steroid hormone biosynthesis from cholesterol: carbon numbering, the enzyme cast, zone-specific pathways, the CYP17A1 two-activity puzzle, glucocorticoid-remediable aldosteronism, and congenital adrenal hyperplasia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="steroid">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="site-header"></header>
+<noscript><div style="max-width:1180px;margin:0 auto;padding:1rem 1.25rem"><p class="note note-amber"><span class="note-kind">JavaScript is off</span>The text below is complete and readable, but the navigation, search, interactive figures, and practice questions need JavaScript. <a href="index.html">Back to the home page</a>.</p></div></noscript>
+
+<div class="page">
+  <nav class="toc" id="page-toc" aria-label="Sections of this page"></nav>
+
+  <main class="content" id="main" tabindex="-1">
+
+    <div class="page-head">
+      <p class="eyebrow">Study guide · Biochemistry · 13 Aug 2026</p>
+      <h1>Steroid Hormone Synthesis</h1>
+      <p class="lede">One starting molecule, one shared trunk, three branches. Every hormone on this page is cholesterol with a few
+        carbons hydroxylated, oxidized, or removed — and every disease on this page is one of those steps failing. Learn the map as
+        plumbing and the diseases stop being a list to memorize: whatever sits above the block accumulates and gets diverted,
+        whatever sits below it disappears.</p>
+      <div class="toc-mobile" id="page-toc-mobile"></div>
+    </div>
+
+    <section class="section" id="orient" data-toc="How to read this page" data-phase="Orient">
+      <h2>What this session asks of you</h2>
+
+      <div class="note note-teal">
+        <span class="note-kind">The seven stated objectives, and where each one is answered</span>
+        <p><strong>1.</strong> Why ignoring cholesterol's carbon numbering is a mistake → <a href="#numbering">the numbering is the map</a>.
+          <strong>2.</strong> Compare and contrast the pathways and their locations → <a href="#pathway">the pathway</a> and
+          <a href="#zones">zone-specific synthesis</a>.
+          <strong>3.</strong> The puzzle of one gene, one polypeptide, two activities, and why only 17α-hydroxylation is needed for cortisol →
+          <a href="#cyp17">the CYP17A1 problem</a>.
+          <strong>4.</strong> A rationale for calling glucocorticoid-remediable aldosteronism a design flaw in the genome →
+          <a href="#gra-design">the design flaw</a>.
+          <strong>5.</strong> Etymology and pathophysiology of glucocorticoid-remediable aldosteronism →
+          <a href="#gra-disease">what the name is telling you</a>.
+          <strong>6.</strong> A mechanism by which 21-hydroxylase deficiency produces atypical genitalia in XX infants →
+          <a href="#cah-mechanism">from a missing enzyme to a virilized fetus</a>.
+          <strong>7.</strong> Classical versus non-classical congenital adrenal hyperplasia by symptomatology →
+          <a href="#cah-classic">classic and non-classic, side by side</a>.</p>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label blue">The one sentence version</div>
+          <div class="block-text">Cholesterol (27 carbons) is cut down to <strong>pregnenolone</strong> (21 carbons), and from there
+            three branches diverge: keep 21 carbons and you get <strong>mineralocorticoids and glucocorticoids</strong>;
+            cut the side chain to 19 carbons and you get <strong>androgens</strong>; remove one more carbon and aromatize the A ring
+            to 18 carbons and you get <strong>estrogens</strong>.</div>
+        </div>
+        <div class="block">
+          <div class="block-label amber">The habit worth building now</div>
+          <div class="block-text">When you meet any steroid disorder, ask three questions in this order:
+            <strong>is cortisol low</strong> (so ACTH is high and the gland is hyperplastic),
+            <strong>is there salt wasting or hypertension</strong> (the mineralocorticoid arm),
+            and <strong>are androgens high or low</strong> (the sex-steroid arm).
+            Those three answers name the enzyme without your having to recall a list.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Orient</span><span class="phase-what">The molecule, its carbons, and the cast of enzymes</span></div>
+
+    <section class="section" id="numbering" data-toc="Carbons and why they matter" data-phase="Orient">
+      <h2>The numbering is the map, not a decoration</h2>
+      <p class="section-note">Objective 1 asks you to explain to a colleague why skipping the carbon numbering is a mistake. Here is the argument.</p>
+
+      <div class="note note-blue">
+        <span class="note-kind">The point in one line</span>
+        <p>Almost every enzyme in steroidogenesis is <strong>named after the carbon it acts on</strong>. If the numbers mean nothing to you,
+          the enzyme names are arbitrary syllables and the pathway becomes rote. If the numbers mean something, the name of the enzyme
+          <em>tells you the reaction</em>, and the reaction tells you what accumulates when it fails.</p>
+      </div>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Enzyme names decoded from carbon positions">
+        <table>
+          <caption>Read the name, predict the chemistry. Every one of these is a carbon position doing exactly what it says.</caption>
+          <thead><tr><th scope="col">Enzyme</th><th scope="col">What the name literally says</th><th scope="col">Consequence for the molecule</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Cholesterol side-chain cleavage — 20,22-desmolase</th><td>Cut the bond between <strong>C20 and C22</strong></td><td>Removes six carbons of the tail. C27 cholesterol → C21 pregnenolone. This is the committed step of all steroidogenesis.</td></tr>
+            <tr><th scope="row">17α-hydroxylase</th><td>Add an OH at <strong>C17</strong>, α face</td><td>Opens the door to cortisol and to androgens. No carbons are lost — the molecule is still C21.</td></tr>
+            <tr><th scope="row">17,20-lyase</th><td>Cut the bond between <strong>C17 and C20</strong></td><td>Removes the two-carbon acetyl side chain. C21 → C19. <strong>This is the step that makes something an androgen.</strong></td></tr>
+            <tr><th scope="row">21-hydroxylase</th><td>Add an OH at <strong>C21</strong></td><td>Required for both cortisol and aldosterone. Lose it and you lose both arms at once — which is exactly why its deficiency is the dangerous one.</td></tr>
+            <tr><th scope="row">11β-hydroxylase</th><td>Add an OH at <strong>C11</strong>, β face</td><td>The last step to cortisol. Note that hydroxylating C11 creates a new asymmetric carbon, which is why the α/β designation is not optional.</td></tr>
+            <tr><th scope="row">Aldosterone synthase</th><td>Acts at <strong>C11 and then C18</strong> — hydroxylation then oxidation</td><td>Converts corticosterone → 18-hydroxycorticosterone → aldosterone, whose defining feature is the C18 aldehyde.</td></tr>
+            <tr><th scope="row">Aromatase</th><td>Removes <strong>C19</strong> and aromatizes ring A</td><td>C19 androgen → C18 estrogen. The lost methyl group and the aromatic A ring are the whole structural difference between testosterone and estradiol.</td></tr>
+            <tr><th scope="row">5α-reductase</th><td>Reduces the double bond at <strong>C5</strong>, α face</td><td>Testosterone → dihydrotestosterone. Same carbon count, dramatically higher receptor affinity.</td></tr>
+            <tr><th scope="row">3β- and 17β-hydroxysteroid dehydrogenase</th><td>Oxidize or reduce the oxygen at <strong>C3</strong> or <strong>C17</strong></td><td>3β-HSD converts Δ5 steroids to Δ4 — the switch from the pregnenolone series to the progesterone series. 17β-HSD is the last step to testosterone and to estradiol.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note note-amber">
+        <span class="note-kind">Say this to your colleague</span>
+        <p>"You cannot tell 17α-hydroxylase from 17,20-lyase without the numbers, and those two are <em>the same protein</em> doing
+          different jobs. You cannot explain why 21-hydroxylase deficiency wrecks both cortisol and aldosterone but 11β-hydroxylase
+          deficiency causes hypertension, unless you know where C21 and C11 sit relative to each other in the sequence. And you cannot
+          explain why an androgen becomes an estrogen without knowing that C19 is the carbon that leaves. The numbering is not
+          nomenclature — it is the mechanism written down."</p>
+      </div>
+
+      <div class="grid three">
+        <div class="block">
+          <div class="block-label blue">C21 — pregnanes</div>
+          <div class="block-text">Progesterone, 11-deoxycorticosterone, corticosterone, aldosterone, 11-deoxycortisol, cortisol.
+            The full side chain is still attached.</div>
+        </div>
+        <div class="block">
+          <div class="block-label blue">C19 — androstanes</div>
+          <div class="block-text">DHEA, androstenedione, testosterone, dihydrotestosterone.
+            The 17,20-lyase step removed the side chain.</div>
+        </div>
+        <div class="block">
+          <div class="block-label blue">C18 — estranes</div>
+          <div class="block-text">Estrone, estradiol. Aromatase removed the C19 methyl and made ring A aromatic.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="enzymes" data-toc="The enzyme cast" data-phase="Orient">
+      <h2>The cast: cytochrome P450s and dehydrogenases</h2>
+      <p class="section-note">Two chemical families, two subcellular addresses. Knowing which is which explains why the intermediates shuttle in and out of the mitochondrion.</p>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label blue">Cytochrome P450s — the hydroxylases</div>
+          <div class="block-text">Heme mono-oxygenases. They insert an oxygen atom, consuming <strong>O₂ and NADPH</strong> through a
+            redox partner. The mitochondrial ones (CYP11A1, CYP11B1, CYP11B2) use ferredoxin and ferredoxin reductase;
+            the ones in the smooth endoplasmic reticulum (CYP17A1, CYP21A2, CYP19A1) use P450 oxidoreductase.
+            Every enzyme whose name contains "hydroxylase," "desmolase," "lyase," or "aromatase" is a P450.</div>
+        </div>
+        <div class="block">
+          <div class="block-label blue">Hydroxysteroid dehydrogenases</div>
+          <div class="block-text">Not P450s and not heme proteins. They move a hydrogen using <strong>NAD⁺/NADH or NADP⁺/NADPH</strong>,
+            interconverting a hydroxyl group and a ketone. <strong>3β-HSD</strong> (HSD3B2) and <strong>17β-HSD</strong> (HSD17B) are the two
+            you need. They are freely reversible in principle, which is why tissue expression of a particular isoform decides the direction.</div>
+        </div>
+      </div>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Steroidogenic enzymes with genes and locations">
+        <table>
+          <caption>The full cast, with the gene name and the compartment. Abbreviations in the left column are the ones used in the pathway map below.</caption>
+          <thead><tr><th scope="col">Short form</th><th scope="col">Enzyme</th><th scope="col">Gene</th><th scope="col">Where it works</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">StAR</th><td>Steroidogenic acute regulatory protein — not an enzyme; a transporter</td><td>STAR</td><td>Moves cholesterol from the outer to the inner mitochondrial membrane. <strong>The rate-limiting step.</strong></td></tr>
+            <tr><th scope="row">SCC</th><td>Cholesterol side-chain cleavage (20,22-desmolase)</td><td>CYP11A1</td><td>Inner mitochondrial membrane</td></tr>
+            <tr><th scope="row">3β</th><td>3β-hydroxysteroid dehydrogenase / Δ5→Δ4 isomerase</td><td>HSD3B2</td><td>Smooth ER and mitochondria</td></tr>
+            <tr><th scope="row">17α</th><td>17α-hydroxylase activity of CYP17A1</td><td>CYP17A1</td><td>Smooth ER</td></tr>
+            <tr><th scope="row">lyase</th><td>17,20-lyase activity of the <em>same</em> CYP17A1 protein — requires cytochrome b5</td><td>CYP17A1</td><td>Smooth ER</td></tr>
+            <tr><th scope="row">21</th><td>21-hydroxylase</td><td>CYP21A2</td><td>Smooth ER</td></tr>
+            <tr><th scope="row">11β</th><td>11β-hydroxylase</td><td>CYP11B1</td><td>Inner mitochondrial membrane, zona fasciculata</td></tr>
+            <tr><th scope="row">AS</th><td>Aldosterone synthase (11β-hydroxylase, 18-hydroxylase and 18-oxidase activities in one protein)</td><td>CYP11B2</td><td>Inner mitochondrial membrane, zona glomerulosa only</td></tr>
+            <tr><th scope="row">17β</th><td>17β-hydroxysteroid dehydrogenase</td><td>HSD17B</td><td>Gonads and peripheral tissue</td></tr>
+            <tr><th scope="row">arom</th><td>Aromatase</td><td>CYP19A1</td><td>Ovarian granulosa cells, placenta, adipose tissue, brain, bone</td></tr>
+            <tr><th scope="row">5α</th><td>5α-reductase</td><td>SRD5A2</td><td>Genital skin, prostate, hair follicle — a <em>peripheral</em> enzyme, not an adrenal one</td></tr>
+            <tr><th scope="row">SULT2A1 / STS</th><td>Sulfotransferase and steroid sulfatase — interconvert DHEA and DHEA-sulfate</td><td>SULT2A1, STS</td><td>Zona reticularis and periphery. DHEA-S is the long-lived circulating reservoir and the practical marker of adrenal androgen output.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note note-amber">
+        <span class="note-kind">Two naming points that catch people out</span>
+        <p>The lecture slides write the 21-hydroxylase gene as <strong>CYP21A1</strong>. In current gene nomenclature the functional gene is
+          <strong>CYP21A2</strong>, on chromosome 6p21.3 inside the HLA class III region; <strong>CYP21A1P</strong> is the neighbouring
+          non-functional pseudogene, and the fact that a working gene sits beside a broken near-copy is precisely why most CAH alleles arise
+          by gene conversion or deletion. Second: <strong>aldosterone synthase and 11β-hydroxylase are separate gene products</strong>
+          (CYP11B2 and CYP11B1) that both carry 11β-hydroxylase activity — remember that and the chimeric-gene disease later on will make sense.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Build</span><span class="phase-what">The pathway, and why each zone makes only part of it</span></div>
+
+    <section class="section" id="pathway" data-toc="The pathway map" data-phase="Build">
+      <h2>The whole map on one grid</h2>
+      <p class="section-note">Three columns, three products. Read left to right for the branch, top to bottom for the sequence.</p>
+
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 580 596" role="img" aria-labelledby="path-t path-d">
+          <title id="path-t">The steroidogenic pathway arranged as three branches</title>
+          <desc id="path-d">Cholesterol is converted by side-chain cleavage to pregnenolone. Pregnenolone can go three ways. Down, via 3-beta-hydroxysteroid dehydrogenase, to progesterone and then along the mineralocorticoid branch: 21-hydroxylase makes 11-deoxycorticosterone, 11-beta-hydroxylase makes corticosterone, and aldosterone synthase makes 18-hydroxycorticosterone and then aldosterone. Right, via 17-alpha-hydroxylase, to 17-hydroxypregnenolone and 17-hydroxyprogesterone, and then along the glucocorticoid branch: 21-hydroxylase makes 11-deoxycortisol and 11-beta-hydroxylase makes cortisol. Right again, via 17,20-lyase, to dehydroepiandrosterone and androstenedione, and then along the androgen branch: 17-beta-hydroxysteroid dehydrogenase makes testosterone, 5-alpha-reductase makes dihydrotestosterone, and aromatase makes estradiol.</desc>
+
+          <defs><marker id="st-a" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--accent)"/></marker></defs>
+
+          <!-- column headers -->
+          <text x="88"  y="14" text-anchor="middle" class="t-mut">mineralocorticoid</text>
+          <text x="290" y="14" text-anchor="middle" class="t-mut">glucocorticoid</text>
+          <text x="492" y="14" text-anchor="middle" class="t-mut">androgen / estrogen</text>
+
+          <!-- cholesterol -->
+          <rect x="13" y="26" width="150" height="30" rx="6" class="box-gray"/>
+          <text x="88" y="45" text-anchor="middle" class="t-b">cholesterol</text>
+          <line x1="88" y1="56" x2="88" y2="90" class="flow" marker-end="url(#st-a)"/>
+          <text x="96" y="77" class="t-mono fill-accent">SCC</text>
+          <text x="240" y="45" class="t-sm">StAR moves cholesterol into the mitochondrion —</text>
+          <text x="240" y="58" class="t-sm">the rate-limiting step of every steroid below</text>
+
+          <!-- row 1: delta-5 -->
+          <rect x="13"  y="96" width="150" height="30" rx="6" class="box-gray"/>
+          <text x="88"  y="115" text-anchor="middle" class="t">pregnenolone</text>
+          <rect x="215" y="96" width="150" height="30" rx="6" class="box-gray"/>
+          <text x="290" y="115" text-anchor="middle" class="t">17-OH-pregnenolone</text>
+          <rect x="417" y="96" width="150" height="30" rx="6" class="box-blue"/>
+          <text x="492" y="115" text-anchor="middle" class="t">DHEA</text>
+          <line x1="163" y1="111" x2="209" y2="111" class="flow" marker-end="url(#st-a)"/>
+          <text x="186" y="105" text-anchor="middle" class="t-mono fill-accent">17α</text>
+          <line x1="365" y1="111" x2="411" y2="111" class="flow" marker-end="url(#st-a)"/>
+          <text x="388" y="105" text-anchor="middle" class="t-mono fill-accent">lyase</text>
+
+          <!-- 3-beta arrows -->
+          <line x1="88"  y1="126" x2="88"  y2="170" class="flow" marker-end="url(#st-a)"/>
+          <text x="96"  y="152" class="t-mono fill-accent">3β</text>
+          <line x1="290" y1="126" x2="290" y2="170" class="flow" marker-end="url(#st-a)"/>
+          <text x="298" y="152" class="t-mono fill-accent">3β</text>
+          <line x1="492" y1="126" x2="492" y2="170" class="flow" marker-end="url(#st-a)"/>
+          <text x="500" y="152" class="t-mono fill-accent">3β</text>
+
+          <!-- row 2: delta-4 -->
+          <rect x="13"  y="176" width="150" height="30" rx="6" class="box-gray"/>
+          <text x="88"  y="195" text-anchor="middle" class="t">progesterone</text>
+          <rect x="215" y="176" width="150" height="30" rx="6" class="box-gray"/>
+          <text x="290" y="195" text-anchor="middle" class="t">17-OH-progesterone</text>
+          <rect x="417" y="176" width="150" height="30" rx="6" class="box-gray"/>
+          <text x="492" y="195" text-anchor="middle" class="t">androstenedione</text>
+          <line x1="163" y1="191" x2="209" y2="191" class="flow" marker-end="url(#st-a)"/>
+          <text x="186" y="185" text-anchor="middle" class="t-mono fill-accent">17α</text>
+          <line x1="365" y1="191" x2="411" y2="191" class="flow" marker-end="url(#st-a)"/>
+          <text x="388" y="185" text-anchor="middle" class="t-mono fill-accent">lyase</text>
+
+          <line x1="88"  y1="206" x2="88"  y2="250" class="flow" marker-end="url(#st-a)"/>
+          <text x="96"  y="232" class="t-mono fill-accent">21</text>
+          <line x1="290" y1="206" x2="290" y2="250" class="flow" marker-end="url(#st-a)"/>
+          <text x="298" y="232" class="t-mono fill-accent">21</text>
+          <line x1="492" y1="206" x2="492" y2="250" class="flow" marker-end="url(#st-a)"/>
+          <text x="500" y="232" class="t-mono fill-accent">17β</text>
+
+          <!-- row 3 -->
+          <rect x="13"  y="256" width="150" height="30" rx="6" class="box-gray"/>
+          <text x="88"  y="275" text-anchor="middle" class="t">11-deoxycorticosterone</text>
+          <rect x="215" y="256" width="150" height="30" rx="6" class="box-gray"/>
+          <text x="290" y="275" text-anchor="middle" class="t">11-deoxycortisol</text>
+          <rect x="417" y="256" width="150" height="30" rx="6" class="box-blue"/>
+          <text x="492" y="275" text-anchor="middle" class="t">testosterone</text>
+
+          <line x1="88"  y1="286" x2="88"  y2="330" class="flow" marker-end="url(#st-a)"/>
+          <text x="96"  y="312" class="t-mono fill-accent">11β</text>
+          <line x1="290" y1="286" x2="290" y2="330" class="flow" marker-end="url(#st-a)"/>
+          <text x="298" y="312" class="t-mono fill-accent">11β</text>
+          <line x1="492" y1="286" x2="492" y2="330" class="flow" marker-end="url(#st-a)"/>
+          <text x="500" y="312" class="t-mono fill-accent">5α</text>
+
+          <!-- row 4 -->
+          <rect x="13"  y="336" width="150" height="30" rx="6" class="box-gray"/>
+          <text x="88"  y="355" text-anchor="middle" class="t">corticosterone</text>
+          <rect x="215" y="336" width="150" height="30" rx="6" class="box-blue"/>
+          <text x="290" y="355" text-anchor="middle" class="t-b">cortisol</text>
+          <rect x="417" y="336" width="150" height="30" rx="6" class="box-blue"/>
+          <text x="492" y="355" text-anchor="middle" class="t">dihydrotestosterone</text>
+
+          <line x1="88" y1="366" x2="88" y2="410" class="flow" marker-end="url(#st-a)"/>
+          <text x="96" y="392" class="t-mono fill-accent">AS</text>
+          <!-- testosterone to estradiol, down the right edge -->
+          <path d="M567 271 C 578 271, 578 420, 546 420" class="flow" marker-end="url(#st-a)" fill="none"/>
+          <text x="536" y="386" text-anchor="end" class="t-mono fill-accent">arom</text>
+
+          <!-- row 5 -->
+          <rect x="13"  y="416" width="150" height="30" rx="6" class="box-gray"/>
+          <text x="88"  y="435" text-anchor="middle" class="t">18-OH-corticosterone</text>
+          <rect x="396" y="416" width="150" height="30" rx="6" class="box-blue"/>
+          <text x="471" y="435" text-anchor="middle" class="t">estradiol</text>
+
+          <line x1="88" y1="446" x2="88" y2="490" class="flow" marker-end="url(#st-a)"/>
+          <text x="96" y="472" class="t-mono fill-accent">AS</text>
+
+          <!-- row 6 -->
+          <rect x="13" y="496" width="150" height="30" rx="6" class="box-blue"/>
+          <text x="88" y="515" text-anchor="middle" class="t-b">aldosterone</text>
+
+          <!-- zone captions -->
+          <text x="88"  y="548" text-anchor="middle" class="t-sm">zona glomerulosa</text>
+          <text x="290" y="548" text-anchor="middle" class="t-sm">zona fasciculata</text>
+          <text x="492" y="548" text-anchor="middle" class="t-sm">zona reticularis</text>
+          <text x="88"  y="562" text-anchor="middle" class="t-mut">CYP11B2, no CYP17A1</text>
+          <text x="290" y="562" text-anchor="middle" class="t-mut">CYP17A1 but no b5</text>
+          <text x="492" y="562" text-anchor="middle" class="t-mut">CYP17A1 with b5</text>
+          <text x="290" y="586" text-anchor="middle" class="t-mut">shaded boxes are the biologically active end products · the top two rows are common to all three zones</text>
+        </svg>
+        <p class="figcaption">Original diagram, drawn from the pathway presented in the session. The <strong>vertical axis is the sequence</strong>
+          and the <strong>horizontal axis is the branch point</strong>: every step to the right removes or modifies carbons at C17,
+          every step downward adds oxygen at C21, C11, or C18. Two structural facts to carry away — <strong>21-hydroxylase serves both the
+          left and the middle column</strong>, which is why its loss is the most damaging single deficiency, and
+          <strong>17α-hydroxylase is the gate to both the middle and the right column</strong>, which is why its loss removes cortisol and all
+          sex steroids at once while leaving the left column not merely intact but overdriven.</p>
+      </div>
+
+      <div class="note note-blue">
+        <span class="note-kind">Trace three paths out loud before moving on</span>
+        <p><strong>To aldosterone:</strong> cholesterol → pregnenolone → progesterone → 11-deoxycorticosterone → corticosterone →
+          18-hydroxycorticosterone → aldosterone. <strong>To cortisol:</strong> cholesterol → pregnenolone → 17-OH-pregnenolone →
+          17-OH-progesterone → 11-deoxycortisol → cortisol. <strong>To testosterone:</strong> cholesterol → pregnenolone →
+          17-OH-pregnenolone → DHEA → androstenedione → testosterone, then 5α-reductase to DHT or aromatase to estradiol in the periphery.</p>
+      </div>
+    </section>
+
+    <section class="section" id="zones" data-toc="Three zones, three products" data-phase="Build">
+      <h2>Why each zone makes only its own hormone</h2>
+      <p class="section-note">Same genome in every cell of the cortex. What differs is which steroidogenic enzymes are transcribed — and that is the whole explanation.</p>
+
+      <div class="grid three">
+        <div class="block">
+          <div class="block-label blue">Zona glomerulosa — 10–15%</div>
+          <div class="block-text"><strong>Aldosterone.</strong> Expresses <strong>CYP11B2</strong> (aldosterone synthase) and
+            <strong>does not express CYP17A1</strong>. With no 17α-hydroxylation available, everything is forced down the
+            mineralocorticoid branch. Driven by <strong>angiotensin II and potassium</strong>, not primarily by ACTH.</div>
+        </div>
+        <div class="block">
+          <div class="block-label blue">Zona fasciculata — 70–80%</div>
+          <div class="block-text"><strong>Cortisol.</strong> Expresses <strong>CYP17A1</strong>, plus <strong>CYP21A2 and CYP11B1</strong>,
+            but <strong>not cytochrome b5</strong> — so it performs 17α-hydroxylation without the subsequent lyase step. Driven by <strong>ACTH</strong>.
+            The largest zone, because cortisol output dwarfs everything else the cortex makes.</div>
+        </div>
+        <div class="block">
+          <div class="block-label blue">Zona reticularis — 10–15%</div>
+          <div class="block-text"><strong>DHEA, DHEA-S, androstenedione.</strong> Expresses <strong>CYP17A1 with cytochrome b5</strong>, so
+            the lyase activity runs; relatively <strong>low 3β-HSD</strong>, which favours DHEA; and <strong>SULT2A1</strong>, which sulfates it.
+            Carries receptors for ACTH and also for LH and FSH, all of which raise cAMP.</div>
+        </div>
+      </div>
+
+      <div class="note note-amber">
+        <span class="note-kind">A mnemonic, and the thing it does not tell you</span>
+        <p><strong>Salt, sugar, sex — the deeper you go, the sweeter it gets:</strong> glomerulosa → salt, fasciculata → sugar,
+          reticularis → sex. What it does not capture is the mechanism: the difference between the zones is
+          <strong>enzyme expression, not anatomy</strong>. The medulla is a separate story entirely — neural crest in origin, chromaffin
+          cells making catecholamines, and it appears on the <a href="adrenal.html#pheo">adrenal disorders page</a> as the home of pheochromocytoma.</p>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label purple">Adrenal androgens are weak, and that matters</div>
+          <div class="block-text">DHEA and androstenedione are the adrenal's androgen products and both are <strong>weak</strong>;
+            potency comes from peripheral and gonadal conversion to <strong>testosterone and DHT</strong>. They dominate androgen exposure
+            <strong>before puberty in both sexes</strong>. After puberty the gonads take over in males, while in females
+            <strong>the adrenal remains a major androgen source</strong> — which is why adrenal androgen excess is a much bigger clinical
+            problem in girls and women.</div>
+        </div>
+        <div class="block">
+          <div class="block-label red">And why the fetus is the vulnerable one</div>
+          <div class="block-text">Pathologically raised adrenal androgens have a far greater effect on <strong>46,XX development before
+            puberty, and above all in utero</strong>, than on 46,XY development — an XY fetus is already awash in testicular testosterone,
+            so extra adrenal androgen changes little, whereas an XX fetus has a bipotential external genital anlage that responds to it.
+            Hold on to that asymmetry; it is the whole of <a href="#cah-mechanism">objective 6</a>.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cyp17" data-toc="The CYP17A1 puzzle" data-phase="Build">
+      <h2>One gene, one polypeptide, two activities</h2>
+      <p class="section-note">Objective 3 asks you to puzzle over this deliberately. It rewards the effort, because the answer explains the zonation you just learned.</p>
+
+      <div class="note note-blue">
+        <span class="note-kind">The apparent paradox</span>
+        <p><strong>CYP17A1</strong> is a single gene encoding a single polypeptide that carries <strong>two catalytic activities</strong>:
+          17α-hydroxylase and 17,20-lyase. Adrenal androgen synthesis needs <em>both</em> — you must hydroxylate C17 and then cleave the
+          C17–C20 bond. Cortisol synthesis needs <em>only the first</em>. So how does one protein, present in both the fasciculata and the
+          reticularis, run both reactions in one zone and only one reaction in the other?</p>
+      </div>
+
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 560 250" role="img" aria-labelledby="b5-t b5-d">
+          <title id="b5-t">Cytochrome b5 as the switch between the two CYP17A1 activities</title>
+          <desc id="b5-d">In the zona fasciculata, CYP17A1 converts progesterone to 17-hydroxyprogesterone and stops there, because cytochrome b5 is absent; 21-hydroxylase and 11-beta-hydroxylase then carry it on to cortisol. In the zona reticularis, cytochrome b5 is present, so the same enzyme continues past 17-hydroxyprogesterone and cleaves the C17 to C20 bond, producing androstenedione.</desc>
+          <defs><marker id="b5-a" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--accent)"/></marker></defs>
+
+          <rect x="10" y="96" width="130" height="34" rx="6" class="box-gray"/>
+          <text x="75" y="117" text-anchor="middle" class="t">progesterone</text>
+
+          <line x1="140" y1="113" x2="196" y2="113" class="flow" marker-end="url(#b5-a)"/>
+          <text x="168" y="106" text-anchor="middle" class="t-mono fill-accent">17α</text>
+
+          <rect x="202" y="96" width="146" height="34" rx="6" class="box-amber"/>
+          <text x="275" y="112" text-anchor="middle" class="t">17-OH-progesterone</text>
+          <text x="275" y="124" text-anchor="middle" class="t-mut">the branch point</text>
+
+          <!-- up: fasciculata -->
+          <path d="M348 105 C 392 105, 386 52, 416 52" class="flow" marker-end="url(#b5-a)" fill="none"/>
+          <text x="386" y="44" text-anchor="middle" class="t-mono fill-accent">21 → 11β</text>
+          <rect x="422" y="34" width="130" height="34" rx="6" class="box-blue"/>
+          <text x="487" y="55" text-anchor="middle" class="t-b">cortisol</text>
+          <text x="487" y="22" text-anchor="middle" class="t-sm">zona fasciculata — no b5</text>
+
+          <!-- down: reticularis -->
+          <path d="M348 121 C 392 121, 386 182, 416 182" class="flow" marker-end="url(#b5-a)" fill="none"/>
+          <text x="386" y="200" text-anchor="middle" class="t-mono fill-accent">lyase + b5</text>
+          <rect x="422" y="164" width="130" height="34" rx="6" class="box-blue"/>
+          <text x="487" y="185" text-anchor="middle" class="t">androstenedione</text>
+          <text x="487" y="222" text-anchor="middle" class="t-sm">zona reticularis — b5 present</text>
+
+          <text x="180" y="168" class="t-sm">The same protein, the same substrate.</text>
+          <text x="180" y="184" class="t-sm">Only the partner protein differs.</text>
+        </svg>
+        <p class="figcaption">Original diagram. <strong>Cytochrome b5 is the switch.</strong> It is not a substrate and not the catalytic
+          enzyme — it is an allosteric partner that promotes the electron transfer the lyase reaction needs. Where b5 is expressed
+          (zona reticularis) CYP17A1 carries straight on through to a C19 androgen; where it is not (zona fasciculata) the reaction stops
+          at 17-hydroxyprogesterone and 21- and 11β-hydroxylase take the molecule to cortisol instead.</p>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label teal">The resolution, stated plainly</div>
+          <div class="block-text">The two activities are <strong>separably regulated even though they are inseparably encoded</strong>.
+            17α-hydroxylase runs wherever CYP17A1 is expressed. 17,20-lyase additionally requires <strong>cytochrome b5</strong>
+            (and serine phosphorylation of the enzyme, and an adequate supply of electrons from P450 oxidoreductase).
+            Control the partner and you control which of the two reactions the cell actually performs.</div>
+        </div>
+        <div class="block">
+          <div class="block-label amber">Why this is worth the effort</div>
+          <div class="block-text">It explains <strong>adrenarche</strong> — the rise in adrenal androgens at around age 6 to 8, independent of
+            gonadarche, which tracks maturation of the zona reticularis and its b5 expression rather than any change in ACTH. It also
+            explains why <strong>CYP17A1 deficiency</strong> takes out cortisol <em>and</em> all sex steroids together, while leaving the
+            mineralocorticoid arm not just intact but over-supplied.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Regulate</span><span class="phase-what">What turns each branch on, and on what timescale</span></div>
+
+    <section class="section" id="regulation" data-toc="Regulation of each branch" data-phase="Regulate">
+      <h2>Two separate control systems in one gland</h2>
+
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 560 300" role="img" aria-labelledby="reg-t reg-d">
+          <title id="reg-t">Separate control of the cortisol and aldosterone branches</title>
+          <desc id="reg-d">On the left, the hypothalamic paraventricular nucleus releases CRH to the pituitary, which releases ACTH; ACTH acts on the MC2 receptor of the zona fasciculata through a G-alpha-s protein and cAMP and PKA, producing cortisol, which feeds back negatively on both the pituitary and the hypothalamus. On the right, angiotensin II and potassium act on the zona glomerulosa through the AT1 receptor and G-q, raising intracellular calcium and inducing aldosterone synthase, producing aldosterone.</desc>
+          <defs><marker id="rg-a" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--accent)"/></marker></defs>
+
+          <text x="140" y="16" text-anchor="middle" class="t-b">Cortisol branch — ACTH</text>
+          <text x="420" y="16" text-anchor="middle" class="t-b">Aldosterone branch — renin–angiotensin and K⁺</text>
+
+          <rect x="55" y="30" width="170" height="30" rx="6" class="box-blue"/>
+          <text x="140" y="49" text-anchor="middle" class="t">hypothalamus — CRH</text>
+          <line x1="140" y1="60" x2="140" y2="84" class="flow" marker-end="url(#rg-a)"/>
+          <rect x="55" y="90" width="170" height="30" rx="6" class="box-blue"/>
+          <text x="140" y="109" text-anchor="middle" class="t">pituitary — ACTH</text>
+          <line x1="140" y1="120" x2="140" y2="144" class="flow" marker-end="url(#rg-a)"/>
+          <rect x="55" y="150" width="170" height="42" rx="6" class="box-gray"/>
+          <text x="140" y="167" text-anchor="middle" class="t">zona fasciculata</text>
+          <text x="140" y="182" text-anchor="middle" class="t-mono">MC2R → Gαs → cAMP → PKA</text>
+          <line x1="140" y1="192" x2="140" y2="216" class="flow" marker-end="url(#rg-a)"/>
+          <rect x="55" y="222" width="170" height="30" rx="6" class="box-blue"/>
+          <text x="140" y="241" text-anchor="middle" class="t-b">cortisol</text>
+          <path d="M55 237 C 14 237, 14 45, 51 45" class="inhibit"/>
+          <text x="20" y="150" text-anchor="middle" class="t-mut" transform="rotate(-90 20 150)">negative feedback</text>
+
+          <rect x="335" y="30" width="170" height="42" rx="6" class="box-blue"/>
+          <text x="420" y="47" text-anchor="middle" class="t">↓ renal perfusion → renin</text>
+          <text x="420" y="62" text-anchor="middle" class="t">→ angiotensin II · or ↑ K⁺</text>
+          <line x1="420" y1="72" x2="420" y2="102" class="flow" marker-end="url(#rg-a)"/>
+          <rect x="335" y="108" width="170" height="42" rx="6" class="box-gray"/>
+          <text x="420" y="125" text-anchor="middle" class="t">zona glomerulosa</text>
+          <text x="420" y="140" text-anchor="middle" class="t-mono">AT1R → Gq → ↑ Ca²⁺</text>
+          <line x1="420" y1="150" x2="420" y2="174" class="flow" marker-end="url(#rg-a)"/>
+          <rect x="335" y="180" width="170" height="30" rx="6" class="box-gray"/>
+          <text x="420" y="199" text-anchor="middle" class="t">↑ CYP11B2 transcription</text>
+          <line x1="420" y1="210" x2="420" y2="234" class="flow" marker-end="url(#rg-a)"/>
+          <rect x="335" y="240" width="170" height="30" rx="6" class="box-blue"/>
+          <text x="420" y="259" text-anchor="middle" class="t-b">aldosterone</text>
+          <text x="420" y="288" text-anchor="middle" class="t-mut">ACTH contributes, but is not the main driver</text>
+        </svg>
+        <p class="figcaption">Original diagram. Two branches, two second messengers: <strong>cAMP on the left, calcium on the right</strong>.
+          Keeping them separate is what lets you predict which hormone is lost in which disease — and it is exactly this separation that
+          <a href="#gra-disease">glucocorticoid-remediable aldosteronism</a> destroys.</p>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label blue">ACTH acts on two timescales</div>
+          <div class="block-text"><strong>Short term (minutes):</strong> cAMP/PKA phosphorylates and mobilizes <strong>StAR</strong>, and
+            cholesterol esters — largely from serum LDL taken up by the cell — are moved into the mitochondrion. This is where the
+            rate-limiting step is regulated.
+            <strong>Long term (hours to days):</strong> cAMP-responsive transcription factors <strong>induce StAR and the steroidogenic
+            enzymes themselves</strong>, and the cortex grows. That second mechanism is why chronically high ACTH produces
+            <em>hyperplasia</em> — the "H" in congenital adrenal hyperplasia.</div>
+        </div>
+        <div class="block">
+          <div class="block-label amber">What drives ACTH</div>
+          <div class="block-text"><strong>Diurnal rhythm</strong> — peak in the early morning, trough around midnight; this is the basis of
+            the late-night salivary cortisol test on the <a href="adrenal.html#cushing">adrenal page</a>. And <strong>stress</strong> —
+            illness, injury, surgery, hypoglycemia. Negative feedback by cortisol closes the loop at both the pituitary and the hypothalamus,
+            which is why exogenous glucocorticoid suppresses the whole axis.</div>
+        </div>
+      </div>
+
+      <div class="note note-teal">
+        <span class="note-kind">Sex steroid production — the two-cell model</span>
+        <p><strong>Ovary:</strong> <em>LH</em> drives the <strong>theca cell</strong>, which has CYP17A1 and makes androstenedione;
+          androstenedione crosses to the <strong>granulosa cell</strong>, where <em>FSH</em> drives <strong>aromatase</strong> and it becomes
+          estrone and then estradiol. Neither cell can do the whole job alone. After the LH surge the theca cells luteinize, CYP17A1
+          expression falls sharply, and <strong>progesterone becomes the major product</strong> — which is the biochemistry of the luteal phase.
+          <strong>Testis:</strong> LH drives the <strong>Leydig cell</strong> to make testosterone, which is then converted peripherally to
+          <strong>DHT by 5α-reductase</strong> or to <strong>estradiol by aromatase</strong>.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Break</span><span class="phase-what">Two diseases that follow directly from the map</span></div>
+
+    <section class="section" id="gra-design" data-toc="GRA — the design flaw" data-phase="Break">
+      <h2>Glucocorticoid-remediable aldosteronism: building the "design flaw" argument</h2>
+      <p class="section-note">Objective 4 asks you to construct a rationale, not to recite a fact. Here is the chain of reasoning, one link at a time.</p>
+
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 560 300" role="img" aria-labelledby="gra-t gra-d">
+          <title id="gra-t">Unequal crossing over between CYP11B1 and CYP11B2 creates a chimeric gene</title>
+          <desc id="gra-d">Two homologous chromosome 8s each carry CYP11B1 and CYP11B2 side by side. Because the two genes are nearly identical in sequence, they can misalign during meiosis, so that CYP11B1 on one chromosome pairs with CYP11B2 on the other. A crossover in that misaligned region produces one chromosome carrying a chimeric gene with the CYP11B1 promoter fused to CYP11B2 coding sequence, and a reciprocal chromosome carrying the CYP11B2 promoter fused to CYP11B1 coding sequence. The first is the cause of glucocorticoid-remediable aldosteronism; the second is clinically silent.</desc>
+          <defs><marker id="gr-a" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--accent)"/></marker></defs>
+
+          <text x="16" y="18" class="t-b">Normal chromosome 8q24.3 — two near-identical genes in tandem</text>
+          <rect x="16"  y="28" width="150" height="26" rx="4" class="box-teal"/>
+          <text x="91"  y="45" text-anchor="middle" class="t-mono">CYP11B1</text>
+          <rect x="172" y="28" width="150" height="26" rx="4" class="box-blue"/>
+          <text x="247" y="45" text-anchor="middle" class="t-mono">CYP11B2</text>
+          <text x="336" y="45" class="t-sm">≈95% identical coding sequence</text>
+
+          <text x="16" y="86" class="t-b">Misalignment in meiosis, then a crossover</text>
+          <rect x="16"  y="96" width="150" height="24" rx="4" class="box-teal"/>
+          <text x="91"  y="112" text-anchor="middle" class="t-mono">CYP11B1</text>
+          <rect x="172" y="96" width="150" height="24" rx="4" class="box-blue"/>
+          <text x="247" y="112" text-anchor="middle" class="t-mono">CYP11B2</text>
+          <rect x="94"  y="136" width="150" height="24" rx="4" class="box-teal"/>
+          <text x="169" y="152" text-anchor="middle" class="t-mono">CYP11B1</text>
+          <rect x="250" y="136" width="150" height="24" rx="4" class="box-blue"/>
+          <text x="325" y="152" text-anchor="middle" class="t-mono">CYP11B2</text>
+          <line x1="200" y1="124" x2="200" y2="134" class="inhibit"/>
+          <text x="410" y="130" class="t-sm">the recombination machinery cannot</text>
+          <text x="410" y="144" class="t-sm">reliably tell the two copies apart</text>
+
+          <text x="16" y="192" class="t-b">Two reciprocal products</text>
+          <rect x="16" y="202" width="240" height="40" rx="6" class="box-red"/>
+          <text x="136" y="218" text-anchor="middle" class="t-mono">B1 promoter + B2 coding</text>
+          <text x="136" y="234" text-anchor="middle" class="t-sm">aldosterone synthase driven by ACTH</text>
+          <rect x="292" y="202" width="240" height="40" rx="6" class="box-gray"/>
+          <text x="412" y="218" text-anchor="middle" class="t-mono">B2 promoter + B1 coding</text>
+          <text x="412" y="234" text-anchor="middle" class="t-sm">11β-hydroxylase driven by angiotensin II</text>
+          <text x="136" y="262" text-anchor="middle" class="t-sm fill-red">disease — GRA</text>
+          <text x="412" y="262" text-anchor="middle" class="t-sm">clinically insignificant</text>
+          <text x="280" y="288" text-anchor="middle" class="t-mut">cortisol output ≈10–20 mg/day · aldosterone output ≈0.05–0.2 mg/day — the asymmetry is the reason</text>
+        </svg>
+        <p class="figcaption">Original diagram. The reciprocal products of the same crossover have wildly different consequences.
+          Putting a <em>small</em> hormone system under a <em>large</em> drive is a catastrophe; putting a large system under a small
+          additional drive changes nothing measurable.</p>
+      </div>
+
+      <div class="note note-purple">
+        <span class="note-kind">The argument, link by link</span>
+        <p><strong>1.</strong> <em>CYP11B2 arose from CYP11B1 by gene duplication.</em> Getting a dedicated aldosterone synthase, separately
+          regulated from cortisol synthesis, was an evolutionary gain.
+          <strong>2.</strong> <em>The duplicates were left sitting next to each other on chromosome 8q24.3, ~95% identical in their coding
+          regions.</em> The genome never tidied up.
+          <strong>3.</strong> <em>Meiotic recombination works by pairing homologous sequence.</em> It is a sequence-matching process; it has
+          no concept of gene identity.
+          <strong>4.</strong> <em>Therefore CYP11B1 on one chromosome can pair with CYP11B2 on the other.</em> Near-identity is
+          indistinguishable from identity as far as the machinery is concerned.
+          <strong>5.</strong> <em>A crossover in that misaligned pairing yields a chimeric gene</em> — the promoter of one fused to the coding
+          sequence of the other.
+          <strong>6.</strong> <em>The chimera with the CYP11B1 promoter and CYP11B2 coding sequence places aldosterone synthase under ACTH
+          control and expresses it in the zona fasciculata.</em> Disease.
+          <strong>7.</strong> Therefore the flaw is <strong>structural, not mutational</strong>: nothing was damaged, no base was mis-copied.
+          The arrangement of the genome itself makes this error recurrent — and that is what justifies calling it a design flaw rather than bad luck.</p>
+      </div>
+
+      <div class="note note-amber">
+        <span class="note-kind">The same flaw, a second time</span>
+        <p>The strongest support for the argument is that the genome does it again. <strong>CYP21A2</strong> sits beside the non-functional
+          pseudogene <strong>CYP21A1P</strong> in the same head-to-tail arrangement, and most disease-causing 21-hydroxylase alleles arise not
+          from spontaneous point mutation but from <strong>gene conversion or deletion between the gene and its pseudogene</strong>.
+          Two of the most important disorders in this session — GRA and congenital adrenal hyperplasia — share one root cause:
+          <strong>near-identical sequences kept in tandem</strong>.</p>
+      </div>
+    </section>
+
+    <section class="section" id="gra-disease" data-toc="GRA — name and disease" data-phase="Break">
+      <h2>What the name "glucocorticoid-remediable" is telling you</h2>
+      <p class="section-note">Objective 5: dissect the etymology, then the pathophysiology. The name is unusually informative — it names the treatment, not the lesion.</p>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label amber">The etymology, word by word</div>
+          <div class="block-text"><strong>Hyper-aldosteron-ism</strong> — too much aldosterone.
+            <strong>Remediable</strong> — from <em>remedium</em>, able to be remedied; the condition is <em>corrected by</em> the thing named.
+            <strong>Glucocorticoid</strong> — the class of drug that corrects it.
+            So: <em>hyperaldosteronism that a glucocorticoid fixes</em>.
+            The trap the name sets is that it sounds like a glucocorticoid <em>deficiency</em> state. It is not. The glucocorticoid is being
+            given as a <strong>suppressant of ACTH</strong>, not as replacement. It is also known as
+            <strong>familial hyperaldosteronism type 1 (FH-I)</strong>, and inherited in an <strong>autosomal dominant</strong> pattern.</div>
+        </div>
+        <div class="block">
+          <div class="block-label blue">The pathophysiology in five steps</div>
+          <div class="block-text"><strong>1.</strong> The chimeric gene expresses aldosterone synthase activity in the
+            <strong>zona fasciculata</strong>, where it does not belong.
+            <strong>2.</strong> It is transcribed from the <strong>CYP11B1 promoter</strong>, so it answers to <strong>ACTH</strong>.
+            <strong>3.</strong> Aldosterone production therefore follows the ACTH rhythm rather than renin, angiotensin II, or potassium.
+            <strong>4.</strong> Aldosterone excess → sodium retention → volume expansion → <strong>hypertension</strong>, with
+            <strong>hypokalemia</strong> and <strong>suppressed renin</strong> (volume expansion switches the renin–angiotensin system off).
+            <strong>5.</strong> Give <strong>dexamethasone</strong>: ACTH is suppressed, the abnormal drive is removed, and aldosterone
+            normalizes. The response is not just treatment — it is the diagnostic demonstration.</div>
+        </div>
+      </div>
+
+      <div class="note note-teal">
+        <span class="note-kind">Recognizing it clinically, and how it is confirmed</span>
+        <p>Suspect it in <strong>early-onset hypertension</strong> with a <strong>family history of hypertension or of hemorrhagic stroke
+          before age 40</strong>, especially with hypokalemia and a raised aldosterone-to-renin ratio. Because the fasciculata is now
+          hydroxylating cortisol at C18, patients excrete the <strong>hybrid steroids 18-oxocortisol and 18-hydroxycortisol</strong>, which are
+          characteristic. Confirmation today is <strong>genetic testing for the chimeric gene</strong> rather than a dexamethasone trial.
+          Treatment is a low-dose glucocorticoid to suppress ACTH, a <strong>mineralocorticoid receptor antagonist</strong>, or both.
+          It is <strong>rare</strong> — a small percentage of primary aldosteronism — but it is the one form with a mechanism you can derive
+          from first principles, which is why it is on the syllabus.</p>
+      </div>
+
+      <p class="citation-line"><cite>Lifton RP et al. <em>A chimaeric 11β-hydroxylase/aldosterone synthase gene causes glucocorticoid-remediable aldosteronism and human hypertension.</em> Nature 1992; and OMIM #103900, Hyperaldosteronism, Familial, Type I. <a href="https://omim.org/entry/103900" target="_blank" rel="noopener noreferrer">omim.org/entry/103900</a></cite></p>
+    </section>
+
+    <section class="section" id="cah-mechanism" data-toc="21-OHD → virilization" data-phase="Break">
+      <h2>From a missing enzyme to a virilized XX fetus</h2>
+      <p class="section-note">Objective 6 asks you to formulate the mechanism. Six steps, each one following from the last.</p>
+
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 560 320" role="img" aria-labelledby="cah-t cah-d">
+          <title id="cah-t">The consequences of a 21-hydroxylase block</title>
+          <desc id="cah-d">A block at 21-hydroxylase stops both the aldosterone and the cortisol branches. Cortisol falls, which removes negative feedback so ACTH rises, which both enlarges the adrenal cortex and drives more precursor into the pathway. 17-hydroxyprogesterone accumulates above the block and is diverted through 17,20-lyase into androstenedione and then testosterone and dihydrotestosterone, producing virilization of a 46,XX fetus. Aldosterone loss produces salt wasting.</desc>
+          <defs><marker id="ch-a" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--accent)"/></marker>
+          <marker id="ch-r" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--red)"/></marker></defs>
+
+          <!-- middle column: the block and the feedback loop -->
+          <rect x="165" y="14" width="170" height="30" rx="6" class="box-gray"/>
+          <text x="250" y="33" text-anchor="middle" class="t">17-OH-progesterone</text>
+
+          <line x1="250" y1="44" x2="250" y2="82" class="flow"/>
+          <line x1="236" y1="54" x2="264" y2="72" stroke="var(--red)" stroke-width="3"/>
+          <line x1="264" y1="54" x2="236" y2="72" stroke="var(--red)" stroke-width="3"/>
+          <text x="158" y="58" text-anchor="end" class="t-mono fill-red">21-hydroxylase</text>
+          <text x="158" y="72" text-anchor="end" class="t-mono fill-red">blocked</text>
+
+          <rect x="165" y="86" width="170" height="30" rx="6" class="box-gray"/>
+          <text x="250" y="105" text-anchor="middle" class="t">↓ cortisol · ↓ aldosterone</text>
+
+          <line x1="250" y1="116" x2="250" y2="152" class="flow" marker-end="url(#ch-a)"/>
+          <rect x="160" y="158" width="180" height="30" rx="6" class="box-amber"/>
+          <text x="250" y="177" text-anchor="middle" class="t">lost feedback → ↑ ACTH</text>
+
+          <line x1="250" y1="188" x2="250" y2="224" class="flow" marker-end="url(#ch-a)"/>
+          <rect x="155" y="230" width="190" height="44" rx="6" class="box-amber"/>
+          <text x="250" y="247" text-anchor="middle" class="t">adrenal hyperplasia +</text>
+          <text x="250" y="263" text-anchor="middle" class="t">more substrate in</text>
+
+          <path d="M345 252 C 368 252, 368 60, 341 44" class="flow" marker-end="url(#ch-a)" fill="none"/>
+
+          <!-- left: the mineralocorticoid consequence -->
+          <line x1="163" y1="101" x2="140" y2="101" class="flow-red" marker-end="url(#ch-r)"/>
+          <rect x="8" y="79" width="124" height="44" rx="6" class="box-red"/>
+          <text x="70" y="96" text-anchor="middle" class="t">salt wasting</text>
+          <text x="70" y="112" text-anchor="middle" class="t-mut">↓Na⁺ ↑K⁺ shock</text>
+
+          <!-- right: the androgen shunt -->
+          <line x1="335" y1="29" x2="379" y2="29" class="flow-red" marker-end="url(#ch-r)"/>
+          <text x="357" y="21" text-anchor="middle" class="t-mono fill-red">lyase</text>
+          <rect x="385" y="14" width="170" height="30" rx="6" class="box-red"/>
+          <text x="470" y="33" text-anchor="middle" class="t">androstenedione</text>
+          <line x1="470" y1="44" x2="470" y2="70" class="flow-red" marker-end="url(#ch-r)"/>
+          <rect x="385" y="76" width="170" height="30" rx="6" class="box-red"/>
+          <text x="470" y="95" text-anchor="middle" class="t">testosterone → DHT</text>
+          <line x1="470" y1="106" x2="470" y2="132" class="flow-red" marker-end="url(#ch-r)"/>
+          <rect x="385" y="138" width="170" height="44" rx="6" class="box-red"/>
+          <text x="470" y="155" text-anchor="middle" class="t-b">virilization of the</text>
+          <text x="470" y="171" text-anchor="middle" class="t-b">46,XX external genitalia</text>
+          <text x="470" y="206" text-anchor="middle" class="t-sm">the only exit still open</text>
+
+          <text x="280" y="300" text-anchor="middle" class="t-mut">one block, three consequences — and the loop feeds itself</text>
+        </svg>
+        <p class="figcaption">Original diagram. The feature that makes this pathway <em>self-amplifying</em> is the feedback arm:
+          the missing cortisol raises ACTH, and higher ACTH pushes still more substrate into a pathway whose only open exit is the androgen branch.
+          That is why an untreated infant does not simply have low cortisol — they have <strong>enormous</strong> androgen production.</p>
+      </div>
+
+      <div class="note note-purple">
+        <span class="note-kind">The mechanism in six steps</span>
+        <p><strong>1.</strong> 21-hydroxylase converts 17-OH-progesterone → 11-deoxycortisol and progesterone → 11-deoxycorticosterone.
+          It therefore serves <strong>both</strong> the cortisol and the aldosterone arms.
+          <strong>2.</strong> Lose it and <strong>cortisol and aldosterone both fall</strong>.
+          <strong>3.</strong> Low cortisol removes negative feedback, so <strong>ACTH rises</strong> — acutely mobilizing cholesterol,
+          chronically inducing enzymes and <strong>enlarging the cortex</strong> (the hyperplasia of the name).
+          <strong>4.</strong> Substrate piles up immediately above the block, so <strong>17-OH-progesterone rises steeply</strong>.
+          <strong>5.</strong> The only route still open to that backlog is <strong>17,20-lyase</strong> → DHEA and androstenedione, which are
+          converted peripherally to <strong>testosterone and DHT</strong>.
+          <strong>6.</strong> A <strong>46,XX fetus</strong> has a bipotential external genital anlage that responds to androgen.
+          Exposure <strong>before about 12 weeks</strong> produces <strong>labioscrotal fusion</strong> and a urogenital sinus;
+          exposure <strong>after about 12–14 weeks</strong>, once the structures are formed, produces <strong>clitoromegaly</strong> without fusion.</p>
+      </div>
+
+      <div class="note note-blue">
+        <span class="note-kind">Why the internal structures are unaffected — and why this matters</span>
+        <p>The affected fetus has <strong>ovaries, a uterus, and fallopian tubes, all normal</strong>. Adrenal androgen does not produce
+          Müllerian regression, because that requires <strong>AMH from Sertoli cells</strong>, and there are none. Nor does it stabilize the
+          Wolffian ducts, which need high <em>local</em> testosterone from an adjacent testis rather than circulating androgen.
+          So the virilization is <strong>external only</strong> — which is exactly why these children are fertile and are raised female,
+          and why the finding is correctable. The clinical consequences are worked through on the
+          <a href="dsd.html#cah">DSD page</a>.</p>
+      </div>
+    </section>
+
+    <section class="section" id="cah-classic" data-toc="Classic vs non-classic CAH" data-phase="Break">
+      <h2>Classic and non-classic congenital adrenal hyperplasia</h2>
+      <p class="section-note">Objective 7. One gene, a spectrum of residual enzyme activity, and a presentation that tracks that residue almost linearly.</p>
+
+      <div class="note note-blue">
+        <span class="note-kind">The organizing idea</span>
+        <p>The three forms are not three diseases. They are <strong>one enzyme deficiency at three severities</strong>. Ask how much
+          21-hydroxylase activity is left and everything else follows: near-zero activity loses cortisol <em>and</em> aldosterone;
+          a little activity keeps aldosterone but not cortisol; a lot of activity keeps both under basal conditions and only shows up
+          as androgen excess later in life.</p>
+      </div>
+
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Classic and non-classic CAH compared">
+        <table>
+          <caption>21-hydroxylase deficiency accounts for roughly 90–95% of all congenital adrenal hyperplasia.</caption>
+          <thead><tr>
+            <th scope="col"></th>
+            <th scope="col">Classic — salt-wasting</th>
+            <th scope="col">Classic — simple virilizing</th>
+            <th scope="col">Non-classic</th>
+          </tr></thead>
+          <tbody>
+            <tr><th scope="row">Residual enzyme activity</th><td>Essentially none (&lt;1–2%)</td><td>A little (roughly 1–5%)</td><td>Substantial (roughly 20–50%)</td></tr>
+            <tr><th scope="row">Cortisol</th><td>Deficient</td><td>Deficient</td><td>Adequate at baseline</td></tr>
+            <tr><th scope="row">Aldosterone</th><td>Deficient — salt wasting</td><td>Preserved</td><td>Preserved</td></tr>
+            <tr><th scope="row">When it presents</th><td>First 1–3 weeks of life, as an adrenal crisis</td><td>At birth in 46,XX; later in 46,XY as early virilization</td><td>Childhood, adolescence, or adulthood — sometimes never</td></tr>
+            <tr><th scope="row">Genitalia at birth</th><td>46,XX atypical; 46,XY normal-appearing</td><td>46,XX atypical; 46,XY normal-appearing</td><td>Normal in both</td></tr>
+            <tr><th scope="row">Characteristic symptoms</th><td>Vomiting, poor feeding, failure to thrive, dehydration, hypotension, shock, hypoglycemia, <strong>hyponatremia with hyperkalemia</strong></td><td>Rapid somatic growth, advanced bone age with a short adult height, premature pubic hair, acne, virilization</td><td>Premature adrenarche, hirsutism, acne, oligomenorrhea, a PCOS-like picture, subfertility — or no symptoms at all</td></tr>
+            <tr><th scope="row">Approximate frequency</th><td colspan="2">Classic overall about 1 in 14,000–18,000 births; roughly three-quarters of classic cases are salt-wasting</td><td>Far commoner — of the order of 1 in 200 to 1 in 1,000, and higher in some populations</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grid">
+        <div class="block">
+          <div class="block-label amber">How each is found</div>
+          <div class="block-text"><strong>Classic:</strong> the <strong>newborn screen measures 17-hydroxyprogesterone</strong>, which is why an
+            affected 46,XY infant — who looks entirely normal at birth and would otherwise present in shock — is caught before the crisis.
+            <strong>Non-classic:</strong> an <strong>early-morning, follicular-phase 17-OHP</strong>; if that is borderline, an
+            <strong>ACTH (cosyntropin) stimulation test</strong> unmasks it. Genotyping confirms.</div>
+        </div>
+        <div class="block">
+          <div class="block-label teal">How each is treated</div>
+          <div class="block-text"><strong>Classic:</strong> <strong>hydrocortisone</strong> for glucocorticoid replacement,
+            <strong>fludrocortisone</strong> plus <strong>sodium chloride supplementation</strong> for the mineralocorticoid arm, and
+            stress dosing during illness. Goals are to prevent crisis while <strong>normalizing growth and androgens</strong> —
+            over-treating stunts growth, under-treating advances bone age.
+            <strong>Non-classic:</strong> often <strong>no treatment</strong>; glucocorticoid only if symptomatic androgen excess or
+            fertility problems warrant it.</div>
+        </div>
+      </div>
+
+      <div class="note note-amber">
+        <span class="note-kind">The other blocks, in one line each</span>
+        <p><strong>11β-hydroxylase deficiency</strong> — the second commonest: androgens high, cortisol low, but 11-deoxycorticosterone
+          accumulates and, being a weak mineralocorticoid in large amounts, causes <strong>hypertension and hypokalemia</strong>. Virilizing
+          <em>and</em> hypertensive.
+          <strong>17α-hydroxylase/17,20-lyase deficiency</strong> — no cortisol and no sex steroids, but DOC and corticosterone accumulate:
+          <strong>hypertension with absent puberty</strong>, and an <strong>undervirilized 46,XY</strong> infant.
+          <strong>3β-HSD deficiency</strong> — Δ5 steroids accumulate; DHEA is a weak androgen, so 46,XX infants are mildly virilized and
+          46,XY infants are undervirilized. It is the one form in which <strong>both</strong> sexes can have atypical genitalia.
+          The full enzyme-by-enzyme lab table is on the <a href="adrenal.html#cah">adrenal disorders page</a>.</p>
+      </div>
+
+      <p class="citation-line"><cite>Speiser PW et al. <em>Congenital Adrenal Hyperplasia Due to Steroid 21-Hydroxylase Deficiency: An Endocrine Society Clinical Practice Guideline.</em> J Clin Endocrinol Metab 2018;103(11):4043–4088. <a href="https://academic.oup.com/jcem/article/103/11/4043/5107759" target="_blank" rel="noopener noreferrer">academic.oup.com/jcem/article/103/11/4043</a> · Nimkarn S et al. <em>21-Hydroxylase-Deficient Congenital Adrenal Hyperplasia.</em> GeneReviews. <a href="https://www.ncbi.nlm.nih.gov/books/NBK1171/" target="_blank" rel="noopener noreferrer">ncbi.nlm.nih.gov/books/NBK1171</a></cite></p>
+    </section>
+
+    <section class="section" id="practice-block" data-toc="Name the block" data-phase="Break">
+      <h2>Name the block from the hormone pattern</h2>
+      <p class="section-note">The single most transferable skill from this session. Work through all six before moving on.</p>
+
+      <div class="figure" data-fig="steroid-block"></div>
+    </section>
+
+    <!-- ================================================================ -->
+    <div class="phase-rule"><span class="phase-step">Retrieve</span><span class="phase-what">Check yourself before you leave the page</span></div>
+
+    <section class="section" id="retrieve" data-toc="Retrieval prompts" data-phase="Retrieve">
+      <h2>Retrieval prompts</h2>
+      <p class="section-note">Answer out loud before opening each one.</p>
+
+      <div class="recall" data-disclosure>
+        <button class="recall-toggle" type="button" data-disclosure-toggle>
+          <span><span class="recall-kind">Retrieve</span><span class="recall-q">Why does 21-hydroxylase deficiency cause both salt wasting and virilization, while 17α-hydroxylase deficiency causes hypertension and no virilization?</span></span>
+          <span class="card-spacer"></span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="recall-body" data-disclosure-body>
+          <p><strong>Position in the pathway.</strong> 21-hydroxylase sits on the mineralocorticoid <em>and</em> the glucocorticoid arms but
+            not on the androgen arm, so its loss removes aldosterone and cortisol while leaving the androgen exit open for the accumulating
+            precursor — salt wasting plus virilization. 17α-hydroxylase sits at the gate to the glucocorticoid <em>and</em> androgen arms,
+            so its loss removes cortisol and all sex steroids while diverting everything into the mineralocorticoid arm — DOC and
+            corticosterone accumulate, giving hypertension with hypokalemia and no virilization.</p>
+        </div>
+      </div>
+
+      <div class="recall" data-disclosure>
+        <button class="recall-toggle" type="button" data-disclosure-toggle>
+          <span><span class="recall-kind">Retrieve</span><span class="recall-q">One gene, one protein, two activities. Say precisely what decides whether CYP17A1 performs one reaction or both.</span></span>
+          <span class="card-spacer"></span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="recall-body" data-disclosure-body>
+          <p><strong>Cytochrome b5.</strong> The 17α-hydroxylase reaction runs wherever CYP17A1 is expressed. The 17,20-lyase reaction
+            additionally requires cytochrome b5 as an allosteric partner promoting electron transfer. b5 is expressed in the
+            <strong>zona reticularis</strong> and not the <strong>zona fasciculata</strong>, so the reticularis makes androgens while the
+            fasciculata stops at 17-hydroxyprogesterone and goes on to cortisol. The genetics are inseparable; the regulation is not.</p>
+        </div>
+      </div>
+
+      <div class="recall" data-disclosure>
+        <button class="recall-toggle" type="button" data-disclosure-toggle>
+          <span><span class="recall-kind">Retrieve</span><span class="recall-q">Why is the reciprocal chimeric gene — CYP11B2 promoter with CYP11B1 coding sequence — clinically silent?</span></span>
+          <span class="card-spacer"></span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="recall-body" data-disclosure-body>
+          <p><strong>Scale.</strong> Cortisol output is of the order of 10–20 mg per day; aldosterone output is of the order of
+            0.05–0.2 mg per day — a difference of roughly two orders of magnitude. Adding a little angiotensin-II-driven 11β-hydroxylase
+            to an already large cortisol system is undetectable. Putting the tiny aldosterone system under the large, tonic ACTH drive
+            transforms it. Same crossover, same two products, opposite clinical significance.</p>
+        </div>
+      </div>
+
+      <div class="recall" data-disclosure>
+        <button class="recall-toggle" type="button" data-disclosure-toggle>
+          <span><span class="recall-kind">Retrieve</span><span class="recall-q">A 22-year-old woman has hirsutism, acne, and irregular periods. Her morning 17-OHP is mildly raised. What is the diagnosis, and what would have been true at her birth?</span></span>
+          <span class="card-spacer"></span>
+          <svg class="card-chevron" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 6l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="recall-body" data-disclosure-body>
+          <p><strong>Non-classic 21-hydroxylase deficiency</strong>, which mimics PCOS. At birth she had <strong>normal genitalia</strong> and a
+            <strong>normal newborn screen</strong>, because 20–50% residual enzyme activity is enough for normal cortisol and aldosterone under
+            basal conditions and enough to keep fetal androgen exposure below the threshold for virilization. Confirm with an
+            early-morning follicular-phase 17-OHP, and use an ACTH stimulation test if the value is equivocal.</p>
+        </div>
+      </div>
+
+      <div class="note note-supp">
+        <span class="note-kind">Practice questions — placeholder</span>
+        <p>Multiple-choice questions for this lecture have not been written yet. When they are added to
+          <span class="mono">assets/data/endocrine_question_bank.json</span> with <span class="mono">"lecture": "Steroid Hormone Synthesis"</span>,
+          they will appear here and in <a href="practice.html">cumulative practice</a> automatically — no change to this page is needed
+          beyond swapping this note for the quiz mount.</p>
+      </div>
+
+      <!-- When questions exist, replace the placeholder note above with:
+           <div class="quiz" data-quiz data-quiz-lecture="Steroid Hormone Synthesis"></div> -->
+    </section>
+
+  </main>
+</div>
+
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/quiz.js" defer></script>
+<script src="assets/js/figures.js" defer></script>
+</body>
+</html>

@@ -749,6 +749,155 @@
   };
 
   /* ===================================================================== */
+  /* Steroidogenesis — name the blocked enzyme from the hormone pattern    */
+  /* ===================================================================== */
+  FIGS['steroid-block'] = function (host) {
+    var CASES = [
+      { stem: 'A newborn has hyponatremia, hyperkalemia, and shock. 17-hydroxyprogesterone is markedly high, androgens are high, cortisol and aldosterone are low. Which enzyme is deficient?',
+        answer: '21-hydroxylase (CYP21A2)', label: '↑ 17-OHP · ↑ androgens · ↓ cortisol · ↓ aldosterone',
+        why: 'The block sits below 17-OHP on both the cortisol and the aldosterone arms, so 17-OHP banks up and is shunted into the one branch still open — the androgens. Losing both cortisol and aldosterone is what produces the salt-wasting crisis. This accounts for roughly 90–95% of congenital adrenal hyperplasia and is the analyte the newborn screen measures.' },
+      { stem: 'A child has hypertension and hypokalemia, virilization, low aldosterone, and high 11-deoxycorticosterone and 11-deoxycortisol. Which enzyme is deficient?',
+        answer: '11β-hydroxylase (CYP11B1)', label: '↑ DOC · ↑ 11-deoxycortisol · ↓ cortisol · ↓ aldosterone but hypertensive',
+        why: 'The block is one step lower than in 21-hydroxylase deficiency, so 11-deoxycorticosterone accumulates. DOC is itself a weak mineralocorticoid, and in these quantities it drives sodium retention and hypertension even though measured aldosterone is low. Androgens are still high, so 46,XX infants virilize — the hypertension is what separates this from 21-hydroxylase deficiency.' },
+      { stem: 'A 46,XY adolescent presents with hypertension, hypokalemia, and absent puberty with female-appearing external genitalia. Cortisol and androgens are low; DOC and corticosterone are high. Which enzyme is deficient?',
+        answer: '17α-hydroxylase / 17,20-lyase (CYP17A1)', label: '↓ cortisol · ↓ all sex steroids · ↑ DOC · hypertension',
+        why: 'Without 17α-hydroxylation nothing crosses into the cortisol or the androgen arm, so both are lost and everything is pushed down the mineralocorticoid branch. DOC and corticosterone rise, producing hypertension and hypokalemia. A 46,XY fetus cannot make testosterone, so external genitalia are undervirilized — the mirror image of the 21-hydroxylase picture.' },
+      { stem: 'An infant has salt wasting and ambiguous genitalia in both sexes. 17-hydroxypregnenolone and DHEA are high, but testosterone is low. Which enzyme is deficient?',
+        answer: '3β-hydroxysteroid dehydrogenase (HSD3B2)', label: '↑ Δ5 steroids (17-OH-pregnenolone, DHEA) · ↓ everything downstream',
+        why: 'The block is at the conversion of Δ5 to Δ4 steroids, so the Δ5 precursors pile up. DHEA is a weak androgen: enough to partly virilize a 46,XX fetus, nowhere near enough to fully virilize a 46,XY fetus. That is why this is the one form in which infants of either sex can present with atypical genitalia.' },
+      { stem: 'A hypertensive young adult has hypokalemia, high aldosterone, suppressed renin, and a family history of early stroke. Dexamethasone normalizes the aldosterone. What is the lesion?',
+        answer: 'A CYP11B1/CYP11B2 chimeric gene — glucocorticoid-remediable aldosteronism', label: 'ACTH-driven aldosterone',
+        why: 'This is not an enzyme deficiency but a regulatory one. Unequal crossing over between the two 95%-identical, tandemly arranged CYP11B genes creates a hybrid whose aldosterone-synthase coding sequence is driven by the ACTH-responsive CYP11B1 promoter. Aldosterone then follows ACTH instead of renin, so suppressing ACTH with a glucocorticoid switches it off — which is exactly what "remediable" names.' },
+      { stem: 'A 46,XY infant has female-appearing external genitalia, no Müllerian structures, normal testosterone, and a raised testosterone-to-DHT ratio. Which enzyme is deficient?',
+        answer: '5α-reductase (SRD5A2)', label: 'Normal testosterone, low DHT',
+        why: 'Testosterone maintains the Wolffian ducts, but external virilization requires its conversion to dihydrotestosterone. Lose 5α-reductase and internal male structures form while external genitalia do not. Müllerian structures are still absent, because AMH from the Sertoli cells is unaffected. At puberty the surge in testosterone drives partial virilization.' }
+    ];
+    exercise({
+      host: host,
+      title: 'Try it — name the block from the hormone pattern',
+      question: 'Which lesion fits?',
+      nextLabel: 'Next pattern →',
+      options: [
+        '21-hydroxylase (CYP21A2)',
+        '11β-hydroxylase (CYP11B1)',
+        '17α-hydroxylase / 17,20-lyase (CYP17A1)',
+        '3β-hydroxysteroid dehydrogenase (HSD3B2)',
+        'A CYP11B1/CYP11B2 chimeric gene — glucocorticoid-remediable aldosteronism',
+        '5α-reductase (SRD5A2)'
+      ],
+      cases: CASES,
+      principleLabel: 'The rule underneath all six: ',
+      principle: 'read the pathway as plumbing. Everything immediately above the block accumulates and is diverted into whichever branch is still open; everything below it is lost. Ask three questions in order — is cortisol low, is there salt wasting or hypertension, and are androgens high or low — and the pattern names the enzyme.'
+    });
+  };
+
+  /* ===================================================================== */
+  /* Adrenal — localize from cortisol, ACTH, and the mineralocorticoid axis */
+  /* ===================================================================== */
+  FIGS['adrenal-localizer'] = function (host) {
+    var CASES = [
+      { stem: 'Cortisol is low, ACTH is high, aldosterone is low with high renin, and the patient is hyperpigmented with hyperkalemia. Where is the lesion?',
+        answer: 'Primary adrenal insufficiency — the adrenal cortex', label: '↓ cortisol · ↑ ACTH · ↓ aldosterone',
+        why: 'The gland has failed, so cortisol falls and feedback is lost — ACTH climbs. Because the whole cortex is destroyed, the zona glomerulosa goes with it and aldosterone is lost too: hyperkalemia, hyponatremia, salt craving. The hyperpigmentation comes from the POMC-derived peptides rising alongside ACTH, and it is the physical sign that says primary rather than central.' },
+      { stem: 'Cortisol is low, ACTH is low, aldosterone and renin are normal, and there is no hyperpigmentation. Where is the lesion?',
+        answer: 'Central (secondary or tertiary) adrenal insufficiency', label: '↓ cortisol · ↓ ACTH · normal aldosterone',
+        why: 'The gland is intact but unstimulated. Aldosterone is spared because the zona glomerulosa answers to the renin–angiotensin system and potassium, not to ACTH — which is why these patients need glucocorticoid replacement but not fludrocortisone. No excess ACTH means no hyperpigmentation. The single commonest cause is withdrawal of exogenous glucocorticoid.' },
+      { stem: 'Cortisol is high and non-suppressible, ACTH is undetectable, and a unilateral adrenal mass is present. Where is the lesion?',
+        answer: 'ACTH-independent Cushing syndrome — an adrenal source', label: '↑ cortisol · ↓ ACTH',
+        why: 'The adrenal is making cortisol on its own, so the pituitary is appropriately switched off and ACTH is suppressed. Exogenous glucocorticoid produces the same biochemistry and is far more common — always ask about steroids before working anyone up.' },
+      { stem: 'Cortisol is high, ACTH is normal or high, and high-dose dexamethasone suppresses cortisol by more than half. Where is the lesion?',
+        answer: 'Cushing disease — an ACTH-secreting pituitary adenoma', label: '↑ cortisol · ↑ ACTH · suppresses with high-dose dexamethasone',
+        why: 'A corticotroph adenoma keeps some feedback sensitivity, just reset upward — so it resists the low dose and yields to the high dose. That partial suppression is the classic feature separating pituitary from ectopic ACTH. Cushing disease is the commonest endogenous cause; treatment is transsphenoidal resection.' },
+      { stem: 'Cortisol is high, ACTH is high, high-dose dexamethasone fails to suppress, and the patient has profound hypokalemia with rapid-onset weakness and a smoking history. Where is the lesion?',
+        answer: 'Ectopic ACTH secretion — a non-pituitary tumor', label: '↑ cortisol · ↑ ACTH · no suppression at high dose',
+        why: 'A tumor outside the pituitary has no feedback machinery at all, so nothing suppresses it. The tempo is faster and the cortisol higher than in pituitary disease, and at those concentrations cortisol overwhelms renal 11β-HSD2 and spills onto the mineralocorticoid receptor — hence the striking hypokalemia and often less time for the classic cushingoid habitus to develop.' },
+      { stem: 'A hypertensive, hypokalemic patient has high aldosterone with suppressed renin and a raised aldosterone-to-renin ratio. Where is the lesion?',
+        answer: 'Primary hyperaldosteronism — an autonomous adrenal source', label: '↑ aldosterone · ↓ renin',
+        why: 'Aldosterone that is high while renin is suppressed cannot be a response to the renin–angiotensin system; it is autonomous. Bilateral adrenal hyperplasia and a unilateral aldosterone-producing adenoma are the two common causes, and adrenal vein sampling — not the CT appearance — is what separates them when surgery is on the table.' },
+      { stem: 'A patient with resistant hypertension has high aldosterone and high renin, and duplex imaging shows renal artery stenosis. Where is the lesion?',
+        answer: 'Secondary hyperaldosteronism — the renin–angiotensin system is being driven', label: '↑ aldosterone · ↑ renin',
+        why: 'Both high means the adrenal is behaving normally in response to an abnormal signal. Anything that lowers renal perfusion — renal artery stenosis, heart failure, cirrhosis with ascites, nephrotic syndrome — drives renin, and aldosterone follows. Renin is the one value that separates this from primary disease.' }
+    ];
+    exercise({
+      host: host,
+      title: 'Try it — localize the adrenal lesion from the axis',
+      question: 'Where is the lesion?',
+      nextLabel: 'Next pattern →',
+      options: [
+        'Primary adrenal insufficiency — the adrenal cortex',
+        'Central (secondary or tertiary) adrenal insufficiency',
+        'ACTH-independent Cushing syndrome — an adrenal source',
+        'Cushing disease — an ACTH-secreting pituitary adenoma',
+        'Ectopic ACTH secretion — a non-pituitary tumor',
+        'Primary hyperaldosteronism — an autonomous adrenal source',
+        'Secondary hyperaldosteronism — the renin–angiotensin system is being driven'
+      ],
+      cases: CASES,
+      principleLabel: 'The rule underneath all seven: ',
+      principle: 'never read the hormone alone — read it against its trophic signal. Cortisol against ACTH localizes every adrenal cortisol problem, and aldosterone against renin localizes every mineralocorticoid one. Same direction means the trophic signal is the driver; opposite directions mean the gland is.'
+    });
+  };
+
+  /* ===================================================================== */
+  /* DSD — triage from karyotype, gonads, and the first labs               */
+  /* ===================================================================== */
+  FIGS['dsd-triage'] = function (host) {
+    var CASES = [
+      { stem: 'A newborn with atypical genitalia and no palpable gonads has a 46,XX karyotype, a uterus on ultrasound, a markedly raised 17-hydroxyprogesterone, and on day 10 develops hyponatremia and hyperkalemia. What is the diagnosis?',
+        answer: 'Congenital adrenal hyperplasia (21-hydroxylase deficiency)', label: '46,XX · no palpable gonads · ↑ 17-OHP · salt wasting',
+        why: 'This is the diagnosis the whole newborn evaluation is built to catch first, because it is both the commonest cause of a 46,XX DSD and the one that kills. Nonpalpable gonads in a virilized infant point to ovaries in the abdomen rather than testes; the raised 17-OHP names the block; the salt-wasting crisis at roughly 1–3 weeks is what makes it an emergency.' },
+      { stem: 'A newborn with atypical genitalia has a 46,XX karyotype, a normal 17-hydroxyprogesterone, and the mother developed acne, hirsutism, and voice deepening during the pregnancy that are now receding. What is the diagnosis?',
+        answer: 'Placental aromatase deficiency', label: '46,XX · virilized infant AND virilized mother',
+        why: 'Aromatase converts fetal androgens to estrogens in the placenta. Without it, androgens cross to both the fetus and the pregnant person — so both virilize, and the maternal changes regress after delivery. Virilization of the mother is the finding that distinguishes this from CAH, where the mother is unaffected.' },
+      { stem: 'A phenotypically male infant has a 46,XX karyotype. FISH is positive for SRY. What is the diagnosis?',
+        answer: '46,XX testicular DSD (SRY-positive)', label: '46,XX karyotype with a male phenotype',
+        why: 'SRY has translocated onto an X chromosome, usually during paternal meiosis, so the bipotential gonad receives the testis-determining signal despite an XX karyotype. About 80% of nonsyndromic cases are SRY-positive. The phenotype is male, but the absent remainder of the Y means azoospermia and infertility, and testosterone often falls short at puberty.' },
+      { stem: 'A phenotypically male infant has bilateral undescended testes and an inguinal hernia; at surgery a uterus and fallopian tubes are found. Karyotype is 46,XY. What is the diagnosis?',
+        answer: 'AMH deficiency — persistent Müllerian duct syndrome', label: '46,XY · male external genitalia · Müllerian structures present',
+        why: 'Sertoli-cell AMH normally regresses the Müllerian ducts while Leydig-cell testosterone maintains the Wolffian ones. Lose AMH or its receptor and both duct systems persist: external genitalia are male because testosterone is intact, but a uterus and tubes remain. It typically surfaces as cryptorchidism or at hernia repair; management is orchiopexy with attention to later malignancy risk.' },
+      { stem: 'A 46,XY infant raised as female virilizes at puberty — the phallus enlarges, muscle mass increases, the voice deepens. Testosterone is normal and the testosterone-to-DHT ratio is high. What is the diagnosis?',
+        answer: '5α-reductase deficiency', label: '46,XY · undervirilized at birth · virilizes at puberty',
+        why: 'Dihydrotestosterone, not testosterone, is what virilizes the external genitalia in utero, so these infants are born undervirilized with internal Wolffian structures intact. At puberty the large rise in testosterone acts directly on the androgen receptor and produces the virilization described in the Dominican cohorts as guevedoce. The raised T:DHT ratio is the biochemical signature.' },
+      { stem: 'A 16-year-old with primary amenorrhea has normal breast development, sparse pubic and axillary hair, a short blind-ending vagina and no uterus. Karyotype is 46,XY with testosterone in the normal male range. What is the diagnosis?',
+        answer: 'Complete androgen insensitivity syndrome', label: '46,XY · phenotypic female · no uterus · normal male testosterone',
+        why: 'The androgen receptor cannot respond, so no androgen-dependent structure forms — hence female external genitalia and almost no sexual hair. AMH is unaffected, which is why there is no uterus and no upper vagina, separating this from every 46,XX cause of primary amenorrhea. Testosterone aromatizes to estrogen, so breasts develop normally.' },
+      { stem: 'A short 14-year-old girl has not entered puberty. She has a webbed neck, a history of coarctation repair, and gonadotropins are high. What is the diagnosis?',
+        answer: 'Turner syndrome', label: '45,X · short stature · ovarian failure · left-sided cardiac lesion',
+        why: 'Loss of one sex chromosome costs a copy of SHOX, and short stature plus ovarian failure are near universal. The gonads are streaks, so estrogen is absent and LH and FSH rise — hypergonadotropic hypogonadism. The associated lymphedema, webbed neck, left-sided cardiac lesions, and renal anomalies are what turn a short girl into a karyotype request.' },
+      { stem: 'A tall 17-year-old boy has small firm testes, gynecomastia, and sparse facial hair. LH and FSH are high, testosterone is low. What is the diagnosis?',
+        answer: 'Klinefelter syndrome', label: '47,XXY · tall · small firm testes · ↑ LH/FSH, ↓ testosterone',
+        why: 'The extra X causes seminiferous tubule hyalinization and Leydig-cell failure — small firm testes, azoospermia, low testosterone with high gonadotropins. The tall stature is attributed to the extra SHOX copy, and the unopposed estrogen-to-androgen balance produces gynecomastia. Height plus small testes is the pairing that should prompt a karyotype.' },
+      { stem: 'A 16-year-old boy has not entered puberty. LH, FSH, and testosterone are all low, and he cannot smell. What is the diagnosis?',
+        answer: 'Kallmann syndrome', label: 'Low LH/FSH with low testosterone, plus anosmia',
+        why: 'GnRH neurons and olfactory neurons migrate together from the olfactory placode; when that migration fails, you lose both hypothalamic GnRH and the sense of smell. Low gonadotropins with low sex steroids is hypogonadotropic hypogonadism — the opposite pattern to Klinefelter and Turner — and MRI shows hypoplastic or absent olfactory bulbs. The karyotype is normal, so this is a cause of hypogonadism rather than a true DSD.' },
+      { stem: 'A newborn with atypical genitalia has one palpable gonad in the labioscrotal fold and none on the other side; karyotype is 45,X/46,XY mosaic. What is the diagnosis?',
+        answer: 'Mixed gonadal dysgenesis', label: 'Asymmetric gonads · 45,X/46,XY mosaicism',
+        why: 'A testis on one side and a streak gonad on the other gives the asymmetric external appearance, often with a persistent Müllerian structure on the streak side where no AMH was produced. Asymmetry is the physical clue. Because Y-derived material sits in a dysgenetic gonad, malignancy risk — gonadoblastoma — is substantial and reported in the region of 15–25%, so gonadal management and surveillance are part of the plan.' }
+    ];
+    exercise({
+      host: host,
+      title: 'Try it — work from karyotype, gonads, and the first labs',
+      question: 'What is the diagnosis?',
+      nextLabel: 'Next case →',
+      options: [
+        'Congenital adrenal hyperplasia (21-hydroxylase deficiency)',
+        'Placental aromatase deficiency',
+        '46,XX testicular DSD (SRY-positive)',
+        'AMH deficiency — persistent Müllerian duct syndrome',
+        '5α-reductase deficiency',
+        'Complete androgen insensitivity syndrome',
+        'Turner syndrome',
+        'Klinefelter syndrome',
+        'Kallmann syndrome',
+        'Mixed gonadal dysgenesis'
+      ],
+      cases: CASES,
+      principleLabel: 'The rule underneath all ten: ',
+      principle: 'three questions, always in the same order. What is the karyotype? Are the gonads palpable, and are they symmetric — a palpable gonad is almost always a testis, and asymmetry means dysgenesis. And is 17-hydroxyprogesterone raised, because CAH is the one diagnosis on the list that can kill this week.'
+    });
+  };
+
+  /* ===================================================================== */
   /* mount                                                                 */
   /* ===================================================================== */
   function mount() {

@@ -18,11 +18,14 @@
     { id: 'type1',     href: 'type1.html',        label: 'T1DM',        group: 'Lectures' },
     { id: 'type2',     href: 'type2.html',        label: 'T2DM',        group: 'Lectures' },
     { id: 'insulin',   href: 'insulin.html',      label: 'Insulin Therapy Lab',    group: 'Lectures' },
+    { id: 'steroid',   href: 'steroid.html',      label: 'Steroid Hormone Synthesis', group: 'Lectures' },
+    { id: 'adrenal',   href: 'adrenal.html',      label: 'Adrenal Gland Disorders', group: 'Lectures' },
+    { id: 'dsd',       href: 'dsd.html',          label: 'DSD Concepts',           group: 'Lectures' },
     { id: 'practice',  href: 'practice.html',     label: 'Cumulative Practice',    group: 'Practice' },
     { id: 'rapid',     href: 'rapid-review.html', label: 'Rapid Review',           group: 'Practice' }
   ];
 
-  var SHORT = { pituitary: 'Pituitary', thyroid: 'Thyroid', type1: 'T1DM', type2: 'T2DM', insulin: 'Insulin Lab', practice: 'Practice', rapid: 'Rapid Review' };
+  var SHORT = { pituitary: 'Pituitary', thyroid: 'Thyroid', type1: 'T1DM', type2: 'T2DM', insulin: 'Insulin Lab', steroid: 'Steroids', adrenal: 'Adrenal', dsd: 'DSD', practice: 'Practice', rapid: 'Rapid Review' };
 
   var current = document.body.getAttribute('data-page') || 'home';
 
