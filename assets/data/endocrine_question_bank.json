@@ -1,8 +1,8 @@
 {
   "title": "HSHD1 Endocrine Practice Question Bank",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "created": "2026-08-07",
-  "intended_use": "Original educational MCQs written at a second-year-medical-student level, covering hypothalamic-pituitary, thyroid, and diabetes/insulin topics. Each question cites an open-access reference; it is not drawn from or a copy of any commercial or institutional question bank.",
+  "intended_use": "Original educational MCQs written at a second-year-medical-student level. Version 1.0.0 covered hypothalamic-pituitary, thyroid, and diabetes/insulin topics; version 1.1.0 adds the week-2 lectures (Steroid Hormone Synthesis, Adrenal Gland Disorders, and DSD Concepts). The week-2 items were written to the concepts tested by an outside review-question set the student had worked through, then audited against the lecture slides and session objectives so that each one is answerable from the assigned lecture materials alone; items that required outside content were dropped. All stems, options, and explanations are newly authored and are not drawn from or a copy of any commercial or institutional question bank.",
   "schema_notes": {
     "correct_answer": "Matches one option id.",
     "option_explanation": "Shown after submission for both correct and incorrect selections.",
@@ -1088,6 +1088,1237 @@
         "text": "StatPearls: Adult Diabetic Ketoacidosis",
         "url": "https://www.ncbi.nlm.nih.gov/books/NBK560723/"
       }
+    },
+    {
+      "id": "STE-001",
+      "lecture": "Steroid Hormone Synthesis",
+      "topic": "Steroid hormone biosynthesis",
+      "objective": "Trace the branch points of adrenal steroidogenesis and name the products of each zone",
+      "difficulty": "foundational",
+      "stem": "A schematic of adrenal steroidogenesis is being annotated. Cholesterol has just been delivered to the inner mitochondrial membrane and converted to pregnenolone. Which enzyme catalyzed that first, rate-limiting conversion?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cytochrome P450 side-chain cleavage enzyme (CYP11A1)",
+          "explanation": "Correct. CYP11A1 (also called cholesterol side-chain cleavage enzyme or 20,22-desmolase) cleaves the side chain of cholesterol to yield pregnenolone. This is the first committed enzymatic step, shared by every steroid hormone, which is why the branch points that follow determine which hormone a given cell makes."
+        },
+        {
+          "id": "B",
+          "text": "21α-hydroxylase (CYP21A2)",
+          "explanation": "CYP21A2 acts far downstream, hydroxylating progesterone to 11-deoxycorticosterone and 17α-hydroxyprogesterone to 11-deoxycortisol."
+        },
+        {
+          "id": "C",
+          "text": "3β-hydroxysteroid dehydrogenase (HSD3B2)",
+          "explanation": "HSD3B2 acts after pregnenolone, converting Δ5 steroids (pregnenolone, 17α-hydroxypregnenolone, DHEA) to their Δ4 counterparts (progesterone, 17α-hydroxyprogesterone, androstenedione). It does not make pregnenolone."
+        },
+        {
+          "id": "D",
+          "text": "Aldosterone synthase (CYP11B2)",
+          "explanation": "CYP11B2 catalyzes the final three steps to aldosterone and is expressed only in the zona glomerulosa. It is the last enzyme of one branch, not the first of the pathway."
+        },
+        {
+          "id": "E",
+          "text": "Steroidogenic acute regulatory protein (StAR)",
+          "explanation": "StAR shuttles cholesterol from the outer to the inner mitochondrial membrane, and that transport step is the rate-limiting and acutely regulated point of steroidogenesis — ACTH raises cAMP, which upregulates StAR transcription. But StAR is a transport protein, not an enzyme: it delivers the substrate rather than catalyzing the conversion."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "StAR delivers cholesterol to the inner mitochondrial membrane; CYP11A1 then cleaves it to pregnenolone — the committed step common to every steroid hormone.",
+      "citation": {
+        "text": "StatPearls: Physiology, Adrenal Gland",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK537260/"
+      }
+    },
+    {
+      "id": "STE-002",
+      "lecture": "Steroid Hormone Synthesis",
+      "topic": "Steroid hormone biosynthesis",
+      "objective": "Compare and contrast the pathways and locations for synthesis of the different steroid hormones",
+      "difficulty": "intermediate",
+      "stem": "In the human adrenal cortex, CYP17A1 (17α-hydroxylase/17,20-lyase) is essentially absent from the outermost cortical zone, whereas aldosterone synthase (CYP11B2) is expressed only in that same zone. Which conclusion follows most directly from this pattern of enzyme expression?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cortisol synthesis requires 17,20-lyase activity",
+          "explanation": "Cortisol requires only the 17α-hydroxylase activity of CYP17A1 (progesterone → 17α-hydroxyprogesterone). The 17,20-lyase activity is needed only to cleave the C17–C20 bond and generate androgens."
+        },
+        {
+          "id": "B",
+          "text": "The zona glomerulosa is the principal source of adrenal androgens",
+          "explanation": "Reversed. Adrenal androgens (DHEA and DHEA-sulfate) come from the zona reticularis, which expresses abundant CYP17A1 with strong 17,20-lyase activity plus sulfotransferase SULT2A1."
+        },
+        {
+          "id": "C",
+          "text": "The zona reticularis converts circulating aldosterone into cortisol",
+          "explanation": "No such conversion occurs. Each zone synthesizes its products de novo from cholesterol along the branch its enzyme complement permits."
+        },
+        {
+          "id": "D",
+          "text": "The zona glomerulosa is the only cortical zone that can complete aldosterone synthesis, and it cannot make cortisol or androgens",
+          "explanation": "Correct. Restricting CYP11B2 to the zona glomerulosa makes it the sole source of aldosterone, and the absence of CYP17A1 there blocks entry into both the cortisol and the androgen branches. Zonal enzyme expression, not a difference in substrate, is what makes each zone functionally distinct."
+        },
+        {
+          "id": "E",
+          "text": "The zona fasciculata is the only zone capable of producing a mineralocorticoid effect",
+          "explanation": "The zona fasciculata makes 11-deoxycorticosterone and corticosterone, which do have weak mineralocorticoid activity, but it lacks CYP11B2 and therefore cannot make aldosterone. The stem's premise points to the glomerulosa, not the fasciculata."
+        }
+      ],
+      "correct_answer": "D",
+      "takeaway": "Zonation is enzyme expression: CYP11B2 only in glomerulosa (aldosterone), CYP17A1 only in fasciculata and reticularis (cortisol and androgens).",
+      "citation": {
+        "text": "StatPearls: Physiology, Adrenal Gland",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK537260/"
+      }
+    },
+    {
+      "id": "STE-003",
+      "lecture": "Steroid Hormone Synthesis",
+      "topic": "Steroid hormone biosynthesis",
+      "objective": "Explain why 17α-hydroxylase and 17,20-lyase activities of a single gene product have different consequences",
+      "difficulty": "advanced",
+      "stem": "17α-hydroxylase and 17,20-lyase activities reside in a single polypeptide encoded by CYP17A1. A patient is found to carry a mutation that selectively abolishes 17,20-lyase activity while leaving 17α-hydroxylase activity intact. Which hormonal pattern is expected?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cortisol production preserved; adrenal androgen production severely impaired",
+          "explanation": "Correct. Cortisol requires only 17α-hydroxylation of progesterone to 17α-hydroxyprogesterone, after which 21-hydroxylase and 11β-hydroxylase finish the job. Generating DHEA and androstenedione requires the additional 17,20-lyase cleavage of the C17–C20 bond, so isolated lyase loss spares cortisol and eliminates androgens. The same logic explains normal zonation: 17,20-lyase activity depends on cytochrome B5, which is expressed in the zona reticularis but not the zona fasciculata — so the fasciculata performs the 17-hydroxylation without the subsequent cleavage and makes cortisol, while the reticularis proceeds to androgens."
+        },
+        {
+          "id": "B",
+          "text": "Aldosterone deficiency with cortisol excess",
+          "explanation": "CYP17A1 is not required for aldosterone synthesis at all — the zona glomerulosa does not express it. Aldosterone is unaffected by CYP17A1 mutations of either kind."
+        },
+        {
+          "id": "C",
+          "text": "Both cortisol and adrenal androgens severely impaired",
+          "explanation": "This is the pattern of complete combined 17α-hydroxylase/17,20-lyase deficiency, in which both activities of CYP17A1 are lost. The stem specifies that hydroxylase activity is intact."
+        },
+        {
+          "id": "D",
+          "text": "Cortisol production severely impaired; adrenal androgen production preserved",
+          "explanation": "This is the reverse. Androgen synthesis is the activity that depends on the lyase step, so androgens — not cortisol — are the ones lost."
+        },
+        {
+          "id": "E",
+          "text": "Both cortisol and adrenal androgens increased",
+          "explanation": "Loss of an enzymatic activity cannot increase flux through the step it catalyzes. ACTH will rise as cortisol falls, but here cortisol does not fall."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "One gene, two activities: 17α-hydroxylase alone suffices for cortisol, but adrenal androgens additionally require the 17,20-lyase activity of the same CYP17A1 protein.",
+      "citation": {
+        "text": "StatPearls: 17-Hydroxylase Deficiency",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK546644/"
+      }
+    },
+    {
+      "id": "STE-004",
+      "lecture": "Steroid Hormone Synthesis",
+      "topic": "Congenital adrenal hyperplasia",
+      "objective": "Formulate a mechanism by which 21-hydroxylase deficiency gives rise to atypical genitalia in 46,XX infants",
+      "difficulty": "intermediate",
+      "stem": "A term newborn with a 46,XX karyotype has clitoromegaly and partially fused labioscrotal folds; no gonads are palpable. Serum 17α-hydroxyprogesterone is markedly elevated. Which mechanism best explains the appearance of the external genitalia?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Failure of peripheral conversion of testosterone to dihydrotestosterone",
+          "explanation": "That is 5α-reductase deficiency, which undervirilizes a 46,XY fetus. It cannot virilize a 46,XX fetus, and it does not elevate 17α-hydroxyprogesterone."
+        },
+        {
+          "id": "B",
+          "text": "Loss of negative feedback on LH driving fetal Leydig cell testosterone output",
+          "explanation": "A 46,XX fetus with ovaries has no Leydig cells. The androgen source here is the hyperstimulated adrenal cortex."
+        },
+        {
+          "id": "C",
+          "text": "Precursors accumulating above the enzyme block are diverted through 17,20-lyase into adrenal androgens",
+          "explanation": "Correct. With CYP21A2 blocked, 17α-hydroxyprogesterone cannot proceed to 11-deoxycortisol. Cortisol falls, ACTH rises, the cortex hypertrophies, and the excess 17α-hydroxyprogesterone is shunted down the one open branch — through 17,20-lyase to androstenedione and testosterone — which virilizes the external genitalia of a 46,XX fetus during the critical first-trimester window."
+        },
+        {
+          "id": "D",
+          "text": "Placental aromatase deficiency permitting maternal androgens to reach the fetus",
+          "explanation": "Aromatase deficiency is a genuine cause of 46,XX virilization, but it is a separate disorder: it presents with maternal virilization during pregnancy and does not raise 17α-hydroxyprogesterone."
+        },
+        {
+          "id": "E",
+          "text": "Autonomous aldosterone secretion by a hyperplastic zona glomerulosa",
+          "explanation": "21-hydroxylase deficiency blocks the mineralocorticoid branch as well, so aldosterone is deficient, not excessive — and aldosterone does not virilize."
+        }
+      ],
+      "correct_answer": "C",
+      "takeaway": "In 21-hydroxylase deficiency the blocked cortisol pathway drives ACTH up and shunts accumulated 17α-hydroxyprogesterone into adrenal androgens — the cause of 46,XX virilization.",
+      "citation": {
+        "text": "GeneReviews: 21-Hydroxylase-Deficient Congenital Adrenal Hyperplasia",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK1171/"
+      }
+    },
+    {
+      "id": "STE-005",
+      "lecture": "Steroid Hormone Synthesis",
+      "topic": "Congenital adrenal hyperplasia",
+      "objective": "Explain why classic 21-hydroxylase deficiency produces both glucocorticoid and mineralocorticoid failure",
+      "difficulty": "foundational",
+      "stem": "A 3-week-old infant with an abnormal newborn screen presents with vomiting, poor weight gain, and lethargy. Blood pressure is 58/30 mm Hg. Sodium is 124 mEq/L, potassium 6.7 mEq/L, and glucose 44 mg/dL. Deficiency of which pair of hormones best accounts for this combination of findings?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cortisol alone",
+          "explanation": "Isolated glucocorticoid deficiency (as in ACTH deficiency) causes hypoglycemia and hyponatremia but characteristically spares potassium, because aldosterone is driven by angiotensin II and potassium rather than by ACTH."
+        },
+        {
+          "id": "B",
+          "text": "Cortisol and dihydrotestosterone",
+          "explanation": "DHT is a peripheral product of 5α-reductase and has no role in sodium, potassium, or glucose homeostasis."
+        },
+        {
+          "id": "C",
+          "text": "Aldosterone alone",
+          "explanation": "Isolated aldosterone synthase deficiency does produce salt wasting with hyperkalemia, but it leaves cortisol intact and so would not explain the hypoglycemia; nor would it raise 17α-hydroxyprogesterone on the newborn screen."
+        },
+        {
+          "id": "D",
+          "text": "Cortisol and aldosterone",
+          "explanation": "Correct. CYP21A2 is required on both arms of the pathway: progesterone → 11-deoxycorticosterone (mineralocorticoid arm) and 17α-hydroxyprogesterone → 11-deoxycortisol (glucocorticoid arm). Losing aldosterone gives hyponatremia, hyperkalemia, and hypovolemic shock; losing cortisol gives hypoglycemia and impaired vascular tone."
+        },
+        {
+          "id": "E",
+          "text": "Aldosterone and dehydroepiandrosterone",
+          "explanation": "Adrenal androgen synthesis does not require 21-hydroxylase and is in fact increased in this disorder. DHEA deficiency would not cause hypoglycemia."
+        }
+      ],
+      "correct_answer": "D",
+      "takeaway": "Classic salt-wasting CAH is simultaneous cortisol and aldosterone failure with androgen excess — 21-hydroxylase sits on both the glucocorticoid and mineralocorticoid arms.",
+      "citation": {
+        "text": "StatPearls: Congenital Adrenal Hyperplasia",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK448098/"
+      }
+    },
+    {
+      "id": "STE-007",
+      "lecture": "Steroid Hormone Synthesis",
+      "topic": "Congenital adrenal hyperplasia",
+      "objective": "Compare 21-hydroxylase and 11β-hydroxylase deficiency using blood pressure and potassium",
+      "difficulty": "intermediate",
+      "stem": "A 3-year-old with a 46,XX karyotype has clitoromegaly, pubic hair, and a height at the 97th percentile. Blood pressure is 118/78 mm Hg (above the 99th percentile for age). Sodium is 146 mEq/L and potassium is 3.1 mEq/L. Serum 11-deoxycortisol and 11-deoxycorticosterone are markedly elevated. Which enzyme is deficient?",
+      "options": [
+        {
+          "id": "A",
+          "text": "11β-hydroxylase (CYP11B1)",
+          "explanation": "Correct. CYP11B1 converts 11-deoxycortisol to cortisol and 11-deoxycorticosterone to corticosterone. When it is blocked, cortisol falls and ACTH rises (driving androgen excess and virilization), while 11-deoxycorticosterone accumulates. Because 11-deoxycorticosterone is itself an agonist at the mineralocorticoid receptor, the result is hypertension with hypokalemic alkalosis rather than salt wasting."
+        },
+        {
+          "id": "B",
+          "text": "Aldosterone synthase (CYP11B2)",
+          "explanation": "Isolated CYP11B2 deficiency causes salt wasting with hyperkalemia and no virilization, since cortisol and androgen synthesis are untouched."
+        },
+        {
+          "id": "C",
+          "text": "21α-hydroxylase (CYP21A2)",
+          "explanation": "21-hydroxylase deficiency also virilizes a 46,XX child, but it blocks the pathway upstream of 11-deoxycorticosterone, so mineralocorticoid activity is lost — giving hypotension, hyponatremia, and hyperkalemia, the opposite of this patient's electrolytes."
+        },
+        {
+          "id": "D",
+          "text": "3β-hydroxysteroid dehydrogenase type 2 (HSD3B2)",
+          "explanation": "HSD3B2 deficiency impairs all three classes of steroid, giving salt wasting with only weak virilization from DHEA. It does not raise 11-deoxycortisol and does not cause hypertension."
+        },
+        {
+          "id": "E",
+          "text": "17α-hydroxylase (CYP17A1)",
+          "explanation": "CYP17A1 deficiency also causes hypertension and hypokalemia from 11-deoxycorticosterone excess, but it blocks sex-steroid synthesis — producing absent virilization and absent puberty, not clitoromegaly and pubic hair."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "Both 21- and 11β-hydroxylase deficiency virilize 46,XX infants; blood pressure and potassium separate them — 21-OHD wastes salt, 11β-OHD retains it via 11-deoxycorticosterone.",
+      "citation": {
+        "text": "StatPearls: Congenital Adrenal Hyperplasia",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK448098/"
+      }
+    },
+    {
+      "id": "STE-008",
+      "lecture": "Steroid Hormone Synthesis",
+      "topic": "Congenital adrenal hyperplasia",
+      "objective": "Recognize combined 17α-hydroxylase/17,20-lyase deficiency from hypertension plus absent sex steroids",
+      "difficulty": "intermediate",
+      "stem": "A 16-year-old raised as a girl is evaluated for primary amenorrhea. There has been no breast development and no pubic or axillary hair. External genitalia appear female. Blood pressure is 160/100 mm Hg and serum potassium is 2.8 mEq/L. Which enzyme deficiency best explains this combination?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Aldosterone synthase",
+          "explanation": "Aldosterone synthase deficiency causes hypotension, hyponatremia, and hyperkalemia, and leaves sexual development normal."
+        },
+        {
+          "id": "B",
+          "text": "5α-reductase",
+          "explanation": "5α-reductase deficiency affects only conversion of testosterone to dihydrotestosterone in a 46,XY individual. It does not affect blood pressure or potassium, and testosterone-driven virilization occurs at puberty."
+        },
+        {
+          "id": "C",
+          "text": "11β-hydroxylase",
+          "explanation": "11β-hydroxylase deficiency does cause hypertension with hypokalemia, but ACTH-driven androgen production is intact and increased, so patients virilize instead of failing to develop any secondary sexual characteristics."
+        },
+        {
+          "id": "D",
+          "text": "17α-hydroxylase (CYP17A1)",
+          "explanation": "Correct. Loss of CYP17A1 blocks both cortisol and all sex steroids, so there is neither gonadal nor adrenal androgen or estrogen production — hence no breast development and no pubic hair. Meanwhile ACTH drives the one remaining open branch, accumulating 11-deoxycorticosterone and corticosterone, whose mineralocorticoid activity produces hypertension with hypokalemic alkalosis and suppressed renin."
+        },
+        {
+          "id": "E",
+          "text": "21α-hydroxylase",
+          "explanation": "21-hydroxylase deficiency causes androgen excess and salt wasting — hypotension and hyperkalemia, with virilization rather than absent sexual development."
+        }
+      ],
+      "correct_answer": "D",
+      "takeaway": "Hypertension plus hypokalemia plus complete absence of pubertal sex steroids is the signature of 17α-hydroxylase deficiency: mineralocorticoid precursors accumulate while every sex steroid is lost.",
+      "citation": {
+        "text": "StatPearls: 17-Hydroxylase Deficiency",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK546644/"
+      }
+    },
+    {
+      "id": "STE-010",
+      "lecture": "Steroid Hormone Synthesis",
+      "topic": "Aldosterone excess",
+      "objective": "Dissect the molecular basis and etymology of glucocorticoid-remediable hyperaldosteronism",
+      "difficulty": "advanced",
+      "stem": "Three generations of a family have hypertension beginning in childhood, mild hypokalemia, and suppressed plasma renin with an elevated aldosterone-to-renin ratio. Aldosterone output tracks the diurnal rhythm of ACTH rather than responding to posture or sodium loading, and both blood pressure and aldosterone normalize on low-dose dexamethasone. Which molecular event best explains this disorder?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Deficiency of 11β-hydroxysteroid dehydrogenase type 2",
+          "explanation": "Apparent mineralocorticoid excess lets cortisol occupy the mineralocorticoid receptor. Aldosterone is low, the urinary cortisol-to-cortisone ratio is elevated, and hybrid steroids are not formed."
+        },
+        {
+          "id": "B",
+          "text": "Activating mutation of the mineralocorticoid receptor",
+          "explanation": "A constitutively active mineralocorticoid receptor causes hypertension with hypokalemia, but aldosterone would be low (the receptor needs no ligand), and dexamethasone would not help."
+        },
+        {
+          "id": "C",
+          "text": "Gain-of-function mutation in the epithelial sodium channel",
+          "explanation": "That is Liddle syndrome. Renin and aldosterone are both suppressed, hybrid steroids are absent, and the treatment is amiloride or triamterene, not a glucocorticoid."
+        },
+        {
+          "id": "D",
+          "text": "A unilateral aldosterone-producing adenoma",
+          "explanation": "A sporadic adenoma does not follow autosomal dominant inheritance across three generations and is not suppressible by dexamethasone; it is treated by adrenalectomy."
+        },
+        {
+          "id": "E",
+          "text": "Unequal crossing over between CYP11B1 and CYP11B2 producing a chimeric gene in which aldosterone synthase activity is driven by the ACTH-responsive CYP11B1 promoter",
+          "explanation": "Correct. CYP11B2 arose from CYP11B1 by gene duplication, the two genes sit adjacent on chromosome 8, and the regions encoding 11β-hydroxylase activity are about 97% identical — which makes them prone to unequal crossing over during meiotic recombination. That is the \"design flaw\" that permits this disease. The resulting chimera places aldosterone synthase coding sequence under the ACTH-responsive CYP11B1 promoter and expresses it in the zona fasciculata, so aldosterone secretion now follows ACTH. Suppressing ACTH with low-dose dexamethasone therefore switches the aldosterone off — the \"glucocorticoid-remediable\" half of the name. The reciprocal chimera, which puts 11β-hydroxylase under angiotensin II control, is clinically silent because normal cortisol output vastly exceeds normal aldosterone output."
+        }
+      ],
+      "correct_answer": "E",
+      "takeaway": "Familial (glucocorticoid-remediable) hyperaldosteronism: a CYP11B1/CYP11B2 chimera puts aldosterone synthase under the ACTH-driven CYP11B1 promoter, so aldosterone follows ACTH and remits on low-dose dexamethasone.",
+      "citation": {
+        "text": "Endotext: Hyperaldosteronism",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK279065/"
+      }
+    },
+    {
+      "id": "STE-011",
+      "lecture": "Steroid Hormone Synthesis",
+      "topic": "Steroid hormone biosynthesis",
+      "objective": "Localize cortisol overproduction to the correct cortical zone",
+      "difficulty": "foundational",
+      "stem": "A 55-year-old man has centripetal weight gain, wide violaceous abdominal striae, thin skin that bruises easily, and proximal muscle weakness. Twenty-four-hour urinary free cortisol is markedly elevated. Overproduction of the responsible hormone occurs in which layer of the adrenal gland?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zona glomerulosa",
+          "explanation": "The zona glomerulosa lacks CYP17A1 and makes aldosterone. Aldosterone excess causes hypertension with hypokalemia, not striae, thin skin, and proximal myopathy."
+        },
+        {
+          "id": "B",
+          "text": "Fibrous capsule",
+          "explanation": "The capsule is connective tissue and is not steroidogenic."
+        },
+        {
+          "id": "C",
+          "text": "Adrenal medulla",
+          "explanation": "Chromaffin cells of the medulla secrete catecholamines, which cause paroxysmal hypertension, headache, and diaphoresis."
+        },
+        {
+          "id": "D",
+          "text": "Zona fasciculata",
+          "explanation": "Correct. The zona fasciculata is the thick middle layer of lipid-rich, cord-arranged cells that expresses CYP17A1, CYP21A2, and CYP11B1 and is the principal site of cortisol synthesis under ACTH control. Cortisol excess produces exactly this constellation — catabolic skin and muscle changes, central fat redistribution, and striae."
+        },
+        {
+          "id": "E",
+          "text": "Zona reticularis",
+          "explanation": "The innermost cortical zone makes DHEA and DHEA-sulfate. Androgen excess causes hirsutism, acne, and virilization rather than the catabolic features described."
+        }
+      ],
+      "correct_answer": "D",
+      "takeaway": "Cortisol is a zona fasciculata product; its excess shows up as catabolic skin, muscle, and fat-distribution changes.",
+      "citation": {
+        "text": "StatPearls: Physiology, Cortisol",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK538239/"
+      }
+    },
+    {
+      "id": "STE-012",
+      "lecture": "Steroid Hormone Synthesis",
+      "topic": "Steroid hormone biosynthesis",
+      "objective": "Identify the hormones produced by the innermost cortical zone",
+      "difficulty": "foundational",
+      "stem": "A photomicrograph of the adrenal gland is examined. The zone identified lies immediately internal to the thick, cord-like middle layer and directly abuts the medulla; its cells are compact, contain lipofuscin pigment, and are arranged in an anastomosing network. Which hormones do the predominant cells of this zone secrete?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dehydroepiandrosterone and its sulfate",
+          "explanation": "Correct. This describes the zona reticularis. Its high 17,20-lyase activity and expression of the sulfotransferase SULT2A1 make it the source of DHEA and DHEA-sulfate, the principal adrenal androgens, which serve as peripheral precursors for testosterone and estrogens."
+        },
+        {
+          "id": "B",
+          "text": "Epinephrine and norepinephrine",
+          "explanation": "Catecholamines come from chromaffin cells of the medulla, which is internal to — not part of — the cortex. Cortisol draining from the cortex is in fact what induces the medullary enzyme that makes epinephrine."
+        },
+        {
+          "id": "C",
+          "text": "Aldosterone",
+          "explanation": "Aldosterone comes from the zona glomerulosa, the outermost zone just beneath the capsule, where cells form small rounded clusters."
+        },
+        {
+          "id": "D",
+          "text": "Cortisol",
+          "explanation": "Cortisol comes from the zona fasciculata, which is the thick lipid-rich middle layer described in the stem as lying external to the zone in question."
+        },
+        {
+          "id": "E",
+          "text": "Renin",
+          "explanation": "Renin is produced by juxtaglomerular cells of the kidney, not by the adrenal gland."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "Capsule inward: glomerulosa (aldosterone), fasciculata (cortisol), reticularis (DHEA/DHEA-S), medulla (catecholamines).",
+      "citation": {
+        "text": "StatPearls: Physiology, Adrenal Gland",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK537260/"
+      }
+    },
+    {
+      "id": "ADR-001",
+      "lecture": "Adrenal Gland Disorders",
+      "topic": "Aldosterone excess",
+      "objective": "Prescribe the correct first-line diagnostic test for suspected primary hyperaldosteronism",
+      "difficulty": "foundational",
+      "stem": "A 34-year-old woman has blood pressure of 172/108 mm Hg despite three antihypertensive agents at full dose. She reports muscle weakness and nocturia. Sodium is 145 mEq/L, potassium 2.9 mEq/L, and bicarbonate 32 mEq/L. Which is the most appropriate initial test?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Adrenal vein sampling",
+          "explanation": "Adrenal vein sampling is a subtype study used to distinguish a unilateral adenoma from bilateral hyperplasia — that is, to decide between surgery and medical therapy. It comes after the diagnosis is biochemically confirmed, not before."
+        },
+        {
+          "id": "B",
+          "text": "Plasma aldosterone concentration and plasma renin activity, reported as a ratio",
+          "explanation": "Correct. Resistant hypertension with spontaneous hypokalemia and metabolic alkalosis is the classic screening indication for primary aldosteronism. The aldosterone-to-renin ratio is the recommended first step: it is high because autonomous aldosterone secretion expands volume and suppresses renin. Confirmatory testing (saline suppression or oral sodium loading) follows a positive screen."
+        },
+        {
+          "id": "C",
+          "text": "Plasma free metanephrines",
+          "explanation": "Pheochromocytoma is worth considering in resistant hypertension, but it typically presents with paroxysmal headache, palpitations, and diaphoresis, and it does not cause hypokalemic alkalosis with a suppressed renin."
+        },
+        {
+          "id": "D",
+          "text": "Twenty-four-hour urinary free cortisol",
+          "explanation": "Cortisol excess can cause hypertension and hypokalemia, but this patient has none of the catabolic features — striae, thin skin, proximal myopathy, central fat redistribution — that would prompt screening for Cushing syndrome first."
+        },
+        {
+          "id": "E",
+          "text": "CT of the adrenal glands",
+          "explanation": "Imaging is also a localization step, and it is unreliable on its own: nonfunctioning incidentalomas are common and small aldosterone-producing adenomas are often missed. Confirm the hormone excess before imaging."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "Screen resistant hypertension with hypokalemia using the aldosterone-to-renin ratio; confirm biochemically, then localize with CT and adrenal vein sampling.",
+      "citation": {
+        "text": "StatPearls: Hyperaldosteronism",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK499983/"
+      }
+    },
+    {
+      "id": "ADR-002",
+      "lecture": "Adrenal Gland Disorders",
+      "topic": "Aldosterone excess",
+      "objective": "Distinguish primary from secondary hyperaldosteronism",
+      "difficulty": "intermediate",
+      "stem": "A 64-year-old man with coronary artery disease presents with worsening leg edema. Blood pressure is 190/110 mm Hg. Sodium is 146 mEq/L and potassium is 3.0 mEq/L. Duplex ultrasonography shows 80% stenosis of the right renal artery. Compared with a patient who has an aldosterone-producing adrenal adenoma, which finding is expected in this man?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Serum aldosterone is low",
+          "explanation": "Aldosterone is elevated in both conditions; that is why hypokalemia and alkalosis appear in each. The discriminator is renin, not aldosterone."
+        },
+        {
+          "id": "B",
+          "text": "Hyperkalemia",
+          "explanation": "Hyperkalemia is a feature of aldosterone deficiency or mineralocorticoid receptor blockade. This patient is hypokalemic, as the stem states."
+        },
+        {
+          "id": "C",
+          "text": "Plasma renin activity is elevated rather than suppressed",
+          "explanation": "Correct. Renal artery stenosis reduces perfusion pressure at the juxtaglomerular apparatus, which drives renin release; angiotensin II then stimulates aldosterone synthesis in the zona glomerulosa. Aldosterone excess is therefore secondary to — and downstream of — high renin, so renin is normal or high. In primary aldosteronism the autonomous aldosterone expands volume and suppresses renin instead. The two conditions separate cleanly on renin, which is why the screening test is a ratio rather than an aldosterone level alone."
+        },
+        {
+          "id": "D",
+          "text": "Metabolic acidosis rather than metabolic alkalosis",
+          "explanation": "Mineralocorticoid excess of either cause increases distal sodium reabsorption in exchange for potassium and hydrogen ion, producing hypokalemic metabolic alkalosis in both."
+        },
+        {
+          "id": "E",
+          "text": "Suppressed ACTH",
+          "explanation": "ACTH is not the trophic driver of aldosterone in either disorder and is not the axis being tested here."
+        }
+      ],
+      "correct_answer": "C",
+      "takeaway": "Aldosterone is high in both; renin sorts them out — suppressed in primary aldosteronism, elevated in secondary (renal artery stenosis, renin-secreting tumor, heart failure, cirrhosis).",
+      "citation": {
+        "text": "StatPearls: Renal Artery Stenosis",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK430718/"
+      }
+    },
+    {
+      "id": "ADR-005",
+      "lecture": "Adrenal Gland Disorders",
+      "topic": "Cortisol excess",
+      "objective": "Prescribe the correct first-line diagnostic test for suspected cortisol excess",
+      "difficulty": "intermediate",
+      "stem": "A 45-year-old man with hypertension treated with hydrochlorothiazide reports weight gain, increased thirst and urination, and one day of severe low back pain that began while lifting a suitcase. Examination shows fat accumulation over the lower posterior neck and point tenderness over the lumbar spine; straight-leg raise is negative bilaterally. Which is the most appropriate next step in diagnosis?",
+      "options": [
+        {
+          "id": "A",
+          "text": "CT of the adrenal glands",
+          "explanation": "Imaging before biochemical confirmation is the classic error. Adrenal incidentalomas are found in several percent of adults, so a mass discovered at this stage would not establish that it is the source of anything."
+        },
+        {
+          "id": "B",
+          "text": "Plasma ACTH",
+          "explanation": "ACTH is the right test for the second step — separating ACTH-dependent from ACTH-independent disease — but it is uninterpretable until cortisol excess has actually been demonstrated."
+        },
+        {
+          "id": "C",
+          "text": "Twenty-four-hour urinary free cortisol",
+          "explanation": "Correct. Central weight gain, a dorsocervical fat pad, new glucose intolerance, and a low-trauma vertebral compression fracture together suggest endogenous hypercortisolism. The first step is always to establish cortisol excess biochemically, using any of three accepted screens: 24-hour urinary free cortisol, late-night salivary cortisol, or the 1-mg overnight dexamethasone suppression test."
+        },
+        {
+          "id": "D",
+          "text": "MRI of the pituitary",
+          "explanation": "Pituitary imaging is a late localizing step reserved for confirmed ACTH-dependent hypercortisolism, and small corticotroph adenomas are frequently not visible."
+        },
+        {
+          "id": "E",
+          "text": "Hemoglobin A1c",
+          "explanation": "This will document the hyperglycemia but explains neither the fat redistribution nor the fragility fracture, and it does not test the underlying hypothesis."
+        }
+      ],
+      "correct_answer": "C",
+      "takeaway": "Cushing workup has a fixed order: prove cortisol excess (24-h UFC, late-night salivary cortisol, or 1-mg DST), then measure ACTH to find the level, then image.",
+      "citation": {
+        "text": "StatPearls: Hypercortisolism (Cushing Syndrome)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK551526/"
+      }
+    },
+    {
+      "id": "ADR-006",
+      "lecture": "Adrenal Gland Disorders",
+      "topic": "Cortisol excess",
+      "objective": "Use ACTH to localize the cause of hypercortisolism",
+      "difficulty": "intermediate",
+      "stem": "A 54-year-old woman has new type 2 diabetes, osteoporosis, hypertension, weight gain, and abdominal striae. Twenty-four-hour urinary free cortisol is elevated and cortisol fails to suppress on an overnight dexamethasone suppression test. Plasma ACTH is less than 10 pg/mL (reference 10–60). CT of the abdomen shows a single 3-cm mass adjacent to the upper pole of the right kidney. Which is the most likely explanation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Exogenous glucocorticoid administration",
+          "explanation": "Exogenous steroid does suppress ACTH, but it also suppresses endogenous cortisol — urinary free cortisol would be low, both adrenals would be atrophic, and there would be no mass."
+        },
+        {
+          "id": "B",
+          "text": "Ectopic ACTH secretion by a small cell lung carcinoma",
+          "explanation": "Ectopic ACTH is also ACTH-dependent, with high ACTH and bilateral adrenal hyperplasia. It typically presents more abruptly with severe hypokalemia and marked hyperpigmentation."
+        },
+        {
+          "id": "C",
+          "text": "Bilateral macronodular adrenal hyperplasia",
+          "explanation": "This is another ACTH-independent cause and would also show a suppressed ACTH, but by definition the abnormality is bilateral and nodular, not a single mass with an atrophic contralateral gland."
+        },
+        {
+          "id": "D",
+          "text": "Cortisol-secreting adrenocortical adenoma",
+          "explanation": "Correct. Cortisol produced autonomously by an adrenal tumor feeds back on the pituitary and suppresses ACTH. A suppressed ACTH therefore places the lesion at the adrenal itself rather than above it, and the unilateral mass identifies which adrenal. This is ACTH-independent (primary adrenal) Cushing syndrome, treated by unilateral adrenalectomy."
+        },
+        {
+          "id": "E",
+          "text": "Corticotroph adenoma of the pituitary (Cushing disease)",
+          "explanation": "Cushing disease is ACTH-dependent: ACTH would be normal or elevated rather than undetectable, and the adrenal glands would be diffusely enlarged rather than harboring a single mass."
+        }
+      ],
+      "correct_answer": "D",
+      "takeaway": "Suppressed ACTH means the adrenal is the driver. Unilateral mass plus contralateral atrophy points to a cortisol-secreting adenoma; low cortisol with low ACTH means exogenous steroid instead.",
+      "citation": {
+        "text": "StatPearls: Hypercortisolism (Cushing Syndrome)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK551526/"
+      }
+    },
+    {
+      "id": "ADR-007",
+      "lecture": "Adrenal Gland Disorders",
+      "topic": "Cortisol excess",
+      "objective": "Distinguish pituitary from ectopic sources of ACTH-dependent hypercortisolism",
+      "difficulty": "advanced",
+      "stem": "A 38-year-old woman has biochemically confirmed hypercortisolism with a plasma ACTH of 118 pg/mL (elevated). Which additional finding would most strongly favor a pituitary corticotroph adenoma over ectopic ACTH secretion?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Severe hypokalemia with onset of symptoms over roughly six weeks",
+          "explanation": "Rapid onset with profound hypokalemic alkalosis and weight loss instead suggests an ectopic, often malignant, source producing very high ACTH."
+        },
+        {
+          "id": "B",
+          "text": "Bilateral adrenal enlargement on CT",
+          "explanation": "Bilateral hyperplasia is the expected consequence of any sustained ACTH excess, pituitary or ectopic, so it does not localize the source."
+        },
+        {
+          "id": "C",
+          "text": "Failure of cortisol to suppress after low-dose (1 mg) dexamethasone",
+          "explanation": "Low-dose non-suppression is a second-line test used to establish that Cushing syndrome is present at all. It is shared by every ACTH-dependent and ACTH-independent cause, so it discriminates nothing about the source."
+        },
+        {
+          "id": "D",
+          "text": "Marked generalized hyperpigmentation",
+          "explanation": "Hyperpigmentation reflects the magnitude of proopiomelanocortin-derived peptide excess and is more pronounced with the very high ACTH levels of ectopic secretion."
+        },
+        {
+          "id": "E",
+          "text": "Cortisol suppresses substantially on a high-dose dexamethasone suppression test",
+          "explanation": "Correct. This is exactly what the high-dose dexamethasone suppression test is for. Corticotroph adenomas retain partial glucocorticoid feedback sensitivity, so a high dose still suppresses them; ectopic ACTH-secreting tumors and adrenal tumors do not suppress. That is the third-line test in the Cushing algorithm, used only after cortisol excess is confirmed and ACTH has established that the disease is ACTH-dependent. (A CRH stimulation test and, when biochemistry stays equivocal, bilateral inferior petrosal sinus sampling can settle the remaining hard cases.)"
+        }
+      ],
+      "correct_answer": "E",
+      "takeaway": "Both pituitary and ectopic Cushing have high ACTH; high-dose dexamethasone suppression plus a CRH response favor pituitary, and petrosal sinus sampling settles hard cases.",
+      "citation": {
+        "text": "StatPearls: Cushing Disease",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK448184/"
+      }
+    },
+    {
+      "id": "ADR-008",
+      "lecture": "Adrenal Gland Disorders",
+      "topic": "Adrenal insufficiency",
+      "objective": "Associate the findings of primary adrenal insufficiency with the underlying hormone deficiencies",
+      "difficulty": "foundational",
+      "stem": "A 34-year-old man reports six months of progressive fatigue, unintentional weight loss, and intense craving for salty foods. Blood pressure is 92/45 mm Hg. There is hyperpigmentation of the buccal mucosa, palmar creases, and knuckles. Sodium is 128 mEq/L, potassium 5.9 mEq/L, and fasting glucose 62 mg/dL. Which laboratory value is most likely to be elevated?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ACTH",
+          "explanation": "Correct. Destruction of the adrenal cortex removes cortisol negative feedback, so corticotroph output of proopiomelanocortin-derived peptides rises. The excess ACTH stimulates melanocortin-1 receptors on melanocytes, which is why hyperpigmentation appears specifically at sun-exposed skin, pressure points, scars, palmar creases, and mucosa — and why it occurs in primary but not secondary adrenal insufficiency."
+        },
+        {
+          "id": "B",
+          "text": "Serum bicarbonate",
+          "explanation": "Aldosterone deficiency reduces distal hydrogen ion secretion, so a mild hyperkalemic metabolic acidosis with a low bicarbonate is typical."
+        },
+        {
+          "id": "C",
+          "text": "Dehydroepiandrosterone sulfate",
+          "explanation": "DHEA-sulfate comes from the zona reticularis and falls along with the rest of the cortex; low DHEA-S is a supportive finding in autoimmune adrenalitis."
+        },
+        {
+          "id": "D",
+          "text": "Aldosterone",
+          "explanation": "Aldosterone is deficient here — that is the cause of the hyponatremia, hyperkalemia, salt craving, and hypotension."
+        },
+        {
+          "id": "E",
+          "text": "Cortisol",
+          "explanation": "Cortisol is low; the hypoglycemia and poor vascular tone are direct consequences. A morning cortisol that fails to rise after cosyntropin confirms it."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "Primary adrenal insufficiency = loss of cortisol AND aldosterone with a compensatory ACTH rise; the ACTH excess is what pigments the skin and mucosa.",
+      "citation": {
+        "text": "StatPearls: Addison Disease",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK441994/"
+      }
+    },
+    {
+      "id": "ADR-009",
+      "lecture": "Adrenal Gland Disorders",
+      "topic": "Adrenal insufficiency",
+      "objective": "Recognize adrenal crisis precipitated by stopping replacement therapy",
+      "difficulty": "intermediate",
+      "stem": "A 45-year-old man with a several-month history of nausea and light-headedness comes to clinic with severe back pain, diffuse muscle weakness, and fatigue. The buccal mucosa is darkly pigmented and systolic blood pressure is 94 mm Hg. He mentions that he stopped taking a medication for a chronic condition a few weeks ago because he felt it was not helping. Sodium is 127 mEq/L, potassium 6.0 mEq/L, and glucose 56 mg/dL. Which medication did he most likely discontinue?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fluconazole",
+          "explanation": "Azoles inhibit steroidogenic cytochrome P450 enzymes, so high-dose azole therapy can *cause* adrenal insufficiency. Stopping it would improve adrenal function, not precipitate crisis."
+        },
+        {
+          "id": "B",
+          "text": "Metformin",
+          "explanation": "Stopping metformin causes hyperglycemia, not hypoglycemia, and produces no hyperpigmentation, hyperkalemia, or hypotension."
+        },
+        {
+          "id": "C",
+          "text": "Dehydroepiandrosterone",
+          "explanation": "DHEA is at most an adjunct for libido and well-being in adrenal insufficiency. It has no glucocorticoid or mineralocorticoid activity and stopping it does not cause crisis."
+        },
+        {
+          "id": "D",
+          "text": "Levothyroxine",
+          "explanation": "Withdrawal of levothyroxine causes hypothyroid symptoms — fatigue, constipation, cold intolerance, weight gain — and can cause hyponatremia, but not hyperkalemia or mucosal pigmentation."
+        },
+        {
+          "id": "E",
+          "text": "Hydrocortisone",
+          "explanation": "Correct. Hyperpigmented mucosa indicates chronic ACTH excess, meaning he has primary adrenal insufficiency and had been on glucocorticoid replacement. Withdrawing it removes the only source of cortisol in a gland that cannot make its own, precipitating crisis: hypotension, hyponatremia, hyperkalemia, and hypoglycemia. Treatment is immediate intravenous hydrocortisone plus isotonic saline with dextrose — given before confirmatory testing returns."
+        }
+      ],
+      "correct_answer": "E",
+      "takeaway": "Any patient with treated primary adrenal insufficiency who stops replacement is in crisis until proven otherwise — give IV hydrocortisone and saline first, test later.",
+      "citation": {
+        "text": "StatPearls: Adrenal Crisis",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK499968/"
+      }
+    },
+    {
+      "id": "ADR-010",
+      "lecture": "Adrenal Gland Disorders",
+      "topic": "Adrenal insufficiency",
+      "objective": "Discuss why primary and secondary adrenal insufficiency differ in potassium and pigmentation",
+      "difficulty": "intermediate",
+      "stem": "Two patients each have fatigue, orthostatic hypotension, hyponatremia, and a low 8 AM cortisol that fails to rise after cosyntropin. The first has potassium 6.1 mEq/L, hyperpigmented palmar creases, and ACTH of 940 pg/mL. The second has potassium 4.1 mEq/L, pale skin, and ACTH of 5 pg/mL. Which principle best explains why hyperkalemia occurs in the first patient but not the second?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ACTH is the principal trophic stimulus for aldosterone secretion",
+          "explanation": "If this were true, patient 2 would also be hyperkalemic. Chronic ACTH deficiency does cause some glomerulosa atrophy, but aldosterone responsiveness to volume depletion is largely retained."
+        },
+        {
+          "id": "B",
+          "text": "The second patient has a coexisting mineralocorticoid excess state",
+          "explanation": "There is nothing in the vignette to suggest this, and a normal potassium is exactly what isolated ACTH deficiency predicts on its own."
+        },
+        {
+          "id": "C",
+          "text": "Aldosterone synthesis fails when the adrenal cortex itself is destroyed, but is preserved in ACTH deficiency because it is driven mainly by angiotensin II and potassium",
+          "explanation": "Correct. ACTH is a permissive but minor regulator of the zona glomerulosa; the dominant stimuli are angiotensin II and serum potassium acting through an intact renin-angiotensin system. Destroying the cortex (patient 1) therefore removes aldosterone and produces hyperkalemia, whereas loss of pituitary ACTH (patient 2) leaves the glomerulosa functional. The same logic explains the pigmentation: only patient 1 has an ACTH excess to stimulate melanocytes."
+        },
+        {
+          "id": "D",
+          "text": "Skin hyperpigmentation itself alters renal potassium handling",
+          "explanation": "Hyperpigmentation is a downstream marker of ACTH excess with no effect on renal transport."
+        },
+        {
+          "id": "E",
+          "text": "Cortisol acts directly on the collecting duct to promote potassium secretion",
+          "explanation": "Cortisol can occupy the mineralocorticoid receptor when 11β-hydroxysteroid dehydrogenase type 2 is overwhelmed, but this is not the mechanism separating the two patients — both are cortisol deficient, yet only one is hyperkalemic."
+        }
+      ],
+      "correct_answer": "C",
+      "takeaway": "Hyperkalemia and hyperpigmentation are the two features that mark adrenal insufficiency as primary; ACTH deficiency spares aldosterone because angiotensin II and potassium drive it.",
+      "citation": {
+        "text": "StatPearls: Adrenal Insufficiency",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK441832/"
+      }
+    },
+    {
+      "id": "ADR-011",
+      "lecture": "Adrenal Gland Disorders",
+      "topic": "Adrenal insufficiency",
+      "objective": "Recognize acute hemorrhagic adrenal failure and its usual pathogen",
+      "difficulty": "intermediate",
+      "stem": "A 20-year-old college student is brought to the emergency department after acutely developing confusion, fever, nausea, and vomiting. She is febrile, hypotensive, and disoriented, with flank and abdominal tenderness and a rapidly spreading petechial rash. CT shows bilateral adrenal hemorrhage. Which organism best accounts for these findings?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A gram-positive, α-hemolytic diplococcus",
+          "explanation": "Streptococcus pneumoniae can cause purpura fulminans and adrenal hemorrhage, particularly in asplenic patients, but it is a much less common cause than meningococcus in a previously healthy young adult with this presentation."
+        },
+        {
+          "id": "B",
+          "text": "A dimorphic fungus",
+          "explanation": "Histoplasma capsulatum likewise causes chronic granulomatous adrenal destruction, usually in disseminated disease in an immunocompromised host, over weeks to months."
+        },
+        {
+          "id": "C",
+          "text": "A gram-negative diplococcus",
+          "explanation": "Correct. This is Waterhouse-Friderichsen syndrome, in which fulminant Neisseria meningitidis bacteremia causes disseminated intravascular coagulation and hemorrhagic infarction of both adrenal glands. The adrenal medulla's single-vein drainage and sinusoidal architecture make it especially vulnerable. The result is abrupt loss of cortisol and aldosterone superimposed on septic shock — which is why empiric stress-dose glucocorticoid accompanies antibiotics and vasopressors."
+        },
+        {
+          "id": "D",
+          "text": "A double-stranded linear DNA virus",
+          "explanation": "Cytomegalovirus adrenalitis occurs in advanced HIV infection and causes gradual insufficiency, not acute bilateral hemorrhage with petechiae."
+        },
+        {
+          "id": "E",
+          "text": "An acid-fast aerobic bacillus",
+          "explanation": "Mycobacterium tuberculosis is a major worldwide cause of primary adrenal insufficiency, but it destroys the glands slowly by caseating granulomatous inflammation, producing chronic insufficiency with calcified glands — not an acute hemorrhagic catastrophe."
+        }
+      ],
+      "correct_answer": "C",
+      "takeaway": "Fulminant meningococcemia with DIC → bilateral adrenal hemorrhage (Waterhouse-Friderichsen) → acute primary adrenal failure; TB, Histoplasma, and CMV destroy the glands slowly instead.",
+      "citation": {
+        "text": "StatPearls: Adrenal Hemorrhage",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK555911/"
+      }
+    },
+    {
+      "id": "ADR-012",
+      "lecture": "Adrenal Gland Disorders",
+      "topic": "Adrenal medulla and MEN syndromes",
+      "objective": "Prescribe the correct first-line biochemical test for suspected pheochromocytoma",
+      "difficulty": "foundational",
+      "stem": "A 43-year-old woman describes several weeks of episodic pounding headache, drenching sweats, and palpitations. Blood pressure today is 185/105 mm Hg; a record from one year ago documents 125/80 mm Hg. Which is the most appropriate initial test?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Plasma aldosterone-to-renin ratio",
+          "explanation": "This screens for primary aldosteronism, which causes sustained hypertension with hypokalemia rather than adrenergic paroxysms."
+        },
+        {
+          "id": "B",
+          "text": "Plasma free metanephrines",
+          "explanation": "Correct. Chromaffin tumors metabolize catecholamines continuously within the tumor by membrane-bound catechol-O-methyltransferase, so metanephrines are elevated even between paroxysms. Plasma free metanephrines (or fractionated 24-hour urinary metanephrines) is therefore the recommended first-line test, with high sensitivity that makes a normal result strongly reassuring."
+        },
+        {
+          "id": "C",
+          "text": "Twenty-four-hour urinary 5-hydroxyindoleacetic acid",
+          "explanation": "5-HIAA is the screening test for carcinoid syndrome, which causes flushing, diarrhea, and wheezing — and characteristically not hypertension."
+        },
+        {
+          "id": "D",
+          "text": "MIBG scintigraphy",
+          "explanation": "Functional imaging is used to find extra-adrenal paraganglioma or metastatic disease after the biochemical diagnosis is established. It is not a screening test."
+        },
+        {
+          "id": "E",
+          "text": "CT of the adrenal glands",
+          "explanation": "As with aldosteronism, confirm the hormone excess before imaging — otherwise an incidental adrenal nodule will be misattributed."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "Suspect pheochromocytoma on episodic headache, palpitations, and diaphoresis with new hypertension; screen with plasma free metanephrines, then image.",
+      "citation": {
+        "text": "StatPearls: Pheochromocytoma",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK589700/"
+      }
+    },
+    {
+      "id": "ADR-013",
+      "lecture": "Adrenal Gland Disorders",
+      "topic": "Adrenal medulla and MEN syndromes",
+      "objective": "Discuss preoperative management of pheochromocytoma",
+      "difficulty": "intermediate",
+      "stem": "A 43-year-old man has elevated urinary metanephrines and a 5-cm left adrenal mass. Laparoscopic adrenalectomy is planned. Which preoperative regimen is most appropriate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Metoprolol for two weeks, then phenoxybenzamine on the day of surgery",
+          "explanation": "This has the sequence backwards, and cardioselectivity does not make early β-blockade safe in an unblocked patient."
+        },
+        {
+          "id": "B",
+          "text": "Phenylephrine to maintain blood pressure during induction",
+          "explanation": "Phenylephrine is an α1 agonist — exactly the wrong direction. Vasopressors may be needed after tumor removal, once the catecholamine source is gone, but not as preparation."
+        },
+        {
+          "id": "C",
+          "text": "A phentolamine infusion begun in the operating room, with no oral preparation",
+          "explanation": "Phentolamine is a short-acting intravenous α-blocker used for intraoperative surges and hypertensive emergencies. It cannot substitute for the days of oral α-blockade needed to restore intravascular volume."
+        },
+        {
+          "id": "D",
+          "text": "α-adrenergic blockade with phenoxybenzamine first, adding a β-blocker later only if tachycardia persists",
+          "explanation": "Correct. Blood pressure must be normalized with an α-adrenergic receptor blocker before any β-blocker is introduced, and adequate α-blockade also lets the chronically contracted intravascular volume re-expand — which is why liberal salt and fluid intake accompanies it and why preparation takes days to a couple of weeks rather than hours. Surgery remains high risk and needs an experienced surgical and anesthesia team."
+        },
+        {
+          "id": "E",
+          "text": "Propranolol alone, started immediately",
+          "explanation": "Blocking β2-mediated vasodilation while α receptors remain unopposed leaves catecholamines acting on α1 alone — the classic route to a hypertensive crisis. β-blockade before α-blockade is the error the question is built around."
+        }
+      ],
+      "correct_answer": "D",
+      "takeaway": "α before β: normalize blood pressure with phenoxybenzamine (plus salt and volume repletion) first, then add a β-blocker for residual tachycardia. β-blocker monotherapy risks hypertensive crisis from unopposed α stimulation.",
+      "citation": {
+        "text": "StatPearls: Perioperative Management of Pheochromocytoma",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK589634/"
+      }
+    },
+    {
+      "id": "ADR-015",
+      "lecture": "Adrenal Gland Disorders",
+      "topic": "Adrenal medulla and MEN syndromes",
+      "objective": "Recognize MEN1 from its characteristic tumor combination and inheritance",
+      "difficulty": "intermediate",
+      "stem": "A 30-year-old man reports seven months of fatigue, weight loss, depression, and epigastric pain that improves after eating. He has passed two kidney stones in the past year and reports declining libido. Serum calcium is 11.6 mg/dL and parathyroid hormone is 760 pg/mL. He was adopted and does not know his family history. Which diagnosis best fits, and how is it inherited?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Multiple endocrine neoplasia type 2A; gain-of-function of the RET proto-oncogene",
+          "explanation": "MEN2A does include hyperparathyroidism, but its defining lesions are medullary thyroid carcinoma and pheochromocytoma — neither suggested here — and it does not cause pancreatic or pituitary tumors."
+        },
+        {
+          "id": "B",
+          "text": "Sporadic parathyroid adenoma",
+          "explanation": "A single sporadic adenoma would not be accompanied by a gastrinoma and a pituitary lesion in a 30-year-old."
+        },
+        {
+          "id": "C",
+          "text": "Multiple endocrine neoplasia type 1; autosomal dominant loss-of-function of the MEN1 tumor suppressor",
+          "explanation": "Correct. Primary hyperparathyroidism from multigland parathyroid hyperplasia is usually the first and most penetrant manifestation of MEN1, and it combines here with a gastrin-secreting pancreatic tumor (ulcer pain relieved by food) and a pituitary lesion suggested by the reduced libido — the classic parathyroid, pancreas, pituitary triad. MEN1 encodes menin, a tumor suppressor, so inheritance is autosomal dominant with a somatic second hit."
+        },
+        {
+          "id": "D",
+          "text": "Multiple endocrine neoplasia type 2B; gain-of-function of the RET proto-oncogene",
+          "explanation": "MEN2B features medullary thyroid carcinoma, pheochromocytoma, mucosal neuromas, and marfanoid habitus, and characteristically spares the parathyroid glands."
+        },
+        {
+          "id": "E",
+          "text": "Familial hypocalciuric hypercalcemia; inactivating mutation of the calcium-sensing receptor",
+          "explanation": "This causes lifelong mild hypercalcemia with an only mildly elevated PTH, a low urinary calcium-to-creatinine clearance ratio, and no stones or associated tumors. A PTH of 760 pg/mL is far too high."
+        }
+      ],
+      "correct_answer": "C",
+      "takeaway": "MEN1 = the three P's (parathyroid, pancreas, pituitary), autosomal dominant loss of the menin tumor suppressor; hyperparathyroidism is usually the earliest sign.",
+      "citation": {
+        "text": "StatPearls: Multiple Endocrine Neoplasia Type 1",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK536980/"
+      }
+    },
+    {
+      "id": "ADR-016",
+      "lecture": "Adrenal Gland Disorders",
+      "topic": "Adrenal medulla and MEN syndromes",
+      "objective": "Sequence management when medullary thyroid carcinoma and pheochromocytoma coexist",
+      "difficulty": "advanced",
+      "stem": "A 47-year-old man with a history of primary hyperparathyroidism presents with an anterior neck mass. Serum calcitonin is markedly elevated and biopsy shows nests of tumor cells in an amyloid-rich stroma. Several relatives have had \"thyroid problems.\" Total thyroidectomy is planned. Which is the most important step before that operation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Screen for pheochromocytoma with plasma free metanephrines and treat it first if present",
+          "explanation": "Correct. Medullary thyroid carcinoma plus hyperparathyroidism plus a family history indicates MEN2A, caused by germline gain-of-function RET mutations. Roughly half of these patients harbor a pheochromocytoma, and anesthesia or surgical manipulation in an unprepared patient can precipitate a lethal catecholamine crisis. The pheochromocytoma is therefore always excluded — and resected first, after α-blockade — before any other operation."
+        },
+        {
+          "id": "B",
+          "text": "Examine the lips and tongue for mucosal neuromas and assess for marfanoid habitus",
+          "explanation": "These are MEN2B features, and MEN2B characteristically does not include hyperparathyroidism. Even if present, they would not change the immediate perioperative priority."
+        },
+        {
+          "id": "C",
+          "text": "Measure fasting insulin and C-peptide to exclude an insulinoma",
+          "explanation": "Pancreatic islet tumors are a MEN1 manifestation and are not part of MEN2."
+        },
+        {
+          "id": "D",
+          "text": "Send the biopsy for BRAF V600E testing",
+          "explanation": "BRAF mutations characterize papillary thyroid carcinoma. Amyloid stroma and elevated calcitonin identify a medullary (parafollicular C-cell) tumor."
+        },
+        {
+          "id": "E",
+          "text": "Obtain a pituitary MRI to exclude a prolactinoma",
+          "explanation": "Pituitary adenomas belong to MEN1. Medullary thyroid carcinoma places this patient in the MEN2 group instead."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "In any MEN2 patient, exclude and treat pheochromocytoma before any other surgery — unprepared anesthesia can trigger a fatal catecholamine crisis.",
+      "citation": {
+        "text": "Endotext: Multiple Endocrine Neoplasia Type 2",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK481898/"
+      }
+    },
+    {
+      "id": "ADR-017",
+      "lecture": "Adrenal Gland Disorders",
+      "topic": "Adrenal medulla and MEN syndromes",
+      "objective": "Differentiate MEN2A from MEN2B",
+      "difficulty": "advanced",
+      "stem": "A 12-year-old boy has a marfanoid habitus, everted eyelids, nodular bumps on the lips and tongue, and long-standing constipation attributed to intestinal ganglioneuromatosis. Serum calcitonin is elevated. Which finding would be LEAST expected in this syndrome?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A germline RET mutation",
+          "explanation": "MEN2B is caused by germline activating RET mutations, most often M918T, which correlates with the aggressive phenotype."
+        },
+        {
+          "id": "B",
+          "text": "Primary hyperparathyroidism",
+          "explanation": "Correct. Mucosal neuromas, marfanoid habitus, and intestinal ganglioneuromatosis identify MEN2B, and parathyroid disease is characteristically absent — that is the single feature separating MEN2B from MEN2A. MEN2B also carries the earliest and most aggressive medullary thyroid carcinoma, which is why prophylactic thyroidectomy is done in infancy or early childhood."
+        },
+        {
+          "id": "C",
+          "text": "Medullary thyroid carcinoma",
+          "explanation": "Medullary thyroid carcinoma occurs in essentially all patients with MEN2B and is the reason the calcitonin is elevated."
+        },
+        {
+          "id": "D",
+          "text": "Pheochromocytoma",
+          "explanation": "Pheochromocytoma occurs in roughly half of MEN2B patients, as in MEN2A, and must be excluded before any surgery."
+        },
+        {
+          "id": "E",
+          "text": "Autosomal dominant inheritance",
+          "explanation": "All MEN2 subtypes are autosomal dominant, although a substantial fraction of MEN2B cases arise de novo."
+        }
+      ],
+      "correct_answer": "B",
+      "takeaway": "MEN2A = medullary thyroid carcinoma + pheochromocytoma + hyperparathyroidism. MEN2B = medullary thyroid carcinoma + pheochromocytoma + mucosal neuromas and marfanoid habitus, with NO parathyroid disease.",
+      "citation": {
+        "text": "Endotext: Multiple Endocrine Neoplasia Type 2",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK481898/"
+      }
+    },
+    {
+      "id": "ADR-018",
+      "lecture": "Adrenal Gland Disorders",
+      "topic": "Adrenocortical neoplasms",
+      "objective": "Distinguish adrenocortical carcinoma from a benign functioning adenoma",
+      "difficulty": "intermediate",
+      "stem": "A 46-year-old woman describes three months of rapidly progressive facial hair growth, deepening of her voice, and temporal hair loss, together with new hypertension and easy bruising. DHEA-sulfate and 24-hour urinary free cortisol are both markedly elevated. Imaging shows a 12-cm left adrenal mass invading the perinephric fat, with enlarged periaortic nodes. Which is the most likely diagnosis?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pheochromocytoma",
+          "explanation": "A chromaffin tumor causes paroxysmal headache, palpitations, and diaphoresis with elevated metanephrines. It does not secrete cortisol or androgens."
+        },
+        {
+          "id": "B",
+          "text": "Non-functioning adrenal incidentaloma",
+          "explanation": "By definition an incidentaloma is hormonally silent and found unintentionally. This mass is clearly hypersecreting two steroid classes."
+        },
+        {
+          "id": "C",
+          "text": "Aldosterone-producing adrenocortical adenoma",
+          "explanation": "These are usually under 2 cm and present with hypertension and hypokalemia, not virilization or hypercortisolism."
+        },
+        {
+          "id": "D",
+          "text": "Adrenocortical carcinoma",
+          "explanation": "Correct. Adrenocortical carcinomas are typically functional and often announce themselves with virilization, and they are large and invasive with atrophic adjacent cortex and early spread to regional and periaortic nodes, then hematogenously to lung. Co-secretion of more than one steroid class — glucocorticoid plus androgen here — over a span of months reinforces the diagnosis. Some cases are syndromic (Li-Fraumeni, Beckwith-Wiedemann)."
+        },
+        {
+          "id": "E",
+          "text": "Cortisol-producing adrenocortical adenoma",
+          "explanation": "Adenomas are well-circumscribed and usually no more than about 2.5 cm, with adjacent cortex of normal thickness, and roughly 60% are non-functional. When one does secrete, it secretes a single steroid class. Neither the size, the invasion, the nodal spread, nor the virilization fits an adenoma."
+        }
+      ],
+      "correct_answer": "D",
+      "takeaway": "Large size, rapid onset, and mixed glucocorticoid-plus-androgen excess point to adrenocortical carcinoma rather than a benign functioning adenoma.",
+      "citation": {
+        "text": "StatPearls: Adrenocortical Carcinoma",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK546580/"
+      }
+    },
+    {
+      "id": "ADR-019",
+      "lecture": "Adrenal Gland Disorders",
+      "topic": "Cortisol excess",
+      "objective": "Anticipate the complications of long-term pharmacologic glucocorticoid exposure",
+      "difficulty": "foundational",
+      "stem": "A 34-year-old man with ulcerative colitis is hospitalized with an acute flare and started on prednisone 60 mg daily with a planned taper. He asks what would happen if he ended up needing the drug long term. Which complication is he most likely to develop?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hip fracture from glucocorticoid-induced osteoporosis",
+          "explanation": "Correct. Glucocorticoids are the leading cause of drug-induced osteoporosis. They suppress osteoblast function and promote osteocyte apoptosis, increase RANKL-driven bone resorption, reduce intestinal calcium absorption, and induce hypogonadism. Bone loss is fastest in the first six to twelve months, so calcium and vitamin D supplementation, weight-bearing exercise, and consideration of a bisphosphonate begin early."
+        },
+        {
+          "id": "B",
+          "text": "Spider angiomata",
+          "explanation": "Spider angiomata reflect the altered estrogen handling of chronic liver disease. Glucocorticoids cause skin thinning, purpura, and striae instead."
+        },
+        {
+          "id": "C",
+          "text": "Adrenal hyperplasia",
+          "explanation": "The opposite occurs. Exogenous glucocorticoid suppresses ACTH, causing adrenal atrophy — which is why abrupt withdrawal can precipitate secondary adrenal insufficiency and why prolonged courses must be tapered."
+        },
+        {
+          "id": "D",
+          "text": "Agranulocytosis",
+          "explanation": "Agranulocytosis is characteristic of thionamides, clozapine, and some other agents. Glucocorticoids actually raise the neutrophil count by demargination and delayed apoptosis."
+        },
+        {
+          "id": "E",
+          "text": "Immune reconstitution inflammatory syndrome",
+          "explanation": "This follows restoration of immune function, typically after starting antiretroviral therapy. Glucocorticoids suppress immunity and are in fact sometimes used to treat it."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "Long-term glucocorticoids cause iatrogenic Cushing syndrome, rapid early bone loss with fragility fracture, and HPA suppression — supplement calcium and vitamin D and never stop abruptly.",
+      "citation": {
+        "text": "Endotext: An Overview of Glucocorticoid-Induced Osteoporosis",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK278968/"
+      }
+    },
+    {
+      "id": "DSD-001",
+      "lecture": "DSD Concepts",
+      "topic": "Approach to atypical genitalia in the newborn",
+      "objective": "Explain why a DSD is a medical emergency in the newborn period",
+      "difficulty": "foundational",
+      "stem": "A term newborn has a 1.5-cm phallic structure, a single perineal opening, partially fused labioscrotal folds, and no palpable gonads. The parents ask whether anything needs to be done urgently. Which concern most justifies urgent evaluation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Salt-wasting congenital adrenal hyperplasia, which can cause fatal adrenal crisis within the first two weeks of life",
+          "explanation": "Correct. CAH is both the most common cause of atypical genitalia in a 46,XX newborn and the only cause that is immediately life-threatening. Cortisol and aldosterone deficiency produce vomiting, hyponatremia, hyperkalemia, hypoglycemia, and hypovolemic shock, typically in the first one to three weeks — after discharge. Electrolytes, glucose, and 17α-hydroxyprogesterone are therefore checked promptly, and stress-dose glucocorticoid is given if crisis is suspected."
+        },
+        {
+          "id": "B",
+          "text": "Sex of rearing must be assigned within the first 24 hours to avoid psychological harm",
+          "explanation": "This is the opposite of current practice. Assignment is deliberately deferred until karyotype, hormonal, and anatomic data are available and a multidisciplinary team has counseled the family. Rushing the decision is itself a recognized harm."
+        },
+        {
+          "id": "C",
+          "text": "Isolated hypospadias",
+          "explanation": "Isolated hypospadias with descended testes is not a DSD and is managed electively. Hypospadias accompanied by non-palpable gonads, as here, is precisely what mandates evaluation."
+        },
+        {
+          "id": "D",
+          "text": "Complete androgen insensitivity syndrome",
+          "explanation": "Complete androgen insensitivity produces unambiguously female-appearing external genitalia, so it is not usually detected in the newborn period, and it carries no acute metabolic risk."
+        },
+        {
+          "id": "E",
+          "text": "Turner syndrome",
+          "explanation": "Turner syndrome presents with female external genitalia, sometimes with lymphedema or a webbed neck, and its cardiac and renal anomalies warrant evaluation — but it does not cause atypical genitalia or adrenal crisis."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "Atypical genitalia in a newborn is an emergency because of one diagnosis: salt-wasting CAH. Check electrolytes, glucose, and 17α-hydroxyprogesterone before the baby goes home.",
+      "citation": {
+        "text": "StatPearls: Ambiguous Genitalia and Disorders of Sexual Differentiation",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK557435/"
+      }
+    },
+    {
+      "id": "DSD-002",
+      "lecture": "DSD Concepts",
+      "topic": "Approach to atypical genitalia in the newborn",
+      "objective": "Recognize the initial evaluation of a newborn with atypical genitalia",
+      "difficulty": "intermediate",
+      "stem": "A newborn is noted at delivery to have atypical genitalia with non-palpable gonads. A multidisciplinary team is assembled. Which set of initial investigations is most appropriate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "MRI of the brain to evaluate the hypothalamic-pituitary axis",
+          "explanation": "Central causes of hypogonadism such as Kallmann syndrome are considered when puberty fails, not in a newborn with atypical genitalia."
+        },
+        {
+          "id": "B",
+          "text": "Defer all testing until six months of age to allow the family time to adjust",
+          "explanation": "Deferring is unsafe: a salt-wasting crisis typically occurs within the first two to three weeks. Prompt evaluation and unhurried decisions about sex of rearing are compatible, not in conflict."
+        },
+        {
+          "id": "C",
+          "text": "Immediate gonadal biopsy to establish gonadal histology",
+          "explanation": "Gonadal biopsy is invasive and is reserved for selected cases, such as suspected ovotesticular DSD or gonadal dysgenesis with tumor risk, after non-invasive testing has narrowed the differential."
+        },
+        {
+          "id": "D",
+          "text": "Karyotype with FISH for SRY, serum 17α-hydroxyprogesterone, serum electrolytes and glucose, and pelvic and inguinal ultrasound",
+          "explanation": "Correct. These four answer the questions that drive every subsequent decision: what are the sex chromosomes, is this CAH, is the infant in metabolic danger, and what internal structures (uterus, gonads) are present. Testosterone, dihydrotestosterone, AMH, LH, and FSH are added according to the karyotype result."
+        },
+        {
+          "id": "E",
+          "text": "A trial of intramuscular testosterone to assess phallic growth",
+          "explanation": "An hCG or testosterone stimulation test has a role in evaluating 46,XY DSD later in the workup, but it is not an initial study and does not address the urgent question of adrenal insufficiency."
+        }
+      ],
+      "correct_answer": "D",
+      "takeaway": "First four studies in a newborn with atypical genitalia: karyotype/SRY, 17α-hydroxyprogesterone, electrolytes and glucose, and pelvic ultrasound.",
+      "citation": {
+        "text": "Endotext: Ambiguous Genitalia in the Newborn",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK279168/"
+      }
+    },
+    {
+      "id": "DSD-003",
+      "lecture": "DSD Concepts",
+      "topic": "46,XY differences of sex development",
+      "objective": "Differentiate 46,XY DSDs by pubertal breast development, blood pressure, and Müllerian structures",
+      "difficulty": "advanced",
+      "stem": "A 16-year-old raised as a girl is evaluated for primary amenorrhea. There is no breast development and no pubic or axillary hair. Blood pressure is 158/98 mm Hg and potassium is 2.9 mEq/L. Karyotype is 46,XY. Ultrasound shows no uterus and intra-abdominal gonads. Which diagnosis best explains all of these findings?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Complete 17α-hydroxylase/17,20-lyase deficiency",
+          "explanation": "Correct. Loss of CYP17A1 blocks testosterone synthesis, so a 46,XY fetus does not virilize and the external genitalia appear female. Sertoli cells still make AMH, so the Müllerian ducts regress and there is no uterus. Because both gonadal and adrenal sex steroids are absent, puberty brings neither breasts nor pubic hair. Meanwhile ACTH drives accumulation of 11-deoxycorticosterone and corticosterone, whose mineralocorticoid activity gives hypertension with hypokalemia — the finding that no other option on this list explains."
+        },
+        {
+          "id": "B",
+          "text": "Müllerian agenesis (Mayer-Rokitansky-Küster-Hauser syndrome)",
+          "explanation": "MRKH occurs in 46,XX individuals with functioning ovaries, so breast development and pubic hair are normal and only the uterus and upper vagina are absent. The karyotype here is 46,XY."
+        },
+        {
+          "id": "C",
+          "text": "Complete gonadal dysgenesis (Swyer syndrome)",
+          "explanation": "Streak gonads make neither testosterone nor AMH, so the Müllerian ducts persist and a uterus IS present — which is inconsistent with this ultrasound. Patients are also normotensive with hypergonadotropic hypogonadism."
+        },
+        {
+          "id": "D",
+          "text": "5α-reductase deficiency",
+          "explanation": "Testosterone is normal, so patients virilize substantially at puberty with deepening voice and muscle development, and blood pressure and potassium are normal."
+        },
+        {
+          "id": "E",
+          "text": "Complete androgen insensitivity syndrome",
+          "explanation": "CAIS shares the female external phenotype, the absent uterus (AMH still regresses the Müllerian ducts), the intra-abdominal testes, and the sparse pubic and axillary hair. But androgen biosynthesis is normal in CAIS — serum testosterone sits in the male reference range, because the defect is in the androgen receptor — whereas here testosterone synthesis itself is blocked. CAIS also causes neither hypertension nor hypokalemia, and the available testosterone is aromatized peripherally, so breast development at puberty is normal rather than absent."
+        }
+      ],
+      "correct_answer": "A",
+      "takeaway": "In 46,XY DSD, absent breast development plus hypertension and hypokalemia separates 17α-hydroxylase deficiency from CAIS; a present uterus points instead to gonadal dysgenesis.",
+      "citation": {
+        "text": "StatPearls: 17-Hydroxylase Deficiency",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK546644/"
+      }
+    },
+    {
+      "id": "DSD-004",
+      "lecture": "DSD Concepts",
+      "topic": "Congenital adrenal hyperplasia and newborn screening",
+      "objective": "Explain the role of newborn screening in the diagnosis of congenital adrenal hyperplasia",
+      "difficulty": "intermediate",
+      "stem": "Newborn screening for congenital adrenal hyperplasia measures 17α-hydroxyprogesterone on the dried blood spot. Why are affected male infants more dependent on this screen than affected female infants for timely diagnosis?",
+      "options": [
+        {
+          "id": "A",
+          "text": "21-hydroxylase deficiency is X-linked, so males are affected more severely",
+          "explanation": "CYP21A2 is on chromosome 6 and the disorder is autosomal recessive. Males and females are affected with equal frequency and equal biochemical severity."
+        },
+        {
+          "id": "B",
+          "text": "Male infants have physiologically higher 17α-hydroxyprogesterone levels, making the test more sensitive in boys",
+          "explanation": "Sex does not meaningfully change the assay's performance. Gestational-age-adjusted cutoffs matter far more, since preterm infants have higher baseline levels and generate false positives."
+        },
+        {
+          "id": "C",
+          "text": "Male infants have a more severe enzyme deficiency on average",
+          "explanation": "The severity of the genotype is independent of sex; what differs is only how visible the androgen excess is at birth."
+        },
+        {
+          "id": "D",
+          "text": "Affected 46,XY infants have normal-appearing external genitalia at birth, so without screening the diagnosis is not suspected until a salt-wasting crisis occurs",
+          "explanation": "Correct. Excess adrenal androgen has no visible effect on a male fetus whose genitalia are already virilized by testicular testosterone, so nothing prompts evaluation. An affected 46,XX infant, by contrast, is often identified at birth from clitoromegaly and labial fusion. Males therefore reach a crisis — typically at one to three weeks with vomiting, hyponatremia, hyperkalemia, and shock — unless the screen catches them, which is the principal reason CAH is on the newborn panel."
+        },
+        {
+          "id": "E",
+          "text": "Placental aromatase protects female fetuses from developing the enzyme deficiency",
+          "explanation": "Placental aromatase does shield the fetus from maternal androgens, but it does not prevent the deficiency and does not prevent virilization by the fetus's own adrenal androgens — which is exactly why affected 46,XX infants are virilized."
+        }
+      ],
+      "correct_answer": "D",
+      "takeaway": "Newborn screening for CAH exists chiefly to catch affected boys, whose genitalia look normal and who would otherwise present in salt-wasting crisis after discharge.",
+      "citation": {
+        "text": "StatPearls: Newborn Screening",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK558983/"
+      }
     }
-  ]
+  ],
+  "updated": "2026-08-16"
 }

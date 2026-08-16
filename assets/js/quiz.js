@@ -20,7 +20,7 @@
 
   function loadBank() {
     if (bankPromise) return bankPromise;
-    bankPromise = fetch('assets/data/endocrine_question_bank.json')
+    bankPromise = fetch('assets/data/endocrine_question_bank.json?v=20260816b')
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .catch(function () {
         // file:// fallback — assets/data/question-bank.js is generated from the
@@ -62,10 +62,17 @@
     return n;
   }
 
+  /* Toolbar controls need DOM ids so their <label for> works. A page can hold
+     more than one quiz (cumulative practice has one bank per week), so the ids
+     are suffixed per instance — otherwise every label would point at the first
+     quiz's controls. */
+  var instances = 0;
+
   /* ======================================================================= */
   function Quiz(host, bank, opts) {
     this.host = host;
     this.bank = bank;
+    this.uid = ++instances;
     this.opts = opts || {};
     this.all = bank.questions.slice();
     if (this.opts.ids && this.opts.ids.length) {
@@ -77,6 +84,14 @@
     if (this.opts.lecture) {
       var lec = this.opts.lecture;
       this.all = this.all.filter(function (q) { return q.lecture === lec; });
+    }
+    /* A set of lectures (data-quiz-lectures) is a scope, not a filter: it limits
+       which questions exist for this mount, and the Lecture dropdown then offers
+       only those. Used to split cumulative practice by week. */
+    if (this.opts.lectures && this.opts.lectures.length) {
+      var wanted = {};
+      this.opts.lectures.forEach(function (l) { wanted[l] = 1; });
+      this.all = this.all.filter(function (q) { return wanted[q.lecture]; });
     }
     this.state = {
       lecture: this.opts.lecture || 'all',
@@ -90,7 +105,7 @@
     this.render();
   }
 
-  /* Lecture and topic are two views of the same 30 questions, so combining
+  /* Lecture and topic are two views of the same question set, so combining
      them with AND mostly yields nothing ("T2DM" AND "Insulin therapy" shares
      no question). They are unioned instead: pick a lecture and a topic and you
      get both sets. Difficulty is a modifier, so it still narrows the result.
@@ -148,7 +163,8 @@
       return out.sort();
     }
 
-    function select(id, label, values, valueKey, labelFor) {
+    function select(name, label, values, valueKey, labelFor) {
+      var id = name + '-' + self.uid;
       var sel = el('select', { id: id });
       sel.appendChild(el('option', { value: 'all', text: 'All' }));
       values.forEach(function (v) { sel.appendChild(el('option', { value: v, text: labelFor ? labelFor(v) : v })); });
@@ -176,7 +192,7 @@
     var randWrap = el('div', { class: 'quiz-field' });
     randWrap.appendChild(el('label', { text: 'Order' }));
     var randLabel = el('label', { class: 'quiz-check' });
-    var randBox = el('input', { type: 'checkbox', id: 'q-random' });
+    var randBox = el('input', { type: 'checkbox', id: 'q-random-' + this.uid });
     randBox.checked = this.state.randomOrder;
     randBox.addEventListener('change', function () {
       self.state.randomOrder = randBox.checked;
@@ -190,7 +206,7 @@
     var optWrap = el('div', { class: 'quiz-field' });
     optWrap.appendChild(el('label', { text: 'Options' }));
     var optLabel = el('label', { class: 'quiz-check' });
-    var optBox = el('input', { type: 'checkbox', id: 'q-randopts' });
+    var optBox = el('input', { type: 'checkbox', id: 'q-randopts-' + this.uid });
     optBox.checked = this.state.randomOptions;
     optBox.addEventListener('change', function () {
       self.state.randomOptions = optBox.checked;
@@ -435,8 +451,10 @@
     loadBank().then(function (bank) {
       hosts.forEach(function (h) {
         var idsAttr = h.getAttribute('data-quiz-ids');
+        var lecturesAttr = h.getAttribute('data-quiz-lectures');
         var opts = {
           ids: idsAttr ? idsAttr.split(',').map(function (s) { return s.trim(); }).filter(Boolean) : null,
+          lectures: lecturesAttr ? lecturesAttr.split(',').map(function (s) { return s.trim(); }).filter(Boolean) : null,
           lecture: h.getAttribute('data-quiz-lecture') || null,
           showToolbar: h.getAttribute('data-quiz-toolbar') !== 'false',
           randomOrder: h.getAttribute('data-quiz-shuffle') !== 'false'

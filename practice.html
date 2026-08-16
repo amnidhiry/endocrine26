@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cumulative Practice — HSHD1 Endocrine Course Companion</title>
-<meta name="description" content="The full original endocrine question bank, filterable by lecture, topic, and difficulty, with an explanation for every answer option.">
+<meta name="description" content="The full original endocrine question bank, split into week 1 and week 2 banks and filterable by lecture, topic, and difficulty, with an explanation for every answer option.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/site.css?v=20260816b">
 </head>
 <body data-page="practice">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -21,23 +21,32 @@
     <div class="page-head">
       <p class="eyebrow">Practice · every lecture with questions written</p>
       <h1>Cumulative Practice</h1>
-      <p class="lede">The whole question bank in one place. Filter it down to whatever you are working on, or leave the filters open and
-        let the mixing do its job — recognizing a thyroid question <em>because it is on the thyroid page</em> is a much easier task than
-        the one an exam sets you. Questions for <a href="steroid.html">steroid hormone synthesis</a>,
-        <a href="adrenal.html">adrenal gland disorders</a> and <a href="dsd.html">DSD concepts</a> have not been written yet;
-        those pages carry worked interactive cases in the meantime.</p>
+      <p class="lede">The whole question bank in one place, split by week. Filter either bank down to whatever you are working on, or leave
+        the filters open and let the mixing do its job — recognizing a thyroid question <em>because it is on the thyroid page</em> is a much
+        easier task than the one an exam sets you. Each bank keeps its own progress, so you can work one without disturbing the other.</p>
     </div>
 
-    <section class="section" id="bank" data-toc="The question bank" data-phase="Practice">
-      <h2>Question bank</h2>
-      <div class="quiz" data-quiz></div>
+    <section class="section" id="week1" data-toc="Week 1 question bank" data-phase="Practice">
+      <h2>Week 1 question bank</h2>
+      <p class="section-note"><a href="pituitary.html">Hypothalamus and pituitary</a>, <a href="thyroid.html">thyroid</a>,
+        <a href="type1.html">T1DM</a>, <a href="type2.html">T2DM</a>, and the <a href="insulin.html">insulin therapy lab</a>.</p>
+      <div class="quiz" data-quiz
+           data-quiz-lectures="Hypothalamus and Pituitary Disorders,Thyroid Disorders,T1DM,T2DM,Insulin Therapy 101"></div>
+    </section>
+
+    <section class="section" id="week2" data-toc="Week 2 question bank" data-phase="Practice">
+      <h2>Week 2 question bank</h2>
+      <p class="section-note"><a href="steroid.html">Steroid hormone synthesis</a>, <a href="adrenal.html">adrenal gland disorders</a>,
+        and <a href="dsd.html">DSD concepts</a>.</p>
+      <div class="quiz" data-quiz
+           data-quiz-lectures="Steroid Hormone Synthesis,Adrenal Gland Disorders,DSD Concepts"></div>
     </section>
 
   </main>
 </div>
 
-<script src="assets/js/site.js" defer></script>
-<script src="assets/js/quiz.js" defer></script>
-<script src="assets/js/figures.js" defer></script>
+<script src="assets/js/site.js?v=20260816b" defer></script>
+<script src="assets/js/quiz.js?v=20260816b" defer></script>
+<script src="assets/js/figures.js?v=20260816b" defer></script>
 </body>
 </html>
