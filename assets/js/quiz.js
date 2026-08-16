@@ -20,7 +20,7 @@
 
   function loadBank() {
     if (bankPromise) return bankPromise;
-    bankPromise = fetch('assets/data/endocrine_question_bank.json?v=20260816b')
+    bankPromise = fetch('assets/data/endocrine_question_bank.json?v=20260816c')
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .catch(function () {
         // file:// fallback — assets/data/question-bank.js is generated from the
@@ -231,9 +231,20 @@
     this.stage.innerHTML = '';
 
     if (!this.deck.length) {
-      var msg = this.state.reviewMode
-        ? 'Nothing to review — you have no incorrect answers in the current filter.'
-        : 'No questions match the current filters. Widen a filter to see questions.';
+      var msg;
+      if (this.state.reviewMode) {
+        msg = 'Nothing to review — you have no incorrect answers in the current filter.';
+      } else if (!this.all.length && (this.opts.ids || this.opts.lecture || this.opts.lectures)) {
+        /* The mount asked for specific questions and the loaded bank has none of
+           them. That is a stale-cache or version-skew problem, not a filter
+           problem — say so, because this mount may have no filters on screen. */
+        msg = 'These questions are not in the question bank your browser loaded. ' +
+              'You are probably seeing a cached copy — reload the page.';
+      } else if (this.opts.showToolbar === false) {
+        msg = 'These practice questions could not be loaded.';
+      } else {
+        msg = 'No questions match the current filters. Widen a filter to see questions.';
+      }
       this.stage.appendChild(el('p', { class: 'quiz-empty', text: msg }));
       if (this.state.reviewMode) {
         var back = el('button', { type: 'button', class: 'btn', text: 'Back to all questions' });

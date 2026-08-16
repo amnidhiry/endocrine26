@@ -259,7 +259,7 @@
 
   function loadIndex() {
     if (indexPromise) return indexPromise;
-    indexPromise = fetch('assets/data/search-index.json?v=20260816b')
+    indexPromise = fetch('assets/data/search-index.json?v=20260816c')
       .then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.json(); })
       .then(function (d) { searchIndex = d.entries || []; return searchIndex; })
       .catch(function () { searchIndex = null; return null; });
