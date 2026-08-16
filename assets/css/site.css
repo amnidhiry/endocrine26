@@ -319,6 +319,12 @@ hr { border: none; border-top: 1px solid var(--border); margin: 1.75rem 0; }
 .block-text strong { color: var(--text); font-weight: 600; }
 .block-text ul { margin: .3rem 0 0 1.05rem; }
 .block-text li { margin-bottom: .25rem; }
+.block-text li:last-child { margin-bottom: 0; }
+/* Lets a bulleted block carry a lead-in or closing line without picking up the
+   browser's default paragraph margins. */
+.block-text > p { margin: 0; }
+.block-text > p + ul { margin-top: .4rem; }
+.block-text > ul + p { margin-top: .5rem; }
 
 /* ---------- Disease card (disclosure) ------------------------------------ */
 .card {
@@ -395,6 +401,9 @@ kbd {
   background: var(--bg3); color: var(--text2);
 }
 .figure img { width: 100%; height: auto; border-radius: 8px; display: block; }
+/* Portrait or small-native figures: cap the width so they are never upscaled past
+   their natural resolution, and centre them the way the SVG diagrams are. */
+.figure img.img-narrow { max-width: 460px; margin: 0 auto; }
 .figure-title { font-size: 13px; font-weight: 600; margin-bottom: .6rem; }
 .figcaption {
   font-size: 12.5px; color: var(--text3); line-height: 1.6;

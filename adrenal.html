@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/site.css?v=20260816b">
 </head>
 <body data-page="adrenal">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -34,25 +34,24 @@
       <h2>Orientation: four hormones, two control systems</h2>
 
       <div class="note note-teal">
-        <span class="note-kind">The three stated objectives, and how this page delivers them</span>
-        <p><strong>1. Associate symptoms, signs, and diagnostic findings with the underlying disorder</strong> — the
-          <a href="#hyperaldo">aldosterone</a>, <a href="#cushing">cortisol excess</a>,
-          <a href="#primary-ai">insufficiency</a>, <a href="#cah">CAH</a>, <a href="#neoplasms">neoplasm</a>,
-          <a href="#pheo">pheochromocytoma</a>, and <a href="#men">MEN</a> sections, each written presentation-first.
-          <strong>2. Prescribe the correct first-line diagnostic test</strong> — every disorder names its own first test, and
-          <a href="#first-tests">one table collects all of them</a> so you can rehearse the choice in isolation.
-          <strong>3. Discuss management of primary, secondary, and tertiary causes based on case characteristics and test results</strong> —
-          <a href="#act">the management section</a>, plus <a href="#crisis">adrenal crisis</a>, which is the one you must be able to do
-          without looking anything up.</p>
+        <span class="note-kind">The three objectives for this session</span>
+        <p><strong>1.</strong> Match symptoms, signs, and lab findings to the disorder — every disorder section below.
+          <strong>2.</strong> Choose the first-line diagnostic test — <a href="#first-tests">all of them in one table</a>.
+          <strong>3.</strong> Manage primary, secondary, and tertiary causes — <a href="#act">management</a>, plus
+          <a href="#crisis">adrenal crisis</a>, the one to know cold.</p>
       </div>
 
       <div class="grid three">
         <div class="block">
           <div class="block-label blue">Cortex — three zones</div>
-          <div class="block-text"><strong>Glomerulosa → aldosterone</strong>, answering to angiotensin II and potassium.
-            <strong>Fasciculata → cortisol</strong>, answering to ACTH.
-            <strong>Reticularis → DHEA and androstenedione</strong>, also ACTH-responsive.
-            The synthetic pathway itself is worked through on the <a href="steroid.html#pathway">steroid synthesis page</a>.</div>
+          <div class="block-text">
+            <ul>
+              <li><strong>Glomerulosa → aldosterone</strong>, answering to angiotensin II and potassium.</li>
+              <li><strong>Fasciculata → cortisol</strong>, answering to ACTH.</li>
+              <li><strong>Reticularis → DHEA and androstenedione</strong>, also ACTH-responsive.</li>
+            </ul>
+            <p>The synthetic pathway itself is worked through on the <a href="steroid.html#pathway">steroid synthesis page</a>.</p>
+          </div>
         </div>
         <div class="block">
           <div class="block-label purple">Medulla — a different organ</div>
@@ -66,6 +65,18 @@
             <strong>Gland or signal?</strong> That names the level — primary means the gland, secondary means the pituitary,
             tertiary means the hypothalamus, and for aldosterone "secondary" means the renin–angiotensin system is driving it.</div>
         </div>
+      </div>
+
+      <div class="figure">
+        <img src="https://thumbs.dreamstime.com/b/adrenal-gland-hormones-diagram-maps-cortex-layers-medulla-aldosterone-cortisol-catecholamines-key-objects-zones-outline-459610061.jpg"
+             alt="Wedge-shaped cross-section of the adrenal gland labelled from the outside in: capsule, zona glomerulosa making mineralocorticoids and chiefly aldosterone, zona fasciculata making glucocorticoids and chiefly cortisol, zona reticularis making androgens and chiefly DHEA — these three forming the adrenal cortex — and the adrenal medulla making catecholamines, epinephrine and norepinephrine. An inset shows the gland sitting on the upper pole of the kidney."
+             loading="lazy" width="800" height="661">
+        <p class="figcaption">Stock illustration via <a href="https://www.dreamstime.com/" target="_blank" rel="noopener noreferrer">Dreamstime</a>
+          (image 459610061). The one figure to fix before reading on: <strong>capsule → glomerulosa → fasciculata → reticularis → medulla</strong>,
+          outside in, each layer with its own hormone class. Every disorder below is one of those five bands going wrong.
+          Note the histology the text can only assert — the zones really are stacked layers of different-looking cells, and the
+          <strong>medulla</strong> is visibly a different tissue. The synthetic pathway behind each layer is on the
+          <a href="steroid.html#pathway">steroid synthesis page</a>.</p>
       </div>
 
       <div class="figure">
@@ -126,50 +137,118 @@
       <h2>Hyperaldosteronism, primary and secondary</h2>
       <p class="section-note">The commonest secondary cause of hypertension, and routinely missed because the potassium is often normal.</p>
 
-      <div class="note note-blue">
-        <span class="note-kind">What aldosterone does, so you can predict the syndrome</span>
-        <p>Aldosterone acts on the <strong>principal cells of the distal nephron</strong>: it upregulates the Na⁺/K⁺-ATPase and the epithelial
-          sodium channel, so <strong>sodium is retained, water follows, and potassium and hydrogen ions are excreted</strong>.
-          Predict from that: <strong>hypertension</strong> from volume expansion, <strong>hypokalemia</strong>, and a
-          <strong>metabolic alkalosis</strong>. Sodium is often near-normal because water is retained alongside it.
-          It is normally released in response to <strong>angiotensin II</strong> (that is, to low renal perfusion or low blood pressure) and to
-          <strong>high serum potassium</strong>; ACTH contributes to a minor extent.</p>
+      <div class="figure">
+        <svg class="svg-diagram-wide" viewBox="0 0 560 446" role="img" aria-labelledby="ha-t ha-d">
+          <title id="ha-t">Two routes to aldosterone excess, separated by renin, converging on one syndrome</title>
+          <desc id="ha-d">Primary hyperaldosteronism starts with an autonomous adrenal lesion — an adenoma, bilateral hyperplasia, carcinoma, or glucocorticoid-remediable aldosteronism — and renin is suppressed, because the volume expansion switches the renin–angiotensin system off. Secondary hyperaldosteronism starts with low renal perfusion from renal artery stenosis, heart failure, cirrhosis, or nephrotic syndrome, and renin is high, because the renin–angiotensin system is the cause rather than the victim. Both routes converge on high aldosterone, which acts on the principal cells of the distal nephron to upregulate the epithelial sodium channel and the sodium-potassium ATPase. The result is three findings: sodium and water retained giving hypertension, potassium wasted giving hypokalemia with weakness, paresthesias, tetany and polyuria, and hydrogen ions excreted giving a metabolic alkalosis.</desc>
+
+          <defs><marker id="ha-a" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0,0 L5.5,3 L0,6 Z" fill="var(--accent)"/></marker></defs>
+
+          <text x="280" y="15" text-anchor="middle" class="t-b">Two routes in, one syndrome out — renin tells them apart</text>
+
+          <!-- branch heads -->
+          <rect x="20" y="28" width="236" height="52" rx="8" class="box-red"/>
+          <text x="138" y="49" text-anchor="middle" class="t-b">PRIMARY</text>
+          <text x="138" y="66" text-anchor="middle" class="t-sm">an autonomous adrenal lesion</text>
+          <text x="138" y="96" text-anchor="middle" class="t-sm">adenoma (Conn) · bilateral hyperplasia</text>
+          <text x="138" y="110" text-anchor="middle" class="t-sm">carcinoma · GRA</text>
+
+          <rect x="304" y="28" width="236" height="52" rx="8" class="box-amber"/>
+          <text x="422" y="49" text-anchor="middle" class="t-b">SECONDARY</text>
+          <text x="422" y="66" text-anchor="middle" class="t-sm">low renal perfusion drives RAAS</text>
+          <text x="422" y="96" text-anchor="middle" class="t-sm">renal artery stenosis · heart failure</text>
+          <text x="422" y="110" text-anchor="middle" class="t-sm">cirrhosis · nephrotic syndrome</text>
+
+          <!-- the discriminator -->
+          <rect x="44" y="124" width="188" height="32" rx="6" class="box-red"/>
+          <text x="138" y="145" text-anchor="middle" class="t-mono">renin ↓ SUPPRESSED</text>
+          <text x="138" y="172" text-anchor="middle" class="t-sm">volume expansion switches RAAS off</text>
+
+          <rect x="328" y="124" width="188" height="32" rx="6" class="box-amber"/>
+          <text x="422" y="145" text-anchor="middle" class="t-mono">renin ↑ HIGH</text>
+          <text x="422" y="172" text-anchor="middle" class="t-sm">RAAS is the cause, not the victim</text>
+
+          <!-- converge -->
+          <line x1="138" y1="180" x2="240" y2="197" class="flow" marker-end="url(#ha-a)"/>
+          <line x1="422" y1="180" x2="320" y2="197" class="flow" marker-end="url(#ha-a)"/>
+
+          <rect x="160" y="202" width="240" height="34" rx="8" class="box-red"/>
+          <text x="280" y="224" text-anchor="middle" class="t-b">ALDOSTERONE HIGH</text>
+
+          <line x1="280" y1="236" x2="280" y2="252" class="flow" marker-end="url(#ha-a)"/>
+
+          <rect x="140" y="258" width="280" height="44" rx="8" class="box-gray"/>
+          <text x="280" y="276" text-anchor="middle" class="t">distal nephron principal cells</text>
+          <text x="280" y="293" text-anchor="middle" class="t-mono">↑ ENaC · ↑ Na⁺/K⁺-ATPase</text>
+
+          <!-- three consequences -->
+          <line x1="280" y1="302" x2="102" y2="330" class="flow" marker-end="url(#ha-a)"/>
+          <line x1="280" y1="302" x2="280" y2="330" class="flow" marker-end="url(#ha-a)"/>
+          <line x1="280" y1="302" x2="458" y2="330" class="flow" marker-end="url(#ha-a)"/>
+
+          <rect x="14" y="336" width="172" height="58" rx="8" class="box-red"/>
+          <text x="100" y="357" text-anchor="middle" class="t-b">HYPERTENSION</text>
+          <text x="100" y="373" text-anchor="middle" class="t-sm">Na⁺ and water</text>
+          <text x="100" y="387" text-anchor="middle" class="t-sm">retained</text>
+
+          <rect x="194" y="336" width="172" height="58" rx="8" class="box-amber"/>
+          <text x="280" y="357" text-anchor="middle" class="t-b">HYPOKALEMIA</text>
+          <text x="280" y="373" text-anchor="middle" class="t-sm">weakness · paresthesias</text>
+          <text x="280" y="387" text-anchor="middle" class="t-sm">tetany · polyuria</text>
+
+          <rect x="374" y="336" width="172" height="58" rx="8" class="box-blue"/>
+          <text x="460" y="357" text-anchor="middle" class="t-b">ALKALOSIS</text>
+          <text x="460" y="373" text-anchor="middle" class="t-sm">H⁺ excreted</text>
+          <text x="460" y="387" text-anchor="middle" class="t-sm">(metabolic)</text>
+
+          <text x="280" y="418" text-anchor="middle" class="t-mut">sodium is often near-normal, because water is retained alongside it</text>
+          <text x="280" y="436" text-anchor="middle" class="t-mut">so the screening test is the aldosterone-to-renin ratio, never an aldosterone level alone</text>
+        </svg>
+        <p class="figcaption">Original diagram. <strong>Both columns have high aldosterone</strong> — everything below the join is identical, which
+          is why the presentations are indistinguishable at the bedside and why <strong>renin is the value that names the disease</strong>.
+          Read the two boxes at the top against each other: in primary disease the gland ignores the signal and the resulting volume expansion
+          <em>suppresses</em> renin, so the two move in opposite directions; in secondary disease the signal is the problem, so both are high.
+          Aldosterone's normal stimuli are <strong>angiotensin II</strong> and <strong>high serum potassium</strong>, with ACTH contributing
+          slightly.</p>
       </div>
 
       <div class="grid">
         <div class="block">
-          <div class="block-label red">Primary — the adrenal is autonomous</div>
-          <div class="block-text"><strong>Aldosterone is high and renin is suppressed</strong>, because the volume expansion shuts the
-            renin–angiotensin system off and the gland ignores it anyway.
-            <strong>Causes:</strong> <strong>bilateral adrenocortical hyperplasia</strong> (idiopathic hyperaldosteronism, the commonest),
-            an <strong>aldosterone-producing adenoma — Conn syndrome</strong>, rarely an <strong>adrenocortical carcinoma</strong>, and the
-            familial forms including <a href="steroid.html#gra-disease">glucocorticoid-remediable aldosteronism</a>.
-            <strong>Symptoms</strong> are those of hypertension plus those of hypokalemia — weakness, paresthesias, tetany, visual
-            disturbance, polyuria — and in a great many patients, nothing at all.</div>
+          <div class="block-label red">Primary — the causes, in order</div>
+          <div class="block-text">
+            <ul>
+              <li><strong>Bilateral adrenocortical hyperplasia</strong> (idiopathic) — the commonest.</li>
+              <li>An <strong>aldosterone-producing adenoma</strong> — <strong>Conn syndrome</strong>.</li>
+              <li><strong>Adrenocortical carcinoma</strong> — rare.</li>
+              <li>Familial forms, notably <a href="steroid.html#gra-disease">glucocorticoid-remediable aldosteronism</a>.</li>
+            </ul>
+            <p>The point that catches people out: <strong>a great many patients have no symptoms at all</strong>. This is the commonest secondary cause of hypertension and it is found by <em>screening</em>, not by complaint.</p>
+          </div>
         </div>
         <div class="block">
-          <div class="block-label amber">Secondary — the signal is driving it</div>
-          <div class="block-text"><strong>Aldosterone is high and renin is high too</strong>, because the adrenal is responding correctly to an
-            abnormal stimulus. Anything that reduces renal perfusion will do it:
-            <strong>renal artery stenosis or atheroma</strong>, <strong>renal vasoconstriction</strong> as in accelerated hypertension, and the
-            <strong>edematous states</strong> — heart failure, cirrhosis with ascites, nephrotic syndrome.
-            <strong>Renin is the single value that separates the two</strong>, which is why the screening test is a ratio and not an
-            aldosterone level.</div>
+          <div class="block-label amber">Secondary — anything that drops renal perfusion</div>
+          <div class="block-text">
+            <ul>
+              <li><strong>Obstructive renal artery disease</strong> — atheroma or stenosis.</li>
+              <li><strong>Renal vasoconstriction</strong>, as in accelerated hypertension.</li>
+              <li>The <strong>edematous states</strong> — heart failure, cirrhosis with ascites, nephrotic syndrome.</li>
+            </ul>
+            <p>In every one of them the adrenal is behaving <em>correctly</em>, which is why treatment means fixing the cause rather than blocking the hormone.</p>
+          </div>
         </div>
       </div>
 
       <div class="note note-amber">
-        <span class="note-kind">Who to screen — a high index of suspicion</span>
-        <p>Test for primary aldosteronism in: <strong>sustained blood pressure above 150/100</strong> on three measurements on three different
-          days; <strong>hypertension above 140/90 resistant to three agents</strong>; <strong>controlled hypertension requiring four or more
-          agents</strong>; <strong>hypertension with hypokalemia</strong> — whether spontaneous or diuretic-induced;
-          <strong>hypertension with an adrenal incidentaloma</strong>; <strong>hypertension with obstructive sleep apnea</strong>;
-          <strong>hypertension with a family history of early-onset hypertension or of stroke before 40</strong>; and
-          <strong>hypertension in anyone with a first-degree relative who has primary aldosteronism</strong>.
-          Note that <em>normal potassium does not exclude it</em> — hypokalemia is present in a minority.</p>
+        <span class="note-kind">Who to screen</span>
+        <p><strong>Sustained BP above 150/100</strong> on three measurements on three different days, <strong>BP above 140/90 resistant to
+          three agents</strong>, <strong>controlled BP needing four or more agents</strong>, <strong>hypertension with hypokalemia</strong>,
+          <strong>hypertension with an adrenal incidentaloma</strong>, and <strong>hypertension with a family history of early-onset
+          hypertension, stroke before 40, or a first-degree relative with primary aldosteronism</strong>.
+          <em>Normal potassium does not exclude it</em>: hypokalemia is present in only a minority.</p>
       </div>
 
       <p class="citation-line"><cite>Funder JW et al. <em>The Management of Primary Aldosteronism: Case Detection, Diagnosis, and Treatment: An Endocrine Society Clinical Practice Guideline.</em> J Clin Endocrinol Metab 2016;101(5):1889–1916. <a href="https://academic.oup.com/jcem/article/101/5/1889/2804729" target="_blank" rel="noopener noreferrer">academic.oup.com/jcem/article/101/5/1889</a></cite></p>
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="ADR-001,ADR-002" data-quiz-toolbar="false"></div>
     </section>
 
     <section class="section" id="cushing" data-toc="Cushing syndrome" data-phase="Recognize">
@@ -178,83 +257,102 @@
 
       <div class="note note-red">
         <span class="note-kind">Get the vocabulary right first</span>
-        <p><strong>Cushing syndrome</strong> is the whole clinical picture produced by inappropriately high exposure to glucocorticoid,
-          from <em>any</em> source. <strong>Cushing disease</strong> is the specific subset caused by an
-          <strong>ACTH-secreting pituitary adenoma</strong>. Every Cushing disease is a Cushing syndrome; most Cushing syndrome is not
-          Cushing disease. And the commonest cause of the syndrome overall is not a tumour at all — it is
+        <p><strong>Cushing syndrome</strong> is the clinical picture of excess glucocorticoid exposure from <em>any</em> source.
+          <strong>Cushing disease</strong> is the subset caused by an <strong>ACTH-secreting pituitary adenoma</strong>.
+          Every Cushing disease is a Cushing syndrome; most Cushing syndrome is not Cushing disease — the commonest cause overall is
           <strong>exogenous glucocorticoid therapy</strong>.</p>
+      </div>
+
+      <div class="figure">
+        <img class="img-narrow" src="https://www.news-medical.net/image-handler/picture/2016/8/Cushing%27s_Syndrome_shutterstock_286083608_(1).jpg"
+             alt="Whole-body map of the symptoms of Cushing syndrome, with an inset of the adrenal glands labelled excess cortisol. Labels from the head down: CNS irritability and emotional disturbances; a red, round face; hypertension; cardiac hypertrophy; adrenal hyperplasia or tumour; purple striae; obesity with fat deposition on the abdomen and the back of the neck; osteoporosis; muscle wasting; and skin ulcers. A box adds that females have amenorrhea and hirsutism, and males erectile dysfunction."
+             loading="lazy" width="590" height="686">
+        <p class="figcaption">Illustration via <a href="https://www.news-medical.net/" target="_blank" rel="noopener noreferrer">News-Medical</a>
+          (Shutterstock 286083608). Two label translations worth making, because the exam uses the other words:
+          <strong>"red and round face"</strong> is <strong>moon facies with plethora</strong>, and <strong>"skin ulcers"</strong> is the
+          <strong>impaired wound healing</strong> that goes with thin skin. Note also that the figure puts
+          <strong>fat on the abdomen <em>and</em> the back of the neck</strong> while the limbs stay thin — that redistribution, rather than
+          weight gain as such, is what makes the picture Cushingoid.</p>
       </div>
 
       <div class="grid">
         <div class="block">
-          <div class="block-label red">The features, and the mechanism behind each</div>
-          <div class="block-text"><strong>Central obesity with thin extremities</strong> — cortisol is catabolic and an insulin antagonist:
-            it mobilizes peripheral fat and breaks down muscle while promoting visceral fat deposition.
-            <strong>Thin, easily bruised skin and wide purple striae</strong> — impaired collagen synthesis and abnormal wound healing.
-            <strong>Facial plethora</strong> — dilated facial capillaries under thinned skin.
-            <strong>Proximal muscle weakness</strong> — the same catabolism.
-            <strong>Secondary hypertension</strong> — cortisol potentiates the vasoconstrictor effect of catecholamines, and at high
-            concentrations it also spills onto the mineralocorticoid receptor.
-            <strong>Hyperglycemia and diabetes, hypertriglyceridemia</strong> — insulin resistance.
-            <strong>Osteoporosis</strong>, <strong>immunosuppression</strong>, <strong>mood disturbance</strong>, and
-            <strong>hypogonadism</strong>, because cortisol suppresses gonadotropins.</div>
+          <div class="block-label red">Four mechanisms generate every finding on that figure</div>
+          <div class="block-text">
+            <ul>
+              <li><strong>Cortisol is catabolic and an insulin antagonist</strong> — it breaks down peripheral muscle and fat while depositing visceral and dorsocervical fat, which accounts for the central obesity with thin extremities, the proximal muscle wasting, and the hyperglycemia and hypertriglyceridemia.</li>
+              <li><strong>It impairs collagen synthesis</strong> — thin, easily bruised skin, wide purple striae, poor wound healing, and the facial plethora of dilated capillaries under thinned skin.</li>
+              <li><strong>It potentiates catecholamine vasoconstriction</strong> and at high concentrations spills onto the mineralocorticoid receptor — hypertension, and the cardiac hypertrophy behind it.</li>
+              <li><strong>It suppresses gonadotropins</strong> — amenorrhea and hirsutism in women, erectile dysfunction in men.</li>
+            </ul>
+            <p>Osteoporosis, immunosuppression, and mood disturbance complete the list.</p>
+          </div>
         </div>
         <div class="block">
           <div class="block-label purple">In children the presentation is different</div>
-          <div class="block-text">The single most useful pediatric sign is <strong>growth failure with weight gain</strong> — a child
+          <div class="block-text">The most useful pediatric sign is <strong>growth failure with weight gain</strong> — a child
             <em>crossing height percentiles downward while crossing weight percentiles upward</em>. Almost nothing else does that.
-            Obesity alone in a child is usually exogenous and comes with <em>accelerated</em> growth; it is the combination that
-            should prompt testing.</div>
+            Simple obesity comes with <em>accelerated</em> growth.</div>
         </div>
       </div>
 
       <div class="note note-amber">
-        <span class="note-kind">When to raise your index of suspicion</span>
-        <p>Test people with <strong>features unusual for their age</strong> — hypertension, osteoporosis, type 2 diabetes, or thin skin in a
-          young adult; people with <strong>multiple and progressive features</strong> rather than one in isolation;
-          <strong>children with a falling height percentile and a rising weight percentile</strong>; and people with an
-          <strong>adrenal incidentaloma</strong>. The reason for the threshold is that individual features — obesity, hypertension,
-          glucose intolerance — are extremely common in the general population and testing everybody produces mostly false positives.</p>
+        <span class="note-kind">When to test</span>
+        <p><strong>Features unusual for the age</strong> — hypertension, osteoporosis, type 2 diabetes, or thin skin in a young adult;
+          <strong>multiple, progressive features</strong> rather than one in isolation; a <strong>child with a falling height and rising weight
+          percentile</strong>; and an <strong>adrenal incidentaloma</strong>. Any single feature is too common in the population to justify
+          testing on its own.</p>
       </div>
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="ADR-005,ADR-006,ADR-019" data-quiz-toolbar="false"></div>
     </section>
 
     <section class="section" id="primary-ai" data-toc="Primary adrenal insufficiency" data-phase="Recognize">
-      <h2>Primary adrenal insufficiency</h2>
+      <h2>Primary adrenal insufficiency (Addison's disease)</h2>
       <p class="section-note">Described by Thomas Addison in 1855. Progressive destruction of the adrenal cortex — so both cortisol and aldosterone are lost.</p>
 
+      <div class="figure">
+        <img src="https://creativemeddoses.com/wp-content/uploads/2019/09/addison-visual-map-jpg-1.jpg"
+             alt="Visual mnemonic map spelling ADDISON. Branches show autoimmune destruction as the commonest cause at 80 percent, driven by autoantibodies; ACTH excess, with POMC generating increased MSH and therefore dark skin and hyperpigmentation; abdominal pain with nausea and vomiting; an ACTH stimulation test showing low cortisol; salt cravings; inability to handle stress; orthostatic hypotension; low sodium with hyponatremia and hyperkalemia; and weight loss, easy fatigability and weakness. A footnote states the commonest presentation is hyponatremia with hyperpigmentation."
+             loading="lazy" width="3508" height="2480">
+        <p class="figcaption">Visual map by Priyanga Singh,
+          <a href="https://creativemeddoses.com/" target="_blank" rel="noopener noreferrer">Creative Med Doses</a> (©2019).
+          The letters of <strong>ADDISON</strong> carry the presentation. The one line to take from it is the footnote:
+          <strong>the commonest presentation is hyponatremia with hyperpigmentation</strong>. Note the mechanism it draws explicitly —
+          <strong>POMC → ↑MSH → dark skin</strong> — which is why the pigment appears and why it appears <em>only</em> in primary disease.
+          The figure also flags the <strong>ACTH stimulation test → low cortisol</strong> as the confirmatory step.</p>
+      </div>
+
       <div class="note note-red">
-        <span class="note-kind">Predict every symptom from the two missing hormones</span>
-        <p><strong>Missing cortisol:</strong> fatigue, anorexia, weight loss, nausea and vomiting, abdominal pain, apathy and confusion,
-          <strong>hypoglycemia</strong>, and an inability to withstand physiological stress.
-          <strong>Missing aldosterone:</strong> sodium wasting → <strong>hyponatremia</strong>, <strong>hypovolemia</strong>,
-          <strong>postural hypotension</strong>, tachycardia, <strong>salt craving</strong>, and — because potassium is no longer excreted —
-          <strong>hyperkalemia</strong>, often with a mild metabolic acidosis.
-          <strong>The one finding that is not a deficiency at all:</strong> <strong>hyperpigmentation</strong>, most obvious in palmar creases,
-          buccal mucosa, scars, and pressure areas. It is caused by the <em>excess</em> ACTH and related POMC-derived peptides, and it is the
-          physical sign that tells you the problem is primary rather than central. In neonates, <strong>prolonged jaundice</strong> belongs
-          on the list too.</p>
+        <span class="note-kind">Sort the findings by which hormone is missing</span>
+        <p>The mnemonic gives you the list; this gives you the reason, and the reason is what a question tests.
+          <strong>Missing cortisol</strong> explains the fatigue, weight loss, anorexia, abdominal pain and vomiting,
+          <strong>hypoglycemia</strong>, and the inability to withstand physiological stress.
+          <strong>Missing aldosterone</strong> explains the rest: sodium wasting gives <strong>hyponatremia, hypovolemia, postural
+          hypotension and salt craving</strong>, and potassium no longer being excreted gives <strong>hyperkalemia</strong> with a mild
+          metabolic acidosis. That second group is the group <a href="#secondary-ai">central disease does not have</a>.
+          <strong>Hyperpigmentation is neither</strong> — it is a consequence of the <em>excess</em> ACTH, so it too is unique to primary
+          disease. In neonates, add <strong>prolonged jaundice</strong>.</p>
       </div>
 
       <div class="grid">
         <div class="block">
           <div class="block-label purple">Causes — autoimmune leads in high-income countries</div>
-          <div class="block-text"><strong>Autoimmune adrenalitis (Addison disease)</strong>, with <strong>21-hydroxylase antibodies</strong>,
-            often as part of an autoimmune polyglandular syndrome — which is why a patient recently started on levothyroxine who then
-            deteriorates deserves a second look.
-            <strong>Infection</strong> — tuberculosis, which remains the leading cause worldwide; disseminated fungal disease; HIV-associated
-            disease; and <a href="#wfs">Waterhouse-Friderichsen syndrome</a>.
-            <strong>Infiltration</strong> — amyloidosis, sarcoidosis, hemochromatosis, metastases.
-            <strong>Genetic</strong> — congenital adrenal hypoplasia (DAX1/NR0B1, SF1/NR5A1, ACTH-receptor mutations) and
-            <strong>adrenoleukodystrophy</strong>.
-            <strong>Metabolic and drug-related</strong> — congenital adrenal hyperplasia, and drugs that inhibit steroidogenesis.</div>
+          <div class="block-text">
+            <ul>
+              <li><strong>Autoimmune adrenalitis</strong> — the commonest cause at roughly <strong>80%</strong>, with <strong>21-hydroxylase antibodies</strong>, often part of an autoimmune polyglandular syndrome; so a patient recently started on levothyroxine who then deteriorates deserves a second look.</li>
+              <li><strong>Infection</strong> — tuberculosis (the leading cause worldwide), disseminated fungal disease, HIV, and <a href="#wfs">Waterhouse-Friderichsen syndrome</a>.</li>
+              <li><strong>Infiltration</strong> — amyloidosis, sarcoidosis, hemochromatosis, metastases.</li>
+              <li><strong>Genetic</strong> — congenital adrenal hypoplasia (DAX1, SF1, ACTH-receptor mutations) and <strong>adrenoleukodystrophy</strong>.</li>
+              <li><strong>Other</strong> — congenital adrenal hyperplasia, and drugs that inhibit steroidogenesis.</li>
+            </ul>
+          </div>
         </div>
         <div class="block">
-          <div class="block-label amber">Adrenoleukodystrophy — worth knowing separately</div>
-          <div class="block-text">An <strong>X-linked peroxisomal disorder</strong> (ABCD1) in which <strong>very long chain fatty acids</strong>
-            accumulate in the <strong>brain, adrenal cortex, and testicular Leydig cells</strong>. It can present as isolated adrenal
-            insufficiency years before neurological disease, so <strong>every boy with primary adrenal insufficiency and no antibodies needs a
-            VLCFA level</strong>. It was added to the US Recommended Uniform Screening Panel in 2016, so most children in the United States
-            are now screened at birth.</div>
+          <div class="block-label amber">Adrenoleukodystrophy</div>
+          <div class="block-text">An <strong>X-linked peroxisomal disorder</strong> in which <strong>very long chain fatty acids</strong>
+            accumulate in the <strong>brain, adrenal cortex, and Leydig cells</strong>. It can present as isolated adrenal insufficiency years
+            before the neurological disease, so <strong>every boy with primary adrenal insufficiency and negative antibodies needs a VLCFA
+            level</strong>. It is on the recommended newborn screen.</div>
         </div>
       </div>
 
@@ -269,18 +367,17 @@
         <div class="card-body" data-disclosure-body>
           <div class="grid">
             <div class="block"><div class="block-label red">The picture</div><div class="block-text">Overwhelming bacterial sepsis — <strong>classically <em>Neisseria meningitidis</em></strong> — with
-              <strong>rapidly progressive hypotension and shock</strong>, <strong>disseminated intravascular coagulation with purpura</strong>, and
-              <strong>massive bilateral adrenal hemorrhage</strong> producing acute adrenocortical insufficiency. More common in children.
-              If the infection is not treated within hours, death follows in hours to days.</div></div>
-            <div class="block"><div class="block-label purple">The pathology</div><div class="block-text">The mechanism of the hemorrhage is not settled; bacterial seeding of small adrenal vessels with
-              endotoxin-induced vasculitis is the usual explanation. Macroscopically the glands are hemorrhagic sacs and the
-              <strong>cortical architecture is indiscernible</strong>.</div></div>
-            <div class="block"><div class="block-label teal">What you actually do</div><div class="block-text">Antibiotics and resuscitation immediately, and <strong>stress-dose hydrocortisone without waiting for a cortisol
-              result</strong>. This is the classic acute presentation of primary adrenal failure and the reason "treat first, confirm later"
-              is the rule in <a href="#crisis">adrenal crisis</a>.</div></div>
+              <strong>rapidly progressive hypotension and shock</strong>, <strong>DIC with purpura</strong>, and
+              <strong>massive bilateral adrenal hemorrhage</strong> producing acute adrenocortical insufficiency. More common in children,
+              and fatal within hours to days if untreated.</div></div>
+            <div class="block"><div class="block-label purple">The pathology</div><div class="block-text">Bacterial seeding of small adrenal vessels with endotoxin-induced vasculitis. The glands become
+              hemorrhagic sacs in which the <strong>cortical architecture is indiscernible</strong>.</div></div>
+            <div class="block"><div class="block-label teal">What you do</div><div class="block-text">Antibiotics and resuscitation immediately, plus <strong>stress-dose hydrocortisone without waiting for a cortisol
+              result</strong> — the reason "treat first, confirm later" is the rule in <a href="#crisis">adrenal crisis</a>.</div></div>
           </div>
         </div>
       </div>
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="ADR-008,ADR-009" data-quiz-toolbar="false"></div>
     </section>
 
     <section class="section" id="secondary-ai" data-toc="Secondary and tertiary AI" data-phase="Recognize">
@@ -289,21 +386,22 @@
       <div class="grid">
         <div class="block">
           <div class="block-label blue">What is different, and why</div>
-          <div class="block-text">Any disorder of the pituitary or hypothalamus that reduces ACTH gives
-            <strong>low ACTH with low cortisol</strong>. The critical difference from primary disease is that
-            <strong>aldosterone is normal</strong>, because the zona glomerulosa answers to the renin–angiotensin system and to potassium,
-            not to ACTH. Therefore: <strong>no hyperkalemia, no salt craving, no mineralocorticoid replacement needed</strong>.
-            And no excess ACTH means <strong>no hyperpigmentation</strong>. Hyponatremia can still occur, because cortisol normally restrains
-            vasopressin release.</div>
+          <div class="block-text">Any pituitary or hypothalamic disorder that reduces ACTH gives <strong>low ACTH with low cortisol</strong>.
+            The critical difference from primary disease is that <strong>aldosterone is normal</strong>, because the zona glomerulosa answers to
+            the renin–angiotensin system and potassium, not to ACTH. So: <strong>no hyperkalemia, no salt craving, no mineralocorticoid
+            replacement</strong>. And no excess ACTH means <strong>no hyperpigmentation</strong>. Hyponatremia can still occur, because cortisol
+            normally restrains vasopressin release.</div>
         </div>
         <div class="block">
           <div class="block-label purple">Causes</div>
-          <div class="block-text"><strong>Withdrawal of exogenous glucocorticoid therapy</strong> — by a wide margin the commonest cause of
-            central adrenal insufficiency, and the reason chronic steroids are tapered rather than stopped.
-            <strong>Hypopituitarism</strong> from any cause — tumour, surgery, radiation, apoplexy, infiltration.
-            <strong>Hypothalamic disease</strong> — tumour, radiation, surgery (this is the tertiary form).
-            <strong>Isolated ACTH deficiency</strong>, and <strong>defects in POMC</strong>, which characteristically also give
-            red hair and early obesity.</div>
+          <div class="block-text">
+            <ul>
+              <li><strong>Withdrawal of exogenous glucocorticoid</strong> — by a wide margin the commonest cause, and the reason chronic steroids are tapered rather than stopped.</li>
+              <li><strong>Hypopituitarism</strong> from any cause — tumour, surgery, radiation, apoplexy, infiltration.</li>
+              <li><strong>Hypothalamic disease</strong> — the tertiary form.</li>
+              <li><strong>Isolated ACTH deficiency</strong> or a <strong>POMC defect</strong>.</li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -314,6 +412,7 @@
           and a need for fludrocortisone. <strong>Central only:</strong> low ACTH, other pituitary hormone deficits,
           and often a history of exogenous steroids.</p>
       </div>
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="ADR-010" data-quiz-toolbar="false"></div>
     </section>
 
     <section class="section" id="cah" data-toc="Congenital adrenal hyperplasia" data-phase="Recognize">
@@ -324,12 +423,12 @@
         <span class="note-kind">The shape of the disease</span>
         <p>An enzyme in the cortisol pathway is deficient → cortisol falls → <strong>ACTH rises</strong> → the adrenals become
           <strong>bilaterally hyperplastic, up to 10–15 times normal weight</strong> → precursors above the block accumulate and are
-          <strong>shunted into whichever branch is still open</strong>. In the commonest form that branch is the androgens.
+          <strong>shunted into whichever branch is still open</strong>, usually the androgens.
           <strong>21-hydroxylase deficiency accounts for 90–95% of cases.</strong> In the severe form both cortisol and aldosterone are lost,
-          so infants present with <strong>adrenal and salt-wasting crisis</strong>: poor feeding, vomiting, failure to thrive, dehydration,
-          <strong>hyponatremia, hyperkalemia, hypoglycemia, and shock</strong>, typically at <strong>1 to 3 weeks of age</strong>.
-          <strong>46,XX infants have atypical genitalia; 46,XY infants may look entirely normal</strong> — which is precisely why the
-          newborn screen exists.</p>
+          so infants present in <strong>salt-wasting adrenal crisis</strong> at <strong>1 to 3 weeks of age</strong>: poor feeding, vomiting,
+          failure to thrive, dehydration, <strong>hyponatremia, hyperkalemia, hypoglycemia, shock</strong>.
+          <strong>46,XX infants have atypical genitalia; 46,XY infants may look entirely normal</strong> — which is why the newborn screen
+          exists.</p>
       </div>
 
       <div class="table-wrap" tabindex="0" role="region" aria-label="Congenital adrenal hyperplasia by enzyme">
@@ -349,12 +448,12 @@
       </div>
 
       <div class="note note-amber">
-        <span class="note-kind">The two hypertensive forms, and why the aldosterone value looks wrong</span>
-        <p>In both 11β-hydroxylase and 17α-hydroxylase deficiency, measured <strong>aldosterone is low but the patient is hypertensive and
-          hypokalemic</strong>. That is not a contradiction: <strong>11-deoxycorticosterone accumulates above the block</strong>, and DOC is a
-          weak mineralocorticoid present in large enough quantities to act like a strong one. The excess mineralocorticoid activity then
-          suppresses renin, and low renin suppresses aldosterone. <strong>Hypertension in a child with CAH means DOC</strong>, and it is the
-          finding that separates these two from 21-hydroxylase deficiency at the bedside.</p>
+        <span class="note-kind">The two hypertensive forms, and why the aldosterone looks wrong</span>
+        <p>In both 11β-hydroxylase and 17α-hydroxylase deficiency, <strong>aldosterone is low but the patient is hypertensive and
+          hypokalemic</strong>. Not a contradiction: <strong>11-deoxycorticosterone accumulates above the block</strong>, and DOC is a weak
+          mineralocorticoid present in large enough quantities to act like a strong one — which then suppresses renin, and so aldosterone.
+          <strong>Hypertension in a child with CAH means DOC</strong>, and it is what separates these two from 21-hydroxylase deficiency at
+          the bedside.</p>
       </div>
     </section>
 
@@ -365,20 +464,27 @@
       <div class="grid">
         <div class="block">
           <div class="block-label purple">The differential, roughly in order</div>
-          <div class="block-text"><strong>Idiopathic</strong> — the commonest.
-            <strong>Premature adrenarche</strong> — early pubic and axillary hair from early maturation of the zona reticularis, without
-            other pubertal signs. <strong>Insulin resistance</strong> and <strong>PCOS</strong>.
-            <strong>Congenital adrenal hyperplasia</strong>, including the non-classic form.
-            <strong>An adrenal or gonadal tumour</strong> — suspect this when onset is rapid, virilization is severe, or the androgen levels
-            are extreme. <strong>Iatrogenic androgen exposure</strong>, which is easy to miss and free to ask about.</div>
+          <div class="block-text">
+            <ul>
+              <li><strong>Idiopathic</strong> — the commonest.</li>
+              <li><strong>Premature adrenarche</strong> — early pubic and axillary hair without other pubertal signs.</li>
+              <li><strong>Insulin resistance</strong> and <strong>PCOS</strong>.</li>
+              <li><strong>Congenital adrenal hyperplasia</strong>, including the non-classic form.</li>
+              <li><strong>An adrenal or gonadal tumour</strong> — suspect when onset is rapid, virilization severe, or androgen levels extreme.</li>
+              <li><strong>Iatrogenic androgen exposure</strong>.</li>
+            </ul>
+          </div>
         </div>
         <div class="block">
           <div class="block-label amber">First-line tests, and reading them</div>
-          <div class="block-text"><strong>17-hydroxyprogesterone</strong> (early morning) — high points to CAH.
-            <strong>DHEA-S</strong> — the adrenal androgen marker; a <em>markedly</em> raised value, of the order of ten times the upper limit,
-            points to an <strong>adrenal tumour</strong> rather than hyperplasia.
-            <strong>Androstenedione</strong> and <strong>testosterone</strong> — a very high testosterone with a normal DHEA-S points to a
-            <strong>gonadal</strong> source. Add bone age, and imaging directed by the biochemistry.</div>
+          <div class="block-text">
+            <ul>
+              <li><strong>17-hydroxyprogesterone</strong> (early morning) — high points to CAH.</li>
+              <li><strong>DHEA-S</strong> — the adrenal androgen marker; a <em>markedly</em> raised value, of the order of ten times the upper limit, points to an <strong>adrenal tumour</strong> rather than hyperplasia.</li>
+              <li><strong>Androstenedione</strong> and <strong>testosterone</strong> — a very high testosterone with a normal DHEA-S points to a <strong>gonadal</strong> source.</li>
+            </ul>
+            <p>Add bone age, and imaging directed by the biochemistry.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -393,7 +499,7 @@
           <tbody>
             <tr><th scope="row">Function</th><td>Non-functional in roughly 60%; may make cortisol, aldosterone, or sex steroids</td><td>Typically <strong>functional</strong> — often virilization or a mixed hormone picture</td></tr>
             <tr><th scope="row">How it is found</th><td>Usually <strong>incidental</strong>, on imaging done for another reason</td><td>Symptomatic — a hormonal syndrome, a mass effect, or systemic illness</td></tr>
-            <tr><th scope="row">Size and margins</th><td>Well circumscribed, usually up to about 2.5 cm</td><td><strong>Large and invasive</strong>, frequently well over 10 cm</td></tr>
+            <tr><th scope="row">Size and margins</th><td>Well circumscribed, usually up to about 2.5 cm</td><td><strong>Large and invasive</strong> — the lecture quotes &gt;20 cm</td></tr>
             <tr><th scope="row">Adjacent cortex</th><td>Normal thickness</td><td><strong>Atrophic</strong>, suppressed by the tumour's own output</td></tr>
             <tr><th scope="row">Spread</th><td>None</td><td>Regional and para-aortic nodes; hematogenous spread to <strong>lung</strong>, liver, bone</td></tr>
             <tr><th scope="row">Inherited associations</th><td>—</td><td><strong>Li-Fraumeni</strong> (TP53) and <strong>Beckwith-Wiedemann</strong></td></tr>
@@ -402,14 +508,12 @@
       </div>
 
       <div class="note note-amber">
-        <span class="note-kind">The incidentaloma — two questions, always both</span>
-        <p><strong>Is it functioning?</strong> Screen every adrenal incidentaloma with a <strong>1 mg overnight dexamethasone suppression
-          test</strong> and <strong>plasma or urinary metanephrines</strong>, and add an <strong>aldosterone-to-renin ratio if the patient is
-          hypertensive or hypokalemic</strong>. <strong>Is it malignant?</strong> Judge from <strong>size</strong> and imaging phenotype —
-          a small, homogeneous, lipid-rich lesion with low attenuation on unenhanced CT behaves like an adenoma, whereas a large,
-          heterogeneous, irregular lesion does not. Biopsy is <em>not</em> the first move, and must never be done before
-          pheochromocytoma has been excluded biochemically.</p>
+        <span class="note-kind">Treatment, and the incidental mass</span>
+        <p>Both are treated by <strong>excision</strong>. For a mass found incidentally, the two questions are <strong>is it functioning</strong>
+          — screen with a dexamethasone suppression test and metanephrines — and <strong>is it malignant</strong>, judged on size and imaging
+          phenotype. Never biopsy before pheochromocytoma has been excluded biochemically.</p>
       </div>
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="ADR-018" data-quiz-toolbar="false"></div>
     </section>
 
     <section class="section" id="pheo" data-toc="Pheochromocytoma" data-phase="Recognize">
@@ -419,29 +523,28 @@
       <div class="grid">
         <div class="block">
           <div class="block-label red">The presentation</div>
-          <div class="block-text">The <strong>classic triad is headache, diaphoresis, and palpitations</strong>, occurring in
-            <strong>episodes</strong> that wax and wane. The commonest single finding is <strong>hypertension</strong> — which may be sustained,
-            paroxysmal, or both, and is often severe. Add pallor, tremor, anxiety, and hyperglycemia.
-            A young or middle-aged patient with resistant or episodic hypertension is the person to think of it in.</div>
+          <div class="block-text">
+            <ul>
+              <li>The <strong>classic triad is headache, diaphoresis, and palpitations</strong>, in <strong>episodes</strong> that wax and wane.</li>
+              <li>The commonest single finding is <strong>hypertension</strong> — sustained, paroxysmal, or both, and often severe.</li>
+              <li>Then pallor, tremor, anxiety, and hyperglycemia.</li>
+            </ul>
+            <p>Think of it in a young or middle-aged patient with resistant or episodic hypertension.</p>
+          </div>
         </div>
         <div class="block">
           <div class="block-label purple">Paraganglioma and the genetics</div>
-          <div class="block-text">Paragangliomas arise from extra-adrenal chromaffin tissue and are strongly associated with mutations of the
-            <strong>succinate dehydrogenase (SDHx)</strong> genes, of which <strong>SDHB</strong> carries the highest risk of metastatic disease.
-            <strong>Every patient should be referred for genetic testing</strong> — a large minority of these tumours are germline —
-            and the syndromes to know are <strong>MEN2A and MEN2B</strong> (RET), <strong>von Hippel-Lindau</strong> (VHL),
-            <strong>neurofibromatosis type 1</strong> (NF1), and the <strong>hereditary paraganglioma syndromes</strong> (SDHx).
-            <strong>Up to 20–25% become metastatic</strong>, so surveillance is lifelong.</div>
+          <div class="block-text">
+            <ul>
+              <li>Paragangliomas arise from <strong>extra-adrenal chromaffin tissue</strong>.</li>
+              <li><strong>Refer every patient for genetic testing</strong> — a large minority are germline. The four syndromes to know: <strong>MEN2A and MEN2B</strong> (RET), <strong>von Hippel-Lindau</strong> (VHL), <strong>neurofibromatosis type 1</strong> (NF1), and the <strong>hereditary paraganglioma syndromes</strong> (SDHx).</li>
+              <li><strong>Up to 20–25% become metastatic</strong>, so surveillance is lifelong.</li>
+            </ul>
+            <p><em>Note:</em> the slides also list Sturge-Weber, which is not an established association — learn the four.</p>
+          </div>
         </div>
       </div>
-
-      <div class="note note-amber">
-        <span class="note-kind">One correction worth making against the slide set</span>
-        <p>The lecture lists <strong>Sturge-Weber syndrome</strong> among the syndromic associations of pheochromocytoma. The associations
-          consistently reported in the literature are <strong>MEN2, VHL, NF1, and the SDHx paraganglioma syndromes</strong>;
-          Sturge-Weber is not an established one. Learn the four — they are the ones a question will test, and they are the ones that
-          determine which gene panel is sent.</p>
-      </div>
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="ADR-012" data-quiz-toolbar="false"></div>
     </section>
 
     <section class="section" id="men" data-toc="MEN syndromes" data-phase="Recognize">
@@ -463,21 +566,21 @@
 
       <div class="note note-amber">
         <span class="note-kind">A distinction the slide set blurs</span>
-        <p>The slides place <strong>Hirschsprung disease</strong> in the MEN2B column alongside intestinal ganglioneuromas. The published
-          association is the other way round: <strong>Hirschsprung disease goes with MEN2A</strong> (typically RET exon 10 variants), while
-          <strong>diffuse intestinal ganglioneuromatosis is the MEN2B feature</strong>. The two are opposite lesions of the enteric nervous
-          system — <em>absent</em> ganglion cells in Hirschsprung, <em>excess</em> ganglion cells in ganglioneuromatosis — which is a good way
-          to keep them apart. <strong>Cutaneous lichen amyloidosis is a MEN2A feature</strong> (classically codon 634).</p>
+        <p>The slides put <strong>Hirschsprung disease</strong> in the MEN2B column. The published association is the other way round:
+          <strong>Hirschsprung goes with MEN2A</strong>, while <strong>diffuse intestinal ganglioneuromatosis is the MEN2B feature</strong>.
+          They are opposite lesions of the enteric nervous system — <em>absent</em> ganglion cells versus <em>excess</em> — which is the way to
+          keep them apart. <strong>Cutaneous lichen amyloidosis is MEN2A.</strong></p>
       </div>
 
       <div class="note note-teal">
         <span class="note-kind">What a MEN2 diagnosis obliges you to do</span>
-        <p><strong>Medullary thyroid carcinoma</strong> arises from parafollicular C cells and <strong>secretes calcitonin</strong>, which is its
-          tumour marker. Because penetrance approaches 100%, RET carriers are offered <strong>prophylactic thyroidectomy</strong>, timed by the
-          specific variant's risk. <strong>Pheochromocytoma</strong> requires lifelong surveillance with plasma or urinary metanephrines, and
-          <strong>must be excluded and treated before any other surgery</strong> — operating on an unblocked pheochromocytoma can precipitate a
-          hypertensive crisis. <strong>Hyperparathyroidism</strong> in MEN2A is followed with calcium and PTH.</p>
+        <p><strong>Medullary thyroid carcinoma</strong> arises from parafollicular C cells and <strong>secretes calcitonin</strong>, its tumour
+          marker; because penetrance approaches 100%, RET carriers are offered <strong>prophylactic thyroidectomy</strong>.
+          <strong>Pheochromocytoma</strong> needs lifelong metanephrine surveillance and <strong>must be excluded and treated before any other
+          surgery</strong> — operating on an unblocked pheochromocytoma can precipitate a hypertensive crisis.
+          <strong>Hyperparathyroidism</strong> in MEN2A is followed with calcium and PTH.</p>
       </div>
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="ADR-015,ADR-016,ADR-017" data-quiz-toolbar="false"></div>
     </section>
 
     <!-- ================================================================ -->
@@ -502,53 +605,46 @@
             <tr>
               <th scope="row">Primary aldosteronism</th>
               <td><strong>Aldosterone-to-renin ratio</strong> under standard conditions</td>
-              <td>Confirmatory testing (oral salt loading, saline infusion, fludrocortisone suppression, or captopril challenge) — which may be omitted with <strong>spontaneous hypokalemia, undetectable renin, and aldosterone above 20 ng/dL</strong>. Then <strong>adrenal CT in everyone</strong>, and <strong>adrenal vein sampling</strong> to separate unilateral from bilateral disease whenever surgery is on the table. AVS beats CT here: small adenomas are missed and non-functioning nodules mislead.</td>
+              <td>Confirmatory testing (salt loading, saline infusion, fludrocortisone suppression, or captopril challenge) — omit it with <strong>spontaneous hypokalemia, undetectable renin, and aldosterone above 20 ng/dL</strong>. Then <strong>adrenal CT in everyone</strong>, and <strong>adrenal vein sampling</strong> to separate unilateral from bilateral disease whenever surgery is on the table.</td>
             </tr>
             <tr>
               <th scope="row">Cushing syndrome</th>
-              <td>Any one of: <strong>late-night salivary cortisol</strong>, <strong>24-hour urinary free cortisol</strong>, or a <strong>1 mg overnight dexamethasone suppression test</strong> — usually two of them, abnormal, before proceeding</td>
-              <td>Then <strong>plasma ACTH</strong> to split ACTH-dependent from ACTH-independent disease. If ACTH-dependent, a <strong>high-dose dexamethasone suppression test</strong> and pituitary MRI: <strong>a pituitary adenoma suppresses, ectopic ACTH does not</strong>. Inferior petrosal sinus sampling settles ambiguous cases.</td>
+              <td><strong>24-hour urinary free cortisol</strong> or <strong>late-night salivary cortisol</strong></td>
+              <td>Second line, a <strong>low-dose (1 mg) overnight dexamethasone suppression test</strong> — inadequate suppression confirms hypercortisolism. Then <strong>plasma ACTH</strong> to split ACTH-dependent from ACTH-independent disease, and third line a <strong>high-dose dexamethasone suppression test</strong> with pituitary MRI: <strong>a pituitary adenoma suppresses; ectopic ACTH and adrenal tumours do not</strong>.</td>
             </tr>
             <tr>
               <th scope="row">Adrenal insufficiency</th>
               <td><strong>Early-morning cortisol with a simultaneous ACTH</strong></td>
-              <td><strong>ACTH (cosyntropin) stimulation test</strong> — 250 µg, with cortisol at 30 and 60 minutes; a peak below roughly 18 µg/dL is diagnostic on traditional assays. Then localize: <strong>high ACTH = primary</strong> (add renin, aldosterone, <strong>21-hydroxylase antibodies</strong>, and VLCFA in a male), <strong>low or normal ACTH = central</strong> (image the pituitary, check the other axes).</td>
+              <td><strong>ACTH (cosyntropin) stimulation test</strong> — 250 µg, cortisol at 30 and 60 minutes; a peak below roughly 18 µg/dL is diagnostic. Then localize: <strong>high ACTH = primary</strong> (add renin, aldosterone, <strong>21-hydroxylase antibodies</strong>, VLCFA in a male), <strong>low or normal ACTH = central</strong> (image the pituitary, check the other axes).</td>
             </tr>
             <tr>
               <th scope="row">Congenital adrenal hyperplasia</th>
               <td><strong>17-hydroxyprogesterone</strong> — on the newborn screen, or an early-morning level later in life</td>
-              <td>Electrolytes, glucose, renin, and cortisol; <strong>ACTH stimulation</strong> if the value is equivocal, as it often is in the non-classic form; genotyping to confirm and for counselling. Never delay treatment of a crisis for the confirmatory result.</td>
+              <td>Electrolytes, glucose, renin, cortisol; <strong>ACTH stimulation</strong> if the value is equivocal, as it often is in the non-classic form; genotyping to confirm. Never delay treatment of a crisis for the confirmatory result.</td>
             </tr>
             <tr>
               <th scope="row">Pheochromocytoma</th>
               <td><strong>Plasma free metanephrines</strong>, drawn supine, or <strong>24-hour urinary fractionated metanephrines</strong></td>
-              <td>Metanephrines are preferred over catecholamines because the tumour metabolizes catecholamines continuously while secreting them episodically — so the metabolites are always elevated whereas the parent hormones may be normal between attacks. Confirm, then image (CT or MRI, with functional imaging if extra-adrenal or metastatic disease is suspected), then <strong>refer everyone for genetic testing</strong>.</td>
+              <td>Metanephrines beat catecholamines because the tumour metabolizes continuously but secretes episodically — the metabolites stay elevated while the parent hormones may be normal between attacks. Confirm, then image (CT or MRI), then <strong>refer everyone for genetic testing</strong>.</td>
             </tr>
             <tr>
               <th scope="row">Virilization</th>
               <td><strong>17-OHP, DHEA-S, androstenedione, testosterone</strong></td>
               <td>A very high DHEA-S points to the adrenal, a very high testosterone with normal DHEA-S to the gonad, and a high 17-OHP to CAH. Bone age, then imaging directed by the biochemistry.</td>
             </tr>
-            <tr>
-              <th scope="row">Adrenal incidentaloma</th>
-              <td><strong>1 mg overnight dexamethasone suppression test + metanephrines</strong> (+ ARR if hypertensive or hypokalemic)</td>
-              <td>Characterize on imaging by size and attenuation. Do not biopsy before pheochromocytoma has been excluded.</td>
-            </tr>
           </tbody>
         </table>
       </div>
 
       <div class="note note-amber">
-        <span class="note-kind">Two numbers, and a caveat about them</span>
-        <p>The slide set gives <strong>&gt;2 µg/dL</strong> as inadequate suppression on the overnight dexamethasone test. The threshold in
-          wide use, including in the Endocrine Society guidance, is <strong>1.8 µg/dL (50 nmol/L)</strong>, chosen deliberately to favour
-          sensitivity — it will call some normal people abnormal, which is the correct trade-off for a screening test that is always
-          followed by a second one. Similarly, the <strong>18 µg/dL</strong> post-cosyntropin threshold comes from older cortisol assays;
-          modern specific assays read lower and many centres now use a cut-off in the 14–15 µg/dL range.
-          Know the classic numbers, and know that they are assay-dependent.</p>
+        <span class="note-kind">Two numbers worth pinning down</span>
+        <p>Inadequate suppression on the overnight dexamethasone test: the slides say <strong>&gt;2 µg/dL</strong>, the Endocrine Society
+          <strong>&gt;1.8 µg/dL</strong> — set low on purpose, because a screening test should favour sensitivity and is always followed by a
+          second one. Post-cosyntropin, a peak below <strong>18 µg/dL</strong> is the classic diagnostic threshold. Both are assay-dependent.</p>
       </div>
 
       <p class="citation-line"><cite>Nieman LK et al. <em>The Diagnosis of Cushing's Syndrome: An Endocrine Society Clinical Practice Guideline.</em> <a href="https://www.endocrine.org/clinical-practice-guidelines/diagnosis-of-cushing-syndrome" target="_blank" rel="noopener noreferrer">endocrine.org</a> · <em>Adrenocorticotropic Hormone (Cosyntropin) Stimulation Test.</em> StatPearls. <a href="https://www.ncbi.nlm.nih.gov/books/NBK555940/" target="_blank" rel="noopener noreferrer">ncbi.nlm.nih.gov/books/NBK555940</a></cite></p>
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="ADR-007" data-quiz-toolbar="false"></div>
     </section>
 
     <!-- ================================================================ -->
@@ -568,10 +664,10 @@
         </button>
         <div class="card-body" data-disclosure-body>
           <div class="grid">
-            <div class="block"><div class="block-label teal">Unilateral — an adenoma</div><div class="block-text"><strong>Laparoscopic adrenalectomy.</strong> These tumours are usually under 2 cm. Surgery reliably corrects the hypokalemia and improves, though does not always cure, the hypertension.</div></div>
+            <div class="block"><div class="block-label teal">Unilateral — an adenoma</div><div class="block-text"><strong>Laparoscopic adrenalectomy.</strong> Reliably corrects the hypokalemia and improves, though does not always cure, the hypertension.</div></div>
             <div class="block"><div class="block-label teal">Bilateral hyperplasia</div><div class="block-text"><strong>Mineralocorticoid receptor antagonist</strong> — spironolactone or eplerenone. Removing one of two overactive glands does not solve a bilateral problem.</div></div>
-            <div class="block"><div class="block-label amber">Glucocorticoid-remediable aldosteronism</div><div class="block-text">A <strong>low-dose glucocorticoid</strong> to suppress the ACTH drive, with or without an MRA. Very rare, but it is the one form where the treatment follows directly from the molecular lesion — see the <a href="steroid.html#gra-disease">steroid page</a>.</div></div>
-            <div class="block"><div class="block-label blue">Secondary hyperaldosteronism</div><div class="block-text">Treat the cause of the renal hypoperfusion — revascularize the stenosis, manage the heart failure or the cirrhosis. Blocking aldosterone alone addresses a symptom of the real problem.</div></div>
+            <div class="block"><div class="block-label amber">Glucocorticoid-remediable aldosteronism</div><div class="block-text">A <strong>low-dose glucocorticoid</strong> to suppress the ACTH drive, with or without an MRA — see the <a href="steroid.html#gra-disease">steroid page</a>.</div></div>
+            <div class="block"><div class="block-label blue">Secondary hyperaldosteronism</div><div class="block-text">Treat the cause of the renal hypoperfusion — revascularize the stenosis, manage the heart failure or cirrhosis. Blocking aldosterone alone treats a symptom.</div></div>
           </div>
         </div>
       </div>
@@ -587,9 +683,16 @@
         <div class="card-body" data-disclosure-body>
           <div class="grid">
             <div class="block"><div class="block-label teal">Pituitary adenoma — Cushing disease</div><div class="block-text"><strong>Transsphenoidal resection</strong> is first line, with <strong>radiation</strong> for residual or recurrent disease.</div></div>
-            <div class="block"><div class="block-label teal">Primary adrenal disease</div><div class="block-text"><strong>Unilateral or bilateral adrenalectomy</strong> depending on the lesion. After bilateral adrenalectomy the patient needs lifelong glucocorticoid <em>and</em> mineralocorticoid replacement.</div></div>
+            <div class="block"><div class="block-label teal">Primary adrenal disease</div><div class="block-text"><strong>Unilateral or bilateral adrenalectomy</strong> depending on the lesion. After bilateral adrenalectomy, lifelong glucocorticoid <em>and</em> mineralocorticoid replacement.</div></div>
             <div class="block"><div class="block-label teal">Ectopic ACTH</div><div class="block-text"><strong>Excise the tumour</strong> where that is possible.</div></div>
-            <div class="block"><div class="block-label amber">Medical therapy</div><div class="block-text">For recurrence, inoperable disease, or to control severe hypercortisolism before surgery: <strong>steroidogenesis inhibitors</strong> (ketoconazole, metyrapone, osilodrostat), <strong>pasireotide</strong> acting on the pituitary tumour, and <strong>mifepristone</strong>, a glucocorticoid receptor antagonist used mainly for the hyperglycemia.</div></div>
+            <div class="block"><div class="block-label amber">Medical therapy</div><div class="block-text">
+            <p>For recurrence, inoperable disease, or severe hypercortisolism before surgery:</p>
+            <ul>
+              <li><strong>Steroidogenesis inhibitors</strong> — ketoconazole, metyrapone, osilodrostat.</li>
+              <li><strong>Pasireotide</strong>, acting on the pituitary tumour.</li>
+              <li><strong>Mifepristone</strong>, a glucocorticoid receptor antagonist.</li>
+            </ul>
+          </div></div>
           </div>
         </div>
       </div>
@@ -604,9 +707,16 @@
         </button>
         <div class="card-body" data-disclosure-body>
           <div class="grid">
-            <div class="block"><div class="block-label teal">Primary</div><div class="block-text"><strong>Glucocorticoid and mineralocorticoid.</strong> Hydrocortisone in divided doses mimicking the diurnal rhythm, plus <strong>fludrocortisone</strong> because the zona glomerulosa has been destroyed along with everything else. Infants and small children also need <strong>sodium chloride supplementation</strong>.</div></div>
-            <div class="block"><div class="block-label teal">Secondary and tertiary</div><div class="block-text"><strong>Glucocorticoid only.</strong> No fludrocortisone is needed, because the adrenal gland and the renin–angiotensin–aldosterone system are both intact — the gland is simply unstimulated. This single difference is the practical reason localization matters.</div></div>
-            <div class="block"><div class="block-label red">Non-negotiable in both</div><div class="block-text"><strong>Stress dosing</strong> — two to three times the usual dose during febrile illness, and parenteral hydrocortisone for vomiting, trauma, or surgery. An <strong>emergency injection kit</strong>, written sick-day rules, and <strong>medical alert identification</strong>. Patients die of untreated crises, not of the underlying diagnosis.</div></div>
+            <div class="block"><div class="block-label teal">Primary</div><div class="block-text"><strong>Glucocorticoid and mineralocorticoid.</strong> Hydrocortisone in divided doses mimicking the diurnal rhythm, plus <strong>fludrocortisone</strong> because the zona glomerulosa was destroyed too. Infants and small children also need <strong>sodium chloride supplementation</strong>.</div></div>
+            <div class="block"><div class="block-label teal">Secondary and tertiary</div><div class="block-text"><strong>Glucocorticoid only.</strong> No fludrocortisone — the gland and the renin–angiotensin–aldosterone system are intact, just unstimulated. This single difference is the practical reason localization matters.</div></div>
+            <div class="block"><div class="block-label red">Non-negotiable in both</div><div class="block-text">
+            <ul>
+              <li><strong>Stress dosing</strong> — two to three times the usual dose in febrile illness, and parenteral hydrocortisone for vomiting, trauma, or surgery.</li>
+              <li>An <strong>emergency injection kit</strong> and written sick-day rules.</li>
+              <li><strong>Medical alert identification</strong>.</li>
+            </ul>
+            <p>Patients die of untreated crises, not of the diagnosis.</p>
+          </div></div>
           </div>
         </div>
       </div>
@@ -621,8 +731,14 @@
         </button>
         <div class="card-body" data-disclosure-body>
           <div class="grid">
-            <div class="block"><div class="block-label teal">The regimen</div><div class="block-text"><strong>Hydrocortisone</strong> for glucocorticoid replacement — preferred in growing children because its short half-life is least suppressive of growth, and it carries useful mineralocorticoid activity at higher doses. <strong>Fludrocortisone</strong> for the mineralocorticoid arm — note there is <strong>no intravenous form</strong>, which matters in a vomiting child. <strong>Salt supplementation</strong> in infancy.</div></div>
-            <div class="block"><div class="block-label amber">The therapeutic target is a balance</div><div class="block-text">Enough glucocorticoid to <strong>prevent crisis and suppress the androgen drive</strong>, not so much that it <strong>stunts growth and causes iatrogenic Cushing syndrome</strong>. Under-treatment lets androgens advance bone age and shorten adult height; over-treatment does the same thing by a different route. Monitor growth velocity, bone age, 17-OHP, and androstenedione.</div></div>
+            <div class="block"><div class="block-label teal">The regimen</div><div class="block-text">
+            <ul>
+              <li><strong>Hydrocortisone</strong> — preferred in growing children because its short half-life is least suppressive of growth.</li>
+              <li><strong>Fludrocortisone</strong> for the mineralocorticoid arm; note there is <strong>no intravenous form</strong>, which matters in a vomiting child.</li>
+              <li><strong>Salt supplementation</strong> in infancy.</li>
+            </ul>
+          </div></div>
+            <div class="block"><div class="block-label amber">The target is a balance</div><div class="block-text">Enough glucocorticoid to <strong>prevent crisis and suppress the androgen drive</strong>, not so much that it <strong>stunts growth and causes iatrogenic Cushing syndrome</strong>. Under-treatment lets androgens advance bone age and shorten adult height; over-treatment shortens it by a different route. Monitor growth velocity, bone age, 17-OHP, and androstenedione.</div></div>
           </div>
         </div>
       </div>
@@ -637,12 +753,13 @@
         </button>
         <div class="card-body" data-disclosure-body>
           <div class="grid">
-            <div class="block"><div class="block-label teal">Alpha blockade first</div><div class="block-text"><strong>Normalize the blood pressure before anything else</strong>, with an <strong>α-adrenergic blocker</strong> — phenoxybenzamine, or a selective α1 agent such as doxazosin or prazosin — started well ahead of surgery, together with liberal salt and fluid intake to re-expand the contracted plasma volume.</div></div>
-            <div class="block"><div class="block-label red">Never a beta blocker alone</div><div class="block-text">Blocking β receptors while α receptors remain unopposed removes β2-mediated vasodilation and leaves pure α-mediated vasoconstriction — a <strong>hypertensive crisis</strong>. A beta blocker may be added <em>after</em> adequate α blockade to control reflex tachycardia, never before.</div></div>
-            <div class="block"><div class="block-label purple">Then surgery</div><div class="block-text"><strong>Surgical excision</strong>, which is a high-risk procedure requiring an experienced surgical and anesthetic team because manipulating the tumour releases catecholamines. Afterwards: lifelong biochemical surveillance, because a fifth to a quarter of these tumours behave malignantly.</div></div>
+            <div class="block"><div class="block-label teal">Alpha blockade first</div><div class="block-text"><strong>Normalize the blood pressure before anything else</strong>, with an <strong>α-adrenergic blocker</strong> — phenoxybenzamine, or a selective α1 agent such as doxazosin — started well ahead of surgery, with liberal salt and fluid to re-expand the contracted plasma volume.</div></div>
+            <div class="block"><div class="block-label red">Never a beta blocker alone</div><div class="block-text">Blocking β while α is unopposed removes β2-mediated vasodilation and leaves pure α-mediated vasoconstriction — a <strong>hypertensive crisis</strong>. A beta blocker is added <em>after</em> adequate α blockade to control reflex tachycardia, never before.</div></div>
+            <div class="block"><div class="block-label purple">Then surgery</div><div class="block-text"><strong>Surgical excision</strong> by an experienced team, because manipulating the tumour releases catecholamines. Afterwards, lifelong biochemical surveillance.</div></div>
           </div>
         </div>
       </div>
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="ADR-013" data-quiz-toolbar="false"></div>
     </section>
 
     <section class="section" id="crisis" data-toc="Adrenal crisis" data-phase="Act">
@@ -651,14 +768,15 @@
       <div class="note note-red">
         <span class="note-kind">Treat first, confirm afterwards</span>
         <p>An unwell patient with <strong>hypotension unresponsive to fluids, hyponatremia, hyperkalemia, and hypoglycemia</strong> —
-          particularly a neonate in the second or third week of life, a patient with known adrenal insufficiency who has become ill,
-          or anyone who has recently stopped long-term steroids — is in adrenal crisis until proved otherwise.
-          <strong>Draw a cortisol and an ACTH if you can do it in seconds, then give hydrocortisone.</strong> Do not wait for the result.
-          <strong>Intravenous hydrocortisone</strong> — 100 mg in an adult, weight- or surface-area-based in a child — then
-          <strong>intravenous fluid resuscitation with saline containing dextrose</strong>, correction of the hypoglycemia, treatment of the
-          <strong>precipitating illness</strong>, and cardiac monitoring for the hyperkalemia. At stress doses hydrocortisone has enough
-          mineralocorticoid activity that fludrocortisone is not needed acutely — which is convenient, since it only exists as a tablet.</p>
+          particularly a neonate in the second or third week of life, a known adrenal-insufficient patient who has become ill,
+          or anyone who recently stopped long-term steroids — is in adrenal crisis until proved otherwise.
+          <strong>Draw cortisol and ACTH only if it takes seconds, then give hydrocortisone.</strong> Do not wait for the result.
+          <strong>IV hydrocortisone</strong> (100 mg in an adult, weight-based in a child), <strong>saline with dextrose</strong>, correction of
+          the hypoglycemia, treatment of the <strong>precipitating illness</strong>, and cardiac monitoring for the hyperkalemia.
+          At stress doses hydrocortisone has enough mineralocorticoid activity that fludrocortisone is not needed acutely — convenient, since
+          it only exists as a tablet.</p>
       </div>
+      <div class="quiz quiz-inline" data-quiz data-quiz-ids="ADR-011" data-quiz-toolbar="false"></div>
     </section>
 
     <!-- ================================================================ -->
@@ -741,25 +859,14 @@
         </div>
       </div>
 
-      <div class="note note-supp">
-        <span class="note-kind">Practice questions — placeholder</span>
-        <p>Multiple-choice questions for this lecture have not been written yet. When they are added to
-          <span class="mono">assets/data/endocrine_question_bank.json</span> with <span class="mono">"lecture": "Adrenal Gland Disorders"</span>,
-          they will appear here and in <a href="practice.html">cumulative practice</a> automatically.
-          The in-lecture practice items the slides pose — which stimuli raise aldosterone, what causes Cushing disease,
-          which hormone causes the hypertension of 11β-hydroxylase deficiency, and the MEN2A vignette — are all covered above and would be
-          the natural first four to write.</p>
-      </div>
-
-      <!-- When questions exist, replace the placeholder note above with:
-           <div class="quiz" data-quiz data-quiz-lecture="Adrenal Gland Disorders"></div> -->
+      <div class="quiz" data-quiz data-quiz-lecture="Adrenal Gland Disorders"></div>
     </section>
 
   </main>
 </div>
 
-<script src="assets/js/site.js" defer></script>
-<script src="assets/js/quiz.js" defer></script>
-<script src="assets/js/figures.js" defer></script>
+<script src="assets/js/site.js?v=20260816b" defer></script>
+<script src="assets/js/quiz.js?v=20260816b" defer></script>
+<script src="assets/js/figures.js?v=20260816b" defer></script>
 </body>
 </html>
