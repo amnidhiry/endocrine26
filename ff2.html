@@ -3212,38 +3212,60 @@ function idChecksum() {
   var h = 0; QUESTIONS.forEach(function (q) { for (var i = 0; i < q.id.length; i++) h = (h * 31 + q.id.charCodeAt(i)) & 0xFFFF; });
   return h;
 }
+App.prototype.transferLists = function () {
+  return { unit: this.unitsForAll(), prof: this.professorsFor('all'), lec: this.lecturesFor('all'), filter: Object.keys(this.filterLabels) };
+};
 App.prototype.encodeTransfer = function () {
-  var n = QUESTIONS.length, buf = new Uint8Array(11 + n * 2), self = this;
+  var self = this, n = QUESTIONS.length, L = this.transferLists(), wide = n > 255;
+  var idxOf = {}; QUESTIONS.forEach(function (q, i) { idxOf[q.id] = i; });
+  var deck = this.deck.filter(function (q) { return idxOf[q.id] !== undefined; });
+  var head = 9, prog = n * 2, st = 5, pos = 4, dl = deck.length;
+  var buf = new Uint8Array(head + prog + st + pos + dl * (wide ? 2 : 1) + Math.ceil(dl / 8));
   var t = Math.floor(Date.now() / 1000), ck = idChecksum();
-  var curId = (this.deck[this.index] || {}).id, cur = 0xFFFF;
-  QUESTIONS.forEach(function (q, i) { if (q.id === curId) cur = i; });
-  buf[0] = 1; buf[1] = n >> 8; buf[2] = n & 255; buf[3] = ck >> 8; buf[4] = ck & 255;
-  buf[5] = cur >> 8; buf[6] = cur & 255;
-  buf[7] = (t >>> 24) & 255; buf[8] = (t >>> 16) & 255; buf[9] = (t >>> 8) & 255; buf[10] = t & 255;
+  buf[0] = 2; buf[1] = n >> 8; buf[2] = n & 255; buf[3] = ck >> 8; buf[4] = ck & 255;
+  buf[5] = (t >>> 24) & 255; buf[6] = (t >>> 16) & 255; buf[7] = (t >>> 8) & 255; buf[8] = t & 255;
   QUESTIONS.forEach(function (q, i) {
     var p = self.store.progress[q.id], b = 0, a = 0;
-    if (p) {
-      var ci = Math.max(0, LETTERS.indexOf(p.c));
-      b = 1 | (p.f ? 2 : 0) | (p.l ? 4 : 0) | (ci << 4); a = Math.min(255, p.a || 1);
-    }
+    if (p) { b = 1 | (p.f ? 2 : 0) | (p.l ? 4 : 0) | (Math.max(0, LETTERS.indexOf(p.c)) << 4); a = Math.min(255, p.a || 1); }
     if (self.store.flags[q.id]) b |= 8;
-    buf[11 + i * 2] = b; buf[12 + i * 2] = a;
+    buf[head + i * 2] = b; buf[head + i * 2 + 1] = a;
   });
+  var o = head + prog;
+  function ix(list, v) { var i = list.indexOf(v); return i < 0 ? 255 : i; }
+  buf[o++] = ix(L.unit, this.state.unit); buf[o++] = ix(L.prof, this.state.prof); buf[o++] = ix(L.lec, this.state.lecture);
+  buf[o++] = ix(L.filter, this.state.filter) & 255;
+  buf[o++] = (this.state.shuffleQ ? 1 : 0) | (this.state.shuffleOpts ? 2 : 0);
+  var di = Math.min(this.index, dl);
+  buf[o++] = di >> 8; buf[o++] = di & 255; buf[o++] = dl >> 8; buf[o++] = dl & 255;
+  deck.forEach(function (q) { var i = idxOf[q.id]; if (wide) buf[o++] = i >> 8; buf[o++] = i & 255; });
+  deck.forEach(function (q, k) { if (self.answers[q.id]) buf[o + (k >> 3)] |= 1 << (k & 7); });
   return b64uEnc(buf);
 };
 App.prototype.decodeTransfer = function (str) {
-  var buf = b64uDec(str), n = QUESTIONS.length;
-  if (buf.length !== 11 + n * 2 || buf[0] !== 1 || ((buf[1] << 8) | buf[2]) !== n || ((buf[3] << 8) | buf[4]) !== idChecksum())
+  var buf = b64uDec(str), n = QUESTIONS.length, wide = n > 255, L = this.transferLists();
+  if (buf.length < 9 || buf[0] !== 2 || ((buf[1] << 8) | buf[2]) !== n || ((buf[3] << 8) | buf[4]) !== idChecksum())
     throw new Error('This link was made for a different version of the quiz.');
-  var cur = (buf[5] << 8) | buf[6];
-  var t = ((buf[7] << 24) | (buf[8] << 16) | (buf[9] << 8) | buf[10]) >>> 0;
-  var progress = {}, flags = {};
+  var t = ((buf[5] << 24) | (buf[6] << 16) | (buf[7] << 8) | buf[8]) >>> 0;
+  var progress = {}, flags = {}, head = 9;
   QUESTIONS.forEach(function (q, i) {
-    var b = buf[11 + i * 2], a = buf[12 + i * 2];
+    var b = buf[head + i * 2], a = buf[head + i * 2 + 1];
     if (b & 1) progress[q.id] = { a: a || 1, f: !!(b & 2), l: !!(b & 4), c: LETTERS[(b >> 4) & 7], t: t * 1000 };
     if (b & 8) flags[q.id] = 1;
   });
-  return { progress: progress, flags: flags, current: cur === 0xFFFF ? null : QUESTIONS[cur].id };
+  var o = head + n * 2;
+  function pick(list, i) { return i < list.length ? list[i] : 'all'; }
+  var state = { unit: pick(L.unit, buf[o]), prof: pick(L.prof, buf[o + 1]), lecture: pick(L.lec, buf[o + 2]), filter: pick(L.filter, buf[o + 3]), shuffleQ: !!(buf[o + 4] & 1), shuffleOpts: !!(buf[o + 4] & 2) };
+  o += 5;
+  var index = (buf[o] << 8) | buf[o + 1], dl = (buf[o + 2] << 8) | buf[o + 3]; o += 4;
+  var deck = [];
+  for (var k = 0; k < dl; k++) {
+    var i = wide ? (buf[o] << 8) | buf[o + 1] : buf[o]; o += wide ? 2 : 1;
+    if (!QUESTIONS[i]) throw new Error('That transfer link is damaged.');
+    deck.push(QUESTIONS[i].id);
+  }
+  var answered = {};
+  deck.forEach(function (id, k) { if (buf[o + (k >> 3)] & (1 << (k & 7))) answered[id] = 1; });
+  return { progress: progress, flags: flags, state: state, deck: deck, index: Math.min(index, dl), answered: answered };
 };
 App.prototype.transferUrl = function () {
   return location.href.split('#')[0].split('?')[0] + '#t=' + this.encodeTransfer();
@@ -3260,7 +3282,7 @@ App.prototype.openTransfer = function () {
   } catch (e) { box.appendChild(el('p', { class: 'note', text: 'Could not draw a QR code — use the link below.' })); }
   body.appendChild(box);
   body.appendChild(el('p', { class: 'xfer-lead', text: 'Scan with your phone camera to open this quiz there with your progress.' }));
-  body.appendChild(el('p', { class: 'note', text: 'Packs ' + done + ' answered question' + (done === 1 ? '' : 's') + ', ' + fl + ' flag' + (fl === 1 ? '' : 's') + ' and your current question. It is a snapshot from right now — generate a new code after more practice. Highlights and crossed-out choices are not included.' }));
+  body.appendChild(el('p', { class: 'note', text: 'Packs ' + done + ' answered question' + (done === 1 ? '' : 's') + ', ' + fl + ' flag' + (fl === 1 ? '' : 's') + ' and your place in the current set (same question order). It is a snapshot from right now — generate a new code after more practice. Highlights and crossed-out choices are not included.' }));
   if (!web) body.appendChild(el('p', { class: 'note warn', text: 'You opened this as a local file, so the QR points to a file path your phone cannot reach. Open the hosted GitHub Pages address on this computer first, then generate the code from there.' }));
   var row = el('div', { class: 'tools' });
   var inp = el('input', { type: 'text', readonly: 'readonly', value: url, class: 'xfer-url', 'aria-label': 'Transfer link' });
@@ -3285,7 +3307,7 @@ App.prototype.checkIncomingTransfer = function () {
   var n = Object.keys(data.progress).length, f = Object.keys(data.flags).length;
   var body = el('div');
   body.appendChild(el('p', { class: 'xfer-lead', text: 'Load progress from your other device?' }));
-  body.appendChild(el('p', { class: 'note', text: n + ' answered question' + (n === 1 ? '' : 's') + ', ' + f + ' flag' + (f === 1 ? '' : 's') + '. It is merged with what is already on this device (the newer answer wins), then you continue from your last question.' }));
+  body.appendChild(el('p', { class: 'note', text: n + ' answered question' + (n === 1 ? '' : 's') + ', ' + f + ' flag' + (f === 1 ? '' : 's') + '. It is merged with what is already on this device (the newer answer wins), then you continue at the same question, in the same order.' }));
   var row = el('div', { class: 'tools' });
   var go = el('button', { type: 'button', class: 'btn primary', text: 'Load progress & continue' });
   var no = el('button', { type: 'button', class: 'btn', text: 'Not now' });
@@ -3305,18 +3327,19 @@ App.prototype.applyTransfer = function (d) {
     if (!cur || (cur.t || 0) <= inc.t) self.store.progress[id] = inc;
   });
   Object.keys(d.flags).forEach(function (id) { self.store.flags[id] = 1; });
-  this.state = { unit: 'all', lecture: 'all', prof: 'all', filter: 'all', shuffleQ: true, shuffleOpts: true };
-  this.answers = {}; this.pending = {};
-  this.buildDeck();
-  if (d.current) {
-    var i = this.deck.findIndex(function (q) { return q.id === d.current; });
-    if (i > 0) this.deck.unshift(this.deck.splice(i, 1)[0]);
-  }
-  this.index = 0;
+  this.state = Object.assign({ unit: 'all', lecture: 'all', prof: 'all', filter: 'all', shuffleQ: true, shuffleOpts: true }, d.state);
+  this.deck = d.deck.map(function (id) { return BY_ID[id]; });
+  this.index = d.index;
+  this.answers = {}; this.elim = {}; this.pending = {};
+  this.deck.forEach(function (q) {
+    var p = d.progress[q.id];
+    if (d.answered[q.id] && p) self.answers[q.id] = { chosenId: p.c, correct: !!p.l };
+  });
+  if (!this.deck.length) this.buildDeck();
   this.persist();
   this.renderControls(); this.renderFilterMenu(); this.paint();
   this.banner.innerHTML = '';
-  this.banner.appendChild(el('div', { class: 'banner' }, [el('span', { text: 'Progress loaded from your other device — continuing from your last question.' })]));
+  this.banner.appendChild(el('div', { class: 'banner' }, [el('span', { text: 'Progress loaded from your other device — question ' + Math.min(this.index + 1, this.deck.length) + ' of ' + this.deck.length + ', same order.' })]));
 };
 
 /* ---------- left question list ---------- */
