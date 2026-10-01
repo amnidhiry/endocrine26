@@ -3243,8 +3243,19 @@ App.prototype.encodeTransfer = function () {
 };
 App.prototype.decodeTransfer = function (str) {
   var buf = b64uDec(str), n = QUESTIONS.length, wide = n > 255, L = this.transferLists();
+  if (buf[0] === 1 && buf.length === 11 + n * 2 && ((buf[1] << 8) | buf[2]) === n && ((buf[3] << 8) | buf[4]) === idChecksum()) {
+    /* older link format: progress + current question only */
+    var cur = (buf[5] << 8) | buf[6], t1 = ((buf[7] << 24) | (buf[8] << 16) | (buf[9] << 8) | buf[10]) >>> 0;
+    var pr = {}, fl = {};
+    QUESTIONS.forEach(function (q, i) {
+      var b = buf[11 + i * 2], a = buf[12 + i * 2];
+      if (b & 1) pr[q.id] = { a: a || 1, f: !!(b & 2), l: !!(b & 4), c: LETTERS[(b >> 4) & 7], t: t1 * 1000 };
+      if (b & 8) fl[q.id] = 1;
+    });
+    return { progress: pr, flags: fl, legacyCurrent: cur === 0xFFFF ? null : QUESTIONS[cur].id };
+  }
   if (buf.length < 9 || buf[0] !== 2 || ((buf[1] << 8) | buf[2]) !== n || ((buf[3] << 8) | buf[4]) !== idChecksum())
-    throw new Error('This link was made for a different version of the quiz.');
+    throw new Error('This code was made by a different version of the quiz page. Hard-refresh the page on BOTH devices (the one showing the QR and this one), then generate and scan a new code.');
   var t = ((buf[5] << 24) | (buf[6] << 16) | (buf[7] << 8) | buf[8]) >>> 0;
   var progress = {}, flags = {}, head = 9;
   QUESTIONS.forEach(function (q, i) {
@@ -3327,6 +3338,15 @@ App.prototype.applyTransfer = function (d) {
     if (!cur || (cur.t || 0) <= inc.t) self.store.progress[id] = inc;
   });
   Object.keys(d.flags).forEach(function (id) { self.store.flags[id] = 1; });
+  if (!d.deck) {
+    this.state = { unit: 'all', lecture: 'all', prof: 'all', filter: 'all', shuffleQ: true, shuffleOpts: true };
+    this.answers = {}; this.pending = {}; this.buildDeck();
+    var li = this.deck.findIndex(function (q) { return q.id === d.legacyCurrent; });
+    if (li > 0) this.deck.unshift(this.deck.splice(li, 1)[0]);
+    this.index = 0; this.persist();
+    this.renderControls(); this.renderFilterMenu(); this.paint();
+    return;
+  }
   this.state = Object.assign({ unit: 'all', lecture: 'all', prof: 'all', filter: 'all', shuffleQ: true, shuffleOpts: true }, d.state);
   this.deck = d.deck.map(function (id) { return BY_ID[id]; });
   this.index = d.index;
