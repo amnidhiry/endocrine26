@@ -2936,7 +2936,7 @@ App.prototype.renderControls = function () {
   var prog = el('button', { type: 'button', class: 'menu-item', html: '<span>Progress &amp; backup</span>' });
   prog.addEventListener('click', function () { self.closeMenus(); self.openProgress(); });
   m.appendChild(prog);
-  var xfer = el('button', { type: 'button', class: 'menu-item', html: '<span>Transfer to phone / tablet (QR)</span>' });
+  var xfer = el('button', { type: 'button', class: 'menu-item', html: '<span>Transfer to another device</span>' });
   xfer.addEventListener('click', function () { self.closeMenus(); self.openTransfer(); });
   m.appendChild(xfer);
   var fin = el('button', { type: 'button', class: 'menu-item strong', text: 'Finish set' });
@@ -3146,7 +3146,7 @@ App.prototype.openProgress = function () {
   unans.addEventListener('click', function () { self.jump({ unit: 'all', lecture: 'all', filter: 'unanswered' }); });
   var exp = el('button', { type: 'button', class: 'btn', text: 'Export progress' });
   exp.addEventListener('click', function () { self.exportProgress(); });
-  var xf = el('button', { type: 'button', class: 'btn', text: 'Transfer to phone (QR)' });
+  var xf = el('button', { type: 'button', class: 'btn', text: 'Transfer to another device' });
   xf.addEventListener('click', function () { self.openTransfer(); });
   var reset = el('button', { type: 'button', class: 'btn danger', text: 'Reset all progress' });
   reset.addEventListener('click', function () { self.resetAll(); });
@@ -3293,9 +3293,9 @@ App.prototype.openTransfer = function () {
     box.innerHTML = qr.createSvgTag({ cellSize: 6, margin: 4, scalable: true });
   } catch (e) { box.appendChild(el('p', { class: 'note', text: 'Could not draw a QR code — use the link below.' })); }
   body.appendChild(box);
-  body.appendChild(el('p', { class: 'xfer-lead', text: 'Scan with your phone camera to open this quiz there with your progress.' }));
+  body.appendChild(el('p', { class: 'xfer-lead', text: 'Scan with the camera on the other device to open this quiz there with your progress.' }));
   body.appendChild(el('p', { class: 'note', text: 'Packs ' + done + ' answered question' + (done === 1 ? '' : 's') + ', ' + fl + ' flag' + (fl === 1 ? '' : 's') + ' and your place in the current set (same question order). It is a snapshot from right now — generate a new code after more practice. Highlights and crossed-out choices are not included.' }));
-  if (!web) body.appendChild(el('p', { class: 'note warn', text: 'You opened this as a local file, so the QR points to a file path your phone cannot reach. Open the hosted GitHub Pages address on this computer first, then generate the code from there.' }));
+  if (!web) body.appendChild(el('p', { class: 'note warn', text: 'You opened this as a local file, so the QR points to a file path the other device cannot reach. Open the hosted GitHub Pages address on this computer first, then generate the code from there.' }));
   var row = el('div', { class: 'tools' });
   var inp = el('input', { type: 'text', readonly: 'readonly', value: url, class: 'xfer-url', 'aria-label': 'Transfer link' });
   inp.addEventListener('focus', function () { inp.select(); });
@@ -3318,7 +3318,7 @@ App.prototype.openTransfer = function () {
   }
   body.appendChild(row2);
   body.appendChild(el('p', { class: 'note', text: 'The progress travels inside the link itself (after the #), so nothing is uploaded anywhere. Anyone with the link can see your answers — treat it like a note.' }));
-  this.openModal('Transfer to phone / tablet', ICON.grid, body, false);
+  this.openModal('Transfer to another device', ICON.grid, body, false);
 };
 App.prototype.checkIncomingTransfer = function () {
   var self = this, m = /^#t=([A-Za-z0-9_-]+)$/.exec(location.hash);
