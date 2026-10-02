@@ -291,6 +291,7 @@
   .xfer .note { text-align: left; margin: .4rem 0; }
   .xfer .note.warn { color: var(--incorrect); }
   .xfer .tools { padding: .3rem 0; flex-wrap: nowrap; }
+  .xfer-btns { justify-content: center; flex-wrap: wrap !important; }
   .xfer-url { flex: 1 1 auto; min-width: 0; font: inherit; font-size: .78rem; padding: .4rem .6rem; border: 1px solid var(--border); border-radius: 4px; background: var(--panel); color: var(--text); }
   .note { font-size: 0.78rem; color: var(--muted); margin: 0; }
 
@@ -3304,8 +3305,18 @@ App.prototype.openTransfer = function () {
     if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(ok, function () { inp.select(); });
     else { inp.select(); try { document.execCommand('copy'); ok(); } catch (e) {} }
   });
-  row.appendChild(inp); row.appendChild(cp);
+  row.appendChild(inp);
   body.appendChild(row);
+  var row2 = el('div', { class: 'tools xfer-btns' });
+  row2.appendChild(cp);
+  if (navigator.share) {
+    var sh = el('button', { type: 'button', class: 'btn', text: 'Share… (AirDrop, Messages)' });
+    sh.addEventListener('click', function () {
+      navigator.share({ title: document.title + ' — my progress', text: 'Open this to continue the quiz where I left off.', url: url }).catch(function () {});
+    });
+    row2.appendChild(sh);
+  }
+  body.appendChild(row2);
   body.appendChild(el('p', { class: 'note', text: 'The progress travels inside the link itself (after the #), so nothing is uploaded anywhere. Anyone with the link can see your answers — treat it like a note.' }));
   this.openModal('Transfer to phone / tablet', ICON.grid, body, false);
 };
