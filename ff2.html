@@ -2757,6 +2757,7 @@ function richText(tag, cls, text) {
 }
 
 function App() {
+  var self0 = this;
   this.store = loadStore();
   this.state = { unit: 'all', lecture: 'all', prof: 'all', filter: 'all', shuffleQ: true, shuffleOpts: true };
   this.deck = []; this.index = 0; this.answers = {};
@@ -2772,6 +2773,14 @@ function App() {
   this.bindGlobal();
   this.paint();
   this.checkIncomingTransfer();
+  window.addEventListener('storage', function (e) {
+    if (e.key !== STORE_KEY || !e.newValue) return;
+    try {
+      var d = JSON.parse(e.newValue);
+      self0.store.progress = d.progress || {}; self0.store.flags = d.flags || {};
+      self0.renderNav(); self0.renderStatus(); self0.renderFilterMenu();
+    } catch (x) {}
+  });
 }
 
 /* ---------- session persistence ---------- */
@@ -2794,13 +2803,14 @@ App.prototype.restoreSession = function () {
   this.deck = deck;
   this.index = Math.min(s.index || 0, deck.length);
   this.answers = s.answers || {};
+  this.fillAnswers();
   var answered = 0, self = this;
   deck.forEach(function (q) { if (self.answers[q.id]) answered++; });
   if (this.index > 0 || answered > 0) {
     var b = el('div', { class: 'banner' });
     b.appendChild(el('span', { text: 'Picked up where you left off — question ' + Math.min(this.index + 1, deck.length) + ' of ' + deck.length + '.' }));
     var x = el('button', { type: 'button', text: 'Start this set over' });
-    x.addEventListener('click', function () { self.buildDeck(); self.paint(); self.banner.innerHTML = ''; });
+    x.addEventListener('click', function () { self.buildDeck(true); self.paint(); self.banner.innerHTML = ''; });
     var d = el('button', { type: 'button', text: 'Dismiss' });
     d.addEventListener('click', function () { self.banner.innerHTML = ''; });
     var r = el('span'); r.appendChild(x); r.appendChild(document.createTextNode(' ')); r.appendChild(d);
@@ -2850,14 +2860,26 @@ App.prototype.matching = function () {
     return true;
   });
 };
-App.prototype.buildDeck = function () {
+App.prototype.buildDeck = function (fresh) {
   var list = this.matching();
   this.deck = this.state.shuffleQ ? shuffle(list) : list;
   this.index = 0;
   this.answers = {};
   this.elim = {};
   this.pending = {};
+  if (!fresh) this.fillAnswers();
   this.persist();
+};
+/* Show earlier results (saved in the store) as answered when a set is rebuilt, so switching
+   filters never makes saved progress look lost. Missed/Unanswered sets start clean on purpose,
+   so you can retry them. */
+App.prototype.fillAnswers = function () {
+  var f = this.state.filter; if (f !== 'all' && f !== 'flagged') return;
+  var self = this;
+  this.deck.forEach(function (q) {
+    var p = self.store.progress[q.id];
+    if (p && p.c && !self.answers[q.id]) self.answers[q.id] = { chosenId: p.c, correct: !!p.l };
+  });
 };
 App.prototype.stats = function () {
   var p = this.store.progress, answered = 0, right = 0, missed = 0;
@@ -2883,7 +2905,7 @@ App.prototype.renderChrome = function () {
   var self = this;
   $('btn-controls').addEventListener('click', function () { self.toggleMenu($('wrap-controls')); });
   $('btn-tools').addEventListener('click', function () { self.toggleMenu($('wrap-tools')); });
-  $('btn-filter').addEventListener('click', function () { self.toggleMenu($('wrap-filter')); });
+  $('btn-filter').addEventListener('click', function () { self.renderFilterMenu(); self.toggleMenu($('wrap-filter')); });
   $('labs-x').addEventListener('click', function () { self.toggleLabs(false); });
   $('modal-x').addEventListener('click', function () { self.closeModal(); });
   $('modal').addEventListener('mousedown', function (e) { if (e.target === $('modal')) self.closeModal(); });
@@ -2972,15 +2994,36 @@ App.prototype.filterLabels = { all: 'All questions', unanswered: 'Unanswered onl
 App.prototype.renderFilterMenu = function () {
   var self = this, m = $('menu-filter');
   m.innerHTML = '';
+  var st = this.state, pg = this.store.progress, fl = this.store.flags;
+  var scoped = QUESTIONS.filter(function (q) {
+    return !(st.unit !== 'all' && q.unit !== st.unit) && !(st.prof && st.prof !== 'all' && profOf(q) !== st.prof) && !(st.lecture !== 'all' && q.lecture !== st.lecture);
+  });
+  var narrowed = scoped.length !== QUESTIONS.length;
+  function cnt(list, k) {
+    return list.filter(function (q) {
+      var p = pg[q.id];
+      return k === 'all' ? true : k === 'unanswered' ? !p : k === 'missed' ? !!(p && p.l === false) : !!fl[q.id];
+    }).length;
+  }
   Object.keys(this.filterLabels).forEach(function (k) {
     var b = el('button', { type: 'button', class: 'menu-item' + (self.state.filter === k ? ' active' : '') });
-    b.appendChild(el('span', { text: self.filterLabels[k] }));
+    b.appendChild(el('span', { text: self.filterLabels[k] + ' (' + cnt(scoped, k) + (narrowed ? ' of ' + cnt(QUESTIONS, k) : '') + ')' }));
     if (self.state.filter === k) b.insertAdjacentHTML('beforeend', ICON.check.replace('width="22" height="22"', 'width="16" height="16"'));
     b.addEventListener('click', function () {
       self.state.filter = k; self.closeMenus(); self.buildDeck(); self.renderFilterMenu(); self.paint();
     });
     m.appendChild(b);
   });
+  if (narrowed) {
+    var scope = [st.unit, st.prof, st.lecture].filter(function (v) { return v && v !== 'all'; }).join(' › ');
+    var wide = el('button', { type: 'button', class: 'menu-item' });
+    wide.appendChild(el('span', { text: 'Limited to: ' + scope + ' — show all units & lectures' }));
+    wide.addEventListener('click', function () {
+      self.state.unit = 'all'; self.state.prof = 'all'; self.state.lecture = 'all';
+      self.closeMenus(); self.buildDeck(); self.renderControls(); self.renderFilterMenu(); self.paint();
+    });
+    m.appendChild(wide);
+  }
   var f = $('btn-filter');
   f.innerHTML = 'Filter' + (this.state.filter !== 'all' ? ' <span class="count">•</span>' : '') + ' ' + SV('<polyline points="9 6 15 12 9 18"/>', 12, 'stroke-width="3"');
 };
@@ -3367,6 +3410,7 @@ App.prototype.applyTransfer = function (d) {
     if (d.answered[q.id] && p) self.answers[q.id] = { chosenId: p.c, correct: !!p.l };
   });
   if (!this.deck.length) this.buildDeck();
+  this.fillAnswers();
   this.persist();
   this.renderControls(); this.renderFilterMenu(); this.paint();
   this.banner.innerHTML = '';
@@ -3660,7 +3704,7 @@ App.prototype.paintSummary = function () {
     row.appendChild(rev);
   }
   var again = el('button', { type: 'button', class: 'btn', text: '↺ Start this set over' });
-  again.addEventListener('click', function () { self.buildDeck(); self.paint(); });
+  again.addEventListener('click', function () { self.buildDeck(true); self.paint(); });
   row.appendChild(again);
   var back = el('button', { type: 'button', class: 'btn', text: '← Back to last question' });
   back.addEventListener('click', function () { self.goTo(self.deck.length - 1); });
