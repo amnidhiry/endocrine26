@@ -3431,16 +3431,6 @@ App.prototype.paint = function () {
   head.appendChild(pv); head.appendChild(nx);
   head.appendChild(el('span', { class: 'spacer' }));
 
-  var dw = el('div', { class: 'menu-wrap dots-wrap' });
-  var db = el('button', { type: 'button', class: 'dots', text: '•••', 'aria-label': 'More' });
-  var dm = el('div', { class: 'menu' });
-  var retry = el('button', { type: 'button', class: 'menu-item', text: '↺ Retry this question' });
-  retry.addEventListener('click', function () { delete self.answers[q.id]; delete self.elim[q.id]; delete self.pending[q.id]; self.persist(); self.paint(); });
-  var clr = el('button', { type: 'button', class: 'menu-item', text: 'Clear highlights' });
-  clr.addEventListener('click', function () { delete self.hl[q.id + ':stem']; delete self.hl[q.id + ':rat']; self.paint(); });
-  dm.appendChild(retry); dm.appendChild(clr); dw.appendChild(db); dw.appendChild(dm);
-  db.addEventListener('click', function () { var was = dw.classList.contains('open'); self.closeMenus(); if (!was) dw.classList.add('open'); });
-  head.appendChild(dw);
   this.stage.appendChild(head);
   this.syncTools();
 
@@ -3524,7 +3514,12 @@ App.prototype.paint = function () {
   if (this.index > 0) { var p2 = el('button', { type: 'button', class: 'btn', text: '← Previous' }); p2.addEventListener('click', function () { self.go(-1); }); row.appendChild(p2); }
   var n2 = el('button', { type: 'button', class: 'btn primary', text: this.index === this.deck.length - 1 ? 'Finish →' : 'Next →' });
   n2.addEventListener('click', function () { self.go(1); });
+  var retry = el('button', { type: 'button', class: 'btn', text: '↺ Retry' });
+  retry.hidden = true;
+  retry.addEventListener('click', function () { delete self.answers[q.id]; delete self.elim[q.id]; delete self.pending[q.id]; self.persist(); self.paint(); window.scrollTo({ top: 0 }); });
+  row.appendChild(retry);
   row.appendChild(n2);
+  this.retryBtn = retry;
   this.stage.appendChild(row);
 
   if (submitted) this.reveal(q, submitted.chosenId, buttons);
@@ -3585,6 +3580,7 @@ App.prototype.submit = function (q, chosen, buttons) {
 };
 
 App.prototype.reveal = function (q, chosenId, buttons) {
+  if (this.retryBtn) this.retryBtn.hidden = false;
   var self = this, correct = chosenId === q.correct_answer;
   this.optsWrap.classList.add('answered');
   if (this.submitRow) this.submitRow.style.display = 'none';
